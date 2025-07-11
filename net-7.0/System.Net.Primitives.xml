@@ -294,7 +294,7 @@
       <returns>
         <see langword="true" /> if <paramref name="cookie" /> was successfully removed from the <see cref="T:System.Net.CookieCollection" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if item is not found in the original collection.</returns>
     </member>
-    <member name="M:System.Net.CookieCollection.System#Collections#Generic#IEnumerable{System#Net#Cookie}#GetEnumerator">
+    <member name="M:System.Net.CookieCollection.System#Collections#Generic#IEnumerable&lt;System#Net#Cookie&gt;#GetEnumerator">
       <summary>Gets an enumerator that can iterate through the <see cref="T:System.Net.CookieCollection" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for this collection.</returns>
     </member>

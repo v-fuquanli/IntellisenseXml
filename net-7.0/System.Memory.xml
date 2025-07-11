@@ -611,20 +611,20 @@
     <member name="T:System.Buffers.BuffersExtensions">
       <summary>Provides extension methods for <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
     </member>
-    <member name="M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0},System.Span{``0})">
+    <member name="M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})">
       <summary>Copies the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to the specified <see cref="T:System.Span`1" />.</summary>
       <param name="source">The source <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
       <param name="destination">The destination <see cref="T:System.Span`1" />.</param>
       <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
     </member>
-    <member name="M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0},``0)">
+    <member name="M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)">
       <summary>Returns the position of the first occurrence of <paramref name="value" /> in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
       <param name="source">The source <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
       <param name="value">The item to find in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
       <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
       <returns>An object whose <see cref="M:System.SequencePosition.GetInteger" /> method returns the position of the first occurrence of <paramref name="value" />, or an object whose <see langword="Nullable&lt;SequencePosition&gt;.HasValue" /> property is <see langword="false" /> .</returns>
     </member>
-    <member name="M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0})">
+    <member name="M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)">
       <summary>Converts the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to an array.</summary>
       <param name="sequence">The read-only sequence to convert to an array.</param>
       <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
@@ -1106,42 +1106,42 @@
     <member name="T:System.Buffers.SequenceReaderExtensions">
       <summary>Provides extended functionality for the <see cref="T:System.Buffers.SequenceReader`1" /> class that allows reading of endian specific numeric values from binary data.</summary>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte},System.Int16@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int16@)">
       <summary>Tries to read an <see cref="T:System.Int16" /> as big endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as big endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int16" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte},System.Int32@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int32@)">
       <summary>Tries to read an <see cref="T:System.Int32" /> as big endian.</summary>
       <param name="reader">The byte sequence reader from which to read the value.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as big endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int32" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte},System.Int64@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int64@)">
       <summary>Tries to read an <see cref="T:System.Int64" /> as big endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as big endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int64" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte},System.Int16@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int16@)">
       <summary>Tries to read an <see cref="T:System.Int16" /> as little endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as little endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int16" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte},System.Int32@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int32@)">
       <summary>Tries to read an <see cref="T:System.Int32" /> as little endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as little endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int32" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte},System.Int64@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int64@)">
       <summary>Tries to read an <see cref="T:System.Int64" /> as little endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as little endian.</param>

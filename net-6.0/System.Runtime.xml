@@ -3772,7 +3772,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <returns>
         <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.op_Implicit(T[])~System.ArraySegment{`0}">
+    <member name="M:System.ArraySegment`1.op_Implicit(`0[])~System.ArraySegment{`0}">
       <summary>Defines an implicit conversion of an array of type <typeparamref name="T" /> to an array segment of type <typeparamref name="T" />.</summary>
       <param name="array">The array to convert.</param>
       <returns>An array segment representation of the array.</returns>
@@ -3805,46 +3805,46 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
         <paramref name="index" /> is greater than the length of the underlying array of this instance.</exception>
       <returns>An array segment that consists of all elements of the current array segment from <paramref name="index" /> to the end of the array segment.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to add to the array segment.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Clear">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Contains(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Contains(`0)">
       <summary>Determines whether the array segment contains a specific value.</summary>
       <param name="item">The object to locate in the array segment.</param>
       <exception cref="T:System.InvalidOperationException">The underlying array is <see langword="null" />.</exception>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the array segment; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Remove(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to remove from the array segment.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
       <returns>Always throws an exception.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the array segment.</summary>
       <exception cref="T:System.InvalidOperationException">The underlying array is <see langword="null" />.</exception>
       <returns>An enumerator that can be used to iterate through the array segment.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList{T}#IndexOf(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#IndexOf(`0)">
       <summary>Determines the index of a specific item in the array segment.</summary>
       <param name="item">The object to locate in the array segment.</param>
       <exception cref="T:System.InvalidOperationException">The underlying array is <see langword="null" />.</exception>
       <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
       <param name="item">The object to insert into the array segment.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -3883,12 +3883,12 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <summary>Gets the position of the first element in the range delimited by the array segment, relative to the start of the original array.</summary>
       <returns>The position of the first element in the range delimited by the <see cref="T:System.ArraySegment`1" />, relative to the start of the original array.</returns>
     </member>
-    <member name="P:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the array segment  is read-only.</summary>
       <returns>
         <see langword="true" /> if the array segment is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.ArraySegment`1.System#Collections#Generic#IList{T}#Item(System.Int32)">
+    <member name="P:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)">
       <summary>Gets or sets the element at the specified index.</summary>
       <param name="index">The zero-based index of the element to get or set.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -3896,7 +3896,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <exception cref="T:System.NotSupportedException">The property is set and the array segment is read-only.</exception>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)">
+    <member name="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)">
       <summary>Gets the element at the specified index of the array segment.</summary>
       <param name="index">The zero-based index of the element to get.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -8381,7 +8381,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <summary>Gets a <see cref="T:System.Collections.Generic.IList`1" /> wrapper around the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.IList`1" /> wrapper around the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns <see langword="false" />.</returns>
@@ -8448,29 +8448,29 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <param name="value">The object to locate in the <see cref="T:System.Collections.Generic.List`1" />. The value can be <see langword="null" /> for reference types.</param>
       <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />, if found; otherwise, -1.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="value">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="value">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       <returns>
         <see langword="true" /> if <paramref name="value" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)">
       <summary>Inserts an item to the <see cref="T:System.Collections.Generic.IList`1" /> at the specified index.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
       <param name="value">The object to insert into the <see cref="T:System.Collections.Generic.IList`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)">
       <summary>Removes the <see cref="T:System.Collections.Generic.IList`1" /> item at the specified index.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -8562,12 +8562,12 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <summary>Returns the <see cref="T:System.Collections.Generic.IList`1" /> that the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> wraps.</summary>
       <returns>The <see cref="T:System.Collections.Generic.IList`1" /> that the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> wraps.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />, this property always returns <see langword="true" />.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)">
       <summary>Gets the element at the specified index. An <see cref="T:System.NotSupportedException" /> occurs if you try to set the item at the specified index.</summary>
       <param name="index">The zero-based index of the element to get.</param>
       <exception cref="T:System.NotSupportedException">Always thrown if the property is set.</exception>
@@ -28783,7 +28783,7 @@ There are too many levels of symbolic links.</exception>
       <summary>Allows utilizing custom filter predicates and transform delegates for enumeration purposes.</summary>
       <typeparam name="TResult">The type that this enumerable encapsulates.</typeparam>
     </member>
-    <member name="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable{`0}.FindTransform,System.IO.EnumerationOptions)">
+    <member name="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable`1.FindTransform{`0},System.IO.EnumerationOptions)">
       <summary>Initializes a new instance of the <see cref="T:System.IO.Enumeration.FileSystemEnumerable`1" /> class with specific search and filtering options.</summary>
       <param name="directory">The path of the directory where the enumeration will be performed.</param>
       <param name="transform">A delegate method for transforming raw find data into a result.</param>
@@ -36581,7 +36581,7 @@ The array is covariant.</exception>
       <summary>Returns the hash code for this instance.</summary>
       <returns>A 32-bit signed integer hash code.</returns>
     </member>
-    <member name="M:System.Memory`1.op_Implicit(T[])~System.Memory{`0}">
+    <member name="M:System.Memory`1.op_Implicit(`0[])~System.Memory{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.Memory`1" /> object.</summary>
       <param name="array">The array to convert.</param>
       <returns>The converted object.</returns>
@@ -37270,12 +37270,12 @@ The array is covariant.</exception>
       <param name="defaultValue">A value to return if the <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="false" />.</param>
       <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property if the <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="true" />; otherwise, the <paramref name="defaultValue" /> parameter.</returns>
     </member>
-    <member name="M:System.Nullable`1.op_Explicit(System.Nullable{`0})~T">
+    <member name="M:System.Nullable`1.op_Explicit(System.Nullable{`0})~`0">
       <summary>Defines an explicit conversion of a <see cref="T:System.Nullable`1" /> instance to its underlying value.</summary>
       <param name="value">A nullable value.</param>
       <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property for the <paramref name="value" /> parameter.</returns>
     </member>
-    <member name="M:System.Nullable`1.op_Implicit(T)~System.Nullable{`0}">
+    <member name="M:System.Nullable`1.op_Implicit(`0)~System.Nullable{`0}">
       <summary>Creates a new <see cref="T:System.Nullable`1" /> object initialized to a specified value.</summary>
       <param name="value">A value type.</param>
       <returns>A <see cref="T:System.Nullable`1" /> object whose <see cref="P:System.Nullable`1.Value" /> property is initialized with the <paramref name="value" /> parameter.</returns>
@@ -37877,7 +37877,7 @@ If <paramref name="value" /> is 0 or the result overflows, returns 0.</returns>
       <summary>Reports a progress change.</summary>
       <param name="value">The value of the updated progress.</param>
     </member>
-    <member name="M:System.Progress`1.System#IProgress{T}#Report(`0)">
+    <member name="M:System.Progress`1.System#IProgress&lt;T&gt;#Report(`0)">
       <summary>Reports a progress change.</summary>
       <param name="value">The value of the updated progress.</param>
     </member>
@@ -38074,7 +38074,7 @@ If <paramref name="value" /> is 0 or the result overflows, returns 0.</returns>
       <summary>Returns the hash code for this <see cref="T:System.ReadOnlyMemory`1" />.</summary>
       <returns>The hash code.</returns>
     </member>
-    <member name="M:System.ReadOnlyMemory`1.op_Implicit(T[])~System.ReadOnlyMemory{`0}">
+    <member name="M:System.ReadOnlyMemory`1.op_Implicit(`0[])~System.ReadOnlyMemory{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.ReadOnlyMemory`1" />.</summary>
       <param name="array">An array of type T to convert.</param>
       <returns>The read-only memory representation of the array of type T.</returns>
@@ -38202,7 +38202,7 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the two <see cref="T:System.ReadOnlySpan`1" /> instances are equal; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ReadOnlySpan`1.op_Implicit(T[])~System.ReadOnlySpan{`0}">
+    <member name="M:System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.ReadOnlySpan`1" />.</summary>
       <param name="array">The array to convert to a <see cref="T:System.ReadOnlySpan`1" />.</param>
       <returns>The read-only span that corresponds to <paramref name="array" />.</returns>
@@ -44416,7 +44416,7 @@ The invoked method is not supported in the base class. Derived classes must prov
 Note: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, <see cref="T:System.MissingMemberException" />, instead.</exception>
       <returns>The value that corresponds to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, a new value created by the parameterless constructor of the class defined by the <paramref name="TValue" /> generic type parameter.</returns>
     </member>
-    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable{`0,`1}.CreateValueCallback)">
+    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback{`0,`1})">
       <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes a callback method to create a value that is bound to the specified key.</summary>
       <param name="key">The key to search for. <paramref name="key" /> represents the object to which the property is attached.</param>
       <param name="createValueCallback">A delegate to a method that can create a value for the given <paramref name="key" />. It has a single parameter of type <c>TKey</c>, and returns a value of type <c>TValue</c>.</param>
@@ -44432,7 +44432,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <returns>
         <see langword="true" /> if the key is found and removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey@TValue}}#GetEnumerator">
+    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that can be used to iterate through the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> table.</summary>
       <returns>An enumerator that can be used to iterate through the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> table.</returns>
     </member>
@@ -48965,7 +48965,7 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the two <see cref="T:System.Span`1" /> objects are equal; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Span`1.op_Implicit(T[])~System.Span{`0}">
+    <member name="M:System.Span`1.op_Implicit(`0[])~System.Span{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.Span`1" />.</summary>
       <param name="array">The array to convert to a <see cref="T:System.Span`1" />.</param>
       <returns>The span that corresponds to <paramref name="array" />.</returns>
@@ -50616,7 +50616,7 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
         <paramref name="startIndex" /> is less than zero or greater than the length of this instance.</exception>
       <returns>A string that is equivalent to the substring that begins at <paramref name="startIndex" /> in this instance, or <see cref="F:System.String.Empty" /> if <paramref name="startIndex" /> is equal to the length of this instance.</returns>
     </member>
-    <member name="M:System.String.System#Collections#Generic#IEnumerable{System#Char}#GetEnumerator">
+    <member name="M:System.String.System#Collections#Generic#IEnumerable&lt;System#Char&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the current <see cref="T:System.String" /> object.</summary>
       <returns>A strongly-typed enumerator that can be used to iterate through the current <see cref="T:System.String" /> object.</returns>
     </member>
@@ -54087,7 +54087,7 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the string has been reached.</returns>
     </member>
-    <member name="M:System.Text.StringRuneEnumerator.System#Collections#Generic#IEnumerable{System#Text#Rune}#GetEnumerator">
+    <member name="M:System.Text.StringRuneEnumerator.System#Collections#Generic#IEnumerable&lt;System#Text#Rune&gt;#GetEnumerator">
       <summary>Returns the current enumerator instance.</summary>
       <returns>The current enumerator instance.</returns>
     </member>

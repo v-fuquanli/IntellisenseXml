@@ -210,7 +210,7 @@
       <summary>Gets the object used to synchronize access to the thread-safe collection.</summary>
       <returns>An object used to synchronize access to the thread-safe collection.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the collection is read only.</summary>
       <returns>
         <code data-dev-comment-type="langword">false</code>
@@ -4325,28 +4325,28 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains an element with the specified <paramref name="name" /> and can be removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Adds an element with the specified name and property into the <see cref="T:System.ServiceModel.Channels.MessageProperties" />.</summary>
       <param name="pair">A key/value pair that contains the name and value of the element to add.</param>
     </member>
-    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Determines whether the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains a specific name.</summary>
       <param name="pair">A key/value pair that contains the name and value of the element to locate in the <see cref="T:System.ServiceModel.Channels.MessageProperties" />.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains an element with the name and value in the specified <paramref name="pair" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
       <summary>Copies the content of the specified <see cref="T:System.ServiceModel.Channels.MessageProperties" /> to an array, starting at the specified index.</summary>
       <param name="array">The array to copy the collection to.</param>
       <param name="index">The index to start from.</param>
     </member>
-    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Removes the element with the specified name from the <see cref="T:System.ServiceModel.Channels.MessageProperties" />.</summary>
       <param name="pair">A key/value pair that contains the name and value of the element to be removed.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains an element with the specified name and value in the <paramref name="pair" /> parameter and can be removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#GetEnumerator">
+    <member name="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that can iterate through a collection.</summary>
       <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -4392,7 +4392,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>Gets or sets the security-related property of a message.</summary>
       <returns>A <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" /> object.</returns>
     </member>
-    <member name="P:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#IsReadOnly">
+    <member name="P:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -5076,7 +5076,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <typeparam name="T">The type that is identified as reference or numeric by the keyword.</typeparam>
       <returns>Returns <see langword="null" /> if <see langword="T" /> is a reference type and zero if <see langword="T" /> is a numeric value type.</returns>
     </member>
-    <member name="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase{`0}.BeginOperationDelegate,System.Object[],System.ServiceModel.ClientBase{`0}.EndOperationDelegate,System.Threading.SendOrPostCallback,System.Object)">
+    <member name="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase`1.BeginOperationDelegate{`0},System.Object[],System.ServiceModel.ClientBase`1.EndOperationDelegate{`0},System.Threading.SendOrPostCallback,System.Object)">
       <summary>Provides support for implementing the event-based asynchronous pattern. For more information about this pattern, see Event-based Asynchronous Pattern Overview.</summary>
       <param name="beginOperationDelegate">A delegate that is used for calling the asynchronous operation.</param>
       <param name="inValues">The input values to the asynchronous call.</param>
@@ -5409,7 +5409,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>Gets an identifier for the current session, if any.</summary>
       <returns>The current session identifier, if any.</returns>
     </member>
-    <member name="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IExtensibleObject{System#ServiceModel#IContextChannel}#Extensions">
+    <member name="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IExtensibleObject&lt;System#ServiceModel#IContextChannel&gt;#Extensions">
       <summary>Gets a collection of extension objects for this extensible object.</summary>
       <returns>The <see cref="T:System.ServiceModel.IExtensionCollection`1" /> of extension objects.</returns>
     </member>

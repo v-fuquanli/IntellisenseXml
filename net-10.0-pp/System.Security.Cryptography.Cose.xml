@@ -212,11 +212,11 @@
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Security.Cryptography.Cose.CoseHeaderMap.System#Collections#Generic#IReadOnlyDictionary{System#Security#Cryptography#Cose#CoseHeaderLabel@System#Security#Cryptography#Cose#CoseHeaderValue}#Keys">
+    <member name="P:System.Security.Cryptography.Cose.CoseHeaderMap.System#Collections#Generic#IReadOnlyDictionary&lt;System#Security#Cryptography#Cose#CoseHeaderLabel,System#Security#Cryptography#Cose#CoseHeaderValue&gt;#Keys">
       <summary>Gets an enumerable collection that contains the keys in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the keys in the read-only dictionary.</returns>
     </member>
-    <member name="P:System.Security.Cryptography.Cose.CoseHeaderMap.System#Collections#Generic#IReadOnlyDictionary{System#Security#Cryptography#Cose#CoseHeaderLabel@System#Security#Cryptography#Cose#CoseHeaderValue}#Values">
+    <member name="P:System.Security.Cryptography.Cose.CoseHeaderMap.System#Collections#Generic#IReadOnlyDictionary&lt;System#Security#Cryptography#Cose#CoseHeaderLabel,System#Security#Cryptography#Cose#CoseHeaderValue&gt;#Values">
       <summary>Gets an enumerable collection that contains the values in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the values in the read-only dictionary.</returns>
     </member>

@@ -40,7 +40,7 @@
       <summary>Calculates the offset from the start using the given collection length.</summary>
       <param name="length">The length of the collection that the NIndex will be used with. Must be a positive value.</param>
     </member>
-    <member name="M:System.Buffers.NIndex.op_CheckedExplicit(System.Buffers.NIndex)~System.Index">
+    <member name="M:System.Buffers.NIndex.op_CheckedExplicit(System.Buffers.NIndex)">
       <param name="value" />
     </member>
     <member name="M:System.Buffers.NIndex.op_Explicit(System.Buffers.NIndex)~System.Index">
@@ -112,7 +112,7 @@
       <summary>Calculates the start offset and length of the <see cref="T:System.Buffers.NRange" /> object using a collection length.</summary>
       <param name="length">The length of the collection that the <see cref="T:System.Buffers.NRange" /> will be used with. Must be a positive value.</param>
     </member>
-    <member name="M:System.Buffers.NRange.op_CheckedExplicit(System.Buffers.NRange)~System.Range">
+    <member name="M:System.Buffers.NRange.op_CheckedExplicit(System.Buffers.NRange)">
       <param name="value" />
     </member>
     <member name="M:System.Buffers.NRange.op_Explicit(System.Buffers.NRange)~System.Range">
@@ -589,7 +589,7 @@
       <returns>
         <c>true</c> if the two tensor span are equal; otherwise, <c>false</c>.</returns>
     </member>
-    <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.op_Implicit(T[])~System.Numerics.Tensors.ReadOnlyTensorSpan{`0}">
+    <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.op_Implicit(`0[])~System.Numerics.Tensors.ReadOnlyTensorSpan{`0}">
       <param name="array" />
     </member>
     <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.op_Inequality(System.Numerics.Tensors.ReadOnlyTensorSpan{`0}@,System.Numerics.Tensors.ReadOnlyTensorSpan{`0}@)">
@@ -704,7 +704,7 @@
     <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.Current">
       <summary>Gets the element at the current position of the enumerator.</summary>
     </member>
-    <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.System#Collections#Generic#IEnumerator&lt;T&gt;#Current" />
     <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Numerics.Tensors.Tensor">
       <summary>Provides methods for tensor operations.</summary>
@@ -1098,7 +1098,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <typeparam name="T" />
       <exception cref="T:System.ArgumentException">The shapes are not broadcast compatible.</exception>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.BroadcastTo``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.Numerics.Tensors.TensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.BroadcastTo``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.Numerics.Tensors.TensorSpan{``0}@)">
       <summary>
             Broadcast the data from <paramref name="source" /> to <paramref name="destination" />.</summary>
       <param name="source">Input <see cref="T:System.Numerics.Tensors.TensorSpan`1" />.</param>
@@ -1112,7 +1112,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="destination" />
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.BroadcastTo``1(System.Numerics.Tensors.TensorSpan{``0},System.Numerics.Tensors.TensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.BroadcastTo``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Numerics.Tensors.TensorSpan{``0}@)">
       <summary>
             Broadcast the data from <paramref name="source" /> to <paramref name="destination" />.</summary>
       <param name="source">Input <see cref="T:System.Numerics.Tensors.TensorSpan`1" />.</param>
@@ -1655,7 +1655,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
         <see cref="T:System.Random" /> to provide random seeding. Defaults to <see cref="P:System.Random.Shared" /> if not provided.</param>
       <typeparam name="T">The element type.</typeparam>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.FilteredUpdate``1(System.Numerics.Tensors.TensorSpan{``0},System.Numerics.Tensors.ReadOnlyTensorSpan{System.Boolean}@,``0)">
+    <member name="M:System.Numerics.Tensors.Tensor.FilteredUpdate``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Numerics.Tensors.ReadOnlyTensorSpan{System.Boolean}@,``0)">
       <summary>
             Updates the <paramref name="tensor" /> tensor with the <paramref name="value" /> where the <paramref name="filter" /> is true.</summary>
       <param name="tensor">Input <see cref="T:System.Numerics.Tensors.Tensor`1" />.</param>
@@ -1663,7 +1663,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="value">Value to update in the <paramref name="tensor" />.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.FilteredUpdate``1(System.Numerics.Tensors.TensorSpan{``0},System.Numerics.Tensors.ReadOnlyTensorSpan{System.Boolean}@,System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.FilteredUpdate``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Numerics.Tensors.ReadOnlyTensorSpan{System.Boolean}@,System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
       <summary>
             Updates the <paramref name="tensor" /> tensor with the <paramref name="values" /> where the <paramref name="filter" /> is true.
             If dimensions are not the same an exception is thrown.</summary>
@@ -2881,7 +2881,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="x">The input <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" />.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.Reshape``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.ReadOnlySpan{System.IntPtr})">
+    <member name="M:System.Numerics.Tensors.Tensor.Reshape``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.ReadOnlySpan{System.IntPtr})">
       <summary>
             Reshapes the <paramref name="tensor" /> tensor to the specified <paramref name="lengths" />. If one of the lengths is -1, it will be calculated automatically.
             Does not change the length of the underlying memory nor does it allocate new memory. If the new shape is not compatible with the old shape,
@@ -2903,7 +2903,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
         <see cref="T:System.ReadOnlySpan`1" /> with the new dimensions.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.Reshape``1(System.Numerics.Tensors.TensorSpan{``0},System.ReadOnlySpan{System.IntPtr})">
+    <member name="M:System.Numerics.Tensors.Tensor.Reshape``1(System.Numerics.Tensors.TensorSpan{``0}@,System.ReadOnlySpan{System.IntPtr})">
       <summary>
             Reshapes the <paramref name="tensor" /> tensor to the specified <paramref name="lengths" />. If one of the lengths is -1, it will be calculated automatically.
             Does not change the length of the underlying memory nor does it allocate new memory. If the new shape is not compatible with the old shape,
@@ -3072,14 +3072,14 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="x">The input <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" />.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.SequenceEqual``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.SequenceEqual``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
       <summary>
             Determines whether two sequences are equal by comparing the elements using IEquatable{T}.Equals(T).</summary>
       <param name="tensor" />
       <param name="other" />
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.SequenceEqual``1(System.Numerics.Tensors.TensorSpan{``0},System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.SequenceEqual``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
       <summary>
             Determines whether two sequences are equal by comparing the elements using IEquatable{T}.Equals(T).</summary>
       <param name="tensor" />
@@ -3094,7 +3094,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="ranges">The ranges you want to set.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.SetSlice``1(System.Numerics.Tensors.TensorSpan{``0},System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.ReadOnlySpan{System.Buffers.NRange})">
+    <member name="M:System.Numerics.Tensors.Tensor.SetSlice``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.ReadOnlySpan{System.Buffers.NRange})">
       <summary>
             Sets a slice of the given <paramref name="tensor" /> with the provided <paramref name="values" /> for the given <paramref name="ranges" /></summary>
       <param name="tensor">Input <see cref="T:System.Numerics.Tensors.Tensor`1" />.</param>
@@ -3181,7 +3181,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="x">The <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" /> to take the square root of.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.Squeeze``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0})">
+    <member name="M:System.Numerics.Tensors.Tensor.Squeeze``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@)">
       <summary>
             Removes all dimensions of length one from the <paramref name="tensor" />.</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" /> to remove all dimensions of length 1.</param>
@@ -3193,13 +3193,13 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.Tensor`1" /> to remove all dimensions of length 1.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.Squeeze``1(System.Numerics.Tensors.TensorSpan{``0})">
+    <member name="M:System.Numerics.Tensors.Tensor.Squeeze``1(System.Numerics.Tensors.TensorSpan{``0}@)">
       <summary>
             Removes all dimensions of length one from the <paramref name="tensor" />.</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.TensorSpan`1" /> to remove all dimensions of length 1.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.SqueezeDimension``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.Int32)">
+    <member name="M:System.Numerics.Tensors.Tensor.SqueezeDimension``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.Int32)">
       <summary>
             Removes axis of length one from the <paramref name="tensor" /> for the given <paramref name="dimension" />.
             If the dimension is not of length one it will throw an exception.</summary>
@@ -3215,7 +3215,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="dimension">The dimension to remove.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.SqueezeDimension``1(System.Numerics.Tensors.TensorSpan{``0},System.Int32)">
+    <member name="M:System.Numerics.Tensors.Tensor.SqueezeDimension``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Int32)">
       <summary>
             Removes axis of length one from the <paramref name="tensor" /> for the given <paramref name="dimension" />.
             If the dimension is not of length one it will throw an exception.</summary>
@@ -3343,7 +3343,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="x">The <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" /> to take the sin of.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.ToString``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.ReadOnlySpan{System.IntPtr})">
+    <member name="M:System.Numerics.Tensors.Tensor.ToString``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.ReadOnlySpan{System.IntPtr})">
       <summary>
             Creates a <see cref="T:System.String" /> representation of the <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" />."/&gt;</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" /> you want to represent as a string.</param>
@@ -3358,7 +3358,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <typeparam name="T" />
       <returns>A <see cref="T:System.String" /> representation of the <paramref name="tensor" /></returns>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.ToString``1(System.Numerics.Tensors.TensorSpan{``0},System.ReadOnlySpan{System.IntPtr})">
+    <member name="M:System.Numerics.Tensors.Tensor.ToString``1(System.Numerics.Tensors.TensorSpan{``0}@,System.ReadOnlySpan{System.IntPtr})">
       <summary>
             Creates a <see cref="T:System.String" /> representation of the <see cref="T:System.Numerics.Tensors.TensorSpan`1" />."/&gt;</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.TensorSpan`1" /> you want to represent as a string.</param>
@@ -3394,7 +3394,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="x">The input <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" />.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.TryBroadcastTo``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.Numerics.Tensors.TensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.TryBroadcastTo``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.Numerics.Tensors.TensorSpan{``0}@)">
       <summary>
             Broadcast the data from <paramref name="tensor" /> to the smallest broadcastable shape compatible with <paramref name="destination" /> and stores it in <paramref name="destination" />
             If the shapes are not compatible, false is returned.</summary>
@@ -3414,7 +3414,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <returns>
         <see langword="false" /> if the shapes are not compatible, otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.TryBroadcastTo``1(System.Numerics.Tensors.TensorSpan{``0},System.Numerics.Tensors.TensorSpan{``0}@)">
+    <member name="M:System.Numerics.Tensors.Tensor.TryBroadcastTo``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Numerics.Tensors.TensorSpan{``0}@)">
       <summary>
             Broadcast the data from <paramref name="tensor" /> to the smallest broadcastable shape compatible with <paramref name="destination" /> and stores it in <paramref name="destination" />
             If the shapes are not compatible, false is returned.</summary>
@@ -3424,7 +3424,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <returns>
         <see langword="false" /> if the shapes are not compatible, otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.Unsqueeze``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0},System.Int32)">
+    <member name="M:System.Numerics.Tensors.Tensor.Unsqueeze``1(System.Numerics.Tensors.ReadOnlyTensorSpan{``0}@,System.Int32)">
       <summary>
             Insert a new dimension of length 1 that will appear at the dimension position.</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" /> to add a dimension of length 1.</param>
@@ -3438,7 +3438,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <param name="dimension">The index of the dimension to add.</param>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor.Unsqueeze``1(System.Numerics.Tensors.TensorSpan{``0},System.Int32)">
+    <member name="M:System.Numerics.Tensors.Tensor.Unsqueeze``1(System.Numerics.Tensors.TensorSpan{``0}@,System.Int32)">
       <summary>
             Insert a new dimension of length 1 that will appear at the dimension position.</summary>
       <param name="tensor">The <see cref="T:System.Numerics.Tensors.TensorSpan`1" /> to add a dimension of length 1.</param>
@@ -3566,7 +3566,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
             Pins and gets a <see cref="T:System.Buffers.MemoryHandle" /> to the backing memory.</summary>
       <returns>A <see cref="T:System.Buffers.MemoryHandle" /> which has pinned the backing memory.</returns>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.op_Implicit(T[])~System.Numerics.Tensors.Tensor{`0}">
+    <member name="M:System.Numerics.Tensors.Tensor`1.op_Implicit(`0[])~System.Numerics.Tensors.Tensor{`0}">
       <param name="array" />
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.op_Implicit(System.Numerics.Tensors.Tensor{`0})~System.Numerics.Tensors.ReadOnlyTensorSpan{`0}">
@@ -3596,7 +3596,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <returns>
         <see cref="T:System.Numerics.Tensors.Tensor`1" /> without copying the provided ranges.</returns>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>
             Gets an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the <see cref="T:System.Numerics.Tensors.Tensor`1" />.</summary>
       <returns>
@@ -3610,7 +3610,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#CopyTo(System.Numerics.Tensors.TensorSpan{`0}@|System.Runtime.InteropServices.InAttribute)">
       <param name="destination" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor{System#Numerics#Tensors#Tensor{T}@T}#GetPinnableReference">
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#GetPinnableReference">
       <summary>
             Returns a reference to the 0th element of the ReadOnlyTensor. If the ReadOnlyTensor is empty, returns null reference.
             It can be used for pinning and is required to support the use of ReadOnlyTensor within a fixed statement.</summary>
@@ -3621,26 +3621,26 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor#Fill(System.Object)">
       <param name="value" />
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor{System#Numerics#Tensors#Tensor{T}@T}#Create(System.ReadOnlySpan{System.IntPtr},System.Boolean)">
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#Create(System.ReadOnlySpan{System.IntPtr},System.Boolean)">
       <summary>
             Creates a <see cref="T:System.Numerics.Tensors.Tensor`1" /> and initializes it with the default value of T. If <paramref name="pinned" /> is true, the memory will be pinned.</summary>
       <param name="lengths">A <see cref="T:System.ReadOnlySpan`1" /> indicating the lengths of each dimension.</param>
       <param name="pinned">A <see cref="T:System.Boolean" /> whether the underlying data should be pinned or not.</param>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor{System#Numerics#Tensors#Tensor{T}@T}#Create(System.ReadOnlySpan{System.IntPtr},System.ReadOnlySpan{System.IntPtr},System.Boolean)">
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#Create(System.ReadOnlySpan{System.IntPtr},System.ReadOnlySpan{System.IntPtr},System.Boolean)">
       <summary>
             Creates a <see cref="T:System.Numerics.Tensors.Tensor`1" /> and initializes it with the default value of T. If <paramref name="pinned" /> is true, the memory will be pinned.</summary>
       <param name="lengths">A <see cref="T:System.ReadOnlySpan`1" /> indicating the lengths of each dimension.</param>
       <param name="strides">A <see cref="T:System.ReadOnlySpan`1" /> indicating the strides of each dimension.</param>
       <param name="pinned">A <see cref="T:System.Boolean" /> whether the underlying data should be pinned or not.</param>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor{System#Numerics#Tensors#Tensor{T}@T}#CreateUninitialized(System.ReadOnlySpan{System.IntPtr},System.Boolean)">
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#CreateUninitialized(System.ReadOnlySpan{System.IntPtr},System.Boolean)">
       <summary>
             Creates a <see cref="T:System.Numerics.Tensors.Tensor`1" /> and does not initialize it. If <paramref name="pinned" /> is true, the memory will be pinned.</summary>
       <param name="lengths">A <see cref="T:System.ReadOnlySpan`1" /> indicating the lengths of each dimension.</param>
       <param name="pinned">A <see cref="T:System.Boolean" /> whether the underlying data should be pinned or not.</param>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor{System#Numerics#Tensors#Tensor{T}@T}#CreateUninitialized(System.ReadOnlySpan{System.IntPtr},System.ReadOnlySpan{System.IntPtr},System.Boolean)">
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#CreateUninitialized(System.ReadOnlySpan{System.IntPtr},System.ReadOnlySpan{System.IntPtr},System.Boolean)">
       <summary>
             Creates a <see cref="T:System.Numerics.Tensors.Tensor`1" /> and does not initialize it. If <paramref name="pinned" /> is true, the memory will be pinned.</summary>
       <param name="lengths">A <see cref="T:System.ReadOnlySpan`1" /> indicating the lengths of each dimension.</param>
@@ -3745,14 +3745,14 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor#Item(System.ReadOnlySpan{System.IntPtr})">
       <param name="indexes" />
     </member>
-    <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor{System#Numerics#Tensors#Tensor{T}@T}#Item(System.ReadOnlySpan{System.Buffers.NIndex})">
+    <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#Item(System.ReadOnlySpan{System.Buffers.NIndex})">
       <summary>
             Returns the specified element of the ReadOnlyTensor.</summary>
       <param name="indexes" />
       <exception cref="T:System.IndexOutOfRangeException">
             Thrown when index less than 0 or index greater than or equal to FlattenedLength</exception>
     </member>
-    <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor{System#Numerics#Tensors#Tensor{T}@T}#Item(System.ReadOnlySpan{System.IntPtr})">
+    <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#Item(System.ReadOnlySpan{System.IntPtr})">
       <summary>
             Returns the specified element of the ReadOnlyTensor.</summary>
       <param name="indexes" />
@@ -3783,7 +3783,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <summary>Gets the element in the collection at the current position of the enumerator.</summary>
       <returns>The element in the collection at the current position of the enumerator.</returns>
     </member>
-    <member name="P:System.Numerics.Tensors.Tensor`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.Numerics.Tensors.Tensor`1.Enumerator.System#Collections#Generic#IEnumerator&lt;T&gt;#Current" />
     <member name="P:System.Numerics.Tensors.Tensor`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Numerics.Tensors.TensorPrimitives">
       <summary>Performs primitive tensor operations over spans of memory.</summary>
@@ -6298,10 +6298,10 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <returns>
         <code data-dev-comment-type="c">true</code> if the two tensor span are equal; otherwise, <code data-dev-comment-type="c">false</code>.</returns>
     </member>
-    <member name="M:System.Numerics.Tensors.TensorSpan`1.op_Implicit(T[])~System.Numerics.Tensors.TensorSpan{`0}">
+    <member name="M:System.Numerics.Tensors.TensorSpan`1.op_Implicit(`0[])~System.Numerics.Tensors.TensorSpan{`0}">
       <param name="array" />
     </member>
-    <member name="M:System.Numerics.Tensors.TensorSpan`1.op_Implicit(System.Numerics.Tensors.TensorSpan{`0})~System.Numerics.Tensors.ReadOnlyTensorSpan{`0}">
+    <member name="M:System.Numerics.Tensors.TensorSpan`1.op_Implicit(System.Numerics.Tensors.TensorSpan{`0}@)~System.Numerics.Tensors.ReadOnlyTensorSpan{`0}">
       <param name="tensor" />
     </member>
     <member name="M:System.Numerics.Tensors.TensorSpan`1.op_Inequality(System.Numerics.Tensors.TensorSpan{`0}@,System.Numerics.Tensors.TensorSpan{`0}@)">
@@ -6419,7 +6419,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.Current">
       <summary>Gets the element at the current position of the enumerator.</summary>
     </member>
-    <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.System#Collections#Generic#IEnumerator&lt;T&gt;#Current" />
     <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.System#Collections#IEnumerator#Current" />
   </members>
 </doc>

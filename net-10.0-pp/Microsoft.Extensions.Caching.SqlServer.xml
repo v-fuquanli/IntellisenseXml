@@ -93,7 +93,7 @@
     <member name="P:Microsoft.Extensions.Caching.SqlServer.SqlServerCacheOptions.ExpiredItemsDeletionInterval">
       <summary>The periodic interval to scan and delete expired items in the cache. Default is 30 minutes.</summary>
     </member>
-    <member name="P:Microsoft.Extensions.Caching.SqlServer.SqlServerCacheOptions.Microsoft#Extensions#Options#IOptions{Microsoft#Extensions#Caching#SqlServer#SqlServerCacheOptions}#Value">
+    <member name="P:Microsoft.Extensions.Caching.SqlServer.SqlServerCacheOptions.Microsoft#Extensions#Options#IOptions&lt;Microsoft#Extensions#Caching#SqlServer#SqlServerCacheOptions&gt;#Value">
       <summary>Gets the default configured <typeparamref name="TOptions" /> instance.</summary>
       <returns>An object that represents the SQL Server cache options.</returns>
     </member>

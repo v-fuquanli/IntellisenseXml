@@ -211,7 +211,7 @@
       <summary>Represents a collection of <see cref="T:System.Reflection.Metadata.AssemblyFileHandle" />.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.AssemblyFileHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.AssemblyFileHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#AssemblyFileHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.AssemblyFileHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#AssemblyFileHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -288,7 +288,7 @@
       <summary>A collection of assembly references.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.AssemblyReferenceHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.AssemblyReferenceHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#AssemblyReferenceHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.AssemblyReferenceHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#AssemblyReferenceHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -620,7 +620,7 @@
     <member name="M:System.Reflection.Metadata.BlobBuilder.Blobs.Reset">
       <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
     </member>
-    <member name="M:System.Reflection.Metadata.BlobBuilder.Blobs.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#Blob}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.BlobBuilder.Blobs.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#Blob&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -1185,7 +1185,7 @@
     <member name="P:System.Reflection.Metadata.CustomAttributeHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.CustomAttributeHandleCollection" />
     <member name="M:System.Reflection.Metadata.CustomAttributeHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.CustomAttributeHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#CustomAttributeHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.CustomAttributeHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#CustomAttributeHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -1325,7 +1325,7 @@
     <member name="P:System.Reflection.Metadata.CustomDebugInformationHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.CustomDebugInformationHandleCollection" />
     <member name="M:System.Reflection.Metadata.CustomDebugInformationHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.CustomDebugInformationHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#CustomDebugInformationHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.CustomDebugInformationHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#CustomDebugInformationHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -1401,7 +1401,7 @@
     <member name="P:System.Reflection.Metadata.DeclarativeSecurityAttributeHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection" />
     <member name="M:System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#DeclarativeSecurityAttributeHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#DeclarativeSecurityAttributeHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -1482,7 +1482,7 @@
     <member name="P:System.Reflection.Metadata.DocumentHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.DocumentHandleCollection" />
     <member name="M:System.Reflection.Metadata.DocumentHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.DocumentHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#DocumentHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.DocumentHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#DocumentHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -3603,7 +3603,7 @@
     <member name="P:System.Reflection.Metadata.EventDefinitionHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.EventDefinitionHandleCollection" />
     <member name="M:System.Reflection.Metadata.EventDefinitionHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.EventDefinitionHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#EventDefinitionHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.EventDefinitionHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#EventDefinitionHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -3729,7 +3729,7 @@
       <summary>Represents a collection of <see cref="T:System.Reflection.Metadata.TypeReferenceHandle" /> instances.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.ExportedTypeHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.ExportedTypeHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ExportedTypeHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.ExportedTypeHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#ExportedTypeHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -3814,7 +3814,7 @@
     <member name="P:System.Reflection.Metadata.FieldDefinitionHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.FieldDefinitionHandleCollection" />
     <member name="M:System.Reflection.Metadata.FieldDefinitionHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.FieldDefinitionHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#FieldDefinitionHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.FieldDefinitionHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#FieldDefinitionHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -3908,7 +3908,7 @@
       <summary>Represents a collection of constraints of a generic type parameter.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.GenericParameterConstraintHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.GenericParameterConstraintHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#GenericParameterConstraintHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.GenericParameterConstraintHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#GenericParameterConstraintHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -3981,7 +3981,7 @@
       <summary>Represents a collection of generic type parameters of a method or type.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.GenericParameterHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.GenericParameterHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#GenericParameterHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.GenericParameterHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#GenericParameterHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -4462,7 +4462,7 @@
     <member name="P:System.Reflection.Metadata.ImportDefinition.TargetType" />
     <member name="T:System.Reflection.Metadata.ImportDefinitionCollection" />
     <member name="M:System.Reflection.Metadata.ImportDefinitionCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.ImportDefinitionCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ImportDefinition}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.ImportDefinitionCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#ImportDefinition&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -4509,7 +4509,7 @@
     <member name="P:System.Reflection.Metadata.ImportScope.Parent" />
     <member name="T:System.Reflection.Metadata.ImportScopeCollection" />
     <member name="M:System.Reflection.Metadata.ImportScopeCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.ImportScopeCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ImportScopeHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.ImportScopeCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#ImportScopeHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -4612,7 +4612,7 @@
     <member name="P:System.Reflection.Metadata.InterfaceImplementationHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.InterfaceImplementationHandleCollection" />
     <member name="M:System.Reflection.Metadata.InterfaceImplementationHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.InterfaceImplementationHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#InterfaceImplementationHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.InterfaceImplementationHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#InterfaceImplementationHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -4758,7 +4758,7 @@
     <member name="P:System.Reflection.Metadata.LocalConstantHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.LocalConstantHandleCollection" />
     <member name="M:System.Reflection.Metadata.LocalConstantHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.LocalConstantHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#LocalConstantHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.LocalConstantHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#LocalConstantHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -4835,7 +4835,7 @@
     <member name="P:System.Reflection.Metadata.LocalScopeHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.LocalScopeHandleCollection" />
     <member name="M:System.Reflection.Metadata.LocalScopeHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.LocalScopeHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#LocalScopeHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.LocalScopeHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#LocalScopeHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -4930,7 +4930,7 @@
     <member name="P:System.Reflection.Metadata.LocalVariableHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.LocalVariableHandleCollection" />
     <member name="M:System.Reflection.Metadata.LocalVariableHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.LocalVariableHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#LocalVariableHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.LocalVariableHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#LocalVariableHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -5016,7 +5016,7 @@
       <summary>Represents a collection of <see cref="T:System.Reflection.Metadata.ManifestResourceHandle" /> instances.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.ManifestResourceHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.ManifestResourceHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ManifestResourceHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.ManifestResourceHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#ManifestResourceHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -5112,7 +5112,7 @@
       <summary>Represents a collection of <see cref="T:System.Reflection.Metadata.MemberReferenceHandle" /> instances.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.MemberReferenceHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.MemberReferenceHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#MemberReferenceHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.MemberReferenceHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#MemberReferenceHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -5661,7 +5661,7 @@
     <member name="P:System.Reflection.Metadata.MethodDebugInformationHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.MethodDebugInformationHandleCollection" />
     <member name="M:System.Reflection.Metadata.MethodDebugInformationHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.MethodDebugInformationHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#MethodDebugInformationHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.MethodDebugInformationHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#MethodDebugInformationHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -5749,7 +5749,7 @@
     <member name="P:System.Reflection.Metadata.MethodDefinitionHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.MethodDefinitionHandleCollection" />
     <member name="M:System.Reflection.Metadata.MethodDefinitionHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.MethodDefinitionHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#MethodDefinitionHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.MethodDefinitionHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#MethodDefinitionHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -5820,7 +5820,7 @@
     <member name="P:System.Reflection.Metadata.MethodImplementationHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.MethodImplementationHandleCollection" />
     <member name="M:System.Reflection.Metadata.MethodImplementationHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.MethodImplementationHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#MethodImplementationHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.MethodImplementationHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#MethodImplementationHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -6102,7 +6102,7 @@
       <summary>Contains a collection of parameters of a specified method.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.ParameterHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.ParameterHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ParameterHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.ParameterHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#ParameterHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -6327,7 +6327,7 @@
     <member name="P:System.Reflection.Metadata.PropertyDefinitionHandle.IsNil" />
     <member name="T:System.Reflection.Metadata.PropertyDefinitionHandleCollection" />
     <member name="M:System.Reflection.Metadata.PropertyDefinitionHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.PropertyDefinitionHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#PropertyDefinitionHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.PropertyDefinitionHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#PropertyDefinitionHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -6425,7 +6425,7 @@
     </member>
     <member name="T:System.Reflection.Metadata.SequencePointCollection" />
     <member name="M:System.Reflection.Metadata.SequencePointCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.SequencePointCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#SequencePoint}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.SequencePointCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#SequencePoint&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -6929,7 +6929,7 @@
       <summary>Contains a collection of <see cref="T:System.Reflection.Metadata.TypeDefinitionHandle" /> instances.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.TypeDefinitionHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.TypeDefinitionHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#TypeDefinitionHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.TypeDefinitionHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#TypeDefinitionHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -7018,7 +7018,7 @@
       <summary>Contains a collection of <see cref="T:System.Reflection.Metadata.TypeReferenceHandle" /> instances.</summary>
     </member>
     <member name="M:System.Reflection.Metadata.TypeReferenceHandleCollection.GetEnumerator" />
-    <member name="M:System.Reflection.Metadata.TypeReferenceHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#TypeReferenceHandle}#GetEnumerator">
+    <member name="M:System.Reflection.Metadata.TypeReferenceHandleCollection.System#Collections#Generic#IEnumerable&lt;System#Reflection#Metadata#TypeReferenceHandle&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>

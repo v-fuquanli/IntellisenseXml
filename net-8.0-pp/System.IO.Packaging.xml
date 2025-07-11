@@ -617,7 +617,7 @@
       <summary>Returns an enumerator for iterating through the parts in the collection.</summary>
       <returns>An enumerator for iterating through the <see cref="T:System.IO.Packaging.PackagePart" /> elements in the collection.</returns>
     </member>
-    <member name="M:System.IO.Packaging.PackagePartCollection.System#Collections#Generic#IEnumerable{System#IO#Packaging#PackagePart}#GetEnumerator">
+    <member name="M:System.IO.Packaging.PackagePartCollection.System#Collections#Generic#IEnumerable&lt;System#IO#Packaging#PackagePart&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>

@@ -30,7 +30,7 @@
       <summary>Initializes a new instance of the <see cref="T:System.Linq.EnumerableQuery`1" /> class and associates the instance with an expression tree.</summary>
       <param name="expression">An expression tree to associate with the new instance.</param>
     </member>
-    <member name="M:System.Linq.EnumerableQuery`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Linq.EnumerableQuery`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that can iterate through the associated <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection, or, if it is null, through the collection that results from rewriting the associated expression tree as a query on an <see cref="T:System.Collections.Generic.IEnumerable`1" /> data source and executing it.</summary>
       <returns>An enumerator that can be used to iterate through the associated data source.</returns>
     </member>
@@ -43,7 +43,7 @@
       <param name="expression">An expression tree that represents an <see cref="T:System.Linq.IQueryable" /> collection of data.</param>
       <returns>An <see cref="T:System.Linq.EnumerableQuery`1" /> object that is associated with <paramref name="expression" />.</returns>
     </member>
-    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery``2(System.Linq.Expressions.Expression)">
+    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery``1(System.Linq.Expressions.Expression)">
       <summary>Constructs a new <see cref="T:System.Linq.EnumerableQuery`1" /> object and associates it with a specified expression tree that represents an <see cref="T:System.Linq.IQueryable`1" /> collection of data.</summary>
       <param name="expression">An expression tree to execute.</param>
       <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>
@@ -55,7 +55,7 @@
       <param name="expression">An expression tree to execute.</param>
       <returns>The value that results from executing <paramref name="expression" />.</returns>
     </member>
-    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute``2(System.Linq.Expressions.Expression)">
+    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute``1(System.Linq.Expressions.Expression)">
       <summary>Executes an expression after rewriting it to call <see cref="T:System.Linq.Enumerable" /> methods instead of <see cref="T:System.Linq.Queryable" /> methods on any enumerable data sources that cannot be queried by <see cref="T:System.Linq.Queryable" /> methods.</summary>
       <param name="expression">An expression tree to execute.</param>
       <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>

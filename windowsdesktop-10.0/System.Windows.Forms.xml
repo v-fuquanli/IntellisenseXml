@@ -6057,7 +6057,7 @@ Note: If the <see cref="P:System.Windows.Forms.CheckBox.ThreeState" /> property 
 
  The <paramref name="value" /> parameter was greater than or equal to the count of items in the collection.</exception>
     </member>
-    <member name="M:System.Windows.Forms.ComboBox.ObjectCollection.System#Collections#Generic#IComparer{System#Windows#Forms#ComboBox+ObjectCollection+Entry}#Compare(System.Windows.Forms.ComboBox.ObjectCollection.Entry,System.Windows.Forms.ComboBox.ObjectCollection.Entry)">
+    <member name="M:System.Windows.Forms.ComboBox.ObjectCollection.System#Collections#Generic#IComparer&lt;System#Windows#Forms#ComboBox#ObjectCollection#Entry&gt;#Compare(System.Windows.Forms.ComboBox.ObjectCollection.Entry,System.Windows.Forms.ComboBox.ObjectCollection.Entry)">
       <summary>Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
       <param name="entry1">The entry to be compared</param>
       <param name="entry2">The entry to compare with.</param>
@@ -36606,7 +36606,7 @@ This class is not available in .NET Core 3.1 and later versions. Use <see cref="
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> is removed from <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Windows.Forms.NumericUpDownAccelerationCollection.System#Collections#Generic#IEnumerable{System#Windows#Forms#NumericUpDownAcceleration}#GetEnumerator">
+    <member name="M:System.Windows.Forms.NumericUpDownAccelerationCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Forms#NumericUpDownAcceleration&gt;#GetEnumerator">
       <summary>Gets the enumerator for the collection.</summary>
       <returns>Iterates over a collection to specify how acceleration should be performed on the control when the up or down button is pressed for specified time period.</returns>
     </member>

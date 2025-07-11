@@ -524,55 +524,55 @@
     <member name="M:System.Dynamic.ExpandoObject.#ctor">
       <summary>Initializes a new <see langword="ExpandoObject" /> that does not have members.</summary>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Adds the specified value to the <see cref="T:System.Collections.Generic.ICollection`1" /> that has the specified key.</summary>
       <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure that represents the key and value to add to the collection.</param>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Clear">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Clear">
       <summary>Removes all items from the collection.</summary>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
       <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if the collection contains a specific key and value; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" />, starting at the specified array index.</summary>
       <param name="array">The one-dimensional array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" /> that is the destination of the <see cref="T:System.Collections.Generic.KeyValuePair`2" /> elements copied from the <see cref="T:System.Collections.Generic.ICollection`1" />. The array must have zero-based indexing.</param>
       <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying starts.</param>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Removes a key and value from the collection.</summary>
       <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure that represents the key and value to remove from the collection.</param>
       <returns>
         <see langword="true" /> if the key and value are successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the key and value are not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Add(System.String,System.Object)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Add(System.String,System.Object)">
       <summary>Adds the specified key and value to the dictionary.</summary>
       <param name="key">The object to use as the key.</param>
       <param name="value">The object to use as the value.</param>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#ContainsKey(System.String)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#ContainsKey(System.String)">
       <summary>Determines whether the dictionary contains the specified key.</summary>
       <param name="key">The key to locate in the dictionary.</param>
       <returns>
         <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Remove(System.String)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Remove(System.String)">
       <summary>Removes the element that has the specified key from the <see cref="T:System.Collections.IDictionary" />.</summary>
       <param name="key">The key of the element to remove.</param>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#TryGetValue(System.String,System.Object@)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#TryGetValue(System.String,System.Object@)">
       <summary>Gets the value associated with the specified key.</summary>
       <param name="key">The key of the value to get.</param>
       <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value for the type of the <paramref name="value" /> parameter. This parameter is passed uninitialized.</param>
       <returns>
         <see langword="true" /> if the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#GetEnumerator">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -585,25 +585,25 @@
       <param name="parameter">The expression that represents the MetaObject to dispatch to the Dynamic virtual methods.</param>
       <returns>The object of the <see cref="T:System.Dynamic.DynamicMetaObject" /> type.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Count">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Count">
       <summary>Gets the number of elements in the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <returns>The number of elements in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#IsReadOnly">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Item(System.String)">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Item(System.String)">
       <summary>Gets or sets the element that has the specified key.</summary>
       <param name="key">The key of the element to get or set.</param>
       <returns>The element that has the specified key.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Keys">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Values">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Values">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
@@ -5883,7 +5883,7 @@
       <param name="index">The zero-based index of the element to get or set.</param>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>

@@ -526,7 +526,7 @@
       <summary>Gets an enumerator for all of the strings in the collection.</summary>
       <returns>An enumerator for all the strings in the collection.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HeaderStringValues.System#Collections#Generic#IEnumerable{System#String}#GetEnumerator">
+    <member name="M:System.Net.Http.Headers.HeaderStringValues.System#Collections#Generic#IEnumerable&lt;System#String&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -712,17 +712,17 @@ The header value format is invalid for this header name, or the header does not 
       <summary>Gets an enumerator that iterates through the <see cref="T:System.Net.Http.Headers.HttpHeadersNonValidated" />.</summary>
       <returns>An enumerator that iterates through the <see cref="T:System.Net.Http.Headers.HttpHeadersNonValidated" />.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Net#Http#Headers#HeaderStringValues}}#GetEnumerator">
+    <member name="M:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Net#Http#Headers#HeaderStringValues&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary{System#String@System#Net#Http#Headers#HeaderStringValues}#ContainsKey(System.String)">
+    <member name="M:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary&lt;System#String,System#Net#Http#Headers#HeaderStringValues&gt;#ContainsKey(System.String)">
       <summary>Determines whether the read-only dictionary contains an element that has the specified key.</summary>
       <param name="key">The key to locate.</param>
       <returns>
         <see langword="true" /> if the read-only dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary{System#String@System#Net#Http#Headers#HeaderStringValues}#TryGetValue(System.String,System.Net.Http.Headers.HeaderStringValues@)">
+    <member name="M:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary&lt;System#String,System#Net#Http#Headers#HeaderStringValues&gt;#TryGetValue(System.String,System.Net.Http.Headers.HeaderStringValues@)">
       <summary>Gets the value that is associated with the specified key.</summary>
       <param name="key">The key to locate.</param>
       <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value of <see cref="T:System.Net.Http.Headers.HeaderStringValues" />. This parameter is passed uninitialized.</param>
@@ -750,11 +750,11 @@ The header value format is invalid for this header name, or the header does not 
       <exception cref="T:System.Collections.Generic.KeyNotFoundException">The header was not contained in the collection.</exception>
       <returns>The values for the specified header.</returns>
     </member>
-    <member name="P:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary{System#String@System#Net#Http#Headers#HeaderStringValues}#Keys">
+    <member name="P:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary&lt;System#String,System#Net#Http#Headers#HeaderStringValues&gt;#Keys">
       <summary>Gets an enumerable collection that contains the keys in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the keys in the read-only dictionary.</returns>
     </member>
-    <member name="P:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary{System#String@System#Net#Http#Headers#HeaderStringValues}#Values">
+    <member name="P:System.Net.Http.Headers.HttpHeadersNonValidated.System#Collections#Generic#IReadOnlyDictionary&lt;System#String,System#Net#Http#Headers#HeaderStringValues&gt;#Values">
       <summary>Gets an enumerable collection that contains the values in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the values in the read-only dictionary.</returns>
     </member>
@@ -3253,55 +3253,55 @@ The timeout specified is greater than <see cref="F:System.Int32.MaxValue" /> mil
       <param name="value">The value of the HTTP request option.</param>
       <typeparam name="TValue">The type of the HTTP value as defined by <paramref name="key" />.</typeparam>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Clear">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific value.</summary>
       <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
       <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.ICollection`1" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
       <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#Add(System.String,System.Object)">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Add(System.String,System.Object)">
       <summary>Adds an element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <param name="key">The object to use as the key of the element to add.</param>
       <param name="value">The object to use as the value of the element to add.</param>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#ContainsKey(System.String)">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#ContainsKey(System.String)">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element with the specified key.</summary>
       <param name="key">The key to locate in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element with the key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#Remove(System.String)">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Remove(System.String)">
       <summary>Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <param name="key">The key of the element to remove.</param>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#TryGetValue(System.String,System.Object@)">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#TryGetValue(System.String,System.Object@)">
       <summary>Gets the value associated with the specified key.</summary>
       <param name="key">The key of the value to get.</param>
       <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the <paramref name="value" /> parameter. This parameter is passed uninitialized.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.Dictionary`2" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#GetEnumerator">
+    <member name="M:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -3317,25 +3317,25 @@ The timeout specified is greater than <see cref="F:System.Int32.MaxValue" /> mil
       <returns>
         <see langword="true" /> if the collection contains an element with the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Count">
+    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Count">
       <summary>Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#IsReadOnly">
+    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#Item(System.String)">
+    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Item(System.String)">
       <summary>Gets or sets the element with the specified key.</summary>
       <param name="key">The key of the element to get or set.</param>
       <returns>The element with the specified key.</returns>
     </member>
-    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#Keys">
+    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary{System#String@System#Object}#Values">
+    <member name="P:System.Net.Http.HttpRequestOptions.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Values">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>

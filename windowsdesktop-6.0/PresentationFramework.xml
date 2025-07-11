@@ -5152,7 +5152,7 @@
       <param name="index">The position within the collection at which the first <see cref="T:System.Windows.Controls.ColumnDefinition" /> is removed.</param>
       <param name="count">The total number of <see cref="T:System.Windows.Controls.ColumnDefinition" /> objects to remove from the collection.</param>
     </member>
-    <member name="M:System.Windows.Controls.ColumnDefinitionCollection.System#Collections#Generic#IEnumerable{System#Windows#Controls#ColumnDefinition}#GetEnumerator">
+    <member name="M:System.Windows.Controls.ColumnDefinitionCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Controls#ColumnDefinition&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -17238,7 +17238,7 @@
       <param name="index">The position within the collection at which the first <see cref="T:System.Windows.Controls.RowDefinition" /> is removed.</param>
       <param name="count">The total number of <see cref="T:System.Windows.Controls.RowDefinition" /> objects to remove from the collection.</param>
     </member>
-    <member name="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#Generic#IEnumerable{System#Windows#Controls#RowDefinition}#GetEnumerator">
+    <member name="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Controls#RowDefinition&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -23972,7 +23972,7 @@
       <returns>
         <see langword="true" /> if the specified <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object has been successfully removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Windows.Data.XmlNamespaceMappingCollection.System#Collections#Generic#IEnumerable{System#Windows#Data#XmlNamespaceMapping}#GetEnumerator">
+    <member name="M:System.Windows.Data.XmlNamespaceMappingCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Data#XmlNamespaceMapping&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -24757,7 +24757,7 @@
       <param name="element">The element to add.</param>
       <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.FigureStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#NamedElement}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.FigureStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#NamedElement&gt;#GetEnumerator">
       <summary>This method is not implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -24786,7 +24786,7 @@
       <param name="element">The block to add.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.ListItemStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#BlockElement}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.ListItemStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#BlockElement&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -24819,7 +24819,7 @@
       <param name="listItem">The list item to add.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="listItem" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.ListStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#ListItemStructure}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.ListStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#ListItemStructure&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -24858,7 +24858,7 @@
       <param name="element">The element to add.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.ParagraphStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#NamedElement}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.ParagraphStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#NamedElement&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -24887,7 +24887,7 @@
       <param name="element">The block element to add.</param>
       <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.SectionStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#BlockElement}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.SectionStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#BlockElement&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>An enumerator.</returns>
     </member>
@@ -24923,7 +24923,7 @@
       <param name="element">The block to add.</param>
       <exception cref="T:System.ArgumentNullException">The block passed is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.StoryFragment.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#BlockElement}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.StoryFragment.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#BlockElement&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -24964,7 +24964,7 @@
       <param name="storyFragment">The <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> to add.</param>
       <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.StoryFragments.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#StoryFragment}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.StoryFragments.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#StoryFragment&gt;#GetEnumerator">
       <summary>This API is not implemented.</summary>
       <returns>This API is not implemented.</returns>
     </member>
@@ -24991,7 +24991,7 @@
       <param name="element">The element to add.</param>
       <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.TableCellStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#BlockElement}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.TableCellStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#BlockElement&gt;#GetEnumerator">
       <summary>This API is not implemented.</summary>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
       <returns>This API is not implemented.</returns>
@@ -25030,7 +25030,7 @@
       <param name="tableRow">The row to add.</param>
       <exception cref="T:System.ArgumentNullException">The row is null.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.TableRowGroupStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#TableRowStructure}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.TableRowGroupStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#TableRowStructure&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -25059,7 +25059,7 @@
       <param name="tableCell">The cell to add.</param>
       <exception cref="T:System.ArgumentNullException">The cell is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.TableRowStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#TableCellStructure}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.TableRowStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#TableCellStructure&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -25088,7 +25088,7 @@
       <param name="tableRowGroup">The group of rows to add.</param>
       <exception cref="T:System.ArgumentNullException">The group of rows is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Documents.DocumentStructures.TableStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#TableRowGroupStructure}#GetEnumerator">
+    <member name="M:System.Windows.Documents.DocumentStructures.TableStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#TableRowGroupStructure&gt;#GetEnumerator">
       <summary>This method has not been implemented.</summary>
       <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
     </member>
@@ -27440,7 +27440,7 @@
       <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> or <paramref name="count" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
       <exception cref="T:System.ArgumentException">Raised when <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in this collection.</exception>
     </member>
-    <member name="M:System.Windows.Documents.TableCellCollection.System#Collections#Generic#IEnumerable{System#Windows#Documents#TableCell}#GetEnumerator">
+    <member name="M:System.Windows.Documents.TableCellCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#TableCell&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -27611,7 +27611,7 @@
       <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> or <paramref name="count" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
       <exception cref="T:System.ArgumentException">Raised when <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in this collection.</exception>
     </member>
-    <member name="M:System.Windows.Documents.TableColumnCollection.System#Collections#Generic#IEnumerable{System#Windows#Documents#TableColumn}#GetEnumerator">
+    <member name="M:System.Windows.Documents.TableColumnCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#TableColumn&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -27786,7 +27786,7 @@
       <exception cref="T:System.ArgumentOutOfRangeException">Raised when index or count is less than zero, or when index is greater than or equal to <see cref="P:System.Windows.Documents.TableRowCollection.Count" />.</exception>
       <exception cref="T:System.ArgumentException">Raised when index and count do not specify a valid range in this collection.</exception>
     </member>
-    <member name="M:System.Windows.Documents.TableRowCollection.System#Collections#Generic#IEnumerable{System#Windows#Documents#TableRow}#GetEnumerator">
+    <member name="M:System.Windows.Documents.TableRowCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#TableRow&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -27960,7 +27960,7 @@
       <exception cref="T:System.ArgumentOutOfRangeException">Raised when index or count is less than zero, or when index is greater than or equal to <see cref="P:System.Windows.Documents.TableRowGroupCollection.Count" />.</exception>
       <exception cref="T:System.ArgumentException">Raised when index and count do not specify a valid range in this collection.</exception>
     </member>
-    <member name="M:System.Windows.Documents.TableRowGroupCollection.System#Collections#Generic#IEnumerable{System#Windows#Documents#TableRowGroup}#GetEnumerator">
+    <member name="M:System.Windows.Documents.TableRowGroupCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#TableRowGroup&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -34047,7 +34047,7 @@
     <member name="P:System.Windows.Media.Animation.Storyboard.TargetName">
       <summary>Gets or sets the name of the object to animate. The object must be a <see cref="T:System.Windows.FrameworkElement" />, <see cref="T:System.Windows.FrameworkContentElement" />, or <see cref="T:System.Windows.Freezable" />.</summary>
     </member>
-    <member name="P:System.Windows.Media.Animation.Storyboard.TargetProperty_a" />
+    <member name="P:System.Windows.Media.Animation.Storyboard.TargetProperty" />
     <member name="T:System.Windows.Media.Animation.ThicknessAnimation">
       <summary>Animates the value of a  <see cref="T:System.Windows.Thickness" /> property between two target values using linear interpolation over a specified <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />.</summary>
     </member>

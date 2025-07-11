@@ -5200,7 +5200,7 @@
  <paramref name="index" /> is greater than <see cref="P:System.Windows.FreezableCollection`1.Count" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.FreezableCollection`1" /> is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />).</exception>
     </member>
-    <member name="M:System.Windows.FreezableCollection`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Windows.FreezableCollection`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -5255,7 +5255,7 @@
       <exception cref="T:System.InvalidOperationException">Attempting to set an item in the collection when the collection is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />).</exception>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.FreezableCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Windows.FreezableCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.FreezableCollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -13356,7 +13356,7 @@
       <param name="action">The last action that occurred by this device at this location.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="device" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Windows.Input.TouchPoint.System#IEquatable{System#Windows#Input#TouchPoint}#Equals(System.Windows.Input.TouchPoint)">
+    <member name="M:System.Windows.Input.TouchPoint.System#IEquatable&lt;System#Windows#Input#TouchPoint&gt;#Equals(System.Windows.Input.TouchPoint)">
       <summary>Indicates whether the current object is equal to another <see cref="T:System.Windows.Input.TouchPoint" />.</summary>
       <param name="other">An object to compare with this object.</param>
       <returns>
@@ -15661,7 +15661,7 @@
       <returns>
         <see langword="true" /> if <paramref name="item" /> was successfully removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Windows.Media.Animation.ClockCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Animation#Clock}#GetEnumerator">
+    <member name="M:System.Windows.Media.Animation.ClockCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Animation#Clock&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -25261,7 +25261,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Animation.Timeline" /> at the specified index position from this <see cref="T:System.Windows.Media.Animation.TimelineCollection" />.</summary>
       <param name="index">The zero-based index position of the item to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Animation#Timeline}#GetEnumerator">
+    <member name="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Animation#Timeline&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -25310,7 +25310,7 @@
         <paramref name="index" /> is less than zero or greater than or equal to the size of the <see cref="T:System.Windows.Media.Animation.TimelineCollection" />.</exception>
       <returns>The Timeline object at the <paramref name="index" /> position.</returns>
     </member>
-    <member name="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#Generic#ICollection{System#Windows#Media#Animation#Timeline}#IsReadOnly">
+    <member name="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Animation#Timeline&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -28944,7 +28944,7 @@
       <summary>Removes the <see cref="T:System.Double" /> at the specified index from this <see cref="T:System.Windows.Media.DoubleCollection" />.</summary>
       <param name="index">The index of the item to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.DoubleCollection.System#Collections#Generic#IEnumerable{System#Double}#GetEnumerator">
+    <member name="M:System.Windows.Media.DoubleCollection.System#Collections#Generic#IEnumerable&lt;System#Double&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -29021,7 +29021,7 @@
  The <see cref="T:System.Windows.Media.DoubleCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Double" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.DoubleCollection.System#Collections#Generic#ICollection{System#Double}#IsReadOnly">
+    <member name="P:System.Windows.Media.DoubleCollection.System#Collections#Generic#ICollection&lt;System#Double&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.DoubleCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -29244,7 +29244,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Drawing" /> at the specified index position from the <see cref="T:System.Windows.Media.DrawingCollection" />.</summary>
       <param name="index">The index position of the item to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.DrawingCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Drawing}#GetEnumerator">
+    <member name="M:System.Windows.Media.DrawingCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Drawing&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -29300,7 +29300,7 @@
  The <see cref="T:System.Windows.Media.DrawingCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Media.Drawing" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.DrawingCollection.System#Collections#Generic#ICollection{System#Windows#Media#Drawing}#IsReadOnly">
+    <member name="P:System.Windows.Media.DrawingCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Drawing&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.DrawingCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -29814,7 +29814,7 @@
       <summary>Note: This API is now obsolete. The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Remove the <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> at the specified index from the collection.</summary>
       <param name="index">The index of the effect to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Effects#BitmapEffect}#GetEnumerator">
+    <member name="M:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Effects#BitmapEffect&gt;#GetEnumerator">
       <summary>Note: This API is now obsolete. The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -29861,7 +29861,7 @@
       <param name="index">The zero-based index of the <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> to get or set.</param>
       <returns>The <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#Generic#ICollection{System#Windows#Media#Effects#BitmapEffect}#IsReadOnly">
+    <member name="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Effects#BitmapEffect&gt;#IsReadOnly">
       <summary>Note: This API is now obsolete. The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Effects.BitmapEffectCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -31537,7 +31537,7 @@
       <summary>Deletes a <see cref="T:System.Windows.Media.GeneralTransform" /> object from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
       <param name="index">The zero-based index position to remove the object.</param>
     </member>
-    <member name="M:System.Windows.Media.GeneralTransformCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#GeneralTransform}#GetEnumerator">
+    <member name="M:System.Windows.Media.GeneralTransformCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#GeneralTransform&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -31593,7 +31593,7 @@
  The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Media.GeneralTransform" /> object at the <paramref name="index" /> position.</returns>
     </member>
-    <member name="P:System.Windows.Media.GeneralTransformCollection.System#Collections#Generic#ICollection{System#Windows#Media#GeneralTransform}#IsReadOnly">
+    <member name="P:System.Windows.Media.GeneralTransformCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#GeneralTransform&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -31959,7 +31959,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Geometry" /> at the specified index from this <see cref="T:System.Windows.Media.GeometryCollection" />.</summary>
       <param name="index">The index of the <see cref="T:System.Windows.Media.Geometry" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.GeometryCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Geometry}#GetEnumerator">
+    <member name="M:System.Windows.Media.GeometryCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Geometry&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -32013,7 +32013,7 @@
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.Count" />.</exception>
       <returns>The <see cref="T:System.Windows.Media.Geometry" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.GeometryCollection.System#Collections#Generic#ICollection{System#Windows#Media#Geometry}#IsReadOnly">
+    <member name="P:System.Windows.Media.GeometryCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Geometry&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.GeometryCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -32822,7 +32822,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.GradientStop" /> at the specified index from this <see cref="T:System.Windows.Media.GradientStopCollection" />.</summary>
       <param name="index">The index of the <see cref="T:System.Windows.Media.GradientStop" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.GradientStopCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#GradientStop}#GetEnumerator">
+    <member name="M:System.Windows.Media.GradientStopCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#GradientStop&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -32901,7 +32901,7 @@
  The <see cref="T:System.Windows.Media.GradientStopCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Media.GradientStop" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.GradientStopCollection.System#Collections#Generic#ICollection{System#Windows#Media#GradientStop}#IsReadOnly">
+    <member name="P:System.Windows.Media.GradientStopCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#GradientStop&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
       <returns>
         <see langword="true" /> if access to the <see cref="T:System.Windows.Media.GradientStopCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</returns>
@@ -33737,7 +33737,7 @@
       <param name="query">Identifies the location of the metadata to be written.</param>
       <param name="value">The value of the metadata to be written.</param>
     </member>
-    <member name="M:System.Windows.Media.Imaging.BitmapMetadata.System#Collections#Generic#IEnumerable{System#String}#GetEnumerator">
+    <member name="M:System.Windows.Media.Imaging.BitmapMetadata.System#Collections#Generic#IEnumerable&lt;System#String&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -35024,7 +35024,7 @@
       <summary>Removes the <see cref="T:System.Int32" /> at the specified index position from the collection.</summary>
       <param name="index">Index position of the <see cref="T:System.Int32" /> to be removed.</param>
     </member>
-    <member name="M:System.Windows.Media.Int32Collection.System#Collections#Generic#IEnumerable{System#Int32}#GetEnumerator">
+    <member name="M:System.Windows.Media.Int32Collection.System#Collections#Generic#IEnumerable&lt;System#Int32&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -35100,7 +35100,7 @@
  <paramref name="index" /> is equal to or greater than the <see cref="P:System.Windows.Media.Int32Collection.Count" />.</exception>
       <returns>The <see cref="T:System.Int32" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Int32Collection.System#Collections#Generic#ICollection{System#Int32}#IsReadOnly">
+    <member name="P:System.Windows.Media.Int32Collection.System#Collections#Generic#ICollection&lt;System#Int32&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Int32Collection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -36255,7 +36255,7 @@
       <summary>Deletes a <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object from the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</summary>
       <param name="index">The zero-based index position to remove the object.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.GeneralTransform3DCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#GeneralTransform3D}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.GeneralTransform3DCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#GeneralTransform3D&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -36311,7 +36311,7 @@
  The collection has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object at the <paramref name="index" /> position.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.GeneralTransform3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#GeneralTransform3D}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.GeneralTransform3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#GeneralTransform3D&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -36616,7 +36616,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Media3D.Material" /> at the specified index position from the <see cref="T:System.Windows.Media.Media3D.MaterialCollection" />.</summary>
       <param name="index">The index position of the Material to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.MaterialCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#Material}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.MaterialCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#Material&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -36663,7 +36663,7 @@
       <param name="index">The zero-based index of the Material object to get or set.</param>
       <returns>The item at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.MaterialCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Material}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.MaterialCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Material&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.MaterialCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -37284,7 +37284,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Media3D.Model3D" /> at the specified index position from the <see cref="T:System.Windows.Media.Media3D.Model3DCollection" />.</summary>
       <param name="index">The index position of the Model3D to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.Model3DCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#Model3D}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.Model3DCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#Model3D&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -37331,7 +37331,7 @@
       <param name="index">The zero-based index of the Model3D object to get or set.</param>
       <returns>The item at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.Model3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Model3D}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.Model3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Model3D&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Model3DCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -37732,7 +37732,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Media3D.Point3D" /> at the specified index position from the <see cref="T:System.Windows.Media.Media3D.Point3DCollection" />.</summary>
       <param name="index">The index position of the Point3D to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.Point3DCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#Point3D}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.Point3DCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#Point3D&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -37802,7 +37802,7 @@
       <param name="index">The zero-based index of the Point3D object to get or set.</param>
       <returns>The item at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.Point3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Point3D}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.Point3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Point3D&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -39331,7 +39331,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Media3D.Transform3D" /> at the specified index position from the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" />.</summary>
       <param name="index">The index position of the Transform3D to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.Transform3DCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#Transform3D}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.Transform3DCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#Transform3D&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -39378,7 +39378,7 @@
       <param name="index">The zero-based index of the Transform3D object to get or set.</param>
       <returns>The item at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.Transform3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Transform3D}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.Transform3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Transform3D&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Transform3DCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -39804,7 +39804,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Media3D.Vector3D" /> at the specified index position from the <see cref="T:System.Windows.Media.Media3D.Vector3DCollection" />.</summary>
       <param name="index">The index position of the <see cref="T:System.Windows.Media.Media3D.Vector3D" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#Vector3D}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#Vector3D&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -39874,7 +39874,7 @@
       <param name="index">The zero-based index of the Vector3D object to get or set.</param>
       <returns>The item at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Vector3D}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Vector3D&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Vector3DCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -40292,7 +40292,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Media3D.Visual3D" /> object at the specified index from this <see cref="T:System.Windows.Media.Media3D.Visual3DCollection" />.</summary>
       <param name="index">Index of the Visual3D to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.Media3D.Visual3DCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Media3D#Visual3D}#GetEnumerator">
+    <member name="M:System.Windows.Media.Media3D.Visual3DCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Media3D#Visual3D&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -40339,7 +40339,7 @@
       <param name="index">The zero-based index of the Visual3D to get or set.</param>
       <returns>The Visual3D at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.Media3D.Visual3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Visual3D}#IsReadOnly">
+    <member name="P:System.Windows.Media.Media3D.Visual3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Visual3D&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.Visual3DCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -40940,7 +40940,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.PathFigure" /> at the specified index position from the collection.</summary>
       <param name="index">Index position of the <see cref="T:System.Windows.Media.PathFigure" /> to be removed.</param>
     </member>
-    <member name="M:System.Windows.Media.PathFigureCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#PathFigure}#GetEnumerator">
+    <member name="M:System.Windows.Media.PathFigureCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#PathFigure&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -41019,7 +41019,7 @@
  The <see cref="T:System.Windows.Media.PathFigureCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Media.PathFigure" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.PathFigureCollection.System#Collections#Generic#ICollection{System#Windows#Media#PathFigure}#IsReadOnly">
+    <member name="P:System.Windows.Media.PathFigureCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#PathFigure&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.PathFigureCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -41299,7 +41299,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.PathSegment" /> at the specified index from this <see cref="T:System.Windows.Media.PathSegmentCollection" />.</summary>
       <param name="index">The index of the item to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.PathSegmentCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#PathSegment}#GetEnumerator">
+    <member name="M:System.Windows.Media.PathSegmentCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#PathSegment&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -41355,7 +41355,7 @@
  The <see cref="T:System.Windows.Media.PathSegmentCollection" /> has a fixed size.</exception>
       <returns>The item at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.PathSegmentCollection.System#Collections#Generic#ICollection{System#Windows#Media#PathSegment}#IsReadOnly">
+    <member name="P:System.Windows.Media.PathSegmentCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#PathSegment&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.PathSegmentCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -41874,7 +41874,7 @@
       <summary>Removes the <see cref="T:System.Windows.Point" /> at the specified index.</summary>
       <param name="index">The zero-based index of the <see cref="T:System.Windows.Point" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.PointCollection.System#Collections#Generic#IEnumerable{System#Windows#Point}#GetEnumerator">
+    <member name="M:System.Windows.Media.PointCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Point&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -41953,7 +41953,7 @@
  The <see cref="T:System.Windows.Media.PointCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Point" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.PointCollection.System#Collections#Generic#ICollection{System#Windows#Point}#IsReadOnly">
+    <member name="P:System.Windows.Media.PointCollection.System#Collections#Generic#ICollection&lt;System#Windows#Point&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.PointCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -42993,7 +42993,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.TextEffect" /> at the specified index in the collection.</summary>
       <param name="index">The zero-based index of the <see cref="T:System.Windows.Media.TextEffect" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.TextEffectCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#TextEffect}#GetEnumerator">
+    <member name="M:System.Windows.Media.TextEffectCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#TextEffect&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -43040,7 +43040,7 @@
       <param name="index">The zero-based index of the collection from which to get or set the item.</param>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.TextEffectCollection.System#Collections#Generic#ICollection{System#Windows#Media#TextEffect}#IsReadOnly">
+    <member name="P:System.Windows.Media.TextEffectCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#TextEffect&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.TextEffectCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -44611,7 +44611,7 @@
       <summary>Removes the <see cref="T:System.Windows.Media.Transform" /> at the specified index.</summary>
       <param name="index">The zero-based index of the <see cref="T:System.Windows.Media.Transform" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.TransformCollection.System#Collections#Generic#IEnumerable{System#Windows#Media#Transform}#GetEnumerator">
+    <member name="M:System.Windows.Media.TransformCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Transform&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -44667,7 +44667,7 @@
  The <see cref="T:System.Windows.Media.TransformCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Media.Transform" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.TransformCollection.System#Collections#Generic#ICollection{System#Windows#Media#Transform}#IsReadOnly">
+    <member name="P:System.Windows.Media.TransformCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Transform&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.TransformCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -45021,7 +45021,7 @@
       <summary>Removes the <see cref="T:System.Windows.Vector" /> at the specified index.</summary>
       <param name="index">The zero-based index of the <see cref="T:System.Windows.Vector" /> to remove.</param>
     </member>
-    <member name="M:System.Windows.Media.VectorCollection.System#Collections#Generic#IEnumerable{System#Windows#Vector}#GetEnumerator">
+    <member name="M:System.Windows.Media.VectorCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Vector&gt;#GetEnumerator">
       <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -45100,7 +45100,7 @@
  The <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size.</exception>
       <returns>The <see cref="T:System.Windows.Vector" /> at the specified index.</returns>
     </member>
-    <member name="P:System.Windows.Media.VectorCollection.System#Collections#Generic#ICollection{System#Windows#Vector}#IsReadOnly">
+    <member name="P:System.Windows.Media.VectorCollection.System#Collections#Generic#ICollection&lt;System#Windows#Vector&gt;#IsReadOnly">
       <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -46255,7 +46255,7 @@
       <summary>Removes the specified <see cref="T:System.Windows.TextDecoration" /> object from the collection at the specified index.</summary>
       <param name="index">The zero-based index position from where to delete the object.</param>
     </member>
-    <member name="M:System.Windows.TextDecorationCollection.System#Collections#Generic#IEnumerable{System#Windows#TextDecoration}#GetEnumerator">
+    <member name="M:System.Windows.TextDecorationCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#TextDecoration&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -46309,7 +46309,7 @@
       <param name="index">The zero-based index position of the object to get or set.</param>
       <returns>The <see cref="T:System.Windows.TextDecoration" /> object at the <paramref name="index" /> position.</returns>
     </member>
-    <member name="P:System.Windows.TextDecorationCollection.System#Collections#Generic#ICollection{System#Windows#TextDecoration}#IsReadOnly">
+    <member name="P:System.Windows.TextDecorationCollection.System#Collections#Generic#ICollection&lt;System#Windows#TextDecoration&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the collection is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Windows.TextDecorationCollection" /> is read-only; otherwise, <see langword="false" />.</returns>

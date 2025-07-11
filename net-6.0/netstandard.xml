@@ -3768,7 +3768,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <returns>
         <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.op_Implicit(T[])~System.ArraySegment{`0}">
+    <member name="M:System.ArraySegment`1.op_Implicit(`0[])~System.ArraySegment{`0}">
       <summary>Defines an implicit conversion of an array of type <typeparamref name="T" /> to an array segment of type <typeparamref name="T" />.</summary>
       <param name="array">The array to convert.</param>
       <returns>An array segment representation of the array.</returns>
@@ -3801,46 +3801,46 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
         <paramref name="index" /> is greater than the length of the underlying array of this instance.</exception>
       <returns>An array segment that consists of all elements of the current array segment from <paramref name="index" /> to the end of the array segment.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to add to the array segment.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Clear">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Contains(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Contains(`0)">
       <summary>Determines whether the array segment contains a specific value.</summary>
       <param name="item">The object to locate in the array segment.</param>
       <exception cref="T:System.InvalidOperationException">The underlying array is <see langword="null" />.</exception>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the array segment; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Remove(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to remove from the array segment.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
       <returns>Always throws an exception.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the array segment.</summary>
       <exception cref="T:System.InvalidOperationException">The underlying array is <see langword="null" />.</exception>
       <returns>An enumerator that can be used to iterate through the array segment.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList{T}#IndexOf(`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#IndexOf(`0)">
       <summary>Determines the index of a specific item in the array segment.</summary>
       <param name="item">The object to locate in the array segment.</param>
       <exception cref="T:System.InvalidOperationException">The underlying array is <see langword="null" />.</exception>
       <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
       <param name="item">The object to insert into the array segment.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)">
+    <member name="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -3879,12 +3879,12 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <summary>Gets the position of the first element in the range delimited by the array segment, relative to the start of the original array.</summary>
       <returns>The position of the first element in the range delimited by the <see cref="T:System.ArraySegment`1" />, relative to the start of the original array.</returns>
     </member>
-    <member name="P:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the array segment  is read-only.</summary>
       <returns>
         <see langword="true" /> if the array segment is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.ArraySegment`1.System#Collections#Generic#IList{T}#Item(System.Int32)">
+    <member name="P:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)">
       <summary>Gets or sets the element at the specified index.</summary>
       <param name="index">The zero-based index of the element to get or set.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -3892,7 +3892,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <exception cref="T:System.NotSupportedException">The property is set and the array segment is read-only.</exception>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)">
+    <member name="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)">
       <summary>Gets the element at the specified index of the array segment.</summary>
       <param name="index">The zero-based index of the element to get.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -5819,20 +5819,20 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="T:System.Buffers.BuffersExtensions">
       <summary>Provides extension methods for <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
     </member>
-    <member name="M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0},System.Span{``0})">
+    <member name="M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})">
       <summary>Copies the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to the specified <see cref="T:System.Span`1" />.</summary>
       <param name="source">The source <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
       <param name="destination">The destination <see cref="T:System.Span`1" />.</param>
       <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
     </member>
-    <member name="M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0},``0)">
+    <member name="M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)">
       <summary>Returns the position of the first occurrence of <paramref name="value" /> in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
       <param name="source">The source <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
       <param name="value">The item to find in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
       <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
       <returns>An object whose <see cref="M:System.SequencePosition.GetInteger" /> method returns the position of the first occurrence of <paramref name="value" />, or an object whose <see langword="Nullable&lt;SequencePosition&gt;.HasValue" /> property is <see langword="false" /> .</returns>
     </member>
-    <member name="M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0})">
+    <member name="M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)">
       <summary>Converts the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to an array.</summary>
       <param name="sequence">The read-only sequence to convert to an array.</param>
       <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
@@ -6412,42 +6412,42 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="T:System.Buffers.SequenceReaderExtensions">
       <summary>Provides extended functionality for the <see cref="T:System.Buffers.SequenceReader`1" /> class that allows reading of endian specific numeric values from binary data.</summary>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte},System.Int16@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int16@)">
       <summary>Tries to read an <see cref="T:System.Int16" /> as big endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as big endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int16" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte},System.Int32@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int32@)">
       <summary>Tries to read an <see cref="T:System.Int32" /> as big endian.</summary>
       <param name="reader">The byte sequence reader from which to read the value.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as big endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int32" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte},System.Int64@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int64@)">
       <summary>Tries to read an <see cref="T:System.Int64" /> as big endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as big endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int64" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte},System.Int16@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int16@)">
       <summary>Tries to read an <see cref="T:System.Int16" /> as little endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as little endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int16" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte},System.Int32@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int32@)">
       <summary>Tries to read an <see cref="T:System.Int32" /> as little endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as little endian.</param>
       <returns>
         <see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int32" />.</returns>
     </member>
-    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte},System.Int64@)">
+    <member name="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int64@)">
       <summary>Tries to read an <see cref="T:System.Int64" /> as little endian.</summary>
       <param name="reader">The byte sequence reader instance from which the value is to be read.</param>
       <param name="value">When the method returns, the value read out of the byte sequence reader, as little endian.</param>
@@ -9115,7 +9115,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that removes and returns items from the collection.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Provides an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for items in the collection.</summary>
       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the items in the collection.</returns>
@@ -9488,7 +9488,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
       <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentBag`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentBag`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryAdd(`0)">
       <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
       <param name="item">The object to be added to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
       <returns>Always returns true.</returns>
@@ -9680,20 +9680,20 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
       <returns>The value for the key. This will be either the existing value for the key if the key is already in the dictionary, or the new value if the key was not in the dictionary.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Adds an item to the collection.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to add to the dictionary.</param>
       <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Collections.Generic.KeyValuePair`2.Key" /> of <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
       <exception cref="T:System.OverflowException">The <see cref="T:System.Collections.Generic.Dictionary`2" /> contains too many elements.</exception>
       <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Gets whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key.</summary>
       <param name="keyValuePair">The key to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an array, starting at the specified array index.</summary>
       <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing.</param>
       <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -9708,14 +9708,14 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
 
 The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Removes the specified key/value pair from the collection.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to remove.</param>
       <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Collections.Generic.KeyValuePair`2.Key" /> property of <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns false if the key was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Add(`0,`1)">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Add(`0,`1)">
       <summary>Adds the specified key and value to the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <param name="key">The object to use as the key of the element to add.</param>
       <param name="value">The object to use as the value of the element to add.</param>
@@ -9724,7 +9724,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</exception>
       <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Remove(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Remove(`0)">
       <summary>Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <param name="key">The key of the element to remove.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -9862,16 +9862,16 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A collection of keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
+    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the <see cref="T:System.Collections.ICollection" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.ICollection" /> is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets a collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
@@ -9949,13 +9949,13 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</summary>
       <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryAdd(`0)">
       <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
       <returns>
         <see langword="true" /> if the object was added successfully; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)">
+    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryTake(`0@)">
       <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">When this method returns, if the operation was successful, <paramref name="item" /> contains the object removed. If no object was available to be removed, the value is unspecified.</param>
       <returns>
@@ -10062,13 +10062,13 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.ArgumentNullException">
         <paramref name="items" /> is a null reference (Nothing in Visual Basic).</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryAdd(`0)">
       <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
       <returns>
         <see langword="true" /> if the object was added successfully; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)">
+    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryTake(`0@)">
       <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">When this method returns, if the operation was successful, <paramref name="item" /> contains the object removed. If no object was available to be removed, the value is unspecified.</param>
       <returns>
@@ -10726,19 +10726,19 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <returns>
         <see langword="true" /> if the element is successfully found and removed; otherwise, <see langword="false" />.  This method returns <see langword="false" /> if <paramref name="key" /> is not found in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Adds the specified value to the <see cref="T:System.Collections.Generic.ICollection`1" /> with the specified key.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure representing the key and value to add to the <see cref="T:System.Collections.Generic.Dictionary`2" />.</param>
       <exception cref="T:System.ArgumentNullException">The key of <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" />, starting at the specified array index.</summary>
       <param name="array">The one-dimensional array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" /> that is the destination of the <see cref="T:System.Collections.Generic.KeyValuePair`2" /> elements copied from the <see cref="T:System.Collections.Generic.ICollection`1" />. The array must have zero-based indexing.</param>
       <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -10748,13 +10748,13 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
         <paramref name="index" /> is less than 0.</exception>
       <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.ICollection`1" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Removes a key and value from the dictionary.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure representing the key and value to remove from the <see cref="T:System.Collections.Generic.Dictionary`2" />.</param>
       <returns>
         <see langword="true" /> if the key and value represented by <paramref name="keyValuePair" /> is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if <paramref name="keyValuePair" /> is not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey@TValue}}#GetEnumerator">
+    <member name="M:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -10867,24 +10867,24 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.Dictionary`2.KeyCollection" /> containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
+    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> of type <paramref name="TKey" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> of type <paramref name="TValue" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets a collection containing the keys of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</summary>
       <returns>A collection containing the keys of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Generic.Dictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets a collection containing the values of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</summary>
       <returns>A collection containing the values of the <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2" />.</returns>
     </member>
@@ -10998,29 +10998,29 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Generic.Dictionary`2.KeyCollection" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator" /> for the <see cref="T:System.Collections.Generic.Dictionary`2.KeyCollection" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Add(`0)">
+    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Clear">
+    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Contains(`0)">
+    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific value.</summary>
       <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Remove(`0)">
+    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       <returns>
         <see langword="true" /> if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if item was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#IEnumerable{TKey}#GetEnumerator">
+    <member name="M:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -11057,7 +11057,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
 
  Retrieving the value of this property is an O(1) operation.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#IsReadOnly">
+    <member name="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2.KeyCollection" />, this property always returns <see langword="true" />.</returns>
@@ -11123,29 +11123,29 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator" /> for the <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)">
+    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear">
+    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)">
+    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific value.</summary>
       <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)">
+    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       <returns>
         <see langword="true" /> if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#IEnumerable{TValue}#GetEnumerator">
+    <member name="M:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#IEnumerable&lt;TValue&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -11180,7 +11180,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets the number of elements contained in the <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection" />.</summary>
       <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly">
+    <member name="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection" />, this property always returns <see langword="true" />.</returns>
@@ -11460,12 +11460,12 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.ArgumentNullException">
         <paramref name="other" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Adds an item to an <see cref="T:System.Collections.Generic.ICollection`1" /> object.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" /> object.</param>
       <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
     </member>
-    <member name="M:System.Collections.Generic.HashSet`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Generic.HashSet`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -11496,7 +11496,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets the number of elements that are contained in a set.</summary>
       <returns>The number of elements that are contained in the set.</returns>
     </member>
-    <member name="P:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether a collection is read-only.</summary>
       <returns>
         <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</returns>
@@ -12090,11 +12090,11 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Removes the node at the end of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
       <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.LinkedList`1" /> is empty.</exception>
     </member>
-    <member name="M:System.Collections.Generic.LinkedList`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.Collections.Generic.LinkedList`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Adds an item at the end of the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="value">The value to add at the end of the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
     </member>
-    <member name="M:System.Collections.Generic.LinkedList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Generic.LinkedList`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -12137,7 +12137,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets the last node of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
       <returns>The last <see cref="T:System.Collections.Generic.LinkedListNode`1" /> of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.LinkedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.Generic.LinkedList`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.LinkedList`1" />, this property always returns <see langword="false" />.</returns>
@@ -12650,7 +12650,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.InvalidOperationException">
         <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.List`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Generic.List`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -12753,7 +12753,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.Generic.List`1.Count" />.</exception>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.Collections.Generic.List`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.Generic.List`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.List`1" />, this property always returns <see langword="false" />.</returns>
@@ -12872,7 +12872,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
       <returns>The object at the beginning of the <see cref="T:System.Collections.Generic.Queue`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.Queue`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Generic.Queue`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -13038,26 +13038,26 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />.  This method also returns <see langword="false" /> if <paramref name="key" /> is not found in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Removes the first occurrence of the specified element from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="keyValuePair" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="keyValuePair" /> was not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey@TValue}}#GetEnumerator">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -13152,24 +13152,24 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" /> containing the keys in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.SortedDictionary`2" />, this property always returns <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</summary>
       <returns>A collection containing the keys in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets a collection containing the values in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</summary>
       <returns>A collection containing the values in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</returns>
     </member>
@@ -13283,29 +13283,29 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator" /> structure for the <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Add(`0)">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Clear">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Contains(`0)">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains the specified value.</summary>
       <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if item is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Remove(`0)">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
       <returns>
         <see langword="true" /> if item is successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if item is not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#IEnumerable{TKey}#GetEnumerator">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -13340,7 +13340,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets the number of elements contained in the <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />.</summary>
       <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#IsReadOnly">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />, this property always returns <see langword="false" />.</returns>
@@ -13406,29 +13406,29 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator" /> structure for the <see cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specified value.</summary>
       <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />. This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#IEnumerable{TValue}#GetEnumerator">
+    <member name="M:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#IEnumerable&lt;TValue&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -13463,7 +13463,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets the number of elements contained in the <see cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection" />.</summary>
       <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly">
+    <member name="P:System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection" />, this property always returns <see langword="false" />.</returns>
@@ -13617,17 +13617,17 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
 
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.Generic.SortedList`2.Count" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Adds a key/value pair to the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
     </member>
-    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific element.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
       <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.ICollection`1" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
       <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -13637,13 +13637,13 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
         <paramref name="arrayIndex" /> is less than zero.</exception>
       <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.ICollection`1" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Removes the first occurrence of a specific key/value pair from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="keyValuePair" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="keyValuePair" /> was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey@TValue}}#GetEnumerator">
+    <member name="M:System.Collections.Generic.SortedList`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -13748,24 +13748,24 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.SortedList`2" />, in sorted order.</summary>
       <returns>A <see cref="T:System.Collections.Generic.IList`1" /> containing the keys in the <see cref="T:System.Collections.Generic.SortedList`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
+    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.SortedList`2" />, this property always returns <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An object containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets an enumerable collection that contains the keys in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the keys in the read-only dictionary.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets an enumerable collection that contains the values in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the values in the read-only dictionary.</returns>
     </member>
@@ -14005,12 +14005,12 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.ArgumentNullException">
         <paramref name="other" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Adds an item to an <see cref="T:System.Collections.Generic.ICollection`1" /> object.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" /> object.</param>
       <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
     </member>
-    <member name="M:System.Collections.Generic.SortedSet`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Generic.SortedSet`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -14068,7 +14068,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets the minimum value in the <see cref="T:System.Collections.Generic.SortedSet`1" />, as defined by the comparer.</summary>
       <returns>The minimum value in the set.</returns>
     </member>
-    <member name="P:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether a <see cref="T:System.Collections.ICollection" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</returns>
@@ -14181,7 +14181,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Inserts an object at the top of the <see cref="T:System.Collections.Generic.Stack`1" />.</summary>
       <param name="item">The object to push onto the <see cref="T:System.Collections.Generic.Stack`1" />. The value can be <see langword="null" /> for reference types.</param>
     </member>
-    <member name="M:System.Collections.Generic.Stack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Collections.Generic.Stack`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -15152,7 +15152,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets a <see cref="T:System.Collections.Generic.IList`1" /> wrapper around the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
       <returns>A <see cref="T:System.Collections.Generic.IList`1" /> wrapper around the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns <see langword="false" />.</returns>
@@ -15393,29 +15393,29 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <param name="value">The object to locate in the <see cref="T:System.Collections.Generic.List`1" />. The value can be <see langword="null" /> for reference types.</param>
       <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />, if found; otherwise, -1.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)">
       <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="value">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear">
       <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)">
       <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="value">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       <returns>
         <see langword="true" /> if <paramref name="value" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)">
       <summary>Inserts an item to the <see cref="T:System.Collections.Generic.IList`1" /> at the specified index.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
       <param name="value">The object to insert into the <see cref="T:System.Collections.Generic.IList`1" />.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)">
       <summary>Removes the <see cref="T:System.Collections.Generic.IList`1" /> item at the specified index.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
       <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -15507,12 +15507,12 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns the <see cref="T:System.Collections.Generic.IList`1" /> that the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> wraps.</summary>
       <returns>The <see cref="T:System.Collections.Generic.IList`1" /> that the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> wraps.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />, this property always returns <see langword="true" />.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)">
       <summary>Gets the element at the specified index. An <see cref="T:System.NotSupportedException" /> occurs if you try to set the item at the specified index.</summary>
       <param name="index">The zero-based index of the element to get.</param>
       <exception cref="T:System.NotSupportedException">Always thrown if the property is set.</exception>
@@ -15566,22 +15566,22 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.ObjectModel.ReadOnlyDictionary`2" />.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to add to the dictionary.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Clear">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Clear">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Determines whether the dictionary contains a specific value.</summary>
       <param name="item">The object to locate in the dictionary.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the dictionary; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
       <summary>Copies the elements of the dictionary to an array, starting at the specified array index.</summary>
       <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary. The array must have zero-based indexing.</param>
       <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -15600,19 +15600,19 @@ The number of elements in the source dictionary is greater than the available sp
               
 Type <paramref name="T" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to remove from the dictionary.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
       <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Add(`0,`1)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Add(`0,`1)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="key">The object to use as the key of the element to add.</param>
       <param name="value">The object to use as the value of the element to add.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Remove(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Remove(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="key">The key of the element to remove.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -15695,11 +15695,11 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
       <summary>Gets a key collection that contains the keys of the dictionary.</summary>
       <returns>A key collection that contains the keys of the dictionary.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
       <returns>Always returns <see langword="true" /> to indicate the dictionary is read-only.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Item(`0)">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Item(`0)">
       <summary>Gets the element that has the specified key.</summary>
       <param name="key">The key of the element to get or set.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -15708,19 +15708,19 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
       <exception cref="T:System.NotSupportedException">The property is set.</exception>
       <returns>The element that has the specified key.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets a collection that contains the keys of the dictionary.</summary>
       <returns>A collection that contains the keys of the object that implements <see cref="T:System.Collections.ObjectModel.ReadOnlyDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets a collection that contains the values in the dictionary.</summary>
       <returns>A collection that contains the values in the object that implements <see cref="T:System.Collections.ObjectModel.ReadOnlyDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Keys">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys">
       <summary>Gets an enumerable collection that contains the keys in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the keys in the read-only dictionary.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Values">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values">
       <summary>Gets an enumerable collection that contains the values in the read-only dictionary.</summary>
       <returns>An enumerable collection that contains the values in the read-only dictionary.</returns>
     </member>
@@ -15795,22 +15795,22 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Add(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to add to the collection.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Clear">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Contains(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)">
       <summary>Determines whether the collection contains a specific value.</summary>
       <param name="item">The object to locate in the collection.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the collection; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#Remove(`0)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to remove from the collection.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -15840,7 +15840,7 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
       <summary>Gets the number of elements in the collection.</summary>
       <returns>The number of elements in the collection.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection{TKey}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
       <returns>
         <see langword="true" /> in all cases.</returns>
@@ -15882,22 +15882,22 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Add(`1)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to add to the collection.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Clear">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Contains(`1)">
       <summary>Determines whether the collection contains a specific value.</summary>
       <param name="item">The object to locate in the collection.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the collection; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)">
+    <member name="M:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#Remove(`1)">
       <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
       <param name="item">The object to remove from the collection.</param>
       <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -15927,7 +15927,7 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
       <summary>Gets the number of elements in the collection.</summary>
       <returns>The number of elements in the collection.</returns>
     </member>
-    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly">
+    <member name="P:System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly">
       <summary>Gets a value that indicates whether the collection is read-only.</summary>
       <returns>
         <see langword="true" /> in all cases.</returns>
@@ -57380,55 +57380,55 @@ The file specified in the <paramref name="fileName" /> could not be found.</exce
     <member name="M:System.Dynamic.ExpandoObject.#ctor">
       <summary>Initializes a new <see langword="ExpandoObject" /> that does not have members.</summary>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Adds the specified value to the <see cref="T:System.Collections.Generic.ICollection`1" /> that has the specified key.</summary>
       <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure that represents the key and value to add to the collection.</param>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Clear">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Clear">
       <summary>Removes all items from the collection.</summary>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
       <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if the collection contains a specific key and value; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" />, starting at the specified array index.</summary>
       <param name="array">The one-dimensional array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" /> that is the destination of the <see cref="T:System.Collections.Generic.KeyValuePair`2" /> elements copied from the <see cref="T:System.Collections.Generic.ICollection`1" />. The array must have zero-based indexing.</param>
       <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying starts.</param>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
       <summary>Removes a key and value from the collection.</summary>
       <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure that represents the key and value to remove from the collection.</param>
       <returns>
         <see langword="true" /> if the key and value are successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the key and value are not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Add(System.String,System.Object)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Add(System.String,System.Object)">
       <summary>Adds the specified key and value to the dictionary.</summary>
       <param name="key">The object to use as the key.</param>
       <param name="value">The object to use as the value.</param>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#ContainsKey(System.String)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#ContainsKey(System.String)">
       <summary>Determines whether the dictionary contains the specified key.</summary>
       <param name="key">The key to locate in the dictionary.</param>
       <returns>
         <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Remove(System.String)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Remove(System.String)">
       <summary>Removes the element that has the specified key from the <see cref="T:System.Collections.IDictionary" />.</summary>
       <param name="key">The key of the element to remove.</param>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#TryGetValue(System.String,System.Object@)">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#TryGetValue(System.String,System.Object@)">
       <summary>Gets the value associated with the specified key.</summary>
       <param name="key">The key of the value to get.</param>
       <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value for the type of the <paramref name="value" /> parameter. This parameter is passed uninitialized.</param>
       <returns>
         <see langword="true" /> if the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#GetEnumerator">
+    <member name="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
     </member>
@@ -57441,25 +57441,25 @@ The file specified in the <paramref name="fileName" /> could not be found.</exce
       <param name="parameter">The expression that represents the MetaObject to dispatch to the Dynamic virtual methods.</param>
       <returns>The object of the <see cref="T:System.Dynamic.DynamicMetaObject" /> type.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#Count">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Count">
       <summary>Gets the number of elements in the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
       <returns>The number of elements in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#IsReadOnly">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Item(System.String)">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Item(System.String)">
       <summary>Gets or sets the element that has the specified key.</summary>
       <param name="key">The key of the element to get or set.</param>
       <returns>The element that has the specified key.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Keys">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String@System#Object}#Values">
+    <member name="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Values">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
@@ -71186,7 +71186,7 @@ There are too many levels of symbolic links.</exception>
       <summary>Allows utilizing custom filter predicates and transform delegates for enumeration purposes.</summary>
       <typeparam name="TResult">The type that this enumerable encapsulates.</typeparam>
     </member>
-    <member name="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable{`0}.FindTransform,System.IO.EnumerationOptions)">
+    <member name="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable`1.FindTransform{`0},System.IO.EnumerationOptions)">
       <summary>Initializes a new instance of the <see cref="T:System.IO.Enumeration.FileSystemEnumerable`1" /> class with specific search and filtering options.</summary>
       <param name="directory">The path of the directory where the enumeration will be performed.</param>
       <param name="transform">A delegate method for transforming raw find data into a result.</param>
@@ -82816,7 +82816,7 @@ The pipe handle has not been set. (Did your <see cref="T:System.IO.Pipes.PipeStr
       <summary>Initializes a new instance of the <see cref="T:System.Linq.EnumerableQuery`1" /> class and associates the instance with an expression tree.</summary>
       <param name="expression">An expression tree to associate with the new instance.</param>
     </member>
-    <member name="M:System.Linq.EnumerableQuery`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+    <member name="M:System.Linq.EnumerableQuery`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
       <summary>Returns an enumerator that can iterate through the associated <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection, or, if it is null, through the collection that results from rewriting the associated expression tree as a query on an <see cref="T:System.Collections.Generic.IEnumerable`1" /> data source and executing it.</summary>
       <returns>An enumerator that can be used to iterate through the associated data source.</returns>
     </member>
@@ -82829,7 +82829,7 @@ The pipe handle has not been set. (Did your <see cref="T:System.IO.Pipes.PipeStr
       <param name="expression">An expression tree that represents an <see cref="T:System.Linq.IQueryable" /> collection of data.</param>
       <returns>An <see cref="T:System.Linq.EnumerableQuery`1" /> object that is associated with <paramref name="expression" />.</returns>
     </member>
-    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery``2(System.Linq.Expressions.Expression)">
+    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery``1(System.Linq.Expressions.Expression)">
       <summary>Constructs a new <see cref="T:System.Linq.EnumerableQuery`1" /> object and associates it with a specified expression tree that represents an <see cref="T:System.Linq.IQueryable`1" /> collection of data.</summary>
       <param name="expression">An expression tree to execute.</param>
       <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>
@@ -82841,7 +82841,7 @@ The pipe handle has not been set. (Did your <see cref="T:System.IO.Pipes.PipeStr
       <param name="expression">An expression tree to execute.</param>
       <returns>The value that results from executing <paramref name="expression" />.</returns>
     </member>
-    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute``2(System.Linq.Expressions.Expression)">
+    <member name="M:System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute``1(System.Linq.Expressions.Expression)">
       <summary>Executes an expression after rewriting it to call <see cref="T:System.Linq.Enumerable" /> methods instead of <see cref="T:System.Linq.Queryable" /> methods on any enumerable data sources that cannot be queried by <see cref="T:System.Linq.Queryable" /> methods.</summary>
       <param name="expression">An expression tree to execute.</param>
       <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>
@@ -93152,7 +93152,7 @@ The array is covariant.</exception>
       <summary>Returns the hash code for this instance.</summary>
       <returns>A 32-bit signed integer hash code.</returns>
     </member>
-    <member name="M:System.Memory`1.op_Implicit(T[])~System.Memory{`0}">
+    <member name="M:System.Memory`1.op_Implicit(`0[])~System.Memory{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.Memory`1" /> object.</summary>
       <param name="array">The array to convert.</param>
       <returns>The converted object.</returns>
@@ -95159,7 +95159,7 @@ The array is covariant.</exception>
       <returns>
         <see langword="true" /> if <paramref name="cookie" /> was successfully removed from the <see cref="T:System.Net.CookieCollection" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if item is not found in the original collection.</returns>
     </member>
-    <member name="M:System.Net.CookieCollection.System#Collections#Generic#IEnumerable{System#Net#Cookie}#GetEnumerator">
+    <member name="M:System.Net.CookieCollection.System#Collections#Generic#IEnumerable&lt;System#Net#Cookie&gt;#GetEnumerator">
       <summary>Gets an enumerator that can iterate through the <see cref="T:System.Net.CookieCollection" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for this collection.</returns>
     </member>
@@ -116790,12 +116790,12 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <param name="defaultValue">A value to return if the <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="false" />.</param>
       <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property if the <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="true" />; otherwise, the <paramref name="defaultValue" /> parameter.</returns>
     </member>
-    <member name="M:System.Nullable`1.op_Explicit(System.Nullable{`0})~T">
+    <member name="M:System.Nullable`1.op_Explicit(System.Nullable{`0})~`0">
       <summary>Defines an explicit conversion of a <see cref="T:System.Nullable`1" /> instance to its underlying value.</summary>
       <param name="value">A nullable value.</param>
       <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property for the <paramref name="value" /> parameter.</returns>
     </member>
-    <member name="M:System.Nullable`1.op_Implicit(T)~System.Nullable{`0}">
+    <member name="M:System.Nullable`1.op_Implicit(`0)~System.Nullable{`0}">
       <summary>Creates a new <see cref="T:System.Nullable`1" /> object initialized to a specified value.</summary>
       <param name="value">A value type.</param>
       <returns>A <see cref="T:System.Nullable`1" /> object whose <see cref="P:System.Nullable`1.Value" /> property is initialized with the <paramref name="value" /> parameter.</returns>
@@ -121549,7 +121549,7 @@ This API is not CLS-compliant.</summary>
       <summary>Reports a progress change.</summary>
       <param name="value">The value of the updated progress.</param>
     </member>
-    <member name="M:System.Progress`1.System#IProgress{T}#Report(`0)">
+    <member name="M:System.Progress`1.System#IProgress&lt;T&gt;#Report(`0)">
       <summary>Reports a progress change.</summary>
       <param name="value">The value of the updated progress.</param>
     </member>
@@ -121746,7 +121746,7 @@ This API is not CLS-compliant.</summary>
       <summary>Returns the hash code for this <see cref="T:System.ReadOnlyMemory`1" />.</summary>
       <returns>The hash code.</returns>
     </member>
-    <member name="M:System.ReadOnlyMemory`1.op_Implicit(T[])~System.ReadOnlyMemory{`0}">
+    <member name="M:System.ReadOnlyMemory`1.op_Implicit(`0[])~System.ReadOnlyMemory{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.ReadOnlyMemory`1" />.</summary>
       <param name="array">An array of type T to convert.</param>
       <returns>The read-only memory representation of the array of type T.</returns>
@@ -121874,7 +121874,7 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the two <see cref="T:System.ReadOnlySpan`1" /> instances are equal; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.ReadOnlySpan`1.op_Implicit(T[])~System.ReadOnlySpan{`0}">
+    <member name="M:System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.ReadOnlySpan`1" />.</summary>
       <param name="array">The array to convert to a <see cref="T:System.ReadOnlySpan`1" />.</param>
       <returns>The read-only span that corresponds to <paramref name="array" />.</returns>
@@ -133587,7 +133587,7 @@ The invoked method is not supported in the base class. Derived classes must prov
 Note: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, <see cref="T:System.MissingMemberException" />, instead.</exception>
       <returns>The value that corresponds to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, a new value created by the parameterless constructor of the class defined by the <paramref name="TValue" /> generic type parameter.</returns>
     </member>
-    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable{`0,`1}.CreateValueCallback)">
+    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback{`0,`1})">
       <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes a callback method to create a value that is bound to the specified key.</summary>
       <param name="key">The key to search for. <paramref name="key" /> represents the object to which the property is attached.</param>
       <param name="createValueCallback">A delegate to a method that can create a value for the given <paramref name="key" />. It has a single parameter of type <c>TKey</c>, and returns a value of type <c>TValue</c>.</param>
@@ -133603,7 +133603,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <returns>
         <see langword="true" /> if the key is found and removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey@TValue}}#GetEnumerator">
+    <member name="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator">
       <summary>Returns an enumerator that can be used to iterate through the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> table.</summary>
       <returns>An enumerator that can be used to iterate through the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> table.</returns>
     </member>
@@ -134345,7 +134345,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <param name="index">The zero-based index of the element to get or set.</param>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="P:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+    <member name="P:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly">
       <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -155045,7 +155045,7 @@ The certificate uses an unknown public key algorithm.</exception>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="certificates" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.System#Collections#Generic#IEnumerable{System#Security#Cryptography#X509Certificates#X509Certificate2}#GetEnumerator">
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.System#Collections#Generic#IEnumerable&lt;System#Security#Cryptography#X509Certificates#X509Certificate2&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -155308,7 +155308,7 @@ The certificate uses an unknown public key algorithm.</exception>
       <summary>Gets an <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator" /> object that can be used to navigate through a collection of chain elements.</summary>
       <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator" /> object.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#Generic#IEnumerable{System#Security#Cryptography#X509Certificates#X509ChainElement}#GetEnumerator">
+    <member name="M:System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#Generic#IEnumerable&lt;System#Security#Cryptography#X509Certificates#X509ChainElement&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -155661,7 +155661,7 @@ The certificate uses an unknown public key algorithm.</exception>
       <summary>Returns an enumerator that can iterate through an <see cref="T:System.Security.Cryptography.X509Certificates.X509ExtensionCollection" /> object.</summary>
       <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ExtensionEnumerator" /> object to use to iterate through the <see cref="T:System.Security.Cryptography.X509Certificates.X509ExtensionCollection" /> object.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509ExtensionCollection.System#Collections#Generic#IEnumerable{System#Security#Cryptography#X509Certificates#X509Extension}#GetEnumerator">
+    <member name="M:System.Security.Cryptography.X509Certificates.X509ExtensionCollection.System#Collections#Generic#IEnumerable&lt;System#Security#Cryptography#X509Certificates#X509Extension&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -157496,7 +157496,7 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the two <see cref="T:System.Span`1" /> objects are equal; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Span`1.op_Implicit(T[])~System.Span{`0}">
+    <member name="M:System.Span`1.op_Implicit(`0[])~System.Span{`0}">
       <summary>Defines an implicit conversion of an array to a <see cref="T:System.Span`1" />.</summary>
       <param name="array">The array to convert to a <see cref="T:System.Span`1" />.</param>
       <returns>The span that corresponds to <paramref name="array" />.</returns>
@@ -159147,7 +159147,7 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
         <paramref name="startIndex" /> is less than zero or greater than the length of this instance.</exception>
       <returns>A string that is equivalent to the substring that begins at <paramref name="startIndex" /> in this instance, or <see cref="F:System.String.Empty" /> if <paramref name="startIndex" /> is equal to the length of this instance.</returns>
     </member>
-    <member name="M:System.String.System#Collections#Generic#IEnumerable{System#Char}#GetEnumerator">
+    <member name="M:System.String.System#Collections#Generic#IEnumerable&lt;System#Char&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the current <see cref="T:System.String" /> object.</summary>
       <returns>A strongly-typed enumerator that can be used to iterate through the current <see cref="T:System.String" /> object.</returns>
     </member>
@@ -161671,43 +161671,43 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <summary>Provides an enumerator that iterates through the collection.</summary>
       <returns>An object that contains all <see cref="T:System.Text.RegularExpressions.Capture" /> objects within the <see cref="T:System.Text.RegularExpressions.CaptureCollection" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Capture}#Add(System.Text.RegularExpressions.Capture)">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Add(System.Text.RegularExpressions.Capture)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to add to the collection.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Capture}#Clear">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Clear">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Capture}#Contains(System.Text.RegularExpressions.Capture)">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Contains(System.Text.RegularExpressions.Capture)">
       <summary>Determines whether the collection contains a specific value.</summary>
       <param name="item">The object to locate in the collection.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the collection; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Capture}#Remove(System.Text.RegularExpressions.Capture)">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Capture&gt;#Remove(System.Text.RegularExpressions.Capture)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to remove from the collection.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       <returns>Calling this method always throws <see cref="T:System.NotSupportedException" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IEnumerable{System#Text#RegularExpressions#Capture}#GetEnumerator">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IEnumerable&lt;System#Text#RegularExpressions#Capture&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Capture}#IndexOf(System.Text.RegularExpressions.Capture)">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#IndexOf(System.Text.RegularExpressions.Capture)">
       <summary>Determines the index of a specific item in the collection.</summary>
       <param name="item">The object to locate in the collection.</param>
       <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Capture}#Insert(System.Int32,System.Text.RegularExpressions.Capture)">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#Insert(System.Int32,System.Text.RegularExpressions.Capture)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
       <param name="item">The object to insert into the collection.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Capture}#RemoveAt(System.Int32)">
+    <member name="M:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#RemoveAt(System.Int32)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -161775,7 +161775,7 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <summary>Gets an object that can be used to synchronize access to the collection.</summary>
       <returns>An object that can be used to synchronize access to the collection.</returns>
     </member>
-    <member name="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Capture}#Item(System.Int32)">
+    <member name="P:System.Text.RegularExpressions.CaptureCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Capture&gt;#Item(System.Int32)">
       <summary>Gets the element at the specified index.</summary>
       <param name="index">The zero-based index of the element to get.</param>
       <returns>The element at the specified index.</returns>
@@ -161853,47 +161853,47 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <summary>Provides an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that contains all <see cref="T:System.Text.RegularExpressions.Group" /> objects in the <see cref="T:System.Text.RegularExpressions.GroupCollection" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Group}#Add(System.Text.RegularExpressions.Group)">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Group&gt;#Add(System.Text.RegularExpressions.Group)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The group to add to the collection.</param>
       <exception cref="T:System.NotSupportedException">This method is not supported. This is a read-only collection.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Group}#Clear">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Group&gt;#Clear">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">This method is not supported. This is a read-only collection.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Group}#Contains(System.Text.RegularExpressions.Group)">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Group&gt;#Contains(System.Text.RegularExpressions.Group)">
       <summary>Determines whether the group collection contains a specific group item.</summary>
       <param name="item">The group to locate in the group collection.</param>
       <returns>
         <see langword="true" /> if the group item is found in the group collection; <see langword="false" /> otherwise.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Group}#Remove(System.Text.RegularExpressions.Group)">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Group&gt;#Remove(System.Text.RegularExpressions.Group)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The group to remove.</param>
       <exception cref="T:System.NotSupportedException">This method is not supported. This is a read-only collection.</exception>
       <returns>Calling this method always throws <see cref="T:System.NotSupportedException" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Text#RegularExpressions#Group}}#GetEnumerator">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Text#RegularExpressions#Group&gt;&gt;#GetEnumerator">
       <summary>Provides an enumerator that iterates through the group collection.</summary>
       <returns>An enumerator that contains all names and objects in the <see cref="T:System.Text.RegularExpressions.Group" /> collection.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IEnumerable{System#Text#RegularExpressions#Group}#GetEnumerator">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IEnumerable&lt;System#Text#RegularExpressions#Group&gt;#GetEnumerator">
       <summary>Provides an enumerator that iterates through the group collection.</summary>
       <returns>An enumerator that contains all <see cref="T:System.Text.RegularExpressions.Group" /> objects in the group collection.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Group}#IndexOf(System.Text.RegularExpressions.Group)">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Group&gt;#IndexOf(System.Text.RegularExpressions.Group)">
       <summary>Determines the index of a specific group in the group collection.</summary>
       <param name="item">The group to locate in the group collection.</param>
       <returns>The index of the <paramref name="item" /> if found; otherwise, -1.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Group}#Insert(System.Int32,System.Text.RegularExpressions.Group)">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Group&gt;#Insert(System.Int32,System.Text.RegularExpressions.Group)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The position at which to insert the group.</param>
       <param name="item">The group to insert.</param>
       <exception cref="T:System.NotSupportedException">This method is not supported. This is a read-only collection.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Group}#RemoveAt(System.Int32)">
+    <member name="M:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Group&gt;#RemoveAt(System.Int32)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index of the group to remove.</param>
       <exception cref="T:System.NotSupportedException">This method is not supported. This is a read-only collection.</exception>
@@ -161974,7 +161974,7 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Text.RegularExpressions.GroupCollection" />.</summary>
       <returns>A copy of the <see cref="T:System.Text.RegularExpressions.Match" /> object to synchronize.</returns>
     </member>
-    <member name="P:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Group}#Item(System.Int32)">
+    <member name="P:System.Text.RegularExpressions.GroupCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Group&gt;#Item(System.Int32)">
       <summary>Gets the group at the specified position in the collection.</summary>
       <param name="index">The zero-based index of the group in the group collection.</param>
       <exception cref="T:System.NotSupportedException">Cannot set an item. This is a read-only collection.</exception>
@@ -162053,45 +162053,45 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred.</exception>
       <returns>An object that contains all <see cref="T:System.Text.RegularExpressions.Match" /> objects within the <see cref="T:System.Text.RegularExpressions.MatchCollection" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Match}#Add(System.Text.RegularExpressions.Match)">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Match&gt;#Add(System.Text.RegularExpressions.Match)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to add to the collection.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Match}#Clear">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Match&gt;#Clear">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Match}#Contains(System.Text.RegularExpressions.Match)">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Match&gt;#Contains(System.Text.RegularExpressions.Match)">
       <summary>Determines whether the collection contains a specific value.</summary>
       <param name="item">The object to locate in the collection.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the collection; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection{System#Text#RegularExpressions#Match}#Remove(System.Text.RegularExpressions.Match)">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#ICollection&lt;System#Text#RegularExpressions#Match&gt;#Remove(System.Text.RegularExpressions.Match)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="item">The object to remove from the collection.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       <returns>
         <see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the original collection.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IEnumerable{System#Text#RegularExpressions#Match}#GetEnumerator">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IEnumerable&lt;System#Text#RegularExpressions#Match&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Match}#IndexOf(System.Text.RegularExpressions.Match)">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Match&gt;#IndexOf(System.Text.RegularExpressions.Match)">
       <summary>Determines the index of a specific item in the collection.</summary>
       <param name="item">The object to locate in the collection.</param>
       <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Match}#Insert(System.Int32,System.Text.RegularExpressions.Match)">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Match&gt;#Insert(System.Int32,System.Text.RegularExpressions.Match)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
       <param name="item">The object to insert into the collection.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
     </member>
-    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Match}#RemoveAt(System.Int32)">
+    <member name="M:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Match&gt;#RemoveAt(System.Int32)">
       <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
       <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -162160,7 +162160,7 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <summary>Gets an object that can be used to synchronize access to the collection.</summary>
       <returns>An object that can be used to synchronize access to the collection. This property always returns the object itself.</returns>
     </member>
-    <member name="P:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList{System#Text#RegularExpressions#Match}#Item(System.Int32)">
+    <member name="P:System.Text.RegularExpressions.MatchCollection.System#Collections#Generic#IList&lt;System#Text#RegularExpressions#Match&gt;#Item(System.Int32)">
       <summary>Gets the element at the specified index.</summary>
       <param name="index">The zero-based index of the element to get.</param>
       <returns>The element at the specified index.</returns>
@@ -186458,7 +186458,7 @@ This option indents element content only; mixed content is not affected. For the
       <returns>
         <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Xml.Linq.XName.System#IEquatable{System#Xml#Linq#XName}#Equals(System.Xml.Linq.XName)">
+    <member name="M:System.Xml.Linq.XName.System#IEquatable&lt;System#Xml#Linq#XName&gt;#Equals(System.Xml.Linq.XName)">
       <summary>Indicates whether the current <see cref="T:System.Xml.Linq.XName" /> is equal to the specified <see cref="T:System.Xml.Linq.XName" />.</summary>
       <param name="other">The <see cref="T:System.Xml.Linq.XName" /> to compare with this <see cref="T:System.Xml.Linq.XName" />.</param>
       <returns>
@@ -191211,7 +191211,7 @@ If the processor cannot find a schema or if the items are not valid, the XML pro
       <summary>Removes the first occurrence of a specific schema from the <see cref="T:System.Xml.Serialization.XmlSchemas" />.</summary>
       <param name="schema">The <see cref="T:System.Xml.Schema.XmlSchema" /> to remove.</param>
     </member>
-    <member name="M:System.Xml.Serialization.XmlSchemas.System#Collections#Generic#IEnumerable{System#Xml#Schema#XmlSchema}#GetEnumerator">
+    <member name="M:System.Xml.Serialization.XmlSchemas.System#Collections#Generic#IEnumerable&lt;System#Xml#Schema#XmlSchema&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection of XML schemas.</summary>
       <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
     </member>

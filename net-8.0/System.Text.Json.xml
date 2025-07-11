@@ -548,7 +548,7 @@ The current <paramref name="reader" /> token does not start or represent a value
     <member name="M:System.Text.Json.JsonElement.ArrayEnumerator.Reset">
       <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
     </member>
-    <member name="M:System.Text.Json.JsonElement.ArrayEnumerator.System#Collections#Generic#IEnumerable{System#Text#Json#JsonElement}#GetEnumerator">
+    <member name="M:System.Text.Json.JsonElement.ArrayEnumerator.System#Collections#Generic#IEnumerable&lt;System#Text#Json#JsonElement&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An enumerator for an array of <see cref="T:System.Text.Json.JsonElement" /> that can be used to iterate through the collection.</returns>
     </member>
@@ -582,7 +582,7 @@ The current <paramref name="reader" /> token does not start or represent a value
     <member name="M:System.Text.Json.JsonElement.ObjectEnumerator.Reset">
       <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
     </member>
-    <member name="M:System.Text.Json.JsonElement.ObjectEnumerator.System#Collections#Generic#IEnumerable{System#Text#Json#JsonProperty}#GetEnumerator">
+    <member name="M:System.Text.Json.JsonElement.ObjectEnumerator.System#Collections#Generic#IEnumerable&lt;System#Text#Json#JsonProperty&gt;#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An enumerator for <see cref="T:System.Text.Json.JsonProperty" /> objects that can be used to iterate through the collection.</returns>
     </member>
@@ -2342,7 +2342,7 @@ There is remaining data in the stream.</exception>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than <see cref="P:System.Text.Json.Nodes.JsonArray.Count" />.</exception>
     </member>
-    <member name="M:System.Text.Json.Nodes.JsonArray.System#Collections#Generic#ICollection{System#Text#Json#Nodes#JsonNode}#CopyTo(System.Text.Json.Nodes.JsonNode[],System.Int32)">
+    <member name="M:System.Text.Json.Nodes.JsonArray.System#Collections#Generic#ICollection&lt;System#Text#Json#Nodes#JsonNode&gt;#CopyTo(System.Text.Json.Nodes.JsonNode[],System.Int32)">
       <summary>Copies the entire <see cref="T:System.Array" /> to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
       <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Text.Json.Nodes.JsonArray" />. The Array must have zero-based indexing.</param>
       <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -2366,7 +2366,7 @@ There is remaining data in the stream.</exception>
       <summary>Gets the number of elements contained in the <see cref="T:System.Text.Json.Nodes.JsonArray" />.</summary>
       <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="P:System.Text.Json.Nodes.JsonArray.System#Collections#Generic#ICollection{System#Text#Json#Nodes#JsonNode}#IsReadOnly">
+    <member name="P:System.Text.Json.Nodes.JsonArray.System#Collections#Generic#ICollection&lt;System#Text#Json#Nodes#JsonNode&gt;#IsReadOnly">
       <summary>Returns <see langword="false" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
@@ -2914,13 +2914,13 @@ There is remaining data in the stream.</exception>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Text#Json#Nodes#JsonNode}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})">
+    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})">
       <summary>Determines whether the <see cref="T:System.Text.Json.Nodes.JsonObject" /> contains a specific property name and <see cref="T:System.Text.Json.Nodes.JsonNode" /> reference.</summary>
       <param name="item">The element to locate in the <see cref="T:System.Text.Json.Nodes.JsonObject" />.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Text.Json.Nodes.JsonObject" /> contains an element with the property name; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Text#Json#Nodes#JsonNode}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}[],System.Int32)">
+    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Text.Json.Nodes.JsonObject" /> to an array of type KeyValuePair starting at the specified array index.</summary>
       <param name="array">The one-dimensional Array that is the destination of the elements copied from <see cref="T:System.Text.Json.Nodes.JsonObject" />.</param>
       <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -2930,13 +2930,13 @@ There is remaining data in the stream.</exception>
         <paramref name="index" /> is less than 0.</exception>
       <exception cref="T:System.ArgumentException">The number of elements in the source ICollection is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Text#Json#Nodes#JsonNode}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})">
+    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})">
       <summary>Removes a key and value from the <see cref="T:System.Text.Json.Nodes.JsonObject" />.</summary>
       <param name="item">The KeyValuePair structure representing the property name and value to remove from the <see cref="T:System.Text.Json.Nodes.JsonObject" />.</param>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#IDictionary{System#String@System#Text#Json#Nodes#JsonNode}#TryGetValue(System.String,System.Text.Json.Nodes.JsonNode@)">
+    <member name="M:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#IDictionary&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;#TryGetValue(System.String,System.Text.Json.Nodes.JsonNode@)">
       <summary>Gets the value associated with the specified property name.</summary>
       <param name="propertyName">The property name of the value to get.</param>
       <param name="jsonNode">When this method returns, contains the value associated with the specified property name, if the property name is found; otherwise, <see langword="null" />.</param>
@@ -2966,16 +2966,16 @@ There is remaining data in the stream.</exception>
       <summary>Gets the number of elements contained in <see cref="T:System.Text.Json.Nodes.JsonObject" />.</summary>
       <returns>The number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="P:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Text#Json#Nodes#JsonNode}}#IsReadOnly">
+    <member name="P:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;&gt;#IsReadOnly">
       <summary>Returns <see langword="false" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#IDictionary{System#String@System#Text#Json#Nodes#JsonNode}#Keys">
+    <member name="P:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#IDictionary&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;#Keys">
       <summary>Gets a collection containing the property names in the <see cref="T:System.Text.Json.Nodes.JsonObject" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
-    <member name="P:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#IDictionary{System#String@System#Text#Json#Nodes#JsonNode}#Values">
+    <member name="P:System.Text.Json.Nodes.JsonObject.System#Collections#Generic#IDictionary&lt;System#String,System#Text#Json#Nodes#JsonNode&gt;#Values">
       <summary>Gets a collection containing the property values in the <see cref="T:System.Text.Json.Nodes.JsonObject" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
