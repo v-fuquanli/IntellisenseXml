@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.Security.Cryptography.OpenSsl</name>
+  </assembly>
+  <members>
+    <member name="T:System.Security.Cryptography.DSAOpenSsl">
+      <summary>Provides an implementation of the Digital Signature Algorithm (DSA) backed by OpenSSL.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSAOpenSsl" /> class with a default key size of 2048 bits.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSAOpenSsl" /> class with a specified key size.</summary>
+      <param name="keySize">The size of the key to generate, when a key is needed.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="keySize" /> value is not supported by this implementation.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.IntPtr)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSAOpenSsl" /> class from an existing OpenSSL key represented as a <c>DSA*</c>.</summary>
+      <param name="handle">The OpenSSL <c>DSA*</c> value to use as the key.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="handle" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="handle" /> is not a valid <c>DSA*</c>.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.Security.Cryptography.DSAParameters)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSAOpenSsl" /> class and imports parameters from an existing key.</summary>
+      <param name="parameters">The key parameters to import.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="parameters" /> is missing required fields.
+
+-or-
+
+<paramref name="parameters" /> has fields with inconsistent lengths for a valid key.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="parameters" /> does not represent a valid DSA key parameter set.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSAOpenSsl" /> class from an existing OpenSSL key represented as an <c>EVP_PKEY*</c>.</summary>
+      <param name="pkeyHandle">The OpenSSL <c>EVP_PKEY*</c> value to use as the key, represented as a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" />.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="pkeyHandle" /> represents an invalid handle.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="pkeyHandle" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="pkeyHandle" /> does not represent a DSA key.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.CreateSignature(System.Byte[])">
+      <summary>When overridden in a derived class, creates the <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified hash value.</summary>
+      <param name="rgbHash">The hash value to be signed.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="rgbHash" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">This instance represents only a public key.
+
+-or-
+
+An error occurred during signature creation.</exception>
+      <returns>The digital signature for the specified hash value.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.DuplicateKeyHandle">
+      <summary>Gets a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</summary>
+      <returns>A <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.ExportParameters(System.Boolean)">
+      <summary>Exports the <see cref="T:System.Security.Cryptography.DSAParameters" /> representing this key.</summary>
+      <param name="includePrivateParameters">
+        <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="includePrivateParameters" /> is <see langword="true" />, but this instance represents only a DSA public key.</exception>
+      <returns>The DSA parameters for the current cryptographic key.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.ImportParameters(System.Security.Cryptography.DSAParameters)">
+      <summary>Imports the specified <see cref="T:System.Security.Cryptography.DSAParameters" />.</summary>
+      <param name="parameters">The key parameters to import.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="parameters" /> is missing required fields.
+
+-or-
+
+<paramref name="parameters" /> has fields with inconsistent lengths for a valid key.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="parameters" /> does not represent a valid DSA key parameter set.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.DSAOpenSsl.VerifySignature(System.Byte[],System.Byte[])">
+      <summary>Verifies if the specified digital signature matches the specified hash.</summary>
+      <param name="rgbHash">The signed hash.</param>
+      <param name="rgbSignature">The digital signature to be verified.</param>
+      <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> or <paramref name="rgbSignature" /> parameters are <see langword="null" />.</exception>
+      <returns>
+        <see langword="true" /> if <paramref name="rgbSignature" /> matches the signature computed using the specified hash; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl">
+      <summary>Provides an implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm backed by OpenSSL.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl" /> class with a default curve of NIST P-521/secp521r1.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.#ctor(System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl" /> class defaulting to the NIST prime curve of the specified size.</summary>
+      <param name="keySize">The size of the key to generate, when a key is needed.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="keySize" /> value is not supported by this implementation.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.#ctor(System.IntPtr)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl" /> class from an existing OpenSSL key represented as an <c>EC_KEY*</c>.</summary>
+      <param name="handle">The OpenSSL <c>EC_KEY*</c> value to use as the key.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="handle" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="handle" /> is not a valid <c>EC_KEY*</c>.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.#ctor(System.Security.Cryptography.ECCurve)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl" /> class and generates a new key on the specified curve.</summary>
+      <param name="curve">The curve used to generate an ephemeral public/private key pair.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="curve" /> does not validate.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl" /> class from an existing OpenSSL key represented as an <c>EVP_PKEY*</c>.</summary>
+      <param name="pkeyHandle">The OpenSSL <c>EVP_PKEY*</c> value to use as the key, represented as a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" />.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="pkeyHandle" /> represents an invalid handle.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="pkeyHandle" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="pkeyHandle" /> does not represent a elliptic curve (EC) key.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.DuplicateKeyHandle">
+      <summary>Gets a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</summary>
+      <returns>A <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.ExportParameters(System.Boolean)">
+      <summary>Exports the key used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object.</summary>
+      <param name="includePrivateParameters">
+        <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">The method cannot obtain curve values.</exception>
+      <returns>The key and named curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDiffieHellmanOpenSsl.ImportParameters(System.Security.Cryptography.ECParameters)">
+      <summary>Imports the specified parameters for an <see cref="T:System.Security.Cryptography.ECCurve" /> object as a key into the current instance.</summary>
+      <param name="parameters">The curve's parameters to import.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="parameters" /> does not validate.</exception>
+      <exception cref="T:System.NotSupportedException">
+        <paramref name="parameters" /> references a curve that cannot be imported.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="parameters" /> references a curve that is not supported by this platform.</exception>
+    </member>
+    <member name="P:System.Security.Cryptography.ECDiffieHellmanOpenSsl.PublicKey">
+      <summary>Gets the public key that can be used by another <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> object to generate a shared secret agreement.</summary>
+      <returns>The public key that is associated with this instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanOpenSsl" /> object.</returns>
+    </member>
+    <member name="T:System.Security.Cryptography.ECDsaOpenSsl">
+      <summary>Provides an implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA) backed by OpenSSL.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaOpenSsl" /> class.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.#ctor(System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaOpenSsl" /> class with a specified target key size.</summary>
+      <param name="keySize">The size of the key. Valid key sizes are 256, 384, and 521 bits.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="keySize" /> specifies an invalid length.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.#ctor(System.IntPtr)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaOpenSsl" /> class from an existing OpenSSL key represented as an <c>EC_KEY*</c>.</summary>
+      <param name="handle">The OpenSSL <c>EC_KEY*</c> value to use as the key.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="handle" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="handle" /> is not a valid <c>EC_KEY*</c>.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.#ctor(System.Security.Cryptography.ECCurve)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaOpenSsl" /> class and generates a new key on the specified curve.</summary>
+      <param name="curve">The curve used to generate an ephemeral public/private key pair.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="curve" /> does not validate.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="curve" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaOpenSsl" /> class from an existing OpenSSL key represented as an <c>EVP_PKEY*</c>.</summary>
+      <param name="pkeyHandle">The OpenSSL <c>EVP_PKEY*</c> value to use as the key, represented as a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" />.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="pkeyHandle" /> represents an invalid handle.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="pkeyHandle" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="pkeyHandle" /> does not represent a elliptic curve (EC) key.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.DuplicateKeyHandle">
+      <summary>Gets a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</summary>
+      <returns>A <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.SignHash(System.Byte[])">
+      <summary>Generates a digital signature for the specified hash value.</summary>
+      <param name="hash">The hash value of the data that is being signed.</param>
+      <exception cref="T:System.ArgumentNullException">The <paramref name="hash" /> parameter is <see langword="null" />.</exception>
+      <returns>A digital signature for the specified hash value.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.ECDsaOpenSsl.VerifyHash(System.Byte[],System.Byte[])">
+      <summary>Verifies that a digital signature is appropriate for the current key and provided data hash.</summary>
+      <param name="hash">The hash value of the data to be verified.</param>
+      <param name="signature">The digital signature of the data to be verified against the hash value.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="hash" /> or <paramref name="signature" /> is <see langword="null" />.</exception>
+      <returns>
+        <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="T:System.Security.Cryptography.RSAOpenSsl">
+      <summary>Provides an implementation of the RSA algorithm backed by OpenSSL.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOpenSsl" /> class with a random 2048-bit key pair.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.#ctor(System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOpenSsl" /> class with a randomly generated key of the specified size.</summary>
+      <param name="keySize">The size of the key to generate in bits.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="keySize" /> is not valid.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.#ctor(System.IntPtr)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOpenSsl" /> class from an existing OpenSSL key represented as an <c>RSA*</c>.</summary>
+      <param name="handle">The OpenSSL <c>RSA*</c> value to use as the key.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="handle" /> is not a valid <c>RSA*</c>.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="handle" /> is invalid</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.#ctor(System.Security.Cryptography.RSAParameters)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOpenSsl" /> class using specified key parameters.</summary>
+      <param name="parameters">The parameters for the key.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="parameters" /> is not a valid RSA key.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOpenSsl" /> class from an existing OpenSSL key represented as an <c>EVP_PKEY*</c>.</summary>
+      <param name="pkeyHandle">The OpenSSL <c>EVP_PKEY*</c> value to use as the key, represented as a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" />.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="pkeyHandle" /> does not represent an RSA key.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="pkeyHandle" /> is <see langword="null" /></exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="pkeyHandle" /> is invalid according to <see cref="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.DuplicateKeyHandle">
+      <summary>Gets a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</summary>
+      <returns>A <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.ExportParameters(System.Boolean)">
+      <summary>Exports the <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
+      <param name="includePrivateParameters">
+        <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">The parameters could not be exported.</exception>
+      <returns>The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.RSAOpenSsl.ImportParameters(System.Security.Cryptography.RSAParameters)">
+      <summary>Imports the specified <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
+      <param name="parameters">The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+        <paramref name="parameters" /> is not a valid RSA key.</exception>
+    </member>
+    <member name="T:System.Security.Cryptography.SafeEvpPKeyHandle">
+      <summary>Represents the <see langword="EVP_PKEY*" /> pointer type from OpenSSL.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.SafeEvpPKeyHandle.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> class, representing an invalid handle.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.SafeEvpPKeyHandle.#ctor(System.IntPtr,System.Boolean)">
+      <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> class with the specified handle value.</summary>
+      <param name="handle">The handle value to represent.</param>
+      <param name="ownsHandle">
+        <see langword="true" /> to reliably let <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> release the handle during the finalization phase; otherwise, <see langword="false" /> (not recommended).</param>
+    </member>
+    <member name="M:System.Security.Cryptography.SafeEvpPKeyHandle.DuplicateHandle">
+      <summary>Creates another instance of this type or increments the reference count of the handle.</summary>
+      <exception cref="T:System.InvalidOperationException">This handle is invalid.</exception>
+      <returns>Another instance of this type or the existing handle.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.SafeEvpPKeyHandle.IsInvalid">
+      <summary>Gets a value indicating whether the handle value is invalid.</summary>
+      <returns>
+        <see langword="true" /> if the handle value is invalid; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.SafeEvpPKeyHandle.OpenSslVersion">
+      <summary>Gets a value representing the version number as reported by the loaded version of OpenSSL.</summary>
+      <returns>A value representing the version number as reported by the loaded version of OpenSSL.</returns>
+    </member>
+  </members>
+</doc>

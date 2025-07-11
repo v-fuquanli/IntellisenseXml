@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.Bcl.Cryptography</name>
+  </assembly>
+  <members>
+    <member name="T:System.Security.Cryptography.MLKem" />
+    <member name="M:System.Security.Cryptography.MLKem.#ctor(System.Security.Cryptography.MLKemAlgorithm)">
+      <param name="algorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.Decapsulate(System.Byte[])">
+      <param name="ciphertext" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.Decapsulate(System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+      <param name="ciphertext" />
+      <param name="sharedSecret" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.DecapsulateCore(System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+      <param name="ciphertext" />
+      <param name="sharedSecret" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.Dispose" />
+    <member name="M:System.Security.Cryptography.MLKem.Dispose(System.Boolean)">
+      <param name="disposing" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.Encapsulate(System.Byte[]@,System.Byte[]@)">
+      <param name="ciphertext" />
+      <param name="sharedSecret" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.Encapsulate(System.Span{System.Byte},System.Span{System.Byte})">
+      <param name="ciphertext" />
+      <param name="sharedSecret" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.EncapsulateCore(System.Span{System.Byte},System.Span{System.Byte})">
+      <param name="ciphertext" />
+      <param name="sharedSecret" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKey" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKey(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKeyCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKey" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKey(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKeyCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncryptedPkcs8PrivateKey(System.String,System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncryptedPkcs8PrivateKeyPem(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncryptedPkcs8PrivateKeyPem(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncryptedPkcs8PrivateKeyPem(System.String,System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportPkcs8PrivateKey" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportPkcs8PrivateKeyPem" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeed" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeed(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeedCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportSubjectPublicKeyInfo" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportSubjectPublicKeyInfoPem" />
+    <member name="M:System.Security.Cryptography.MLKem.GenerateKey(System.Security.Cryptography.MLKemAlgorithm)">
+      <param name="algorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportDecapsulationKey(System.Security.Cryptography.MLKemAlgorithm,System.Byte[])">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportDecapsulationKey(System.Security.Cryptography.MLKemAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportEncapsulationKey(System.Security.Cryptography.MLKemAlgorithm,System.Byte[])">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportEncapsulationKey(System.Security.Cryptography.MLKemAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="passwordBytes" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+      <param name="password" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportEncryptedPkcs8PrivateKey(System.String,System.Byte[])">
+      <param name="password" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportFromEncryptedPem(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+      <param name="passwordBytes" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportFromEncryptedPem(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})">
+      <param name="source" />
+      <param name="password" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportFromEncryptedPem(System.String,System.Byte[])">
+      <param name="source" />
+      <param name="passwordBytes" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportFromEncryptedPem(System.String,System.String)">
+      <param name="source" />
+      <param name="password" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportFromPem(System.ReadOnlySpan{System.Char})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportFromPem(System.String)">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportPkcs8PrivateKey(System.Byte[])">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportPkcs8PrivateKey(System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportPrivateSeed(System.Security.Cryptography.MLKemAlgorithm,System.Byte[])">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportPrivateSeed(System.Security.Cryptography.MLKemAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportSubjectPublicKeyInfo(System.Byte[])">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.ImportSubjectPublicKeyInfo(System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="password" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.TryExportEncryptedPkcs8PrivateKey(System.String,System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="password" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.TryExportPkcs8PrivateKey(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.TryExportPkcs8PrivateKeyCore(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKem.TryExportSubjectPublicKeyInfo(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="P:System.Security.Cryptography.MLKem.Algorithm" />
+    <member name="P:System.Security.Cryptography.MLKem.IsSupported" />
+    <member name="T:System.Security.Cryptography.MLKemAlgorithm" />
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.Equals(System.Object)">
+      <param name="obj" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.Equals(System.Security.Cryptography.MLKemAlgorithm)">
+      <param name="other" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.GetHashCode" />
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.op_Equality(System.Security.Cryptography.MLKemAlgorithm,System.Security.Cryptography.MLKemAlgorithm)">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.op_Inequality(System.Security.Cryptography.MLKemAlgorithm,System.Security.Cryptography.MLKemAlgorithm)">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.CiphertextSizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.DecapsulationKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.EncapsulationKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem1024" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem512" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem768" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.Name" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.PrivateSeedSizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.SharedSecretSizeInBytes" />
+    <member name="T:System.Security.Cryptography.SlhDsa" />
+    <member name="M:System.Security.Cryptography.SlhDsa.#ctor(System.Security.Cryptography.SlhDsaAlgorithm)">
+      <param name="algorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.Dispose" />
+    <member name="M:System.Security.Cryptography.SlhDsa.Dispose(System.Boolean)">
+      <param name="disposing" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportEncryptedPkcs8PrivateKey(System.String,System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportEncryptedPkcs8PrivateKeyPem(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportEncryptedPkcs8PrivateKeyPem(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportEncryptedPkcs8PrivateKeyPem(System.String,System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportPkcs8PrivateKey" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportPkcs8PrivateKeyPem" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKey" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKey(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKeyCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKeyCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSubjectPublicKeyInfo" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSubjectPublicKeyInfoPem" />
+    <member name="M:System.Security.Cryptography.SlhDsa.GenerateKey(System.Security.Cryptography.SlhDsaAlgorithm)">
+      <param name="algorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="passwordBytes" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+      <param name="password" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportEncryptedPkcs8PrivateKey(System.String,System.Byte[])">
+      <param name="password" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportFromEncryptedPem(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+      <param name="passwordBytes" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportFromEncryptedPem(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})">
+      <param name="source" />
+      <param name="password" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportFromEncryptedPem(System.String,System.Byte[])">
+      <param name="source" />
+      <param name="passwordBytes" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportFromEncryptedPem(System.String,System.String)">
+      <param name="source" />
+      <param name="password" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportFromPem(System.ReadOnlySpan{System.Char})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportFromPem(System.String)">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportPkcs8PrivateKey(System.Byte[])">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportPkcs8PrivateKey(System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportSlhDsaPublicKey(System.Security.Cryptography.SlhDsaAlgorithm,System.Byte[])">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportSlhDsaPublicKey(System.Security.Cryptography.SlhDsaAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportSlhDsaSecretKey(System.Security.Cryptography.SlhDsaAlgorithm,System.Byte[])">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportSlhDsaSecretKey(System.Security.Cryptography.SlhDsaAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportSubjectPublicKeyInfo(System.Byte[])">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ImportSubjectPublicKeyInfo(System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignData(System.Byte[],System.Byte[])">
+      <param name="data" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="data" />
+      <param name="destination" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignDataCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+      <param name="data" />
+      <param name="context" />
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="password" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.TryExportEncryptedPkcs8PrivateKey(System.String,System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="password" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.TryExportPkcs8PrivateKey(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.TryExportPkcs8PrivateKeyCore(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.TryExportSubjectPublicKeyInfo(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyData(System.Byte[],System.Byte[],System.Byte[])">
+      <param name="data" />
+      <param name="signature" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyData(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="data" />
+      <param name="signature" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyDataCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="data" />
+      <param name="context" />
+      <param name="signature" />
+    </member>
+    <member name="P:System.Security.Cryptography.SlhDsa.Algorithm" />
+    <member name="P:System.Security.Cryptography.SlhDsa.IsSupported" />
+    <member name="T:System.Security.Cryptography.SlhDsaAlgorithm" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.Name" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.PublicKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SignatureSizeInBytes" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_128f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_128s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_192f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_192s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_256f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_256s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake128f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake128s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake192f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake192s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake256f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake256s" />
+    <member name="T:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits">
+      <summary>
+              Represents a set of constraints to apply when loading PKCS#12/PFX contents.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.#ctor">
+      <summary>
+              Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits" /> class
+              with default values.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.#ctor(System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits" /> class
+              by copying the values from another instance.</summary>
+      <param name="copyFrom">The instance to copy the values from.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="copyFrom" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.MakeReadOnly">
+      <summary>
+              Makes the <see cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits" /> instance read-only.</summary>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.DangerousNoLimits">
+      <summary>
+              Gets a shared reference to loader limits that indicate no
+              filtering or restrictions of the contents should be applied
+              before sending them to the underlying system loader.</summary>
+      <returns>
+              A shared reference to loader limits that indicate no
+              filtering or restrictions of the contents should be applied
+              before sending them to the underlying system loader.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults">
+      <summary>
+              Gets a shared reference to the default loader limits.</summary>
+      <returns>A shared reference to the default loader limits.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.IgnoreEncryptedAuthSafes">
+      <summary>
+              Gets or sets a value indicating whether to ignore encrypted authentication safes.</summary>
+      <returns>
+        <see langword="true" /> to skip over encrypted PFX AuthSafe values;
+              <see langword="false" /> to decrypt encrypted PFX AuthSafe values to process their
+              contents.
+              The default is <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.IgnorePrivateKeys">
+      <summary>
+              Gets or sets a value indicating whether to ignore private keys.</summary>
+      <returns>
+        <see langword="true" /> to skip loading private keys;
+              <see langword="false" /> to load both certificates and private keys.
+              The default is <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.IndividualKdfIterationLimit">
+      <summary>
+              Gets or sets the iteration limit for the individual Key Derivation Function (KDF) calculations.</summary>
+      <returns>
+              The iteration limit for the individual Key Derivation Function (KDF) calculations,
+              or <see langword="null" /> for no limit.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.IsReadOnly">
+      <summary>
+              Gets a value indicating whether the instance is read-only.</summary>
+      <returns>
+        <see langword="true" /> if the instance is read-only; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.MacIterationLimit">
+      <summary>
+              Gets or sets the iteration limit for the MAC calculation.</summary>
+      <returns>The iteration limit for the MAC calculation, or <see langword="null" /> for no limit.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.MaxCertificates">
+      <summary>
+              Gets or sets the maximum number of certificates permitted.</summary>
+      <returns>
+              The maximum number of certificates permitted, or <see langword="null" /> for no maximum.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.MaxKeys">
+      <summary>
+              Gets or sets the maximum number of keys permitted.</summary>
+      <returns>
+              The maximum number of keys permitted, or <see langword="null" /> for no maximum.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.PreserveCertificateAlias">
+      <summary>
+              Gets or sets a value indicating whether to preserve the certificate alias,
+              also known as the friendly name.</summary>
+      <returns>
+        <see langword="true" /> to respect the alias for a
+              certificate; <see langword="false" /> to ignore the alias
+              information.
+              The default is <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.PreserveKeyName">
+      <summary>
+              Gets or sets a value indicating whether to preserve the key name.</summary>
+      <returns>
+        <see langword="true" /> to respect the key name identifier for a
+              private key; <see langword="false" /> to ignore the key name
+              information and use a randomly generated identifier.
+              The default is <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.PreserveStorageProvider">
+      <summary>
+              Gets or sets a value indicating whether to preserve the storage provider.</summary>
+      <returns>
+        <see langword="true" /> to respect the storage provider identifier for a
+              private key; <see langword="false" /> to ignore the storage provider
+              information and use the system defaults.
+              The default is <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.PreserveUnknownAttributes">
+      <summary>
+              Gets or sets a value indicating whether to preserve unknown attributes.</summary>
+      <returns>
+        <see langword="true" /> to keep any attributes of a certificate or
+              private key that are not described by another property on this type intact
+              when invoking the system PKCS#12/PFX loader;
+              <see langword="false" /> to remove the unknown attributes prior to invoking
+              the system loader.
+              The default is <see langword="false" />.</returns>
+    </member>
+    <member name="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.TotalKdfIterationLimit">
+      <summary>
+              Gets or sets the total iteration limit for the Key Derivation Function (KDF) calculations.</summary>
+      <returns>
+              The total iteration limit for the Key Derivation Function (KDF) calculations,
+              or <see langword="null" /> for no limit.</returns>
+    </member>
+    <member name="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+      <summary>
+              The exception that is thrown when importing a PKCS#12/PFX has failed
+              due to violating a specified limit.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException.#ctor(System.String)">
+      <summary>
+              Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException" />
+              class.</summary>
+      <param name="propertyName">
+              The name of the property representing the limit that was exceeded.</param>
+    </member>
+    <member name="T:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors" />
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.MLKem)">
+      <param name="certificate" />
+      <param name="privateKey" />
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.SlhDsa)">
+      <param name="certificate" />
+      <param name="privateKey" />
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.GetMLKemPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+      <param name="certificate" />
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.GetMLKemPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+      <param name="certificate" />
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.GetSlhDsaPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+      <param name="certificate" />
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.GetSlhDsaPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+      <param name="certificate" />
+    </member>
+    <member name="T:System.Security.Cryptography.X509Certificates.X509CertificateLoader">
+      <summary>Provides methods for loading an X.509 certificate or a PKCS#12 PFX that contains certificates.</summary>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadCertificate(System.Byte[])">
+      <summary>
+              Loads a single X.509 certificate from <paramref name="data" />, in either the PEM
+              or DER encoding.</summary>
+      <param name="data">The data to load.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="data" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              The data did not load as a valid X.509 certificate.</exception>
+      <returns>
+              The certificate loaded from <paramref name="data" />.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadCertificate(System.ReadOnlySpan{System.Byte})">
+      <summary>
+              Loads a single X.509 certificate from <paramref name="data" />, in either the PEM
+              or DER encoding.</summary>
+      <param name="data">The data to load.</param>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              The data did not load as a valid X.509 certificate.</exception>
+      <returns>
+              The certificate loaded from <paramref name="data" />.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadCertificateFromFile(System.String)">
+      <summary>
+              Loads a single X.509 certificate (in either the PEM or DER encoding)
+              from the specified file.</summary>
+      <param name="path">The path of the file to open.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              The data did not load as a valid X.509 certificate.</exception>
+      <exception cref="T:System.IO.IOException">
+              An error occurred while loading the specified file.</exception>
+      <returns>
+              The loaded certificate.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Loads the provided data as a PKCS#12 PFX and extracts a certificate.</summary>
+      <param name="data">The data to load.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="data" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <returns>The loaded certificate.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Loads the provided data as a PKCS#12 PFX and extracts a certificate.</summary>
+      <param name="data">The data to load.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="data" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <returns>The loaded certificate.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12Collection(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Loads the provided data as a PKCS#12 PFX and returns a collection of
+              all of the certificates therein.</summary>
+      <param name="data">The data to load.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="data" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <returns>A collection of the certificates loaded from the input.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12Collection(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Loads the provided data as a PKCS#12 PFX and returns a collection of
+              all of the certificates therein.</summary>
+      <param name="data">The data to load.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="data" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <returns>A collection of the certificates loaded from the input.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12CollectionFromFile(System.String,System.ReadOnlySpan{System.Char},System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Opens the specified file, reads the contents as a PKCS#12 PFX and extracts a certificate.
+              Loads the provided data as a PKCS#12 PFX and returns a collection of
+              all of the certificates therein.</summary>
+      <param name="path">The path of the file to open.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <exception cref="T:System.IO.IOException">
+              An error occurred while loading the specified file.</exception>
+      <returns>
+              The loaded certificate.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12CollectionFromFile(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Opens the specified file, reads the contents as a PKCS#12 PFX and extracts a certificate.
+              Loads the provided data as a PKCS#12 PFX and returns a collection of
+              all of the certificates therein.</summary>
+      <param name="path">The path of the file to open.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <exception cref="T:System.IO.IOException">
+              An error occurred while loading the specified file.</exception>
+      <returns>
+              The loaded certificate.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12FromFile(System.String,System.ReadOnlySpan{System.Char},System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Opens the specified file, reads the contents as a PKCS#12 PFX and extracts a certificate.</summary>
+      <param name="path">The path of the file to open.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <exception cref="T:System.IO.IOException">
+              An error occurred while loading the specified file.</exception>
+      <returns>
+              The loaded certificate.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12FromFile(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags,System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits)">
+      <summary>
+              Opens the specified file, reads the contents as a PKCS#12 PFX and extracts a certificate.</summary>
+      <param name="path">The path of the file to open.</param>
+      <param name="password">The password to decrypt the contents of the PFX.</param>
+      <param name="keyStorageFlags">
+              A bitwise combination of the enumeration values that control where and how to
+              import the private key associated with the returned certificate.</param>
+      <param name="loaderLimits">
+              Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="keyStorageFlags" /> contains a value, or combination of values,
+              that is not valid.</exception>
+      <exception cref="T:System.PlatformNotSupportedException">
+        <paramref name="keyStorageFlags" /> contains a value that is not valid for the
+              current platform.</exception>
+      <exception cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException">
+              The PKCS#12/PFX violated one or more constraints of <paramref name="loaderLimits" />.</exception>
+      <exception cref="T:System.Security.Cryptography.CryptographicException">
+              An error occurred while loading the PKCS#12/PFX.</exception>
+      <exception cref="T:System.IO.IOException">
+              An error occurred while loading the specified file.</exception>
+      <returns>
+              The loaded certificate.</returns>
+    </member>
+  </members>
+</doc>
