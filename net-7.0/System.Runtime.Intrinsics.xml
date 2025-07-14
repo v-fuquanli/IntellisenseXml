@@ -20581,7 +20581,7 @@
       <typeparam name="T">The type of the elements in the vector.</typeparam>
       <returns>The bitwise-and of <paramref name="left" /> and the ones-complement of <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.Intrinsics.Vector128.As``2(System.Runtime.Intrinsics.Vector128{``0})">
+    <member name="M:System.Runtime.Intrinsics.Vector128.As``2(System.Runtime.Intrinsics.Vector128{T})">
       <summary>Reinterprets a <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> of type <typeparamref name="TFrom" /> as a new <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> of type <typeparamref name="TTo" />.</summary>
       <param name="vector">The vector to reinterpret.</param>
       <typeparam name="TFrom">The type of the input vector.</typeparam>
@@ -22098,7 +22098,7 @@
       <exception cref="T:System.NotSupportedException">The type of <paramref name="left" /> and <paramref name="right" /> (<typeparamref name="T" />) is not supported.</exception>
       <returns>The bitwise-and of <paramref name="left" /> and the ones-complement of <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.Intrinsics.Vector256.As``2(System.Runtime.Intrinsics.Vector256{``0})">
+    <member name="M:System.Runtime.Intrinsics.Vector256.As``2(System.Runtime.Intrinsics.Vector256{T})">
       <summary>Reinterprets a <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> of type <typeparamref name="TFrom" /> as a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> of type <typeparamref name="TTo" />.</summary>
       <param name="vector">The vector to reinterpret.</param>
       <typeparam name="TFrom">The type of the input vector.</typeparam>
@@ -23631,7 +23631,7 @@
       <exception cref="T:System.NotSupportedException">The type of <paramref name="left" /> and <paramref name="right" /> (<typeparamref name="T" />) is not supported.</exception>
       <returns>The bitwise-and of <paramref name="left" /> and the ones-complement of <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.Intrinsics.Vector64.As``2(System.Runtime.Intrinsics.Vector64{``0})">
+    <member name="M:System.Runtime.Intrinsics.Vector64.As``2(System.Runtime.Intrinsics.Vector64{T})">
       <summary>Reinterprets a <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> of type <typeparamref name="TFrom" /> as a new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> of type <typeparamref name="TTo" />.</summary>
       <param name="vector">The vector to reinterpret.</param>
       <typeparam name="TFrom">The type of the input vector.</typeparam>

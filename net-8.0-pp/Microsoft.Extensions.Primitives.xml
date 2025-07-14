@@ -560,7 +560,7 @@
             Initializes a new instance of <see cref="T:Microsoft.Extensions.Primitives.StringTokenizer.Enumerator" />.</summary>
       <returns>An <see cref="T:Microsoft.Extensions.Primitives.StringTokenizer.Enumerator" /> based on the <see cref="T:Microsoft.Extensions.Primitives.StringTokenizer" />'s value and separators.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringTokenizer.System#Collections#Generic#IEnumerable&lt;Microsoft#Extensions#Primitives#StringSegment&gt;#GetEnumerator">
+    <member name="M:Microsoft.Extensions.Primitives.StringTokenizer.System#Collections#Generic#IEnumerable{Microsoft#Extensions#Primitives#StringSegment}#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -856,20 +856,20 @@
       <returns>
         <see langword="true" /> if the value of <paramref name="left" /> is different to the value of <paramref name="right" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection&lt;System#String&gt;#Add(System.String)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection{System#String}#Add(System.String)">
       <summary>Adds an item to the collection.</summary>
       <param name="item">The object to add to the collection.</param>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection&lt;System#String&gt;#Clear">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection{System#String}#Clear">
       <summary>Removes all items from the collection.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection&lt;System#String&gt;#Contains(System.String)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection{System#String}#Contains(System.String)">
       <summary>Determines whether a string is in the <see cref="T:Microsoft.Extensions.Primitives.StringValues" />.</summary>
       <param name="item">The <see cref="T:System.String" /> to locate in the <see cref="T:Microsoft.Extensions.Primitives.StringValues" />.</param>
       <returns>
         <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:Microsoft.Extensions.Primitives.StringValues" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection&lt;System#String&gt;#CopyTo(System.String[],System.Int32)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection{System#String}#CopyTo(System.String[],System.Int32)">
       <summary>
             Copies the entire <see cref="T:Microsoft.Extensions.Primitives.StringValues" />to a string array, starting at the specified index of the target array.</summary>
       <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
@@ -880,7 +880,7 @@
         <paramref name="arrayIndex" /> is less than 0.</exception>
       <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:Microsoft.Extensions.Primitives.StringValues" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection&lt;System#String&gt;#Remove(System.String)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection{System#String}#Remove(System.String)">
       <summary>Removes the first occurrence of a specific object from the collection.</summary>
       <param name="item">The object to remove from the collection.</param>
       <returns>
@@ -890,18 +890,18 @@
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList&lt;System#String&gt;#IndexOf(System.String)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList{System#String}#IndexOf(System.String)">
       <summary>
             Returns the zero-based index of the first occurrence of an item in the <see cref="T:Microsoft.Extensions.Primitives.StringValues" />.</summary>
       <param name="item">The string to locate in the <see cref="T:Microsoft.Extensions.Primitives.StringValues"></see>.</param>
       <returns>The zero-based index of the first occurrence of <paramref name="item" /> within the <see cref="T:Microsoft.Extensions.Primitives.StringValues"></see>, if found; otherwise, -1.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList&lt;System#String&gt;#Insert(System.Int32,System.String)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList{System#String}#Insert(System.Int32,System.String)">
       <summary>Inserts an item to the <see cref="T:System.Collections.Generic.IList`1" /> at the specified index.</summary>
       <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
       <param name="item">The object to insert into the <see cref="T:System.Collections.Generic.IList`1" />.</param>
     </member>
-    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList&lt;System#String&gt;#RemoveAt(System.Int32)">
+    <member name="M:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList{System#String}#RemoveAt(System.Int32)">
       <summary>Removes the <see cref="T:System.Collections.Generic.IList`1" /> item at the specified index.</summary>
       <param name="index">The zero-based index of the item to remove.</param>
     </member>
@@ -930,12 +930,12 @@
       <param name="index">The zero-based index of the element to get.</param>
       <returns>The string at the specified index.</returns>
     </member>
-    <member name="P:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection&lt;System#String&gt;#IsReadOnly">
+    <member name="P:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#ICollection{System#String}#IsReadOnly">
       <summary>Gets a value indicating whether the collection is read-only.</summary>
       <returns>
         <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList&lt;System#String&gt;#Item(System.Int32)">
+    <member name="P:Microsoft.Extensions.Primitives.StringValues.System#Collections#Generic#IList{System#String}#Item(System.Int32)">
       <summary>
             Gets the <see cref="T:System.String" /> at the specified index.</summary>
       <param name="index">The zero-based index of the element to get.</param>

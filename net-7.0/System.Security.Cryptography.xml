@@ -14534,7 +14534,7 @@ The Subject Alternative Name extension or Subject Name could not be decoded.</ex
       <exception cref="T:System.ArgumentNullException">
         <paramref name="certificates" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.System#Collections#Generic#IEnumerable&lt;System#Security#Cryptography#X509Certificates#X509Certificate2&gt;#GetEnumerator">
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.System#Collections#Generic#IEnumerable{System#Security#Cryptography#X509Certificates#X509Certificate2}#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -14815,7 +14815,7 @@ The Subject Alternative Name extension or Subject Name could not be decoded.</ex
       <summary>Gets an <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator" /> object that can be used to navigate through a collection of chain elements.</summary>
       <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator" /> object.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#Generic#IEnumerable&lt;System#Security#Cryptography#X509Certificates#X509ChainElement&gt;#GetEnumerator">
+    <member name="M:System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#Generic#IEnumerable{System#Security#Cryptography#X509Certificates#X509ChainElement}#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
@@ -15187,7 +15187,7 @@ The Subject Alternative Name extension or Subject Name could not be decoded.</ex
       <summary>Returns an enumerator that can iterate through an <see cref="T:System.Security.Cryptography.X509Certificates.X509ExtensionCollection" /> object.</summary>
       <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509ExtensionEnumerator" /> object to use to iterate through the <see cref="T:System.Security.Cryptography.X509Certificates.X509ExtensionCollection" /> object.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509ExtensionCollection.System#Collections#Generic#IEnumerable&lt;System#Security#Cryptography#X509Certificates#X509Extension&gt;#GetEnumerator">
+    <member name="M:System.Security.Cryptography.X509Certificates.X509ExtensionCollection.System#Collections#Generic#IEnumerable{System#Security#Cryptography#X509Certificates#X509Extension}#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>

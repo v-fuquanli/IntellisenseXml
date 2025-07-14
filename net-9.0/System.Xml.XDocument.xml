@@ -1281,7 +1281,7 @@
       <returns>
         <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Xml.Linq.XName.System#IEquatable&lt;System#Xml#Linq#XName&gt;#Equals(System.Xml.Linq.XName)">
+    <member name="M:System.Xml.Linq.XName.System#IEquatable{System#Xml#Linq#XName}#Equals(System.Xml.Linq.XName)">
       <summary>Indicates whether the current <see cref="T:System.Xml.Linq.XName" /> is equal to the specified <see cref="T:System.Xml.Linq.XName" />.</summary>
       <param name="other">The <see cref="T:System.Xml.Linq.XName" /> to compare with this <see cref="T:System.Xml.Linq.XName" />.</param>
       <returns>

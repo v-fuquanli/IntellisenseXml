@@ -534,7 +534,7 @@
             Provides options for configuring the behavior of <see cref="T:Microsoft.Extensions.AI.AIJsonUtilities" /> JSON schema creation functionality.</summary>
     </member>
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.#ctor" />
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.&lt;Clone&gt;$" />
+    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.{Clone}$" />
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.Equals(Microsoft.Extensions.AI.AIJsonSchemaCreateOptions)">
       <summary>Indicates whether the current object is equal to another object of the same type.</summary>
       <param name="other">An object to compare with this object.</param>
@@ -632,7 +632,7 @@
             Provides options for configuring the behavior of <see cref="T:Microsoft.Extensions.AI.AIJsonUtilities" /> JSON schema transformation functionality.</summary>
     </member>
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.#ctor" />
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.&lt;Clone&gt;$" />
+    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.{Clone}$" />
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.Equals(Microsoft.Extensions.AI.AIJsonSchemaTransformOptions)">
       <param name="other" />
     </member>

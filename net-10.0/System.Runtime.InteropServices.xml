@@ -693,7 +693,7 @@
       <typeparam name="TValue">The type of a value.</typeparam>
       <returns>A reference to a <typeparamref name="TValue" /> in the specified dictionary.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.CollectionsMarshal.GetValueRefOrAddDefault``3(System.Collections.Generic.Dictionary`2.AlternateLookup{``0,``1,``2},``2,System.Boolean@)">
+    <member name="M:System.Runtime.InteropServices.CollectionsMarshal.GetValueRefOrAddDefault``3(System.Collections.Generic.Dictionary{``0,``1}.AlternateLookup{``2},``2,System.Boolean@)">
       <summary>Gets a ref to a <typeparamref name="TValue" /> in the <see cref="T:System.Collections.Generic.Dictionary`2.AlternateLookup`1" />, adding a new entry with a default value if it does not exist in the <paramref name="dictionary" />.</summary>
       <param name="dictionary">The dictionary to get the ref to <typeparamref name="TValue" /> from.</param>
       <param name="key">The key used for lookup.</param>
@@ -711,7 +711,7 @@
       <typeparam name="TValue">The type of a value.</typeparam>
       <returns>A reference to a <typeparamref name="TValue" /> in the <see cref="T:System.Collections.Generic.Dictionary`2" /> or a reference <see langword="null" /> if it does not exist in the <paramref name="dictionary" />..</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.CollectionsMarshal.GetValueRefOrNullRef``3(System.Collections.Generic.Dictionary`2.AlternateLookup{``0,``1,``2},``2)">
+    <member name="M:System.Runtime.InteropServices.CollectionsMarshal.GetValueRefOrNullRef``3(System.Collections.Generic.Dictionary{``0,``1}.AlternateLookup{``2},``2)">
       <summary>Gets either a ref to a <typeparamref name="TValue" /> in the <see cref="T:System.Collections.Generic.Dictionary`2" /> or a ref null if it does not exist in the <paramref name="dictionary" />.</summary>
       <param name="dictionary">The dictionary to get the ref to <typeparamref name="TValue" /> from.</param>
       <param name="key">The key used for lookup.</param>
@@ -6380,7 +6380,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <param name="right">The value that's added to <paramref name="left" />.</param>
       <returns>The sum of <paramref name="left" /> and <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.op_CheckedExplicit(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.op_CheckedExplicit(System.Runtime.InteropServices.NFloat)~System.Byte">
       <param name="value" />
     </member>
     <member name="M:System.Runtime.InteropServices.NFloat.op_Decrement(System.Runtime.InteropServices.NFloat)">
@@ -6852,47 +6852,47 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <param name="x">The value whose square-root is to be computed.</param>
       <returns>The square-root of <paramref name="x" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IAdditionOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_CheckedAddition(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IAdditionOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_CheckedAddition(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Adds two values together to compute their sum.</summary>
       <param name="left">The value to which <paramref name="right" /> is added.</param>
       <param name="right">The value that's added to <paramref name="left" />.</param>
       <returns>The sum of <paramref name="left" /> and <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_BitwiseAnd(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_BitwiseAnd(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Computes the bitwise-and of two values.</summary>
       <param name="left">The value to <see langword="and" /> with <paramref name="right" />.</param>
       <param name="right">The value to <see langword="and" /> with <paramref name="left" />.</param>
       <returns>The bitwise-and of <paramref name="left" /> and <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_BitwiseOr(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_BitwiseOr(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Computes the bitwise-or of two values.</summary>
       <param name="left">The value to <see langword="or" /> with <paramref name="right" />.</param>
       <param name="right">The value to <see langword="or" /> with <paramref name="left" />.</param>
       <returns>The bitwise-or of <paramref name="left" /> and <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_ExclusiveOr(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_ExclusiveOr(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Computes the exclusive-or of two values.</summary>
       <param name="left">The value to xor with <paramref name="right" />.</param>
       <param name="right">The value to xor with <paramref name="left" />.</param>
       <returns>The exclusive-or of <paramref name="left" /> and <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_OnesComplement(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IBitwiseOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_OnesComplement(System.Runtime.InteropServices.NFloat)">
       <summary>Computes the ones-complement representation of a given value.</summary>
       <param name="value">The value for which to compute the ones-complement.</param>
       <returns>The ones-complement of <paramref name="value" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IDecrementOperators&lt;System#Runtime#InteropServices#NFloat&gt;#op_CheckedDecrement(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IDecrementOperators{System#Runtime#InteropServices#NFloat}#op_CheckedDecrement(System.Runtime.InteropServices.NFloat)">
       <summary>Decrements a value.</summary>
       <param name="value">The value to decrement.</param>
       <returns>The result of decrementing <paramref name="value" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IDivisionOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_CheckedDivision(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IDivisionOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_CheckedDivision(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Divides two values to compute their quotient.</summary>
       <param name="left">The value that <paramref name="right" /> divides.</param>
       <param name="right">The value that divides <paramref name="left" />.</param>
       <returns>The quotient of <paramref name="left" /> divided by <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IFloatingPoint&lt;System#Runtime#InteropServices#NFloat&gt;#GetExponentByteCount">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IFloatingPoint{System#Runtime#InteropServices#NFloat}#GetExponentByteCount">
       <summary>Gets the number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteExponentLittleEndian(System.Span{System.Byte},System.Int32@)" />.</summary>
       <returns>The number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteExponentLittleEndian(System.Span{System.Byte},System.Int32@)" />.</returns>
     </member>
@@ -6904,7 +6904,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>Gets the length, in bits, of the current significand.</summary>
       <returns>The length, in bits, of the current significand.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IFloatingPoint&lt;System#Runtime#InteropServices#NFloat&gt;#GetSignificandByteCount">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IFloatingPoint{System#Runtime#InteropServices#NFloat}#GetSignificandByteCount">
       <summary>Gets the number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteSignificandLittleEndian(System.Span{System.Byte},System.Int32@)" />.</summary>
       <returns>The number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteSignificandLittleEndian(System.Span{System.Byte},System.Int32@)" />.</returns>
     </member>
@@ -6936,57 +6936,57 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the significand was succesfully written to <paramref name="destination" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IIncrementOperators&lt;System#Runtime#InteropServices#NFloat&gt;#op_CheckedIncrement(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IIncrementOperators{System#Runtime#InteropServices#NFloat}#op_CheckedIncrement(System.Runtime.InteropServices.NFloat)">
       <summary>Increments a value.</summary>
       <param name="value">The value to increment.</param>
       <returns>The result of incrementing <paramref name="value" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IMultiplyOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_CheckedMultiply(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IMultiplyOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_CheckedMultiply(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Multiplies two values to compute their product.</summary>
       <param name="left">The value that <paramref name="right" /> multiplies.</param>
       <param name="right">The value that multiplies <paramref name="left" />.</param>
       <returns>The product of <paramref name="left" /> multiplied by <paramref name="right" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#IsCanonical(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#IsCanonical(System.Runtime.InteropServices.NFloat)">
       <summary>Determines if a value is in its canonical representation.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is in its canonical representation; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#IsComplexNumber(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#IsComplexNumber(System.Runtime.InteropServices.NFloat)">
       <summary>Determines if a value represents a complex number.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is a complex number; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#IsImaginaryNumber(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#IsImaginaryNumber(System.Runtime.InteropServices.NFloat)">
       <summary>Determines if a value represents a pure imaginary number.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is a pure imaginary number; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#IsZero(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#IsZero(System.Runtime.InteropServices.NFloat)">
       <summary>Determines if a value is zero.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is zero; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#TryConvertFromChecked``1(``0,System.Runtime.InteropServices.NFloat@)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#TryConvertFromChecked``1(``0,System.Runtime.InteropServices.NFloat@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#TryConvertFromSaturating``1(``0,System.Runtime.InteropServices.NFloat@)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#TryConvertFromSaturating``1(``0,System.Runtime.InteropServices.NFloat@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#TryConvertFromTruncating``1(``0,System.Runtime.InteropServices.NFloat@)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#TryConvertFromTruncating``1(``0,System.Runtime.InteropServices.NFloat@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#TryConvertToChecked``1(System.Runtime.InteropServices.NFloat,``0@)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#TryConvertToChecked``1(System.Runtime.InteropServices.NFloat,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, throwing an overflow exception for any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that's used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -6994,7 +6994,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#TryConvertToSaturating``1(System.Runtime.InteropServices.NFloat,``0@)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#TryConvertToSaturating``1(System.Runtime.InteropServices.NFloat,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, saturating any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that's used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -7002,7 +7002,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#TryConvertToTruncating``1(System.Runtime.InteropServices.NFloat,``0@)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#TryConvertToTruncating``1(System.Runtime.InteropServices.NFloat,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, truncating any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that's used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -7010,13 +7010,13 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#ISubtractionOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_CheckedSubtraction(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#ISubtractionOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_CheckedSubtraction(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)">
       <summary>Subtracts two values to compute their difference.</summary>
       <param name="left">The value from which <paramref name="right" /> is subtracted.</param>
       <param name="right">The value that's subtracted from <paramref name="left" />.</param>
       <returns>The value of <paramref name="right" /> subtracted from <paramref name="left" />.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IUnaryNegationOperators&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#op_CheckedUnaryNegation(System.Runtime.InteropServices.NFloat)">
+    <member name="M:System.Runtime.InteropServices.NFloat.System#Numerics#IUnaryNegationOperators{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#op_CheckedUnaryNegation(System.Runtime.InteropServices.NFloat)">
       <summary>Computes the checked unary negation of a value.</summary>
       <param name="value">The value for which to compute the unary negation.</param>
       <returns>The unary negation of <paramref name="value" />.</returns>
@@ -7197,25 +7197,25 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="P:System.Runtime.InteropServices.NFloat.Size">
       <summary>Gets the size, in bytes, of an NFloat.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#IAdditiveIdentity&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#AdditiveIdentity">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#IAdditiveIdentity{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#AdditiveIdentity">
       <summary>Gets the additive identity of the current type.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#IBinaryNumber&lt;System#Runtime#InteropServices#NFloat&gt;#AllBitsSet">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#IBinaryNumber{System#Runtime#InteropServices#NFloat}#AllBitsSet">
       <summary>Gets an instance of the binary type in which all bits are set.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#IMultiplicativeIdentity&lt;System#Runtime#InteropServices#NFloat,System#Runtime#InteropServices#NFloat&gt;#MultiplicativeIdentity">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#IMultiplicativeIdentity{System#Runtime#InteropServices#NFloat@System#Runtime#InteropServices#NFloat}#MultiplicativeIdentity">
       <summary>Gets the multiplicative identity of the current type.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#One">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#One">
       <summary>Gets the value <c>1</c> for the type.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#Radix">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#Radix">
       <summary>Gets the radix, or base, for the type.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase&lt;System#Runtime#InteropServices#NFloat&gt;#Zero">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#INumberBase{System#Runtime#InteropServices#NFloat}#Zero">
       <summary>Gets the value <c>0</c> for the type.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#ISignedNumber&lt;System#Runtime#InteropServices#NFloat&gt;#NegativeOne">
+    <member name="P:System.Runtime.InteropServices.NFloat.System#Numerics#ISignedNumber{System#Runtime#InteropServices#NFloat}#NegativeOne">
       <summary>Gets the value <c>-1</c> for the type.</summary>
     </member>
     <member name="P:System.Runtime.InteropServices.NFloat.Tau">
@@ -7234,7 +7234,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <exception cref="T:System.InvalidOperationException">The ObjectiveCMarshal API has not been initialized.</exception>
       <returns>Reference tracking GC handle.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.Initialize(=FUNC:System.Void,=FUNC:System.Int32(System.IntPtr),=FUNC:System.Void(System.IntPtr),System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.UnhandledExceptionPropagationHandler)">
+    <member name="M:System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.Initialize(delegate* unmanaged{System.Void},delegate* unmanaged{System.IntPtr, System.Int32},delegate* unmanaged{System.IntPtr, System.Void},System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.UnhandledExceptionPropagationHandler)">
       <summary>Initialize the Objective-C marshalling API.</summary>
       <param name="beginEndCallback">Called when tracking begins and ends.</param>
       <param name="isReferencedCallback">Called to determine if a managed object instance is referenced elsewhere, and must not be collected by the GC.</param>

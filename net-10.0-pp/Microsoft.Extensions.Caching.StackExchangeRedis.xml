@@ -95,7 +95,7 @@
     <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.InstanceName">
       <summary>The Redis instance name.</summary>
     </member>
-    <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.Microsoft#Extensions#Options#IOptions&lt;Microsoft#Extensions#Caching#StackExchangeRedis#RedisCacheOptions&gt;#Value">
+    <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.Microsoft#Extensions#Options#IOptions{Microsoft#Extensions#Caching#StackExchangeRedis#RedisCacheOptions}#Value">
       <summary>Gets the default configured <typeparamref name="TOptions" /> instance.</summary>
       <returns>An object that represents the Redis cache options.</returns>
     </member>

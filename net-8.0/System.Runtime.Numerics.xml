@@ -951,7 +951,7 @@
       <param name="right">The value to subtract (the subtrahend).</param>
       <returns>The result of subtracting <paramref name="right" /> from <paramref name="left" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#IBinaryInteger&lt;System#Numerics#BigInteger&gt;#GetByteCount">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#IBinaryInteger{System#Numerics#BigInteger}#GetByteCount">
       <summary>Gets the number of bytes that will be written as part of <see cref="M:System.Numerics.IBinaryInteger`1.TryWriteLittleEndian(System.Span{System.Byte},System.Int32@)" />.</summary>
       <returns>The number of bytes that will be written as part of <see cref="M:System.Numerics.IBinaryInteger`1.TryWriteLittleEndian(System.Span{System.Byte},System.Int32@)" />.</returns>
     </member>
@@ -959,12 +959,12 @@
       <summary>Gets the length, in bits, of the shortest two's complement representation of the current value.</summary>
       <returns>The length, in bits, of the shortest two's complement representation of the current value.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#IBinaryInteger&lt;System#Numerics#BigInteger&gt;#TryReadBigEndian(System.ReadOnlySpan{System.Byte},System.Boolean,System.Numerics.BigInteger@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#IBinaryInteger{System#Numerics#BigInteger}#TryReadBigEndian(System.ReadOnlySpan{System.Byte},System.Boolean,System.Numerics.BigInteger@)">
       <param name="source" />
       <param name="isUnsigned" />
       <param name="value" />
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#IBinaryInteger&lt;System#Numerics#BigInteger&gt;#TryReadLittleEndian(System.ReadOnlySpan{System.Byte},System.Boolean,System.Numerics.BigInteger@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#IBinaryInteger{System#Numerics#BigInteger}#TryReadLittleEndian(System.ReadOnlySpan{System.Byte},System.Boolean,System.Numerics.BigInteger@)">
       <param name="source" />
       <param name="isUnsigned" />
       <param name="value" />
@@ -983,133 +983,133 @@
       <returns>
         <see langword="true" /> if the value was succesfully written to <paramref name="destination" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumber&lt;System#Numerics#BigInteger&gt;#MaxNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumber{System#Numerics#BigInteger}#MaxNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
       <summary>Compares two values to compute which is greater and returns the other value if one input is <c>NaN</c>.</summary>
       <param name="x">The value to compare with <paramref name="y" />.</param>
       <param name="y">The value to compare with <paramref name="x" />.</param>
       <returns>
         <paramref name="x" /> if it is greater than <paramref name="y" />; otherwise, <paramref name="y" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumber&lt;System#Numerics#BigInteger&gt;#MinNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumber{System#Numerics#BigInteger}#MinNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
       <summary>Compares two values to compute which is lesser and returns the other value if one input is <c>NaN</c>.</summary>
       <param name="x">The value to compare with <paramref name="y" />.</param>
       <param name="y">The value to compare with <paramref name="x" />.</param>
       <returns>
         <paramref name="x" /> if it is less than <paramref name="y" />; otherwise, <paramref name="y" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumber&lt;System#Numerics#BigInteger&gt;#Sign(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumber{System#Numerics#BigInteger}#Sign(System.Numerics.BigInteger)">
       <summary>Computes the sign of a value.</summary>
       <param name="value">The value whose sign is to be computed.</param>
       <returns>A positive value if <paramref name="value" /> is positive, <see cref="P:System.Numerics.INumberBase`1.Zero" /> if <paramref name="value" /> is zero, and a negative value if <paramref name="value" /> is negative.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsCanonical(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsCanonical(System.Numerics.BigInteger)">
       <summary>Determines if a value is in its canonical representation.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is in its canonical representation; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsComplexNumber(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsComplexNumber(System.Numerics.BigInteger)">
       <summary>Determines if a value represents a complex number.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is a complex number; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsFinite(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsFinite(System.Numerics.BigInteger)">
       <summary>Determines if a value is finite.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is finite; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsImaginaryNumber(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsImaginaryNumber(System.Numerics.BigInteger)">
       <summary>Determines if a value represents a pure imaginary number.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is a pure imaginary number; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsInfinity(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsInfinity(System.Numerics.BigInteger)">
       <summary>Determines if a value is infinite.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is infinite; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsInteger(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsInteger(System.Numerics.BigInteger)">
       <summary>Determines if a value represents an integral number.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is an integer; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsNaN(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsNaN(System.Numerics.BigInteger)">
       <summary>Determines if a value is NaN.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is NaN; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsNegativeInfinity(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsNegativeInfinity(System.Numerics.BigInteger)">
       <summary>Determines if a value is negative infinity.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is negative infinity; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsNormal(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsNormal(System.Numerics.BigInteger)">
       <summary>Determines if a value is normal.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is normal; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsPositiveInfinity(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsPositiveInfinity(System.Numerics.BigInteger)">
       <summary>Determines if a value is positive infinity.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is positive infinity; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsRealNumber(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsRealNumber(System.Numerics.BigInteger)">
       <summary>Determines if a value represents a real number.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is a real number; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsSubnormal(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsSubnormal(System.Numerics.BigInteger)">
       <summary>Determines if a value is subnormal.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is subnormal; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#IsZero(System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#IsZero(System.Numerics.BigInteger)">
       <summary>Determines if a value is zero.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is zero; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#MaxMagnitudeNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#MaxMagnitudeNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
       <summary>Compares two values to compute which has the greater magnitude and returns the other value if one input is <c>NaN</c>.</summary>
       <param name="x">The value to compare with <paramref name="y" />.</param>
       <param name="y">The value to compare with <paramref name="x" />.</param>
       <returns>
         <paramref name="x" /> if it is greater than <paramref name="y" />; otherwise, <paramref name="y" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#MinMagnitudeNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#MinMagnitudeNumber(System.Numerics.BigInteger,System.Numerics.BigInteger)">
       <summary>Compares two values to compute which has the lesser magnitude and returns the other value if one input is <c>NaN</c>.</summary>
       <param name="x">The value to compare with <paramref name="y" />.</param>
       <param name="y">The value to compare with <paramref name="x" />.</param>
       <returns>
         <paramref name="x" /> if it is less than <paramref name="y" />; otherwise, <paramref name="y" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#TryConvertFromChecked``1(``0,System.Numerics.BigInteger@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#TryConvertFromChecked``1(``0,System.Numerics.BigInteger@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#TryConvertFromSaturating``1(``0,System.Numerics.BigInteger@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#TryConvertFromSaturating``1(``0,System.Numerics.BigInteger@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#TryConvertFromTruncating``1(``0,System.Numerics.BigInteger@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#TryConvertFromTruncating``1(``0,System.Numerics.BigInteger@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#TryConvertToChecked``1(System.Numerics.BigInteger,``0@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#TryConvertToChecked``1(System.Numerics.BigInteger,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, throwing an overflow exception for any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that is used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -1117,7 +1117,7 @@
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#TryConvertToSaturating``1(System.Numerics.BigInteger,``0@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#TryConvertToSaturating``1(System.Numerics.BigInteger,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, saturating any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that is used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -1125,7 +1125,7 @@
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#TryConvertToTruncating``1(System.Numerics.BigInteger,``0@)">
+    <member name="M:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#TryConvertToTruncating``1(System.Numerics.BigInteger,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, truncating any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that is used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -1293,19 +1293,19 @@
 
  <list type="table"><listheader><term> Number</term><description> Description</description></listheader><item><term> -1</term><description> The value of this object is negative.</description></item><item><term> 0</term><description> The value of this object is 0 (zero).</description></item><item><term> 1</term><description> The value of this object is positive.</description></item></list></returns>
     </member>
-    <member name="P:System.Numerics.BigInteger.System#Numerics#IAdditiveIdentity&lt;System#Numerics#BigInteger,System#Numerics#BigInteger&gt;#AdditiveIdentity">
+    <member name="P:System.Numerics.BigInteger.System#Numerics#IAdditiveIdentity{System#Numerics#BigInteger@System#Numerics#BigInteger}#AdditiveIdentity">
       <summary>Gets the additive identity of the current type.</summary>
     </member>
-    <member name="P:System.Numerics.BigInteger.System#Numerics#IBinaryNumber&lt;System#Numerics#BigInteger&gt;#AllBitsSet">
+    <member name="P:System.Numerics.BigInteger.System#Numerics#IBinaryNumber{System#Numerics#BigInteger}#AllBitsSet">
       <summary>Gets an instance of the binary type in which all bits are set.</summary>
     </member>
-    <member name="P:System.Numerics.BigInteger.System#Numerics#IMultiplicativeIdentity&lt;System#Numerics#BigInteger,System#Numerics#BigInteger&gt;#MultiplicativeIdentity">
+    <member name="P:System.Numerics.BigInteger.System#Numerics#IMultiplicativeIdentity{System#Numerics#BigInteger@System#Numerics#BigInteger}#MultiplicativeIdentity">
       <summary>Gets the multiplicative identity of the current type.</summary>
     </member>
-    <member name="P:System.Numerics.BigInteger.System#Numerics#INumberBase&lt;System#Numerics#BigInteger&gt;#Radix">
+    <member name="P:System.Numerics.BigInteger.System#Numerics#INumberBase{System#Numerics#BigInteger}#Radix">
       <summary>Gets the radix, or base, for the type.</summary>
     </member>
-    <member name="P:System.Numerics.BigInteger.System#Numerics#ISignedNumber&lt;System#Numerics#BigInteger&gt;#NegativeOne">
+    <member name="P:System.Numerics.BigInteger.System#Numerics#ISignedNumber{System#Numerics#BigInteger}#NegativeOne">
       <summary>Gets the value <c>-1</c> for the type.</summary>
     </member>
     <member name="P:System.Numerics.BigInteger.Zero">
@@ -1880,53 +1880,53 @@ This API is not CLS-compliant.</summary>
       <param name="right">The value to subtract (the subtrahend).</param>
       <returns>The result of subtracting <paramref name="right" /> from <paramref name="left" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#Abs(System.Numerics.Complex)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#Abs(System.Numerics.Complex)">
       <summary>Computes the absolute of a value.</summary>
       <param name="value">The value for which to get its absolute.</param>
       <returns>The absolute of <paramref name="value" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#IsCanonical(System.Numerics.Complex)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#IsCanonical(System.Numerics.Complex)">
       <summary>Determines if a value is in its canonical representation.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is in its canonical representation; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#IsZero(System.Numerics.Complex)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#IsZero(System.Numerics.Complex)">
       <summary>Determines if a value is zero.</summary>
       <param name="value">The value to be checked.</param>
       <returns>
         <see langword="true" /> if <paramref name="value" /> is zero; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#MaxMagnitudeNumber(System.Numerics.Complex,System.Numerics.Complex)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#MaxMagnitudeNumber(System.Numerics.Complex,System.Numerics.Complex)">
       <summary>Compares two values to compute which has the greater magnitude and returning the other value if an input is <c>NaN</c>.</summary>
       <param name="x">The value to compare with <paramref name="y" />.</param>
       <param name="y">The value to compare with <paramref name="x" />.</param>
       <returns>
         <paramref name="x" /> if it is greater than <paramref name="y" />; otherwise, <paramref name="y" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#MinMagnitudeNumber(System.Numerics.Complex,System.Numerics.Complex)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#MinMagnitudeNumber(System.Numerics.Complex,System.Numerics.Complex)">
       <summary>Compares two values to compute which has the lesser magnitude and returning the other value if an input is <c>NaN</c>.</summary>
       <param name="x">The value to compare with <paramref name="y" />.</param>
       <param name="y">The value to compare with <paramref name="x" />.</param>
       <returns>
         <paramref name="x" /> if it is less than <paramref name="y" />; otherwise, <paramref name="y" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#TryConvertFromChecked``1(``0,System.Numerics.Complex@)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#TryConvertFromChecked``1(``0,System.Numerics.Complex@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#TryConvertFromSaturating``1(``0,System.Numerics.Complex@)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#TryConvertFromSaturating``1(``0,System.Numerics.Complex@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#TryConvertFromTruncating``1(``0,System.Numerics.Complex@)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#TryConvertFromTruncating``1(``0,System.Numerics.Complex@)">
       <param name="value" />
       <param name="result" />
       <typeparam name="TOther" />
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#TryConvertToChecked``1(System.Numerics.Complex,``0@)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#TryConvertToChecked``1(System.Numerics.Complex,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, throwing an overflow exception for any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that is used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -1934,7 +1934,7 @@ This API is not CLS-compliant.</summary>
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#TryConvertToSaturating``1(System.Numerics.Complex,``0@)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#TryConvertToSaturating``1(System.Numerics.Complex,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, saturating any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that is used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -1942,7 +1942,7 @@ This API is not CLS-compliant.</summary>
       <returns>
         <see langword="false" /> if <typeparamref name="TOther" /> is not supported; otherwise, <see langword="true" />.</returns>
     </member>
-    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#TryConvertToTruncating``1(System.Numerics.Complex,``0@)">
+    <member name="M:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#TryConvertToTruncating``1(System.Numerics.Complex,``0@)">
       <summary>Tries to convert an instance of the the current type to another type, truncating any values that fall outside the representable range of the current type.</summary>
       <param name="value">The value that is used to create the instance of <typeparamref name="TOther" />.</param>
       <param name="result">When this method returns, contains an instance of <typeparamref name="TOther" /> converted from <paramref name="value" />.</param>
@@ -2049,22 +2049,22 @@ This API is not CLS-compliant.</summary>
       <summary>Gets the real component of the current <see cref="T:System.Numerics.Complex" /> object.</summary>
       <returns>The real component of a complex number.</returns>
     </member>
-    <member name="P:System.Numerics.Complex.System#Numerics#IAdditiveIdentity&lt;System#Numerics#Complex,System#Numerics#Complex&gt;#AdditiveIdentity">
+    <member name="P:System.Numerics.Complex.System#Numerics#IAdditiveIdentity{System#Numerics#Complex@System#Numerics#Complex}#AdditiveIdentity">
       <summary>Gets the additive identity of the current type.</summary>
     </member>
-    <member name="P:System.Numerics.Complex.System#Numerics#IMultiplicativeIdentity&lt;System#Numerics#Complex,System#Numerics#Complex&gt;#MultiplicativeIdentity">
+    <member name="P:System.Numerics.Complex.System#Numerics#IMultiplicativeIdentity{System#Numerics#Complex@System#Numerics#Complex}#MultiplicativeIdentity">
       <summary>Gets the multiplicative identity of the current type.</summary>
     </member>
-    <member name="P:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#One">
+    <member name="P:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#One">
       <summary>Gets the value <c>1</c> for the type.</summary>
     </member>
-    <member name="P:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#Radix">
+    <member name="P:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#Radix">
       <summary>Gets the radix, or base, for the type.</summary>
     </member>
-    <member name="P:System.Numerics.Complex.System#Numerics#INumberBase&lt;System#Numerics#Complex&gt;#Zero">
+    <member name="P:System.Numerics.Complex.System#Numerics#INumberBase{System#Numerics#Complex}#Zero">
       <summary>Gets the value <c>0</c> for the type.</summary>
     </member>
-    <member name="P:System.Numerics.Complex.System#Numerics#ISignedNumber&lt;System#Numerics#Complex&gt;#NegativeOne">
+    <member name="P:System.Numerics.Complex.System#Numerics#ISignedNumber{System#Numerics#Complex}#NegativeOne">
       <summary>Gets the value <c>-1</c> for the type.</summary>
     </member>
   </members>

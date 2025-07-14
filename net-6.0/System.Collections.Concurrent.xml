@@ -113,7 +113,7 @@
       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that removes and returns items from the collection.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator">
+    <member name="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
       <summary>Provides an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for items in the collection.</summary>
       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the items in the collection.</returns>
@@ -486,7 +486,7 @@
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
       <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentBag`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryAdd(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentBag`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
       <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</summary>
       <param name="item">The object to be added to the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
       <returns>Always returns true.</returns>
@@ -678,20 +678,20 @@
       <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
       <returns>The value for the key. This will be either the existing value for the key if the key is already in the dictionary, or the new value if the key was not in the dictionary.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Adds an item to the collection.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to add to the dictionary.</param>
       <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Collections.Generic.KeyValuePair`2.Key" /> of <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
       <exception cref="T:System.OverflowException">The <see cref="T:System.Collections.Generic.Dictionary`2" /> contains too many elements.</exception>
       <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Gets whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key.</summary>
       <param name="keyValuePair">The key to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
       <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an array, starting at the specified array index.</summary>
       <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing.</param>
       <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
@@ -706,14 +706,14 @@
 
 The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
       <summary>Removes the specified key/value pair from the collection.</summary>
       <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to remove.</param>
       <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Collections.Generic.KeyValuePair`2.Key" /> property of <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
       <returns>
         <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns false if the key was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Add(`0,`1)">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Add(`0,`1)">
       <summary>Adds the specified key and value to the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <param name="key">The object to use as the key of the element to add.</param>
       <param name="value">The object to use as the value of the element to add.</param>
@@ -722,7 +722,7 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</exception>
       <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Remove(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey@TValue}#Remove(`0)">
       <summary>Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <param name="key">The key of the element to remove.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -860,16 +860,16 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A collection of keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly">
+    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey@TValue}}#IsReadOnly">
       <summary>Gets a value that indicates whether the <see cref="T:System.Collections.ICollection" /> is read-only.</summary>
       <returns>
         <see langword="true" /> if the <see cref="T:System.Collections.ICollection" /> is read-only; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys">
+    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Keys">
       <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
-    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values">
+    <member name="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey@TValue}#Values">
       <summary>Gets a collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
       <returns>A collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
     </member>
@@ -947,13 +947,13 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</summary>
       <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryAdd(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
       <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
       <returns>
         <see langword="true" /> if the object was added successfully; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryTake(`0@)">
+    <member name="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)">
       <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">When this method returns, if the operation was successful, <paramref name="item" /> contains the object removed. If no object was available to be removed, the value is unspecified.</param>
       <returns>
@@ -1060,13 +1060,13 @@ The number of elements in the source <see cref="T:System.Collections.ICollection
       <exception cref="T:System.ArgumentNullException">
         <paramref name="items" /> is a null reference (Nothing in Visual Basic).</exception>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryAdd(`0)">
+    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
       <summary>Attempts to add an object to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">The object to add to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
       <returns>
         <see langword="true" /> if the object was added successfully; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryTake(`0@)">
+    <member name="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)">
       <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
       <param name="item">When this method returns, if the operation was successful, <paramref name="item" /> contains the object removed. If no object was available to be removed, the value is unspecified.</param>
       <returns>

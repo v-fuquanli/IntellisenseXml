@@ -362,7 +362,7 @@
       <param name="builder">The <see cref="T:Microsoft.Extensions.Logging.ILoggingBuilder" /> to remove <see cref="T:Microsoft.Extensions.Logging.ILoggerProvider" />s from.</param>
       <returns>The <see cref="T:Microsoft.Extensions.Logging.ILoggingBuilder" /> so that additional calls can be chained.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.LoggingBuilderExtensions.Configure(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{Microsoft.Extensions.Logging.LoggerFactoryOptions})">
+    <member name="M:Microsoft.Extensions.Logging.LoggingBuilderExtensions.Configure">
       <summary>Configures the current logging builder instance with the specified logger factory options.</summary>
       <returns>The configured logging builder instance so that additional calls can be chained.</returns>
     </member>

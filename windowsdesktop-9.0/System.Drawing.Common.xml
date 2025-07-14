@@ -11970,7 +11970,7 @@ The <see cref="T:System.Drawing.Graphics" /> object has a transform applied othe
       <summary>Returns an enumerator that can iterate through the collection.</summary>
       <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Drawing.Printing.PrinterSettings.StringCollection" />.</returns>
     </member>
-    <member name="M:System.Drawing.Printing.PrinterSettings.StringCollection.System#Collections#Generic#IEnumerable&lt;System#String&gt;#GetEnumerator">
+    <member name="M:System.Drawing.Printing.PrinterSettings.StringCollection.System#Collections#Generic#IEnumerable{System#String}#GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>

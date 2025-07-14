@@ -177,7 +177,7 @@
       <summary>
             Gets or sets the minimum length of time between successive scans for expired items.</summary>
     </member>
-    <member name="P:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.Microsoft#Extensions#Options#IOptions&lt;Microsoft#Extensions#Caching#Memory#MemoryCacheOptions&gt;#Value">
+    <member name="P:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.Microsoft#Extensions#Options#IOptions{Microsoft#Extensions#Caching#Memory#MemoryCacheOptions}#Value">
       <summary>Gets the default configured <typeparamref name="TOptions" /> instance.</summary>
     </member>
     <member name="P:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.SizeLimit">

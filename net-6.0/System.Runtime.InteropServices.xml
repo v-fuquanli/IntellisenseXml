@@ -5058,7 +5058,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <exception cref="T:System.InvalidOperationException">The ObjectiveCMarshal API has not been initialized.</exception>
       <returns>Reference tracking GC handle.</returns>
     </member>
-    <member name="M:System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.Initialize(=FUNC:System.Void,=FUNC:System.Int32(System.IntPtr),=FUNC:System.Void(System.IntPtr),System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.UnhandledExceptionPropagationHandler)">
+    <member name="M:System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.Initialize(delegate* unmanaged{System.Void},delegate* unmanaged{System.IntPtr, System.Int32},delegate* unmanaged{System.IntPtr, System.Void},System.Runtime.InteropServices.ObjectiveC.ObjectiveCMarshal.UnhandledExceptionPropagationHandler)">
       <summary>Initialize the Objective-C marshalling API.</summary>
       <param name="beginEndCallback">Called when tracking begins and ends.</param>
       <param name="isReferencedCallback">Called to determine if a managed object instance is referenced elsewhere, and must not be collected by the GC.</param>

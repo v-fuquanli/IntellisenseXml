@@ -294,7 +294,7 @@
       <returns>
         <see langword="true" /> if <paramref name="cookie" /> was successfully removed from the <see cref="T:System.Net.CookieCollection" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if item is not found in the original collection.</returns>
     </member>
-    <member name="M:System.Net.CookieCollection.System#Collections#Generic#IEnumerable&lt;System#Net#Cookie&gt;#GetEnumerator">
+    <member name="M:System.Net.CookieCollection.System#Collections#Generic#IEnumerable{System#Net#Cookie}#GetEnumerator">
       <summary>Gets an enumerator that can iterate through the <see cref="T:System.Net.CookieCollection" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for this collection.</returns>
     </member>
@@ -1074,13 +1074,13 @@
  A <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
       <returns>The value of the current instance in the specified format.</returns>
     </member>
-    <member name="M:System.Net.IPAddress.System#IParsable&lt;System#Net#IPAddress&gt;#Parse(System.String,System.IFormatProvider)">
+    <member name="M:System.Net.IPAddress.System#IParsable{System#Net#IPAddress}#Parse(System.String,System.IFormatProvider)">
       <summary>Parses a string into a value.</summary>
       <param name="s">The string to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
       <returns>The result of parsing <paramref name="s" />.</returns>
     </member>
-    <member name="M:System.Net.IPAddress.System#IParsable&lt;System#Net#IPAddress&gt;#TryParse(System.String,System.IFormatProvider,System.Net.IPAddress@)">
+    <member name="M:System.Net.IPAddress.System#IParsable{System#Net#IPAddress}#TryParse(System.String,System.IFormatProvider,System.Net.IPAddress@)">
       <summary>Tries to parse a string into an <see cref="T:System.Net.IPAddress" />.</summary>
       <param name="s">The string to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
@@ -1097,13 +1097,13 @@
       <returns>
         <see langword="true" /> if the formatting was successful; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Net.IPAddress.System#ISpanParsable&lt;System#Net#IPAddress&gt;#Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
+    <member name="M:System.Net.IPAddress.System#ISpanParsable{System#Net#IPAddress}#Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
       <summary>Parses a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
       <returns>The result of parsing <paramref name="s" />.</returns>
     </member>
-    <member name="M:System.Net.IPAddress.System#ISpanParsable&lt;System#Net#IPAddress&gt;#TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Net.IPAddress@)">
+    <member name="M:System.Net.IPAddress.System#ISpanParsable{System#Net#IPAddress}#TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Net.IPAddress@)">
       <summary>Tries to parse a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
@@ -1394,13 +1394,13 @@ The scope identifier is &gt; 0x00000000FFFFFFFF</exception>
  A <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
       <returns>The value of the current instance in the specified format.</returns>
     </member>
-    <member name="M:System.Net.IPNetwork.System#IParsable&lt;System#Net#IPNetwork&gt;#Parse(System.String,System.IFormatProvider)">
+    <member name="M:System.Net.IPNetwork.System#IParsable{System#Net#IPNetwork}#Parse(System.String,System.IFormatProvider)">
       <summary>Parses a string into a value.</summary>
       <param name="s">The string to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
       <returns>The result of parsing <paramref name="s" />.</returns>
     </member>
-    <member name="M:System.Net.IPNetwork.System#IParsable&lt;System#Net#IPNetwork&gt;#TryParse(System.String,System.IFormatProvider,System.Net.IPNetwork@)">
+    <member name="M:System.Net.IPNetwork.System#IParsable{System#Net#IPNetwork}#TryParse(System.String,System.IFormatProvider,System.Net.IPNetwork@)">
       <summary>Tries to parse a string into an <see cref="T:System.Net.IPNetwork" />.</summary>
       <param name="s">The string to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
@@ -1417,13 +1417,13 @@ The scope identifier is &gt; 0x00000000FFFFFFFF</exception>
       <returns>
         <see langword="true" /> if the formatting was successful; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Net.IPNetwork.System#ISpanParsable&lt;System#Net#IPNetwork&gt;#Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
+    <member name="M:System.Net.IPNetwork.System#ISpanParsable{System#Net#IPNetwork}#Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
       <summary>Parses a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>
       <returns>The result of parsing <paramref name="s" />.</returns>
     </member>
-    <member name="M:System.Net.IPNetwork.System#ISpanParsable&lt;System#Net#IPNetwork&gt;#TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Net.IPNetwork@)">
+    <member name="M:System.Net.IPNetwork.System#ISpanParsable{System#Net#IPNetwork}#TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Net.IPNetwork@)">
       <summary>Tries to parse a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
       <param name="provider">An object that provides culture-specific formatting information about <paramref name="s" />.</param>

@@ -1294,7 +1294,7 @@ There are too many levels of symbolic links.</exception>
       <summary>Allows utilizing custom filter predicates and transform delegates for enumeration purposes.</summary>
       <typeparam name="TResult">The type that this enumerable encapsulates.</typeparam>
     </member>
-    <member name="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable`1.FindTransform{`0},System.IO.EnumerationOptions)">
+    <member name="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable{`0}.FindTransform,System.IO.EnumerationOptions)">
       <summary>Initializes a new instance of the <see cref="T:System.IO.Enumeration.FileSystemEnumerable`1" /> class with specific search and filtering options.</summary>
       <param name="directory">The path of the directory where the enumeration will be performed.</param>
       <param name="transform">A delegate method for transforming raw find data into a result.</param>

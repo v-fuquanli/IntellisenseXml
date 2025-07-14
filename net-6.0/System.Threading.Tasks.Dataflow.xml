@@ -57,7 +57,7 @@
       <exception cref="T:System.ArgumentNullException">
         <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;TInput&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{TInput}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the dataflow block, and gives it the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">The header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>
@@ -124,7 +124,7 @@
       <param name="exception">The <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T[]&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0[]},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T[]}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0[]},System.Boolean@)">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> .</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
@@ -136,7 +136,7 @@
   
  If the message requested is not available, the return value will be <see langword="null" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T[]&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0[]})">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T[]}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0[]})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
@@ -144,7 +144,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T[]&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0[]})">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T[]}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0[]})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
@@ -153,7 +153,7 @@
       <returns>
         <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;T&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{T}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>
@@ -237,7 +237,7 @@
       <param name="exception">The <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;System#Collections#Generic#IList&lt;T1&gt;,System#Collections#Generic#IList&lt;T2&gt;&gt;&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{System#Collections#Generic#IList{T1}@System#Collections#Generic#IList{T2}}}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}},System.Boolean@)">
       <summary>Passes the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> instance to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be consumed.</param>
@@ -247,7 +247,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <returns>The value of the consumed message. This may correspond to a different <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance than was previously reserved and passed as the <paramref name="messageHeader" /> to this method. The consuming <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> must use the returned value instead of the value passed as <paramref name="messageValue" /> to <see cref="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />. If the message requested is not available, the return value is <see langword="null" /> (<see langword="Nothing" /> in Visual Basic).</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;System#Collections#Generic#IList&lt;T1&gt;,System#Collections#Generic#IList&lt;T2&gt;&gt;&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}})">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{System#Collections#Generic#IList{T1}@System#Collections#Generic#IList{T2}}}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}})">
       <summary>Releases the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> that currently holds the reservation.</param>
@@ -255,7 +255,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;System#Collections#Generic#IList&lt;T1&gt;,System#Collections#Generic#IList&lt;T2&gt;&gt;&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}})">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{System#Collections#Generic#IList{T1}@System#Collections#Generic#IList{T2}}}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}})">
       <summary>Reserves the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be reserved.</param>
@@ -336,7 +336,7 @@
       <param name="exception">The <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;System#Collections#Generic#IList&lt;T1&gt;,System#Collections#Generic#IList&lt;T2&gt;,System#Collections#Generic#IList&lt;T3&gt;&gt;&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1},System.Collections.Generic.IList{`2}}},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{System#Collections#Generic#IList{T1}@System#Collections#Generic#IList{T2}@System#Collections#Generic#IList{T3}}}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1},System.Collections.Generic.IList{`2}}},System.Boolean@)">
       <summary>Passes the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> instance to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be consumed.</param>
@@ -346,7 +346,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <returns>The value of the consumed message. This may correspond to a different <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance than was previously reserved and passed as the <paramref name="messageHeader" /> to this method. The consuming <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> must use the returned value instead of the value passed as <paramref name="messageValue" /> to <see cref="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />. If the message requested is not available, the return value is <see langword="null" /> (<see langword="Nothing" /> in Visual Basic).</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;System#Collections#Generic#IList&lt;T1&gt;,System#Collections#Generic#IList&lt;T2&gt;,System#Collections#Generic#IList&lt;T3&gt;&gt;&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1},System.Collections.Generic.IList{`2}}})">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{System#Collections#Generic#IList{T1}@System#Collections#Generic#IList{T2}@System#Collections#Generic#IList{T3}}}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1},System.Collections.Generic.IList{`2}}})">
       <summary>Releases the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> that currently holds the reservation.</param>
@@ -354,7 +354,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;System#Collections#Generic#IList&lt;T1&gt;,System#Collections#Generic#IList&lt;T2&gt;,System#Collections#Generic#IList&lt;T3&gt;&gt;&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1},System.Collections.Generic.IList{`2}}})">
+    <member name="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{System#Collections#Generic#IList{T1}@System#Collections#Generic#IList{T2}@System#Collections#Generic#IList{T3}}}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1},System.Collections.Generic.IList{`2}}})">
       <summary>Reserves the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be reserved.</param>
@@ -434,13 +434,13 @@
       <param name="exception">The  <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#IReceivableSourceBlock&lt;T&gt;#TryReceiveAll(System.Collections.Generic.IList{`0}@)">
+    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#IReceivableSourceBlock{T}#TryReceiveAll(System.Collections.Generic.IList{`0}@)">
       <summary>Attempts to synchronously receive all available items from the <see cref="T:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1" />.</summary>
       <param name="items">The items received from the source.</param>
       <returns>
         <see langword="true" /> if one or more items could be received; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
@@ -452,7 +452,7 @@
   
  If the message requested is not available, the return value will be <see langword="null" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
+    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
@@ -460,7 +460,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
+    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
@@ -469,7 +469,7 @@
       <returns>
         <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;T&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{T}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>
@@ -529,7 +529,7 @@
       <param name="exception">The  <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
@@ -541,7 +541,7 @@
   
  If the message requested is not available, the return value will be <see langword="null" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
+    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
@@ -549,7 +549,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
+    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
@@ -558,7 +558,7 @@
       <returns>
         <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;T&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{T}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>
@@ -1253,7 +1253,7 @@
       <param name="exception">The  <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2&gt;&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1}},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{T1@T2}}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1}},System.Boolean@)">
       <summary>Passes the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> instance to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be consumed.</param>
@@ -1263,7 +1263,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <returns>The value of the consumed message. This may correspond to a different <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance than was previously reserved and passed as the <paramref name="messageHeader" /> to this method. The consuming <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> must use the returned value instead of the value passed as <paramref name="messageValue" /> to <see cref="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />. If the message requested is not available, the return value is <see langword="null" /> (<see langword="Nothing" /> in Visual Basic).</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2&gt;&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1}})">
+    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{T1@T2}}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1}})">
       <summary>Releases the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> that currently holds the reservation.</param>
@@ -1271,7 +1271,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2&gt;&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1}})">
+    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{T1@T2}}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1}})">
       <summary>Reserves the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be reserved.</param>
@@ -1347,7 +1347,7 @@
       <param name="exception">The  <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2,T3&gt;&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{T1@T2@T3}}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}},System.Boolean@)">
       <summary>Passes the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> instance to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be consumed.</param>
@@ -1357,7 +1357,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <returns>The value of the consumed message. This may correspond to a different <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance than was previously reserved and passed as the <paramref name="messageHeader" /> to this method. The consuming <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> must use the returned value instead of the value passed as <paramref name="messageValue" /> to <see cref="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />. If the message requested is not available, the return value is <see langword="null" /> (<see langword="Nothing" /> in Visual Basic).</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2,T3&gt;&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}})">
+    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{T1@T2@T3}}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}})">
       <summary>Releases the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> that currently holds the reservation.</param>
@@ -1365,7 +1365,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" /> (Nothing in Visual Basic).</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2,T3&gt;&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}})">
+    <member name="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock{System#Tuple{T1@T2@T3}}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}})">
       <summary>Reserves the right to pass the ownership of the message identified by the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> from this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message that is to be reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> for which the message is to be reserved.</param>
@@ -1462,7 +1462,7 @@
       <param name="exception">The <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;TOutput&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{TOutput}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1},System.Boolean@)">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
@@ -1474,7 +1474,7 @@
   
  If the message requested is not available, the return value will be <see langword="null" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;TOutput&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{TOutput}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
@@ -1482,7 +1482,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;TOutput&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{TOutput}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
@@ -1491,7 +1491,7 @@
       <returns>
         <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ITargetBlock&lt;TInput&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformBlock`2.System#Threading#Tasks#Dataflow#ITargetBlock{TInput}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>
@@ -1589,7 +1589,7 @@
       <param name="exception">The <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;TOutput&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{TOutput}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1},System.Boolean@)">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
@@ -1601,7 +1601,7 @@
   
  If the message requested is not available, the return value will be <see langword="null" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;TOutput&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{TOutput}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
@@ -1609,7 +1609,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock&lt;TOutput&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ISourceBlock{TOutput}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`1})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
@@ -1618,7 +1618,7 @@
       <returns>
         <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ITargetBlock&lt;TInput&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.System#Threading#Tasks#Dataflow#ITargetBlock{TInput}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>
@@ -1697,13 +1697,13 @@
       <param name="exception">The  <see cref="T:System.Exception" /> that caused the faulting.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#IReceivableSourceBlock&lt;T&gt;#TryReceiveAll(System.Collections.Generic.IList{`0}@)">
+    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#IReceivableSourceBlock{T}#TryReceiveAll(System.Collections.Generic.IList{`0}@)">
       <summary>Attempts to synchronously receive all available items from the <see cref="T:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1" />.</summary>
       <param name="items">The items received from the source.</param>
       <returns>
         <see langword="true" /> if one or more items could be received; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)">
+    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
@@ -1715,7 +1715,7 @@
   
  If the message requested is not available, the return value will be <see langword="null" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
+    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
@@ -1723,7 +1723,7 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
+    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock{T}#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})">
       <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
       <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
       <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
@@ -1732,7 +1732,7 @@
       <returns>
         <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;T&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
+    <member name="M:System.Threading.Tasks.Dataflow.WriteOnceBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{T}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)">
       <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
       <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
       <param name="messageValue">The value of the message being offered.</param>

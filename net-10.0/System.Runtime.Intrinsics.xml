@@ -35621,7 +35621,7 @@
       <param name="vector" />
       <typeparam name="T" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Vector128.As``2(System.Runtime.Intrinsics.Vector128{``0})">
+    <member name="M:System.Runtime.Intrinsics.Vector128.As``2(System.Runtime.Intrinsics.Vector128{T})">
       <summary>Reinterprets a <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> of type <typeparamref name="TFrom" /> as a new <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> of type <typeparamref name="TTo" />.</summary>
       <param name="vector">The vector to reinterpret.</param>
       <typeparam name="TFrom">The type of the input vector.</typeparam>
@@ -37780,7 +37780,7 @@
       <param name="vector" />
       <typeparam name="T" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Vector256.As``2(System.Runtime.Intrinsics.Vector256{``0})">
+    <member name="M:System.Runtime.Intrinsics.Vector256.As``2(System.Runtime.Intrinsics.Vector256{T})">
       <summary>Reinterprets a <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> of type <typeparamref name="TFrom" /> as a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> of type <typeparamref name="TTo" />.</summary>
       <param name="vector">The vector to reinterpret.</param>
       <typeparam name="TFrom">The type of the input vector.</typeparam>
@@ -42226,7 +42226,7 @@
       <param name="vector" />
       <typeparam name="T" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Vector64.As``2(System.Runtime.Intrinsics.Vector64{``0})">
+    <member name="M:System.Runtime.Intrinsics.Vector64.As``2(System.Runtime.Intrinsics.Vector64{T})">
       <summary>Reinterprets a <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> of type <typeparamref name="TFrom" /> as a new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> of type <typeparamref name="TTo" />.</summary>
       <param name="vector">The vector to reinterpret.</param>
       <typeparam name="TFrom">The type of the input vector.</typeparam>

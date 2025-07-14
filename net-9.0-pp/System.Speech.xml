@@ -943,43 +943,43 @@
       <summary>Provides a hash code for a <c>SemanticValue</c> object.</summary>
       <returns>A hash code for the current <see cref="T:System.Speech.Recognition.SemanticValue" /> object.</returns>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Speech#Recognition#SemanticValue}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})">
       <summary>Adds the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> to the collection.</summary>
       <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#Clear">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Speech#Recognition#SemanticValue}}#Clear">
       <summary>Removes all key/value pairs from the collection.</summary>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue}[],System.Int32)">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Speech#Recognition#SemanticValue}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue}[],System.Int32)">
       <summary>Copies a key/value pair to a specific location in a targeted array.</summary>
       <param name="array">The array of key/value pairs that is the target of the operation.</param>
       <param name="index">An integer that specifies the location in the array to which the key/value pair will be copied.</param>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Speech#Recognition#SemanticValue}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})">
       <summary>Removes the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> from the collection.</summary>
       <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
       <returns>
         <see langword="true" /> if the key/value pair was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the collection.</returns>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Add(System.String,System.Speech.Recognition.SemanticValue)">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary{System#String@System#Speech#Recognition#SemanticValue}#Add(System.String,System.Speech.Recognition.SemanticValue)">
       <summary>Adds the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> to the dictionary.</summary>
       <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
       <param name="value">The <see cref="T:System.Speech.Recognition.SemanticValue" /> to add.</param>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Remove(System.String)">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary{System#String@System#Speech#Recognition#SemanticValue}#Remove(System.String)">
       <summary>Removes the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> from the dictionary.</summary>
       <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
       <returns>
         <see langword="true" /> if the key/value pair was successfully removed from the dictionary; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the dictionary.</returns>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#TryGetValue(System.String,System.Speech.Recognition.SemanticValue@)">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary{System#String@System#Speech#Recognition#SemanticValue}#TryGetValue(System.String,System.Speech.Recognition.SemanticValue@)">
       <summary>Gets the <see cref="T:System.Speech.Recognition.SemanticValue" /> associated with the specified key.</summary>
       <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
       <param name="value">The <see cref="T:System.Speech.Recognition.SemanticValue" /> to get.</param>
       <returns>
         <see langword="true" /> if the dictionary contains a key/value pair with the specified key; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#GetEnumerator">
+    <member name="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Speech#Recognition#SemanticValue}}#GetEnumerator">
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An enumerator that iterates through a collection.</returns>
     </member>
@@ -1002,15 +1002,15 @@
       <exception cref="T:System.InvalidOperationException">Code attempted to change the <see cref="T:System.Speech.Recognition.SemanticValue" /> at the specified index.</exception>
       <returns>Returns a child of the current <see cref="T:System.Speech.Recognition.SemanticValue" /> that can be indexed as part of a key value pair: <c>KeyValuePair&lt;String,</c><c>SemanticValue&gt;</c>.</returns>
     </member>
-    <member name="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#IsReadOnly">
+    <member name="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String@System#Speech#Recognition#SemanticValue}}#IsReadOnly">
       <summary>Gets a value that indicates whether the collection is read-only.</summary>
       <returns>Returns a value that indicates whether the collection is read-only.</returns>
     </member>
-    <member name="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Keys">
+    <member name="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary{System#String@System#Speech#Recognition#SemanticValue}#Keys">
       <summary>Gets a collection that contains the keys from a dictionary of key/value pairs.</summary>
       <returns>A collection that contains the keys from a dictionary of key/value pairs.</returns>
     </member>
-    <member name="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Values">
+    <member name="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary{System#String@System#Speech#Recognition#SemanticValue}#Values">
       <summary>Gets a collection that contains the values from a dictionary of key/value pairs.</summary>
       <returns>A collection that contains the values from a dictionary of key/value pairs.</returns>
     </member>
