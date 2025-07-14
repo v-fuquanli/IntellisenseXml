@@ -798,7 +798,8 @@
       <param name="innerKeySelector">A function to extract the join key from each element of the second sequence.</param>
       <param name="resultSelector">
             A function to create a result element from an element from the first sequence
-            and a collection of matching elements from the second sequence.</param>
+            and a collection of matching elements from the second sequence.
+            </param>
       <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to use to hash and compare keys.</param>
       <typeparam name="TOuter" />
       <typeparam name="TInner" />
@@ -818,7 +819,8 @@
       <param name="innerKeySelector">A function to extract the join key from each element of the second sequence.</param>
       <param name="resultSelector">
             A function to create a result element from an element from the first sequence
-            and a collection of matching elements from the second sequence.</param>
+            and a collection of matching elements from the second sequence.
+            </param>
       <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to use to hash and compare keys.</param>
       <typeparam name="TOuter" />
       <typeparam name="TInner" />
@@ -1297,7 +1299,8 @@
       <param name="source">A sequence of values to invoke a transform function on.</param>
       <param name="selector">
             A transform function to apply to each element; the second parameter of
-            the function represents the index of the source element.</param>
+            the function represents the index of the source element.
+            </param>
       <typeparam name="TSource">The type of the elements of source.</typeparam>
       <typeparam name="TResult">The type of the value returned by selector.</typeparam>
       <exception cref="T:System.ArgumentNullException">
@@ -1311,7 +1314,8 @@
       <param name="source">A sequence of values to invoke a transform function on.</param>
       <param name="selector">
             A transform function to apply to each element; the second parameter of
-            the function represents the index of the source element.</param>
+            the function represents the index of the source element.
+            </param>
       <typeparam name="TSource">The type of the elements of source.</typeparam>
       <typeparam name="TResult">The type of the value returned by selector.</typeparam>
       <exception cref="T:System.ArgumentNullException">
@@ -1736,7 +1740,8 @@
       <param name="source">An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> to return elements from.</param>
       <param name="predicate">
             A function to test each element for a condition; the second parameter
-            of the function represents the index of the source element.</param>
+            of the function represents the index of the source element.
+            </param>
       <typeparam name="TSource">The type of the elements of source.</typeparam>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="predicate" /> is <see langword="null" />.</exception>
@@ -1753,7 +1758,8 @@
       <param name="source">An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> to return elements from.</param>
       <param name="predicate">
             A function to test each element for a condition; the second parameter
-            of the function represents the index of the source element.</param>
+            of the function represents the index of the source element.
+            </param>
       <typeparam name="TSource">The type of the elements of source.</typeparam>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="predicate" /> is <see langword="null" />.</exception>
@@ -2221,7 +2227,8 @@
       <param name="source">An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> to filter.</param>
       <param name="predicate">
             A function to test each element for a condition; the second parameter
-            of the function represents the index of the source element.</param>
+            of the function represents the index of the source element.
+            </param>
       <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="predicate" /> is <see langword="null" />.</exception>
@@ -2234,7 +2241,8 @@
       <param name="source">An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> to filter.</param>
       <param name="predicate">
             A function to test each element for a condition; the second parameter
-            of the function represents the index of the source element.</param>
+            of the function represents the index of the source element.
+            </param>
       <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="predicate" /> is <see langword="null" />.</exception>

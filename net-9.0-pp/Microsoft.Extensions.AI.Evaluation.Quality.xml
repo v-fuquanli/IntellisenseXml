@@ -61,14 +61,16 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             Contextual information that the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator" /> uses to evaluate the 'Completeness' of a
             response.</summary>
       <param name="groundTruth">
-            The ground truth against which the response that is being evaluated is assessed.</param>
+            The ground truth against which the response that is being evaluated is assessed.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluatorContext.#ctor(System.String)">
       <summary>
             Contextual information that the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator" /> uses to evaluate the 'Completeness' of a
             response.</summary>
       <param name="groundTruth">
-            The ground truth against which the response that is being evaluated is assessed.</param>
+            The ground truth against which the response that is being evaluated is assessed.
+            </param>
     </member>
     <member name="P:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluatorContext.GroundTruth">
       <summary>
@@ -111,14 +113,16 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             Contextual information that the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator" /> uses to evaluate the 'Equivalence' of a
             response.</summary>
       <param name="groundTruth">
-            The ground truth response against which the response that is being evaluated is compared.</param>
+            The ground truth response against which the response that is being evaluated is compared.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluatorContext.#ctor(System.String)">
       <summary>
             Contextual information that the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator" /> uses to evaluate the 'Equivalence' of a
             response.</summary>
       <param name="groundTruth">
-            The ground truth response against which the response that is being evaluated is compared.</param>
+            The ground truth response against which the response that is being evaluated is compared.
+            </param>
     </member>
     <member name="P:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluatorContext.GroundTruth">
       <summary>
@@ -186,14 +190,16 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             Contextual information that the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator" /> uses to evaluate the 'Groundedness' of a
             response.</summary>
       <param name="groundingContext">
-            Contextual information against which the 'Groundedness' of a response is evaluated.</param>
+            Contextual information against which the 'Groundedness' of a response is evaluated.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluatorContext.#ctor(System.String)">
       <summary>
             Contextual information that the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator" /> uses to evaluate the 'Groundedness' of a
             response.</summary>
       <param name="groundingContext">
-            Contextual information against which the 'Groundedness' of a response is evaluated.</param>
+            Contextual information against which the 'Groundedness' of a response is evaluated.
+            </param>
     </member>
     <member name="P:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluatorContext.GroundingContext">
       <summary>
@@ -304,13 +310,15 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluatorContext" /> class.</summary>
       <param name="retrievedContextChunks">
-            The context chunks that were retrieved in response to the user request being evaluated.</param>
+            The context chunks that were retrieved in response to the user request being evaluated.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluatorContext.#ctor(System.String[])">
       <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluatorContext" /> class.</summary>
       <param name="retrievedContextChunks">
-            The context chunks that were retrieved in response to the user request being evaluated.</param>
+            The context chunks that were retrieved in response to the user request being evaluated.
+            </param>
     </member>
     <member name="P:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluatorContext.RetrievedContextChunks">
       <summary>

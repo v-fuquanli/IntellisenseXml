@@ -324,7 +324,8 @@
       <param name="destination">Buffer to redact into.</param>
       <param name="format">
             The optional format string that selects the specific formatting operation performed. Refer to the
-            documentation of the type being formatted to understand the values you can supply here.</param>
+            documentation of the type being formatted to understand the values you can supply here.
+            </param>
       <param name="provider">Format provider used to produce a string representing the value.</param>
       <typeparam name="T">Type of value to redact.</typeparam>
       <exception cref="T:System.ArgumentNullException">
@@ -339,7 +340,8 @@
       <param name="value">Value to redact.</param>
       <param name="format">
             The optional format that selects the specific formatting operation performed. Refer to the
-            documentation of the type being formatted to understand the values you can supply here.</param>
+            documentation of the type being formatted to understand the values you can supply here.
+            </param>
       <param name="provider">Format provider used to produce a string representing the value.</param>
       <typeparam name="T">Type of value to redact.</typeparam>
       <exception cref="T:System.ArgumentNullException">
@@ -354,7 +356,8 @@
       <param name="charsWritten">When this method returns, contains the number of redacted characters that were written to the destination buffer.</param>
       <param name="format">
             The format string that selects the specific formatting operation performed. Refer to the
-            documentation of the type being formatted to understand the values you can supply here.</param>
+            documentation of the type being formatted to understand the values you can supply here.
+            </param>
       <param name="provider">The format provider used to produce a string representing the value.</param>
       <typeparam name="T">The type of value to redact.</typeparam>
       <returns>

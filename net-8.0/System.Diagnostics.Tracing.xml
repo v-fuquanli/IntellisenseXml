@@ -456,14 +456,14 @@
     <member name="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)">
       <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
       <param name="eventSourceType">The type of the event source.</param>
-      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the provider element of the manifest.</param>
+      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the <see href="https://learn.microsoft.com/windows/win32/wes/eventmanifestschema-provider-eventstype-element">provider</see> element of the manifest.</param>
       <param name="flags">A bitwise combination of the enumeration values that specify how the manifest is generated.</param>
       <returns>The XML data string or <see langword="null" />.</returns>
     </member>
     <member name="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String)">
       <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
       <param name="eventSourceType">The type of the event source.</param>
-      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the provider element of the manifest.</param>
+      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the <see href="https://learn.microsoft.com/windows/win32/wes/eventmanifestschema-provider-eventstype-element">provider</see> element of the manifest.</param>
       <returns>The XML data string.</returns>
     </member>
     <member name="M:System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)">

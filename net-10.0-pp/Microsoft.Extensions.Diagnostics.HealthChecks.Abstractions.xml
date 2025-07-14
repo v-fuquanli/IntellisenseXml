@@ -24,7 +24,8 @@
       <param name="instance">The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" /> instance.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported upon failure of the health check. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used for filtering health checks.</param>
       <param name="timeout">An optional <see cref="T:System.TimeSpan" /> representing the timeout of the check.</param>
     </member>
@@ -35,7 +36,8 @@
       <param name="instance">The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" /> instance.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported upon failure of the health check. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used for filtering health checks.</param>
     </member>
     <member name="M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration.#ctor(System.String,System.Func{System.IServiceProvider,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck},System.Nullable{Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.TimeSpan})">
@@ -45,7 +47,8 @@
       <param name="factory">A delegate used to create the <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" /> instance.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used for filtering health checks.</param>
       <param name="timeout">An optional <see cref="T:System.TimeSpan" /> representing the timeout of the check.</param>
     </member>
@@ -56,7 +59,8 @@
       <param name="factory">A delegate used to create the <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" /> instance.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used for filtering health checks.</param>
     </member>
     <member name="P:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration.Delay">

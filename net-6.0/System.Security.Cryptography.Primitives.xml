@@ -29,7 +29,35 @@
       <summary>Creates an instance of the specified implementation of an asymmetric algorithm.</summary>
       <param name="algName">The asymmetric algorithm implementation to use. The following table shows the valid values for the <paramref name="algName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> System.Security.Cryptography.AsymmetricAlgorithm</term><description><see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /></description></item><item><term> RSA</term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> System.Security.Cryptography.RSA</term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> DSA</term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> System.Security.Cryptography.DSA</term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> ECDsa</term><description><see cref="T:System.Security.Cryptography.ECDsa" /></description></item><item><term> ECDsaCng</term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> System.Security.Cryptography.ECDsaCng</term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> ECDH</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellman</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellmanCng</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item><item><term> System.Security.Cryptography.ECDiffieHellmanCng</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value
+
+ </term><description> Implements
+
+ </description></listheader><item><term> System.Security.Cryptography.AsymmetricAlgorithm
+
+ </term><description><see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /></description></item><item><term> RSA
+
+ </term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> System.Security.Cryptography.RSA
+
+ </term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> DSA
+
+ </term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> System.Security.Cryptography.DSA
+
+ </term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> ECDsa
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDsa" /></description></item><item><term> ECDsaCng
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> System.Security.Cryptography.ECDsaCng
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> ECDH
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellman
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellmanCng
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item><item><term> System.Security.Cryptography.ECDiffieHellmanCng
+
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item></list></param>
       <returns>A new instance of the specified asymmetric algorithm implementation.</returns>
     </member>
     <member name="M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose">
@@ -715,7 +743,41 @@ The algorithm-specific key import failed.</exception>
       <summary>Creates an instance of the specified implementation of a hash algorithm.</summary>
       <param name="hashName">The hash algorithm implementation to use. The following table shows the valid values for the <paramref name="hashName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> SHA</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> SHA1</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.SHA1</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.HashAlgorithm</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> MD5</term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.MD5</term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> SHA256</term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA-256</term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> System.Security.Cryptography.SHA256</term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA384</term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA-384</term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> System.Security.Cryptography.SHA384</term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA512</term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> SHA-512</term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> System.Security.Cryptography.SHA512</term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value
+
+ </term><description> Implements
+
+ </description></listheader><item><term> SHA
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> SHA1
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.SHA1
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.HashAlgorithm
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> MD5
+
+ </term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.MD5
+
+ </term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> SHA256
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA-256
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> System.Security.Cryptography.SHA256
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA384
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA-384
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> System.Security.Cryptography.SHA384
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA512
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> SHA-512
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> System.Security.Cryptography.SHA512
+
+ </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item></list></param>
       <returns>A new instance of the specified hash algorithm, or <see langword="null" /> if <paramref name="hashName" /> is not a valid hash algorithm.</returns>
     </member>
     <member name="M:System.Security.Cryptography.HashAlgorithm.Dispose">
@@ -922,7 +984,43 @@ The algorithm-specific key import failed.</exception>
       <summary>Creates an instance of the specified implementation of a Hash-based Message Authentication Code (HMAC).</summary>
       <param name="algorithmName">The HMAC implementation to use. The following table shows the valid values for the <paramref name="algorithmName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> System.Security.Cryptography.HMAC</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value
+
+ </term><description> Implements
+
+ </description></listheader><item><term> System.Security.Cryptography.HMAC
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES
+
+ </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES
+
+ </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
       <returns>A new instance of the specified HMAC implementation.</returns>
     </member>
     <member name="M:System.Security.Cryptography.HMAC.Dispose(System.Boolean)">
@@ -1024,7 +1122,43 @@ The algorithm-specific key import failed.</exception>
       <summary>Creates an instance of the specified implementation of a keyed hash algorithm.</summary>
       <param name="algName">The keyed hash algorithm implementation to use. The following table shows the valid values for the <paramref name="algName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> System.Security.Cryptography.HMAC</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value
+
+ </term><description> Implements
+
+ </description></listheader><item><term> System.Security.Cryptography.HMAC
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512
+
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES
+
+ </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES
+
+ </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
       <exception cref="T:System.PlatformNotSupportedException">.NET Core 2.0 - 3.1 and .NET 5 and later: In all cases.</exception>
       <returns>A new instance of the specified keyed hash algorithm.</returns>
     </member>

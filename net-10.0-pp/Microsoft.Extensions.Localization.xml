@@ -13,7 +13,8 @@
             Adds services required for application localization.</summary>
       <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the services to.</param>
       <param name="setupAction">
-            An <see cref="T:System.Action`1" /> to configure the <see cref="T:Microsoft.Extensions.Localization.LocalizationOptions" />.</param>
+            An <see cref="T:System.Action`1" /> to configure the <see cref="T:Microsoft.Extensions.Localization.LocalizationOptions" />.
+            </param>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> so that additional calls can be chained.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection)">

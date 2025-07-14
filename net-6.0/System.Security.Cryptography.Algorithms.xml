@@ -3397,7 +3397,8 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
                 of the hash algorithm specified by <paramref name="hashAlgorithm" /> will be hashed (using the
                 algorithm specified by <paramref name="hashAlgorithm" />) to derive a correctly-sized key. Therefore,
                 the recommended size of the secret key is the output size of the hash specified by
-                <paramref name="hashAlgorithm" />.</param>
+                <paramref name="hashAlgorithm" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="key" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">

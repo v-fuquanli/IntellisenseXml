@@ -3768,7 +3768,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>
 
  Aggregates a managed object of the specified type with the specified COM object.</summary>
-      <param name="pOuter">The outer IUnknown pointer.</param>
+      <param name="pOuter">The outer <see href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</see> pointer.</param>
       <param name="o">The managed object to aggregate.</param>
       <typeparam name="T">The type of the managed object to aggregate.</typeparam>
       <exception cref="T:System.ArgumentException">
@@ -4665,7 +4665,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(System.Int32,System.IntPtr)">
       <summary>Throws an exception with a specific failure HRESULT, based on the specified IErrorInfo interface.</summary>
       <param name="errorCode">The HRESULT corresponding to the desired exception.</param>
-      <param name="errorInfo">A pointer to the IErrorInfo interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current IErrorInfo interface, or <c>IntPtr(-1)</c> to ignore the current IErrorInfo interface and construct the exception just from the error code.</param>
+      <param name="errorInfo">A pointer to the <see href="https://learn.microsoft.com/windows/win32/api/oaidl/nn-oaidl-ierrorinfo">IErrorInfo</see> interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current <see href="https://learn.microsoft.com/windows/win32/api/oaidl/nn-oaidl-ierrorinfo">IErrorInfo</see> interface, or <c>IntPtr(-1)</c> to ignore the current <see href="https://learn.microsoft.com/windows/win32/api/oaidl/nn-oaidl-ierrorinfo">IErrorInfo</see> interface and construct the exception just from the error code.</param>
     </member>
     <member name="M:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(System.Int32)">
       <summary>Throws an exception with a specific failure HRESULT value.</summary>

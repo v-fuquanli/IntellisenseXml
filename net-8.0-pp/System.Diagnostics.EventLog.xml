@@ -1474,7 +1474,7 @@
     </member>
     <member name="M:System.Diagnostics.EventLog.ModifyOverflowPolicy(System.Diagnostics.OverflowAction,System.Int32)">
       <summary>Changes the configured behavior for writing new entries when the event log reaches its maximum file size.</summary>
-      <param name="action">The overflow behavior for writing new entries to the event log. Must not be OverwriteOlder.</param>
+      <param name="action">The overflow behavior for writing new entries to the event log. Must not be `OverwriteOlder`.</param>
       <param name="retentionDays">Deprecated. Must be 0.</param>
       <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
         <paramref name="action" /> is not a valid <see cref="P:System.Diagnostics.EventLog.OverflowAction" /> value.</exception>

@@ -546,7 +546,8 @@
               Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.Pkcs12LoadLimitExceededException" />
               class.</summary>
       <param name="propertyName">
-              The name of the property representing the limit that was exceeded.</param>
+              The name of the property representing the limit that was exceeded.
+            </param>
     </member>
     <member name="T:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.MLKem)">
@@ -615,10 +616,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="data" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -640,10 +643,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="data" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -666,10 +671,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="data" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -692,10 +699,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="data" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -719,10 +728,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="path" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -749,10 +760,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="path" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -777,10 +790,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="path" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -805,10 +820,12 @@
       <param name="password">The password to decrypt the contents of the PFX.</param>
       <param name="keyStorageFlags">
               A bitwise combination of the enumeration values that control where and how to
-              import the private key associated with the returned certificate.</param>
+              import the private key associated with the returned certificate.
+            </param>
       <param name="loaderLimits">
               Limits to apply when loading the PFX.  A <see langword="null" /> value, the default,
-              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.</param>
+              is equivalent to <see cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.Defaults" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="path" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">

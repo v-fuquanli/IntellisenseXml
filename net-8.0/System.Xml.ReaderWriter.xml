@@ -384,7 +384,7 @@ This option indents element content only; mixed content is not affected. For the
       <summary>Represents the callback method that will handle XML schema validation events and the <see cref="T:System.Xml.Schema.ValidationEventArgs" />.</summary>
       <param name="sender">The source of the event.  
   
- Note Determine the type of a sender before using it in your code. You cannot assume that the sender is an instance of a particular type. The sender is also not guaranteed to not  be null. Always surround your casts with failure handling logic.</param>
+ **Note** Determine the type of a sender before using it in your code. You cannot assume that the sender is an instance of a particular type. The sender is also not guaranteed to not  be null. Always surround your casts with failure handling logic.</param>
       <param name="e">The event data.</param>
     </member>
     <member name="T:System.Xml.Schema.XmlAtomicValue">
@@ -3544,7 +3544,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     <member name="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String,System.String)">
       <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
       <param name="s">The string to convert.</param>
-      <param name="format">The format from which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the dateTime section of the XML Schema specification..) The string <paramref name="s" /> is validated against this format.</param>
+      <param name="format">The format from which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..) The string <paramref name="s" /> is validated against this format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.FormatException">
@@ -3554,12 +3554,12 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     <member name="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String,System.String[])">
       <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
       <param name="s">The string to convert.</param>
-      <param name="formats">An array of formats from which <paramref name="s" /> can be converted. Each format in <paramref name="formats" /> can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the dateTime section of the XML Schema specification..) The string <paramref name="s" /> is validated against one of these formats.</param>
+      <param name="formats">An array of formats from which <paramref name="s" /> can be converted. Each format in <paramref name="formats" /> can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..) The string <paramref name="s" /> is validated against one of these formats.</param>
       <returns>The <see cref="T:System.DateTimeOffset" /> equivalent of the supplied string.</returns>
     </member>
     <member name="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String)">
       <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
-      <param name="s">The string to convert. The string must conform to a subset of the W3C Recommendation for the XML dateTime type. For more information, see the dateTime section of the XML Schema specification.</param>
+      <param name="s">The string to convert. The string must conform to a subset of the W3C Recommendation for the XML dateTime type. For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentOutOfRangeException">The argument passed to this method is outside the range of allowable values. For information about allowable values, see <see cref="T:System.DateTimeOffset" />.</exception>
@@ -3685,7 +3685,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     <member name="M:System.Xml.XmlConvert.ToString(System.DateTimeOffset,System.String)">
       <summary>Converts the supplied <see cref="T:System.DateTimeOffset" /> to a <see cref="T:System.String" /> in the specified format.</summary>
       <param name="value">The <see cref="T:System.DateTimeOffset" /> to be converted.</param>
-      <param name="format">The format to which <paramref name="value" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the dateTime section of the XML Schema specification..)</param>
+      <param name="format">The format to which <paramref name="value" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..)</param>
       <returns>A <see cref="T:System.String" /> representation in the specified format of the supplied <see cref="T:System.DateTimeOffset" />.</returns>
     </member>
     <member name="M:System.Xml.XmlConvert.ToString(System.DateTimeOffset)">
@@ -4865,7 +4865,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
       <summary>Adds the given namespace to the collection.</summary>
       <param name="prefix">The prefix to associate with the namespace being added. Use String.Empty to add a default namespace.
 
- Note If the <see cref="T:System.Xml.XmlNamespaceManager" /> will be used for resolving namespaces in an XML Path Language (XPath) expression, a prefix must be specified. If an XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. For more information about XPath expressions and the <see cref="T:System.Xml.XmlNamespaceManager" />, refer to the <see cref="M:System.Xml.XmlNode.SelectNodes(System.String)" /> and <see cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" /> methods.</param>
+ **Note** If the <see cref="T:System.Xml.XmlNamespaceManager" /> will be used for resolving namespaces in an XML Path Language (XPath) expression, a prefix must be specified. If an XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. For more information about XPath expressions and the <see cref="T:System.Xml.XmlNamespaceManager" />, refer to the <see cref="M:System.Xml.XmlNode.SelectNodes(System.String)" /> and <see cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" /> methods.</param>
       <param name="uri">The namespace to add.</param>
       <exception cref="T:System.ArgumentException">The value for <paramref name="prefix" /> is "xml" or "xmlns".</exception>
       <exception cref="T:System.ArgumentNullException">The value for <paramref name="prefix" /> or <paramref name="uri" /> is <see langword="null" />.</exception>
@@ -5101,7 +5101,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     </member>
     <member name="M:System.Xml.XmlNode.SelectNodes(System.String,System.Xml.XmlNamespaceManager)">
       <summary>Selects a list of nodes matching the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
-      <param name="xpath">The XPath expression. See XPath Examples.</param>
+      <param name="xpath">The XPath expression. See <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">XPath Examples</see>.</param>
       <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
       <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix that's not defined in the <see langword="XmlNamespaceManager" />.</exception>
       <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
@@ -5114,14 +5114,14 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     </member>
     <member name="M:System.Xml.XmlNode.SelectSingleNode(System.String,System.Xml.XmlNamespaceManager)">
       <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
-      <param name="xpath">The XPath expression. See XPath Examples.</param>
+      <param name="xpath">The XPath expression. See <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">XPath Examples</see>.</param>
       <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
       <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix that's not defined in the <see langword="XmlNamespaceManager" />.</exception>
       <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
     </member>
     <member name="M:System.Xml.XmlNode.SelectSingleNode(System.String)">
       <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
-      <param name="xpath">The XPath expression. See XPath Examples.</param>
+      <param name="xpath">The XPath expression. See <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">XPath Examples</see>.</param>
       <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
       <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
     </member>
@@ -6000,7 +6000,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
       <param name="settings">The settings for the new <see cref="T:System.Xml.XmlReader" /> instance. This value can be <see langword="null" />.</param>
       <param name="baseUri">The base URI for the entity or document being read. This value can be <see langword="null" />.
 
- Security Note The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
+ **Security Note** The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> value is <see langword="null" />.</exception>
       <returns>An object that is used to read the XML data in the stream.</returns>
     </member>
@@ -6040,7 +6040,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
       <param name="settings">The settings for the new <see cref="T:System.Xml.XmlReader" /> instance. This value can be <see langword="null" />.</param>
       <param name="baseUri">The base URI for the entity or document being read. This value can be <see langword="null" />.
 
- Security Note The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
+ **Security Note** The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> value is <see langword="null" />.</exception>
       <returns>An object that is used to read the XML data in the stream.</returns>
     </member>
@@ -6293,7 +6293,7 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
       <summary>Reads the content as an object of the type specified.</summary>
       <param name="returnType">The type of the value to be returned.
 
- Note With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
       <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion. For example, this can be used when converting an <see cref="T:System.Xml.XmlQualifiedName" /> object to an <c>xs:string</c>.
 
  This value can be <see langword="null" />.</param>
@@ -6465,7 +6465,7 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
       <summary>Checks that the specified local name and namespace URI matches that of the current element, then reads the element content as the requested type.</summary>
       <param name="returnType">The type of the value to be returned.
 
- Note With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
       <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion.</param>
       <param name="localName">The local name of the element.</param>
       <param name="namespaceURI">The namespace URI of the element.</param>
@@ -6488,7 +6488,7 @@ An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asy
       <summary>Reads the element content as the requested type.</summary>
       <param name="returnType">The type of the value to be returned.
 
- Note With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
       <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion.</param>
       <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
 
@@ -9594,7 +9594,7 @@ An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without 
       <summary>Writes the object value.</summary>
       <param name="value">The object value to write.
 
- Note With the release of the .NET Framework 3.5, this method accepts <see cref="T:System.DateTimeOffset" /> as a parameter.</param>
+ **Note** With the release of the .NET Framework 3.5, this method accepts <see cref="T:System.DateTimeOffset" /> as a parameter.</param>
       <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The writer is closed or in error state.

@@ -503,7 +503,8 @@
             Provides information to guide the production of a strongly typed 64 bit integer counter metric factory method and associated type.</summary>
       <typeparam name="T">
             The type of value the counter will hold, which is limited to <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.Int32" />, <see cref="T:System.Int64" />,
-            <see cref="T:System.Single" />, <see cref="T:System.Double" />, or <see cref="T:System.Decimal" />.</typeparam>
+            <see cref="T:System.Single" />, <see cref="T:System.Double" />, or <see cref="T:System.Decimal" />.
+            </typeparam>
     </member>
     <member name="M:Microsoft.Extensions.Diagnostics.Metrics.CounterAttribute`1.#ctor(System.String[])">
       <summary>
@@ -584,7 +585,8 @@
             Provides information to guide the production of a strongly typed histogram metric factory method and associated type.</summary>
       <typeparam name="T">
             The type of value the histogram will hold, which is limited to <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.Int32" />, <see cref="T:System.Int64" />,
-            <see cref="T:System.Single" />, <see cref="T:System.Double" />, or <see cref="T:System.Decimal" />.</typeparam>
+            <see cref="T:System.Single" />, <see cref="T:System.Double" />, or <see cref="T:System.Decimal" />.
+            </typeparam>
     </member>
     <member name="M:Microsoft.Extensions.Diagnostics.Metrics.HistogramAttribute`1.#ctor(System.String[])">
       <summary>

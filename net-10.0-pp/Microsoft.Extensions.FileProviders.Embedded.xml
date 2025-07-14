@@ -75,7 +75,7 @@
     <member name="M:Microsoft.Extensions.FileProviders.EmbeddedFileProvider.GetFileInfo(System.String)">
       <summary>
             Locates a file at the given path.</summary>
-      <param name="subpath">The path that identifies the file.</param>
+      <param name="subpath">The path that identifies the file. </param>
       <returns>
             The file information. Caller must check Exists property. A <see cref="T:Microsoft.Extensions.FileProviders.NotFoundFileInfo" /> if the file could
             not be found.</returns>
@@ -132,7 +132,7 @@
     </member>
     <member name="M:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider.Watch(System.String)">
       <summary>Creates a <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> for the specified <paramref name="filter" />.</summary>
-      <param name="filter">Filter string used to determine what files or folders to monitor. Example: */.cs, ., subFolder/*/.cshtml.</param>
+      <param name="filter">Filter string used to determine what files or folders to monitor. Example: **/*.cs, *.*, subFolder/**/*.cshtml.</param>
       <returns>An <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> that is notified when a file matching <paramref name="filter" /> is added, modified or deleted.</returns>
     </member>
     <member name="P:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider.Assembly">

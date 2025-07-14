@@ -12,7 +12,8 @@
       <summary>
             Gets all string resources.</summary>
       <param name="includeParentCultures">
-            A <see cref="T:System.Boolean" /> indicating whether to include strings from parent cultures.</param>
+            A <see cref="T:System.Boolean" /> indicating whether to include strings from parent cultures.
+            </param>
       <returns>The strings.</returns>
     </member>
     <member name="P:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])">

@@ -109,16 +109,19 @@
             with a specified error message and a reference to the inner exception that
             is the cause of this exception.</summary>
       <param name="message">
-            The error message that explains the reason for the exception.</param>
+            The error message that explains the reason for the exception.
+            </param>
       <param name="innerException">
-            The exception that is the cause of the current exception.</param>
+            The exception that is the cause of the current exception.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.Hosting.HostAbortedException.#ctor(System.String)">
       <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Extensions.Hosting.HostAbortedException" /> class
             with a specified error message.</summary>
       <param name="message">
-            The error message that explains the reason for the exception.</param>
+            The error message that explains the reason for the exception.
+            </param>
     </member>
     <member name="T:Microsoft.Extensions.Hosting.HostBuilderContext">
       <summary>
@@ -346,7 +349,8 @@
       <param name="factory">The factory object that can create the <typeparamref name="TContainerBuilder" /> and <see cref="T:System.IServiceProvider" />.</param>
       <param name="configure">
             A delegate used to configure the <typeparamref name="TContainerBuilder" />. This can be used to configure services using
-            APIS specific to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1" /> implementation.</param>
+            APIS specific to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1" /> implementation.
+            </param>
       <typeparam name="TContainerBuilder">The type of builder provided by the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1" />.</typeparam>
     </member>
     <member name="P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration">

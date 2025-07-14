@@ -16,7 +16,8 @@
       <param name="instance">An <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" /> instance.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter health checks.</param>
       <param name="timeout">An optional <see cref="T:System.TimeSpan" /> representing the timeout of the check.</param>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder" />.</returns>
@@ -29,7 +30,8 @@
       <param name="instance">An <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" /> instance.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter health checks.</param>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder" />.</returns>
     </member>
@@ -40,7 +42,8 @@
       <param name="name">The name of the health check.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter health checks.</param>
       <param name="timeout">An optional <see cref="T:System.TimeSpan" /> representing the timeout of the check.</param>
       <typeparam name="T">The health check implementation type.</typeparam>
@@ -53,7 +56,8 @@
       <param name="name">The name of the health check.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter health checks.</param>
       <typeparam name="T">The health check implementation type.</typeparam>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder" />.</returns>
@@ -65,7 +69,8 @@
       <param name="name">The name of the health check.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter health checks.</param>
       <param name="args">Additional arguments to provide to the constructor.</param>
       <typeparam name="T">The health check implementation type.</typeparam>
@@ -78,7 +83,8 @@
       <param name="name">The name of the health check.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter health checks.</param>
       <param name="timeout">A <see cref="T:System.TimeSpan" /> representing the timeout of the check.</param>
       <param name="args">Additional arguments to provide to the constructor.</param>
@@ -92,7 +98,8 @@
       <param name="name">The name of the health check.</param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check reports a failure. If the provided value
-            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            is <c>null</c>, then <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="args">Additional arguments to provide to the constructor.</param>
       <typeparam name="T">The health check implementation type.</typeparam>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder" />.</returns>
@@ -249,7 +256,8 @@
       <summary>
             Runs the provided health checks and returns the aggregated status</summary>
       <param name="predicate">
-            A predicate that can be used to include health checks based on user-defined criteria.</param>
+            A predicate that can be used to include health checks based on user-defined criteria.
+            </param>
       <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> which can be used to cancel the health checks.</param>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>

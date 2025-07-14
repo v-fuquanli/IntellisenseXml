@@ -152,7 +152,8 @@
       <param name="fileSystemWatcher">The wrapped watcher that is watching <paramref name="root" />.</param>
       <param name="pollForChanges">
         <see langword="true" /> for the poller to use polling to trigger instances of
-            <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> created by <see cref="M:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.CreateFileChangeToken(System.String)" />.</param>
+            <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> created by <see cref="M:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.CreateFileChangeToken(System.String)" />.
+            </param>
       <param name="filters">Specifies which files or directories are excluded. Notifications of changes to are not raised to these.</param>
     </member>
     <member name="M:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.#ctor(System.String,System.IO.FileSystemWatcher,System.Boolean)">
@@ -163,7 +164,8 @@
       <param name="fileSystemWatcher">The wrapped watcher that's watching <paramref name="root" />.</param>
       <param name="pollForChanges">
         <see langword="true" /> for the poller to use polling to trigger instances of
-            <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> created by <see cref="M:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.CreateFileChangeToken(System.String)" />.</param>
+            <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> created by <see cref="M:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.CreateFileChangeToken(System.String)" />.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.CreateFileChangeToken(System.String)">
       <summary>
@@ -290,8 +292,9 @@
         <para>Globbing patterns are interpreted by <see cref="T:Microsoft.Extensions.FileSystemGlobbing.Matcher" />.</para>
       </summary>
       <param name="filter">
-            Filter string used to determine what files or folders to monitor. Example: */.cs, .,
-            subFolder/*/.cshtml.</param>
+            Filter string used to determine what files or folders to monitor. Example: **/*.cs, *.*,
+            subFolder/**/*.cshtml.
+            </param>
       <returns>
             An <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> that is notified when a file matching <paramref name="filter" /> is added,
             modified, or deleted. Returns a <see cref="T:Microsoft.Extensions.FileProviders.NullChangeToken" /> if <paramref name="filter" /> has invalid filter

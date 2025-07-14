@@ -13,14 +13,17 @@
             Adds a health check for the specified <see cref="T:Microsoft.EntityFrameworkCore.DbContext" /> type.</summary>
       <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder" />.</param>
       <param name="name">
-            The health check name. Optional. If <c>null</c> the type name of <typeparamref name="TContext" /> will be used for the name.</param>
+            The health check name. Optional. If <c>null</c> the type name of <typeparamref name="TContext" /> will be used for the name.
+            </param>
       <param name="failureStatus">
             The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" /> that should be reported when the health check fails. Optional. If <c>null</c> then
-            the default status of <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.</param>
+            the default status of <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy" /> will be reported.
+            </param>
       <param name="tags">A list of tags that can be used to filter sets of health checks. Optional.</param>
       <param name="customTestQuery">
             A custom test query that will be executed when the health check executes to test the health of the database
-            connection and configurations.</param>
+            connection and configurations.
+            </param>
       <typeparam name="TContext">The <see cref="T:Microsoft.EntityFrameworkCore.DbContext" /> type.</typeparam>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder" />.</returns>
     </member>

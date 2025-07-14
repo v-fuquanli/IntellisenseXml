@@ -203,7 +203,8 @@
             one implementation available.</summary>
       <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add services to.</param>
       <param name="setupAction">
-            The <see cref="T:System.Action`1" /> to configure the provided <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions" />.</param>
+            The <see cref="T:System.Action`1" /> to configure the provided <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions" />.
+            </param>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> so that additional calls can be chained.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddDistributedMemoryCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
@@ -221,7 +222,8 @@
             <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</summary>
       <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add services to.</param>
       <param name="setupAction">
-            The <see cref="T:System.Action`1" /> to configure the provided <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions" />.</param>
+            The <see cref="T:System.Action`1" /> to configure the provided <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions" />.
+            </param>
       <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> so that additional calls can be chained.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)">

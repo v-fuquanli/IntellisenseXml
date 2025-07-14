@@ -177,7 +177,8 @@
       <summary>
             Initializes an instance of the <see cref="T:Microsoft.Extensions.Primitives.StringSegment" /> struct.</summary>
       <param name="buffer">
-            The original <see cref="T:System.String" />. The <see cref="T:Microsoft.Extensions.Primitives.StringSegment" /> includes the whole <see cref="T:System.String" />.</param>
+            The original <see cref="T:System.String" />. The <see cref="T:Microsoft.Extensions.Primitives.StringSegment" /> includes the whole <see cref="T:System.String" />.
+            </param>
     </member>
     <member name="M:Microsoft.Extensions.Primitives.StringSegment.AsMemory">
       <summary>
@@ -293,7 +294,7 @@
             Gets the zero-based index of the first occurrence of the character <paramref name="c" /> in this <see cref="T:Microsoft.Extensions.Primitives.StringSegment" />.
             The search starts at <paramref name="start" /> and examines a specified number of <paramref name="count" /> character positions.</summary>
       <param name="c">The Unicode character to seek.</param>
-      <param name="start">The zero-based index position at which the search starts.</param>
+      <param name="start">The zero-based index position at which the search starts. </param>
       <param name="count">The number of characters to examine.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="start" /> or <paramref name="count" /> is less than zero, or <paramref name="start" /> + <paramref name="count" /> is
@@ -305,7 +306,7 @@
             Gets the zero-based index of the first occurrence of the character <paramref name="c" /> in this <see cref="T:Microsoft.Extensions.Primitives.StringSegment" />.
             The search starts at <paramref name="start" />.</summary>
       <param name="c">The Unicode character to seek.</param>
-      <param name="start">The zero-based index position at which the search starts.</param>
+      <param name="start">The zero-based index position at which the search starts. </param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="start" /> is greater than or equal to <see cref="P:Microsoft.Extensions.Primitives.StringSegment.Length" /> or less than zero.</exception>
       <returns>The zero-based index position of <paramref name="c" /> from the beginning of the <see cref="T:Microsoft.Extensions.Primitives.StringSegment" /> if that character is found, or -1 if it is not.</returns>

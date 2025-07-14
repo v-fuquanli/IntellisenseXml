@@ -15,7 +15,8 @@
       <param name="services">
             The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> used to build the <see cref="T:Microsoft.Extensions.Hosting.IHost" />.
             For example, <see cref="P:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services" /> or the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> passed to the
-            <see cref="M:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})" /> callback.</param>
+            <see cref="M:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})" /> callback.
+            </param>
       <param name="configure">An <see cref="T:System.Action`1" /> to configure the provided <see cref="T:Microsoft.Extensions.Hosting.WindowsServiceLifetimeOptions" />.</param>
       <returns>The <paramref name="services" /> instance for chaining.</returns>
     </member>
@@ -27,7 +28,8 @@
       <param name="services">
             The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> used to build the <see cref="T:Microsoft.Extensions.Hosting.IHost" />.
             For example, <see cref="P:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services" /> or the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> passed to the
-            <see cref="M:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})" /> callback.</param>
+            <see cref="M:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})" /> callback.
+            </param>
       <returns>The <paramref name="services" /> instance for chaining.</returns>
     </member>
     <member name="M:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.WindowsServiceLifetimeOptions})">
@@ -107,7 +109,8 @@
       <summary>
             Asynchronously stops and shuts down the host. This method is called from <see cref="M:Microsoft.Extensions.Hosting.IHost.StopAsync(System.Threading.CancellationToken)" />.</summary>
       <param name="cancellationToken">
-            A cancellation token that indicates when stop should no longer be graceful.</param>
+            A cancellation token that indicates when stop should no longer be graceful.
+            </param>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>
             A task that represents the asynchronous stop operation.</returns>
@@ -116,7 +119,8 @@
       <summary>
             Asynchronously waits until start is complete before continuing. This method is called at the beginning of <see cref="M:Microsoft.Extensions.Hosting.IHost.StartAsync(System.Threading.CancellationToken)" />. This can be used to delay startup until signaled by an external event.</summary>
       <param name="cancellationToken">
-            A cancellation token that indicates when stop should no longer be graceful.</param>
+            A cancellation token that indicates when stop should no longer be graceful.
+            </param>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>
             A task that represents the asynchronous waiting for start operation.</returns>

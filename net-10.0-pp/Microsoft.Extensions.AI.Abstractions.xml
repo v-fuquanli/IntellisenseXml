@@ -132,7 +132,8 @@
       <param name="key">The key to locate.</param>
       <param name="value">
             When this method returns, contains the value retrieved from the dictionary, if found and successfully converted to the requested type;
-            otherwise, the default value of <typeparamref name="T" />.</param>
+            otherwise, the default value of <typeparamref name="T" />.
+            </param>
       <typeparam name="T">The type of the value to be retrieved.</typeparam>
       <returns>
         <see langword="true" /> if a non-<see langword="null" /> value was found for <paramref name="key" />
@@ -362,10 +363,12 @@
       <param name="method">The method to be represented via the created <see cref="T:Microsoft.Extensions.AI.AIFunction" />.</param>
       <param name="name">
             The name to use for the <see cref="T:Microsoft.Extensions.AI.AIFunction" />. If <see langword="null" />, the name will be derived from
-            the name of <paramref name="method" />.</param>
+            the name of <paramref name="method" />.
+            </param>
       <param name="description">
             The description to use for the <see cref="T:Microsoft.Extensions.AI.AIFunction" />. If <see langword="null" />, a description will be derived from
-            any <see cref="T:System.ComponentModel.DescriptionAttribute" /> on <paramref name="method" />, if available.</param>
+            any <see cref="T:System.ComponentModel.DescriptionAttribute" /> on <paramref name="method" />, if available.
+            </param>
       <param name="serializerOptions">The <see cref="T:System.Text.Json.JsonSerializerOptions" /> used to marshal function parameters and any return value.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="method" /> is <see langword="null" />.</exception>
@@ -381,7 +384,8 @@
       <param name="createInstanceFunc">
             Callback used on each function invocation to create an instance of the type on which the instance method <paramref name="method" />
             will be invoked. If the returned instance is <see cref="T:System.IAsyncDisposable" /> or <see cref="T:System.IDisposable" />, it will be disposed of
-            after <paramref name="method" /> completes its invocation.</param>
+            after <paramref name="method" /> completes its invocation.
+            </param>
       <param name="options">Metadata to use to override defaults inferred from <paramref name="method" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="createInstanceFunc" /> is <see langword="null" />.</exception>
@@ -397,7 +401,8 @@
       <param name="method">The method to be represented via the created <see cref="T:Microsoft.Extensions.AI.AIFunction" />.</param>
       <param name="target">
             The target object for the <paramref name="method" /> if it represents an instance method.
-            This should be <see langword="null" /> if and only if <paramref name="method" /> is a static method.</param>
+            This should be <see langword="null" /> if and only if <paramref name="method" /> is a static method.
+            </param>
       <param name="options">Metadata to use to override defaults inferred from <paramref name="method" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="method" /> represents an instance method but <paramref name="target" /> is null.</exception>
@@ -413,13 +418,16 @@
       <param name="method">The method to be represented via the created <see cref="T:Microsoft.Extensions.AI.AIFunction" />.</param>
       <param name="target">
             The target object for the <paramref name="method" /> if it represents an instance method.
-            This should be <see langword="null" /> if and only if <paramref name="method" /> is a static method.</param>
+            This should be <see langword="null" /> if and only if <paramref name="method" /> is a static method.
+            </param>
       <param name="name">
             The name to use for the <see cref="T:Microsoft.Extensions.AI.AIFunction" />. If <see langword="null" />, the name will be derived from
-            the name of <paramref name="method" />.</param>
+            the name of <paramref name="method" />.
+            </param>
       <param name="description">
             The description to use for the <see cref="T:Microsoft.Extensions.AI.AIFunction" />. If <see langword="null" />, a description will be derived from
-            any <see cref="T:System.ComponentModel.DescriptionAttribute" /> on <paramref name="method" />, if available.</param>
+            any <see cref="T:System.ComponentModel.DescriptionAttribute" /> on <paramref name="method" />, if available.
+            </param>
       <param name="serializerOptions">The <see cref="T:System.Text.Json.JsonSerializerOptions" /> used to marshal function parameters and return value.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="method" /> represents an instance method but <paramref name="target" /> is null.</exception>
@@ -730,7 +738,8 @@
       <param name="values">The data to serialize and from which a hash should be computed.</param>
       <param name="serializerOptions">
             The <see cref="T:System.Text.Json.JsonSerializerOptions" /> to use for serializing the values.
-            If <see langword="null" />, <see cref="P:Microsoft.Extensions.AI.AIJsonUtilities.DefaultOptions" /> will be used.</param>
+            If <see langword="null" />, <see cref="P:Microsoft.Extensions.AI.AIJsonUtilities.DefaultOptions" /> will be used.
+            </param>
       <returns>A string that will be used as a cache key.</returns>
     </member>
     <member name="M:Microsoft.Extensions.AI.AIJsonUtilities.TransformSchema(System.Text.Json.JsonElement,Microsoft.Extensions.AI.AIJsonSchemaTransformOptions)">
@@ -895,7 +904,8 @@
       <summary>Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.ChatClientMetadata" /> class.</summary>
       <param name="providerName">
             The name of the chat provider, if applicable. Where possible, this should map to the
-            appropriate name defined in the OpenTelemetry Semantic Conventions for Generative AI systems.</param>
+            appropriate name defined in the OpenTelemetry Semantic Conventions for Generative AI systems.
+            </param>
       <param name="providerUri">The URL for accessing the chat provider, if applicable.</param>
       <param name="defaultModelId">The ID of the chat model used by default, if applicable.</param>
     </member>
@@ -1347,8 +1357,8 @@
       <summary>
             Returns a value indicating whether two <see cref="T:Microsoft.Extensions.AI.ChatRole" /> instances are not equivalent, as determined by a
             case-insensitive comparison of their values.</summary>
-      <param name="left">The first <see cref="T:Microsoft.Extensions.AI.ChatRole" /> instance to compare.</param>
-      <param name="right">The second <see cref="T:Microsoft.Extensions.AI.ChatRole" /> instance to compare.</param>
+      <param name="left">The first <see cref="T:Microsoft.Extensions.AI.ChatRole" /> instance to compare. </param>
+      <param name="right">The second <see cref="T:Microsoft.Extensions.AI.ChatRole" /> instance to compare. </param>
       <returns>
         <see langword="true" /> if left and right have different values; <see langword="false" /> if they have equivalent values or are both <see langword="null" />.</returns>
     </member>
@@ -1444,7 +1454,8 @@
       <param name="uri">The data URI containing the content.</param>
       <param name="mediaType">
             The media type (also known as MIME type) represented by the content. If not provided,
-            it must be provided as part of the <paramref name="uri" />.</param>
+            it must be provided as part of the <paramref name="uri" />.
+            </param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="uri" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -1723,7 +1734,8 @@
       <summary>Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.EmbeddingGeneratorMetadata" /> class.</summary>
       <param name="providerName">
             The name of the embedding generation provider, if applicable. Where possible, this should map to the
-            appropriate name defined in the OpenTelemetry Semantic Conventions for Generative AI systems.</param>
+            appropriate name defined in the OpenTelemetry Semantic Conventions for Generative AI systems.
+            </param>
       <param name="providerUri">The URL for accessing the embedding generation provider, if applicable.</param>
       <param name="defaultModelId">The ID of the default embedding generation model used, if applicable.</param>
       <param name="defaultModelDimensions">The number of dimensions in vectors produced by the default model, if applicable.</param>
@@ -1806,7 +1818,8 @@
       <param name="result">
         <see langword="null" /> if the function returned <see langword="null" /> or was void-returning
             and thus had no result, or if the function call failed. Typically, however, to provide meaningfully representative
-            information to an AI service, a human-readable representation of those conditions should be supplied.</param>
+            information to an AI service, a human-readable representation of those conditions should be supplied.
+            </param>
     </member>
     <member name="P:Microsoft.Extensions.AI.FunctionResultContent.CallId">
       <summary>
@@ -2073,7 +2086,8 @@
       <summary>Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.SpeechToTextClientMetadata" /> class.</summary>
       <param name="providerName">
             The name of the speech to text  provider, if applicable. Where possible, this should map to the
-            appropriate name defined in the OpenTelemetry Semantic Conventions for Generative AI systems.</param>
+            appropriate name defined in the OpenTelemetry Semantic Conventions for Generative AI systems.
+            </param>
       <param name="providerUri">The URL for accessing the speech to text  provider, if applicable.</param>
       <param name="defaultModelId">The ID of the speech to text used by default, if applicable.</param>
     </member>
@@ -2258,8 +2272,8 @@
       <summary>
             Returns a value indicating whether two <see cref="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind" /> instances are not equivalent, as determined by a
             case-insensitive comparison of their values.</summary>
-      <param name="left">The first <see cref="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind" /> instance to compare.</param>
-      <param name="right">The second <see cref="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind" /> instance to compare.</param>
+      <param name="left">The first <see cref="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind" /> instance to compare. </param>
+      <param name="right">The second <see cref="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind" /> instance to compare. </param>
       <returns>
         <see langword="true" /> if left and right have different values; <see langword="false" /> if they have equivalent values or are both null.</returns>
     </member>

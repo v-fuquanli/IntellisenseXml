@@ -5972,8 +5972,8 @@ The <see cref="T:System.Drawing.Graphics" /> object has a transform applied othe
     </member>
     <member name="M:System.Drawing.Icon.ExtractIcon(System.String,System.Int32,System.Boolean)">
       <summary>Extracts a specified icon from the given <code data-dev-comment-type="paramref">filePath</code>.</summary>
-      <param name="filePath" />
-      <param name="id" />
+      <param name="filePath">Path to an icon or PE (.dll, .exe) file.</param>
+      <param name="id">Positive numbers refer to an icon index in the given file. Negative numbers refer to a specific native resource identifier in a PE (.dll, .exe) file.</param>
       <param name="smallIcon">
         <see langword="true" /> to get the <see cref="T:System.Drawing.Icon" /> at the current system small icon size setting. <see langword="false" /> to get the <see cref="T:System.Drawing.Icon" /> at the current system large icon size setting. The default is <see langword="false" />.</param>
       <returns>An <xref data-throw-if-not-resolved="true" uid="System.Drawing.Icon"></xref>, or <code data-dev-comment-type="langword">null</code> if an icon can't be found with the specified <code data-dev-comment-type="paramref">id</code>.</returns>
@@ -6202,7 +6202,7 @@ The <see cref="T:System.Drawing.Graphics" /> object has a transform applied othe
       <param name="thumbHeight">The height, in pixels, of the requested thumbnail image.</param>
       <param name="callback">A <see cref="T:System.Drawing.Image.GetThumbnailImageAbort" /> delegate.
 
- Note You must create a delegate and pass a reference to the delegate as the <paramref name="callback" /> parameter, but the delegate is not used.</param>
+ **Note** You must create a delegate and pass a reference to the delegate as the <paramref name="callback" /> parameter, but the delegate is not used.</param>
       <param name="callbackData">Must be <see cref="F:System.IntPtr.Zero" />.</param>
       <returns>An <see cref="T:System.Drawing.Image" /> that represents the thumbnail.</returns>
     </member>
@@ -12240,7 +12240,7 @@ The <see cref="T:System.Drawing.Graphics" /> object has a transform applied othe
     </member>
     <member name="M:System.Drawing.SystemIcons.GetStockIcon(System.Drawing.StockIconId,System.Int32)">
       <summary>Gets the specified Windows shell stock icon.</summary>
-      <param name="stockIcon" />
+      <param name="stockIcon">The stock icon to retrieve.</param>
       <param name="size">The desired size. If the specified size does not exist, an existing size will be resampled to give the requested size.</param>
       <returns>The requested <xref data-throw-if-not-resolved="true" uid="System.Drawing.Icon"></xref>.</returns>
     </member>

@@ -25300,7 +25300,7 @@ The value assigned is less than the <see cref="F:System.Windows.Forms.DateTimePi
 
  <c>titlebar</c>: Whether the title of the current page is displayed. Setting this option to <c>no</c> has no effect within a managed application; the title bar will always appear.
 
- <c>toolbar</c>: Whether toolbar buttons such as Back, Forward, and Stop are visible. Default is <c>yes</c>.
+ <c>toolbar</c>: Whether toolbar buttons such as **Back**, **Forward**, and **Stop** are visible. Default is <c>yes</c>.
 
  <c>top</c>: The top (y-coordinate) position of the window, relative to the upper-left corner of the user's screen, in pixels. Must be a positive integer.
 
@@ -25347,7 +25347,7 @@ The value assigned is less than the <see cref="F:System.Windows.Forms.DateTimePi
 
  <c>titlebar</c>: Whether the title of the current page is displayed. Setting this option to <c>no</c> has no effect within a managed application; the title bar will always appear.
 
- <c>toolbar</c>: Whether toolbar buttons such as Back, Forward, and Stop are visible. Default is <c>yes</c>.
+ <c>toolbar</c>: Whether toolbar buttons such as **Back**, **Forward**, and **Stop** are visible. Default is <c>yes</c>.
 
  <c>top</c>: The top (y-coordinate) position of the window, relative to the upper-left corner of the user's screen, in pixels. Must be a positive integer.
 
@@ -36556,12 +36556,12 @@ The following table shows the default value of this property for different .NET 
     </member>
     <member name="M:System.Windows.Forms.PropertyGrid.PropertyTabCollection.AddTabType(System.Type,System.ComponentModel.PropertyTabScope)">
       <summary>Adds a Property tab of the specified type and with the specified scope to the collection.</summary>
-      <param name="propertyTabType">The Property tab type to add to the grid.</param>
+      <param name="propertyTabType">The **Property** tab type to add to the grid.</param>
       <param name="tabScope">One of the <see cref="T:System.ComponentModel.PropertyTabScope" /> values.</param>
     </member>
     <member name="M:System.Windows.Forms.PropertyGrid.PropertyTabCollection.AddTabType(System.Type)">
       <summary>Adds a Property tab of the specified type to the collection.</summary>
-      <param name="propertyTabType">The Property tab type to add to the grid.</param>
+      <param name="propertyTabType">The **Property** tab type to add to the grid.</param>
     </member>
     <member name="M:System.Windows.Forms.PropertyGrid.PropertyTabCollection.Clear(System.ComponentModel.PropertyTabScope)">
       <summary>Removes all the Property tabs of the specified scope from the collection.</summary>
