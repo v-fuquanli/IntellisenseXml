@@ -213,13 +213,13 @@
     <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
       <summary>Gets a value that indicates whether the collection is read only.</summary>
       <returns>
-        <code data-dev-comment-type="langword">false</code>
+        <see langword="false" />
       </returns>
     </member>
     <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#ICollection#IsSynchronized">
       <summary>Gets a value that indicates whether the collection is thread safe.</summary>
       <returns>
-        <code data-dev-comment-type="langword">true</code>
+        <see langword="true" />
       </returns>
     </member>
     <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#ICollection#SyncRoot">
@@ -229,13 +229,13 @@
     <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#IList#IsFixedSize">
       <summary>Gets a value that indicates whether the collection is fixed in size.</summary>
       <returns>
-        <code data-dev-comment-type="langword">false</code>
+        <see langword="false" />
       </returns>
     </member>
     <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#IList#IsReadOnly">
       <summary>Gets a value that indicates whether the collection is read only.</summary>
       <returns>
-        <code data-dev-comment-type="langword">false</code>
+        <see langword="false" />
       </returns>
     </member>
     <member name="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#IList#Item(System.Int32)">

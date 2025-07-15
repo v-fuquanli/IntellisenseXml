@@ -55601,7 +55601,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="P:System.Windows.Forms.WebBrowser.Padding">
       <summary>This property is not meaningful for this control.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Forms.Padding.Empty"></xref>
+        <see cref="F:System.Windows.Forms.Padding.Empty" />
       </returns>
     </member>
     <member name="P:System.Windows.Forms.WebBrowser.ReadyState">

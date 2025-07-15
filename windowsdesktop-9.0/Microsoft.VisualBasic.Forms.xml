@@ -2302,37 +2302,37 @@
     <member name="P:Microsoft.VisualBasic.MyServices.RegistryProxy.ClassesRoot">
       <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type that provides access to <see langword="HKEY_CLASSES_ROOT" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="Microsoft.Win32.RegistryKey"></xref>
+        <see cref="T:Microsoft.Win32.RegistryKey" />
       </returns>
     </member>
     <member name="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentConfig">
       <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type that provides access to <see langword="HKEY_CURRENT_CONFIG" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="Microsoft.Win32.RegistryKey"></xref>
+        <see cref="T:Microsoft.Win32.RegistryKey" />
       </returns>
     </member>
     <member name="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser">
       <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type that provides access to <see langword="HKEY_CURRENT_USER" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="Microsoft.Win32.RegistryKey"></xref>
+        <see cref="T:Microsoft.Win32.RegistryKey" />
       </returns>
     </member>
     <member name="P:Microsoft.VisualBasic.MyServices.RegistryProxy.LocalMachine">
       <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_LOCAL_MACHINE" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="Microsoft.Win32.RegistryKey"></xref>
+        <see cref="T:Microsoft.Win32.RegistryKey" />
       </returns>
     </member>
     <member name="P:Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData">
       <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_PERFORMANCE_DATA" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="Microsoft.Win32.RegistryKey"></xref>
+        <see cref="T:Microsoft.Win32.RegistryKey" />
       </returns>
     </member>
     <member name="P:Microsoft.VisualBasic.MyServices.RegistryProxy.Users">
       <summary>Returns a <see cref="T:Microsoft.Win32.RegistryKey" /> type, which provides access to <see langword="HKEY_USERS" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="Microsoft.Win32.RegistryKey"></xref>
+        <see cref="T:Microsoft.Win32.RegistryKey" />
       </returns>
     </member>
     <member name="T:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy">

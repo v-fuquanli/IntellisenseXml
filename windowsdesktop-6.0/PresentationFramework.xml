@@ -24163,7 +24163,7 @@
     <member name="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries">
       <summary>Gets all instances of themed <see cref="T:System.Windows.ResourceDictionary" /> objects loaded by the application when a managed debugger is attached.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries"></xref>
+        <see cref="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries" />
       </returns>
     </member>
     <member name="T:System.Windows.Diagnostics.ResourceDictionaryInfo">
