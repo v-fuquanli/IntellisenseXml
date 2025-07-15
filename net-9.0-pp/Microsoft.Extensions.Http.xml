@@ -42,8 +42,7 @@
             Adds an additional message handler from the dependency injection container for a named <see cref="T:System.Net.Http.HttpClient" />.</summary>
       <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" />.</param>
       <typeparam name="THandler">
-            The type of the <see cref="T:System.Net.Http.DelegatingHandler" />. The handler type must be registered as a transient service.
-            </typeparam>
+            The type of the <see cref="T:System.Net.Http.DelegatingHandler" />. The handler type must be registered as a transient service.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddLogger(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.Func{System.IServiceProvider,Microsoft.Extensions.Http.Logging.IHttpClientLogger},System.Boolean)">
@@ -66,8 +65,7 @@
             or to the bottom of the additional handlers chains.</param>
       <typeparam name="TLogger">
             The service type of the custom logger as it was registered in DI. The logger should implement <see cref="T:Microsoft.Extensions.Http.Logging.IHttpClientLogger" />
-            or <see cref="T:Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger" />.
-            </typeparam>
+            or <see cref="T:Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient``1(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.Func{System.Net.Http.HttpClient,``0})">
@@ -78,8 +76,7 @@
       <param name="factory">A factory function that will be used to construct the typed client.</param>
       <typeparam name="TClient">
             The type of the typed client. They type specified will be registered in the service collection as
-            a transient service.
-            </typeparam>
+            a transient service.</typeparam>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient``1(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.Func{System.Net.Http.HttpClient,System.IServiceProvider,``0})">
       <summary>
@@ -89,8 +86,7 @@
       <param name="factory">A factory function that will be used to construct the typed client.</param>
       <typeparam name="TClient">
             The type of the typed client. They type specified will be registered in the service collection as
-            a transient service.
-            </typeparam>
+            a transient service.</typeparam>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient``1(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)">
       <summary>
@@ -99,8 +95,7 @@
       <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient``2(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)">
       <summary>
@@ -110,12 +105,10 @@
       <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" />.</param>
       <typeparam name="TClient">
             The declared type of the typed client. They type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified by will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureAdditionalHttpMessageHandlers(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.Action{System.Collections.Generic.IList{System.Net.Http.DelegatingHandler},System.IServiceProvider})">
       <summary>
@@ -177,8 +170,7 @@
             for a named <see cref="T:System.Net.Http.HttpClient" />.</summary>
       <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" />.</param>
       <typeparam name="THandler">
-            The type of the <see cref="T:System.Net.Http.DelegatingHandler" />. The handler type must be registered as a transient service.
-            </typeparam>
+            The type of the <see cref="T:System.Net.Http.DelegatingHandler" />. The handler type must be registered as a transient service.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RedactLoggedHeaders(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.Collections.Generic.IEnumerable{System.String})">
@@ -277,8 +269,7 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.Net.Http.HttpClient})">
@@ -290,8 +281,7 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.IServiceProvider,System.Net.Http.HttpClient})">
@@ -303,8 +293,7 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.Net.Http.HttpClient})">
@@ -316,8 +305,7 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
@@ -328,8 +316,7 @@
       <param name="name">The logical name of the <see cref="T:System.Net.Http.HttpClient" /> to configure.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
@@ -340,8 +327,7 @@
       <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.IServiceProvider,System.Net.Http.HttpClient})">
@@ -353,12 +339,10 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.Net.Http.HttpClient})">
@@ -370,12 +354,10 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.Net.Http.HttpClient,``1})">
@@ -386,11 +368,9 @@
       <param name="factory">A delegate that is used to create an instance of <typeparamref name="TClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
-            The implementation type of the typed client.
-            </typeparam>
+            The implementation type of the typed client.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.Net.Http.HttpClient,System.IServiceProvider,``1})">
@@ -401,11 +381,9 @@
       <param name="factory">A delegate that is used to create an instance of <typeparamref name="TClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
-            The implementation type of the typed client.
-            </typeparam>
+            The implementation type of the typed client.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.IServiceProvider,System.Net.Http.HttpClient})">
@@ -417,12 +395,10 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{System.Net.Http.HttpClient})">
@@ -434,12 +410,10 @@
       <param name="configureClient">A delegate that is used to configure an <see cref="T:System.Net.Http.HttpClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Func{System.Net.Http.HttpClient,``1})">
@@ -451,11 +425,9 @@
       <param name="factory">A delegate that is used to create an instance of <typeparamref name="TClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
-            The implementation type of the typed client.
-            </typeparam>
+            The implementation type of the typed client.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Func{System.Net.Http.HttpClient,System.IServiceProvider,``1})">
@@ -467,11 +439,9 @@
       <param name="factory">A delegate that is used to create an instance of <typeparamref name="TClient" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
-            The implementation type of the typed client.
-            </typeparam>
+            The implementation type of the typed client.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
@@ -482,12 +452,10 @@
       <param name="name">The logical name of the <see cref="T:System.Net.Http.HttpClient" /> to configure.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
@@ -498,12 +466,10 @@
       <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</param>
       <typeparam name="TClient">
             The type of the typed client. The type specified will be registered in the service collection as
-            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.
-            </typeparam>
+            a transient service. See <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" /> for more details about authoring typed clients.</typeparam>
       <typeparam name="TImplementation">
             The implementation type of the typed client. The type specified will be instantiated by the
-            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.
-            </typeparam>
+            <see cref="T:Microsoft.Extensions.Http.ITypedHttpClientFactory`1" />.</typeparam>
       <returns>An <see cref="T:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder" /> that can be used to configure the client.</returns>
     </member>
     <member name="M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IHttpClientBuilder})">
@@ -669,8 +635,7 @@
             Creates a typed client given an associated <see cref="T:System.Net.Http.HttpClient" />.</summary>
       <param name="httpClient">
             An <see cref="T:System.Net.Http.HttpClient" /> created by the <see cref="T:System.Net.Http.IHttpClientFactory" /> for the named client
-            associated with <typeparamref name="TClient" />.
-            </param>
+            associated with <typeparamref name="TClient" />.</param>
       <returns>An instance of <typeparamref name="TClient" />.</returns>
     </member>
     <member name="T:Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger">

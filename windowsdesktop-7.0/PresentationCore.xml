@@ -579,32 +579,32 @@
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.ActiveTextPositionChanged" />
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.AsyncContentLoaded">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.AutomationFocusChanged">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.InputDiscarded">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent"></xref>
+        <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.InputReachedOtherElement">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent"></xref>
+        <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.InputReachedTarget">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent"></xref>
+        <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.InvokePatternOnInvoked">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent"></xref>
+        <see cref="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.LiveRegionChanged">
@@ -613,12 +613,12 @@
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.MenuClosed">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.MenuClosedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuClosedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.MenuOpened">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.MenuOpenedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuOpenedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.Notification" />
@@ -627,47 +627,47 @@
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.SelectionItemPatternOnElementAddedToSelection">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent"></xref>
+        <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.SelectionItemPatternOnElementRemovedFromSelection">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent"></xref>
+        <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.SelectionItemPatternOnElementSelected">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent"></xref>
+        <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.SelectionPatternOnInvalidated">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent"></xref>
+        <see cref="F:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.StructureChanged">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.TextPatternOnTextChanged">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent"></xref>
+        <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.TextPatternOnTextSelectionChanged">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent"></xref>
+        <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.ToolTipClosed">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.ToolTipClosedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipClosedEvent" />
       </summary>
     </member>
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.ToolTipOpened">
       <summary>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Automation.AutomationElementIdentifiers.ToolTipOpenedEvent"></xref>
+        <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipOpenedEvent" />
       </summary>
     </member>
     <member name="T:System.Windows.Automation.Peers.AutomationOrientation">

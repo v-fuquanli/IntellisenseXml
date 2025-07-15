@@ -64,7 +64,7 @@
     <member name="M:Microsoft.Extensions.FileProviders.IFileProvider.Watch(System.String)">
       <summary>
             Creates an <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> for the specified <paramref name="filter" />.</summary>
-      <param name="filter">A filter string used to determine what files or folders to monitor. Examples: **/*.cs, *.*, subFolder/**/*.cshtml.</param>
+      <param name="filter">A filter string used to determine what files or folders to monitor. Examples: */.cs, ., subFolder/*/.cshtml.</param>
       <returns>An <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> that is notified when a file matching <paramref name="filter" /> is added, modified, or deleted.</returns>
     </member>
     <member name="T:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents">

@@ -13458,7 +13458,7 @@
       <param name="parameter">This parameter is not used.</param>
       <param name="culture">This parameter is not used.</param>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Windows.Data.Binding.DoNothing"></xref>
+        <see cref="F:System.Windows.Data.Binding.DoNothing" />
       </returns>
     </member>
     <member name="T:System.Windows.Controls.NotifyDataErrorValidationRule">
@@ -22205,7 +22205,7 @@
       <summary>Enables a <see cref="T:System.Windows.Data.CollectionView" /> object to participate in synchronized access to a collection used on multiple threads by using a mechanism other than a simple lock.</summary>
       <param name="collection">The collection that needs synchronized access.</param>
       <param name="context">An object that is passed to the callback.</param>
-      <param name="synchronizationCallback">The callback that is invoked whenever access to the collection is required. You can use it to ensure that the collection is accessed by one thread at a time. </param>
+      <param name="synchronizationCallback">The callback that is invoked whenever access to the collection is required. You can use it to ensure that the collection is accessed by one thread at a time.</param>
     </member>
     <member name="M:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)">
       <summary>Enables a <see cref="T:System.Windows.Data.CollectionView" /> object to participate in synchronized access to a collection used on multiple threads by using a simple locking mechanism.</summary>
@@ -24150,7 +24150,7 @@
     <member name="M:System.Windows.DependencyPropertyHelper.IsTemplatedValueDynamic(System.Windows.DependencyObject,System.Windows.DependencyProperty)">
       <summary>Indicates whether a specified element belongs to an instance of a template that defines a value for the specified property that may change at runtime based on changes elsewhere.</summary>
       <param name="elementInTemplate">An element that belongs to a template instance.</param>
-      <param name="dependencyProperty">A dependency property. </param>
+      <param name="dependencyProperty">A dependency property.</param>
       <returns>
         <see langword="true" /> if <paramref name="elementInTemplate" /> belongs to an instance of a template that defines a value for the specified property that may change at runtime based on changes elsewhere; otherwise, <see langword="false" />.</returns>
     </member>

@@ -106,8 +106,7 @@
       <param name="token">The token representing the state to extract.</param>
       <param name="value">
             Receives the value associated with the specified token, if the context is initialized;
-            otherwise, the default value for the type of the <paramref name="value" /> parameter.
-            </param>
+            otherwise, the default value for the type of the <paramref name="value" /> parameter.</param>
       <returns>
         <see langword="true" /> if the context is initialized; otherwise, <see langword="false" />.</returns>
     </member>

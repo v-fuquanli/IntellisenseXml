@@ -145,8 +145,7 @@
             Initializes a new instance of the <see cref="T:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector`1" /> class.</summary>
       <param name="meterScope">The scope of the meter that publishes the instrument to record.
             Take caution when using Meters in the global scope (scope == null). This interacts with
-            static mutable data and tests doing this should not be run in parallel with each other.
-            </param>
+            static mutable data and tests doing this should not be run in parallel with each other.</param>
       <param name="meterName">The name of the meter that publishes the instrument to record.</param>
       <param name="instrumentName">The name of the instrument to record.</param>
       <param name="timeProvider">The time provider to use, or <see langword="null" /> to use the system time provider.</param>

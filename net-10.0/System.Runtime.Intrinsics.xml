@@ -37684,7 +37684,7 @@
       <param name="value">The vector.</param>
       <exception cref="T:System.NotSupportedException">The type of the vector (<typeparamref name="T" />) is not supported.</exception>
       <returns>
-        <code data-dev-comment-type="paramref">value</code>
+        <paramref name="value" />
       </returns>
     </member>
     <member name="M:System.Runtime.Intrinsics.Vector128`1.op_UnsignedRightShift(System.Runtime.Intrinsics.Vector128{`0},System.Int32)">
@@ -39846,7 +39846,7 @@
       <param name="value">The vector.</param>
       <exception cref="T:System.NotSupportedException">The type of the vector (<typeparamref name="T" />) is not supported.</exception>
       <returns>
-        <code data-dev-comment-type="paramref">value</code>
+        <paramref name="value" />
       </returns>
     </member>
     <member name="M:System.Runtime.Intrinsics.Vector256`1.op_UnsignedRightShift(System.Runtime.Intrinsics.Vector256{`0},System.Int32)">
@@ -42130,7 +42130,7 @@
       <param name="value">The vector.</param>
       <exception cref="T:System.NotSupportedException">The type of the vector (<typeparamref name="T" />) is not supported.</exception>
       <returns>
-        <code data-dev-comment-type="paramref">value</code>
+        <paramref name="value" />
       </returns>
     </member>
     <member name="M:System.Runtime.Intrinsics.Vector512`1.op_UnsignedRightShift(System.Runtime.Intrinsics.Vector512{`0},System.Int32)">
@@ -44007,7 +44007,7 @@
       <param name="value">The vector.</param>
       <exception cref="T:System.NotSupportedException">The type of the vector (<typeparamref name="T" />) is not supported.</exception>
       <returns>
-        <code data-dev-comment-type="paramref">value</code>
+        <paramref name="value" />
       </returns>
     </member>
     <member name="M:System.Runtime.Intrinsics.Vector64`1.op_UnsignedRightShift(System.Runtime.Intrinsics.Vector64{`0},System.Int32)">

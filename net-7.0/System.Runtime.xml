@@ -14127,8 +14127,8 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
     </member>
     <member name="M:System.DateTime.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)">
       <summary>Converts a memory span that contains string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
-      <param name="s">The memory span that contains the string to parse. See <see href="#StringToParse">The string to parse</see> for more information.</param>
-      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See <see href="#Culture">Parsing and cultural conventions</see></param>
+      <param name="s">The memory span that contains the string to parse. See The string to parse for more information.</param>
+      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See Parsing and cultural conventions</param>
       <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
       <exception cref="T:System.FormatException">
         <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
@@ -14144,8 +14144,8 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
     </member>
     <member name="M:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)">
       <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
-      <param name="s">A string that contains a date and time to convert. See <see href="#StringToParse">The string to parse</see> for more information.</param>
-      <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.  See <see href="#Culture">Parsing and cultural conventions</see></param>
+      <param name="s">A string that contains a date and time to convert. See The string to parse for more information.</param>
+      <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.  See Parsing and cultural conventions</param>
       <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
@@ -14157,8 +14157,8 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
     </member>
     <member name="M:System.DateTime.Parse(System.String,System.IFormatProvider)">
       <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information.</summary>
-      <param name="s">A string that contains a date and time to convert. See <see href="#StringToParse">The string to parse</see> for more information.</param>
-      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See <see href="#Culture">Parsing and cultural conventions</see></param>
+      <param name="s">A string that contains a date and time to convert. See The string to parse for more information.</param>
+      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See Parsing and cultural conventions</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.FormatException">
@@ -14167,7 +14167,7 @@ Type <paramref name="T" /> cannot be cast automatically to the type of the desti
     </member>
     <member name="M:System.DateTime.Parse(System.String)">
       <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using the conventions of the current culture.</summary>
-      <param name="s">A string that contains a date and time to convert. See <see href="#StringToParse">The string to parse</see> for more information.</param>
+      <param name="s">A string that contains a date and time to convert. See The string to parse for more information.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.FormatException">
@@ -15618,7 +15618,7 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
       <param name="format">A format specifier that defines the required format of <paramref name="input" />.</param>
       <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
       <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the </param>
+      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.
 -or-
@@ -15634,7 +15634,7 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
       <param name="formats">A array of standard or custom format strings that define the acceptable formats of <paramref name="input" />.</param>
       <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
       <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the </param>
+      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.
 -or-
@@ -17018,7 +17018,7 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
     <member name="M:System.Decimal.TryParse(System.String,System.Decimal@)">
       <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
       <param name="s">The string representation of the number to convert.</param>
-      <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a valid format, or represents a number less than <see cref="F:System.Decimal.MinValue">Decimal.MinValue</see> or greater than <see cref="F:System.Decimal.MaxValue">Decimal.MaxValue</see>. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten. </param>
+      <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a valid format, or represents a number less than <see cref="F:System.Decimal.MinValue">Decimal.MinValue</see> or greater than <see cref="F:System.Decimal.MaxValue">Decimal.MaxValue</see>. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten.</param>
       <returns>
         <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
     </member>
@@ -21584,7 +21584,7 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available, and controls whether the garbage collector does a full blocking garbage collection if not enough memory is initially available.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <param name="disallowFullBlockingGC">
         <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate <paramref name="totalSize" /> bytes; otherwise, <see langword="false" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -21595,7 +21595,7 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64,System.Int64,System.Boolean)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap, and controls whether the garbage collector does a full blocking garbage collection if not enough memory is initially available.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <param name="lohSize">The number of bytes in <paramref name="totalSize" /> to use for large object heap (LOH) allocations.</param>
       <param name="disallowFullBlockingGC">
         <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate the specified memory on the small object heap (SOH) and LOH; otherwise, <see langword="false" />.</param>
@@ -21607,7 +21607,7 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64,System.Int64)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <param name="lohSize">The number of bytes in <paramref name="totalSize" /> to use for large object heap (LOH) allocations.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="totalSize" /> - <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
@@ -21617,7 +21617,7 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
       <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
@@ -44000,7 +44000,7 @@ The range specified by the combination of <paramref name="offset" /> and <paramr
     </member>
     <member name="T:System.Memory`1">
       <summary>Represents a contiguous region of memory.</summary>
-      <typeparam name="T">The type of items in the <see cref="T:System.Memory`1" />. </typeparam>
+      <typeparam name="T">The type of items in the <see cref="T:System.Memory`1" />.</typeparam>
     </member>
     <member name="M:System.Memory`1.#ctor(`0[],System.Int32,System.Int32)">
       <summary>Creates a new <see cref="T:System.Memory`1" /> object that includes a specified number of elements of an array beginning at a specified index.</summary>
@@ -59858,7 +59858,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <summary>Creates a new <see cref="T:System.Span`1" /> object that includes a specified number of elements of an array starting at a specified index.</summary>
       <param name="array">The source array.</param>
       <param name="start">The zero-based index of the first element to include in the new <see cref="T:System.Span`1" />.</param>
-      <param name="length">The number of elements to include in the new <see cref="T:System.Span`1" />. </param>
+      <param name="length">The number of elements to include in the new <see cref="T:System.Span`1" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
 
@@ -59874,7 +59874,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     </member>
     <member name="M:System.Span`1.#ctor(`0[])">
       <summary>Creates a new <see cref="T:System.Span`1" /> object over the entirety of a specified array.</summary>
-      <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object. </param>
+      <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object.</param>
       <exception cref="T:System.ArrayTypeMismatchException">
         <typeparamref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <typeparamref name="T" />.</exception>
     </member>
@@ -60658,7 +60658,7 @@ Either <paramref name="indexA" /> or <paramref name="indexB" /> is <see langword
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of three specified objects. An parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <param name="arg2">The third object to format.</param>
@@ -60675,7 +60675,7 @@ The index of a format item is less than zero, or greater than two.</exception>
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of two specified objects. A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -60691,7 +60691,7 @@ The index of a format item is not zero or one.</exception>
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object)">
       <summary>Replaces the format item or items in a specified string with the string representation of the corresponding object. A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The object to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> is <see langword="null" />.</exception>
@@ -60706,7 +60706,7 @@ The index of a format item is not zero.</exception>
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])">
       <summary>Replaces the format items in a string with the string representations of corresponding objects in a specified array. A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="args">An object array that contains zero or more objects to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> or <paramref name="args" /> is <see langword="null" />.</exception>
@@ -60720,7 +60720,7 @@ The index of a format item is less than zero, or greater than or equal to the le
     </member>
     <member name="M:System.String.Format(System.String,System.Object,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of three specified objects.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <param name="arg2">The third object to format.</param>
@@ -60736,7 +60736,7 @@ The index of a format item is less than zero, or greater than two.</exception>
     </member>
     <member name="M:System.String.Format(System.String,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of two specified objects.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -60751,7 +60751,7 @@ The index of a format item is not zero or one.</exception>
     </member>
     <member name="M:System.String.Format(System.String,System.Object)">
       <summary>Replaces one or more format items in a string with the string representation of a specified object.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The object to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> is <see langword="null" />.</exception>
@@ -60764,7 +60764,7 @@ The index of a format item is not zero.</exception>
     </member>
     <member name="M:System.String.Format(System.String,System.Object[])">
       <summary>Replaces the format item in a specified string with the string representation of a corresponding object in a specified array.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="args">An object array that contains zero or more objects to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> or <paramref name="args" /> is <see langword="null" />.</exception>
@@ -67160,7 +67160,7 @@ timeout is greater than
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationAction">The action delegate to execute when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
 
@@ -67189,7 +67189,7 @@ timeout is greater than
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
       <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <param name="scheduler">The object that is used to schedule the new continuation task.</param>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -67230,7 +67230,7 @@ timeout is greater than
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -67261,7 +67261,7 @@ timeout is greater than
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationAction">The action delegate to execute when all tasks in the <paramref name="tasks" /> array have completed.</param>
       <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <param name="scheduler">The object that is used to schedule the new continuation task.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -67302,7 +67302,7 @@ timeout is greater than
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationAction">The action delegate to execute when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -67333,7 +67333,7 @@ timeout is greater than
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
       <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <param name="scheduler">The object that is used to schedule the new continuation task.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
@@ -67379,7 +67379,7 @@ timeout is greater than
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -73817,7 +73817,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
  -or-
 
  <see cref="F:System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
-      <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise. </param>
+      <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise.</param>
       <param name="filterCriteria">The search criteria that determines whether a member is returned in the array of <see langword="MemberInfo" /> objects.
 
  The fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> can be used in conjunction with the <see langword="FilterAttribute" /> delegate supplied by this class.</param>
@@ -79707,7 +79707,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     </member>
     <member name="M:System.UIntPtr.op_Explicit(System.UInt32)~System.UIntPtr">
       <summary>Converts the value of a 32-bit unsigned integer to an <see cref="T:System.UIntPtr" />.</summary>
-      <param name="value">A 32-bit unsigned integer. </param>
+      <param name="value">A 32-bit unsigned integer.</param>
       <returns>A new instance of <see cref="T:System.UIntPtr" /> initialized to <paramref name="value" />.</returns>
     </member>
     <member name="M:System.UIntPtr.op_Explicit(System.UInt64)~System.UIntPtr">

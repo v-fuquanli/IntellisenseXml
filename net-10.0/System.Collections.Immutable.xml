@@ -271,8 +271,7 @@
       <param name="key">The alternate key of the value to get.</param>
       <param name="value">
             When this method returns, contains the value associated with the specified key, if the key is found;
-            otherwise, the default value for the type of the value parameter.
-        </param>
+            otherwise, the default value for the type of the value parameter.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="key" /> is <see langword="null" />.</exception>
       <returns>

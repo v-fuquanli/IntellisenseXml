@@ -784,7 +784,7 @@
     </member>
     <member name="M:System.ComponentModel.SortDescription.#ctor(System.String,System.ComponentModel.ListSortDirection)">
       <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SortDescription" /> structure.</summary>
-      <param name="propertyName">The name of the property to sort the list by. If the collection contains strings or value types, set this parameter to the empty string (`""`).</param>
+      <param name="propertyName">The name of the property to sort the list by. If the collection contains strings or value types, set this parameter to the empty string ("").</param>
       <param name="direction">The sort order.</param>
       <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="direction" /> parameter does not specify a valid value.</exception>
     </member>

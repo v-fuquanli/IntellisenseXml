@@ -10,8 +10,8 @@
     </member>
     <member name="M:System.Threading.Tasks.TimeProviderTaskExtensions.CreateCancellationTokenSource(System.TimeProvider,System.TimeSpan)">
       <summary>Initializes a new instance of the <see cref="T:System.Threading.CancellationTokenSource" /> class that will be canceled after the specified <see cref="T:System.TimeSpan" />.</summary>
-      <param name="timeProvider">The <see cref="T:System.TimeProvider" /> with which to interpret the <paramref name="delay" />. </param>
-      <param name="delay">The time interval to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource" />. </param>
+      <param name="timeProvider">The <see cref="T:System.TimeProvider" /> with which to interpret the <paramref name="delay" />.</param>
+      <param name="delay">The time interval to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException"> The <paramref name="delay" /> is negative and not equal to <see cref="F:System.Threading.Timeout.InfiniteTimeSpan" /> or greater than maximum allowed timer duration.</exception>
       <returns>
         <see cref="T:System.Threading.CancellationTokenSource" /> that will be canceled after the specified <paramref name="delay" />.</returns>

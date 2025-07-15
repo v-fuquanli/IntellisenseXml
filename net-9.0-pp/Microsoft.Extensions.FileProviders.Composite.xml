@@ -61,7 +61,7 @@
     <member name="M:Microsoft.Extensions.FileProviders.CompositeFileProvider.Watch(System.String)">
       <summary>
             Creates a <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> for the specified <paramref name="pattern" />.</summary>
-      <param name="pattern">A filter string used to determine what files or folders to monitor. Examples: \*\*/\*.cs, \*.\*, subFolder/\*\*/\*.cshtml.</param>
+      <param name="pattern">A filter string used to determine what files or folders to monitor. Examples: **/*.cs, *.*, subFolder/**/*.cshtml.</param>
       <returns>An <see cref="T:Microsoft.Extensions.Primitives.IChangeToken" /> that is notified when a file matching <paramref name="pattern" /> is added, modified, or deleted.
             The change token will be notified when one of the change token returned by the provided <see cref="T:Microsoft.Extensions.FileProviders.IFileProvider" /> is notified.</returns>
     </member>

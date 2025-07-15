@@ -691,7 +691,7 @@
       <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
       <param name="overwrite">
         <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
-      <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <c>ShowUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Specifies behavior when the user clicks Cancel or No on the dialog box shown as a result of <c>ShowUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
       <exception cref="T:System.IO.IOException">
@@ -752,7 +752,7 @@
       <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
       <param name="overwrite">
         <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
-      <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <paramref name="showUI" /> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Specifies behavior when the user clicks Cancel or No on the dialog box shown as a result of <paramref name="showUI" /> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
       <exception cref="T:System.IO.IOException">
@@ -793,7 +793,7 @@
       <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
       <param name="overwrite">
         <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
-      <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <c>ShowUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Specifies behavior when the user clicks Cancel or No on the dialog box shown as a result of <c>ShowUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
       <exception cref="T:System.IO.IOException">
@@ -885,7 +885,7 @@
       <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
       <param name="showUI">Whether to display progress of the operation. Default is <see langword="False" />.</param>
       <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
-      <param name="onUserCancel">Action to be taken when the user clicks **Cancel**. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Action to be taken when the user clicks Cancel. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
       <exception cref="T:System.InvalidOperationException">
@@ -944,7 +944,7 @@
       <param name="showUI">
         <see langword="True" /> to display progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
       <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
-      <param name="onUserCancel">Action to be taken when the user clicks **Cancel**. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Action to be taken when the user clicks Cancel. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
       <exception cref="T:System.InvalidOperationException">
@@ -977,7 +977,7 @@
       <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
       <param name="showUI">Whether to display progress of the operation. Default is <see langword="False" />.</param>
       <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
-      <param name="onUserCancel">Action to be taken when the user clicks **Cancel**. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Action to be taken when the user clicks Cancel. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
       <exception cref="T:System.InvalidOperationException">
@@ -1467,7 +1467,7 @@
       <param name="sourceDirectoryName">The directory to be copied.</param>
       <param name="destinationDirectoryName">The location to which the directory should be copied.</param>
       <param name="showUI">Whether to visually track the operation's progress. Default is <see langword="UIOption.OnlyErrorDialogs" />.</param>
-      <param name="onUserCancel">Specifies what should be done if the user clicks **Cancel** during the operation. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Specifies what should be done if the user clicks Cancel during the operation. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">The path is not valid for one of the following reasons: it is a zero-length string; it contains only white space; it contains invalid characters; or it is a device path (starts with \\.\).</exception>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="destinationDirectoryName" /> or <paramref name="sourceDirectoryName" /> is <see langword="Nothing" /> or an empty string.</exception>
@@ -1536,7 +1536,7 @@
       <param name="sourceFileName">The file to be copied.</param>
       <param name="destinationFileName">The location to which the file should be copied.</param>
       <param name="showUI">Whether to visually track the operation's progress. Default is <see langword="UIOption.OnlyErrorDialogs" />.</param>
-      <param name="onUserCancel">Specifies what should be done if the user clicks **Cancel** during the operation. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+      <param name="onUserCancel">Specifies what should be done if the user clicks Cancel during the operation. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="destinationFileName" /> contains path information.</exception>
       <exception cref="T:System.ArgumentNullException">
@@ -1627,8 +1627,8 @@
       <summary>Deletes a directory.</summary>
       <param name="directory">Directory to be deleted.</param>
       <param name="showUI">Specifies whether to visually track the operation's progress. Default is <see langword="UIOption.OnlyErrorDialogs" />.</param>
-      <param name="recycle">Specifies whether or not the deleted file should be sent to the **Recycle Bin**. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
-      <param name="onUserCancel">Specifies whether to throw an exception if the user clicks **Cancel**.</param>
+      <param name="recycle">Specifies whether or not the deleted file should be sent to the Recycle Bin. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
+      <param name="onUserCancel">Specifies whether to throw an exception if the user clicks Cancel.</param>
       <exception cref="T:System.ArgumentException">The path is a zero-length string, is malformed, contains only white space, or contains invalid characters (including wildcard characters). The path is a device path (starts with \\.\).</exception>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="directory" /> is <see langword="Nothing" /> or an empty string.</exception>
@@ -1643,7 +1643,7 @@
       <summary>Deletes a directory.</summary>
       <param name="directory">Directory to be deleted.</param>
       <param name="showUI">Specifies whether to visually track the operation's progress. Default is <see langword="UIOption.OnlyErrorDialogs" />.</param>
-      <param name="recycle">Specifies whether or not the deleted file should be sent to the **Recycle Bin**. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
+      <param name="recycle">Specifies whether or not the deleted file should be sent to the Recycle Bin. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
       <exception cref="T:System.ArgumentException">The path is a zero-length string, is malformed, contains only white space, or contains invalid characters (including wildcard characters). The path is a device path (starts with \\.\).</exception>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="directory" /> is <see langword="Nothing" /> or an empty string.</exception>
@@ -1658,7 +1658,7 @@
       <summary>Deletes a file.</summary>
       <param name="file">Name and path of the file to be deleted.</param>
       <param name="showUI">Whether to visually track the operation's progress. Default is <see langword="UIOption.OnlyErrorDialogs" />.</param>
-      <param name="recycle">Whether or not the deleted file should be sent to the **Recycle Bin**. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
+      <param name="recycle">Whether or not the deleted file should be sent to the Recycle Bin. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
       <param name="onUserCancel">Specifies whether or not an exception is thrown when the user cancels the operation. Default is <see langword="UICancelOption.ThrowException" />.</param>
       <exception cref="T:System.ArgumentException">The path is not valid for one of the following reasons: it is a zero-length string; it contains only white space; it contains invalid characters; it has a trailing slash where a file must be specified; or it is a device path (starts with \\.\).</exception>
       <exception cref="T:System.ArgumentNullException">
@@ -1675,7 +1675,7 @@
       <summary>Deletes a file.</summary>
       <param name="file">Name and path of the file to be deleted.</param>
       <param name="showUI">Whether to visually track the operation's progress. Default is <see langword="UIOption.OnlyErrorDialogs" />.</param>
-      <param name="recycle">Whether or not the deleted file should be sent to the **Recycle Bin**. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
+      <param name="recycle">Whether or not the deleted file should be sent to the Recycle Bin. Default is <see langword="RecycleOption.DeletePermanently" />.</param>
       <exception cref="T:System.ArgumentException">The path is not valid for one of the following reasons: it is a zero-length string; it contains only white space; it contains invalid characters; it has a trailing slash where a file must be specified; or it is a device path (starts with \\.\).</exception>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="file" /> is <see langword="Nothing" /> or an empty string.</exception>

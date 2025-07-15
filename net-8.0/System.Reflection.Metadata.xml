@@ -2458,7 +2458,7 @@
       <param name="implAttributes">The method implementation attributes.</param>
       <param name="name">The method name.</param>
       <param name="signature">The method signature.</param>
-      <param name="bodyOffset">Offset within the block in the PE image that stores method bodies (the IL stream), or -1 if the method doesn't have a body. </param>
+      <param name="bodyOffset">Offset within the block in the PE image that stores method bodies (the IL stream), or -1 if the method doesn't have a body.</param>
       <param name="parameterList">If the method declares parameters in the Params table, set this to the handle of the first one. Otherwise, set this to the handle of the first parameter declared by the next method definition. If no parameters are declared in the module, <see langword="System.Reflection.Metadata.Ecma335.MetadataTokens.ParameterHandle(1)" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="bodyOffset" /> is less than -1.</exception>

@@ -25,7 +25,7 @@
     </member>
     <member name="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String)">
       <summary>Defines a named transient dynamic module in this assembly.</summary>
-      <param name="name">The name of the dynamic module. </param>
+      <param name="name">The name of the dynamic module.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> begins with white space.
 

@@ -14,8 +14,7 @@
       <param name="expectedArrayType">Expected array type.</param>
       <param name="allowNulls">
         <see langword="true" /> to permit <see langword="null" /> values within the array;
-              otherwise, <see langword="false" />.
-            </param>
+              otherwise, <see langword="false" />.</param>
       <exception cref="T:System.InvalidOperationException">
         <paramref name="expectedArrayType" /> does not match the data from the payload.</exception>
       <returns>An array filled with the data provided in the serialized records.</returns>
@@ -182,13 +181,11 @@
       <param name="payload">The NRBF payload.</param>
       <param name="recordMap">
               When this method returns, contains a mapping of <see cref="T:System.Formats.Nrbf.SerializationRecordId" /> to the associated serialization record.
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <param name="options">An object that describes optional <see cref="T:System.Formats.Nrbf.PayloadOptions" /> parameters to use.</param>
       <param name="leaveOpen">
         <see langword="true" /> to leave <paramref name="payload" /> payload open
-              after the reading is finished; otherwise, <see langword="false" />.
-            </param>
+              after the reading is finished; otherwise, <see langword="false" />.</param>
       <returns>A <xref data-throw-if-not-resolved="true" uid="System.Formats.Nrbf.SerializationRecord"></xref> that represents the root object.
             It can be either <xref data-throw-if-not-resolved="true" uid="System.Formats.Nrbf.PrimitiveTypeRecord`1"></xref>,
             a <xref data-throw-if-not-resolved="true" uid="System.Formats.Nrbf.ClassRecord"></xref>, or an <xref data-throw-if-not-resolved="true" uid="System.Formats.Nrbf.ArrayRecord"></xref>.</returns>
@@ -200,8 +197,7 @@
       <param name="options">Options to control behavior during parsing.</param>
       <param name="leaveOpen">
         <see langword="true" /> to leave <paramref name="payload" /> payload open
-              after the reading is finished; otherwise, <see langword="false" />.
-            </param>
+              after the reading is finished; otherwise, <see langword="false" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="payload" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -432,8 +428,7 @@
             When overridden in a derived class, allocates an array of <typeparamref name="T" /> and fills it with the data provided in the serialized records (in case of primitive types like <see cref="T:System.String" /> or <see cref="T:System.Int32" />) or the serialized records themselves.</summary>
       <param name="allowNulls">
         <see langword="true" /> to permit <see langword="null" /> values within the array;
-              otherwise, <see langword="false" />.
-            </param>
+              otherwise, <see langword="false" />.</param>
       <returns>An array filled with the data provided in the serialized records.</returns>
     </member>
     <member name="P:System.Formats.Nrbf.SZArrayRecord`1.Length">

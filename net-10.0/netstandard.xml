@@ -6396,13 +6396,13 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     </member>
     <member name="M:System.Buffers.IBufferWriter`1.GetMemory(System.Int32)">
       <summary>Returns a <see cref="T:System.Memory`1" /> to write to that is at least the requested size (specified by <paramref name="sizeHint" />).</summary>
-      <param name="sizeHint">The minimum length of the returned <see cref="T:System.Memory`1" />. If 0, a non-empty buffer is returned. </param>
+      <param name="sizeHint">The minimum length of the returned <see cref="T:System.Memory`1" />. If 0, a non-empty buffer is returned.</param>
       <exception cref="T:System.OutOfMemoryException">The requested buffer size is not available.</exception>
       <returns>A <see cref="T:System.Memory`1" /> of at least the size <paramref name="sizeHint" />. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer.</returns>
     </member>
     <member name="M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)">
       <summary>Returns a <see cref="T:System.Span`1" /> to write to that is at least the requested size (specified by <paramref name="sizeHint" />).</summary>
-      <param name="sizeHint">The minimum length of the returned <see cref="T:System.Span`1" />. If 0, a non-empty buffer is returned. </param>
+      <param name="sizeHint">The minimum length of the returned <see cref="T:System.Span`1" />. If 0, a non-empty buffer is returned.</param>
       <returns>A <see cref="T:System.Span`1" /> of at least the size <paramref name="sizeHint" />. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer.</returns>
     </member>
     <member name="T:System.Buffers.IMemoryOwner`1">
@@ -6501,7 +6501,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.MemoryPool`1.Dispose(System.Boolean)">
       <summary>Frees the unmanaged resources used by the memory pool and optionally releases the managed resources.</summary>
       <param name="disposing">
-        <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources. </param>
+        <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
     </member>
     <member name="M:System.Buffers.MemoryPool`1.Rent(System.Int32)">
       <summary>Returns a memory block capable of holding at least <paramref name="minBufferSize" /> elements of T.</summary>
@@ -7342,7 +7342,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Byte@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.Byte" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7360,7 +7360,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.DateTimeOffset@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.DateTimeOffset" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7369,7 +7369,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Decimal@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.Decimal" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7378,7 +7378,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Double@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.Double" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7387,7 +7387,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Guid@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.Guid" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7396,7 +7396,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Int16@,System.Int32@,System.Char)">
       <summary>Parses an <see cref="T:System.Int16" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7405,7 +7405,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Int32@,System.Int32@,System.Char)">
       <summary>Parses an <see cref="T:System.Int32" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7414,7 +7414,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Int64@,System.Int32@,System.Char)">
       <summary>Parses an <see cref="T:System.Int64" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7423,7 +7423,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.SByte@,System.Int32@,System.Char)">
       <summary>Parses an <see cref="T:System.SByte" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7432,7 +7432,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.Single@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.Single" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7441,7 +7441,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.TimeSpan@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.TimeSpan" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7450,7 +7450,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.UInt16@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.UInt16" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7459,7 +7459,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.UInt32@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.UInt32" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -7468,7 +7468,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
     <member name="M:System.Buffers.Text.Utf8Parser.TryParse(System.ReadOnlySpan{System.Byte},System.UInt64@,System.Int32@,System.Char)">
       <summary>Parses a <see cref="T:System.UInt64" /> at the start of a Utf8 string.</summary>
       <param name="source">The Utf8 string to parse.</param>
-      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded. </param>
+      <param name="value">When the method returns, contains the value parsed from <paramref name="source" />, if the parsing operation succeeded.</param>
       <param name="bytesConsumed">If the parsing operation was successful, contains the length in bytes of the parsed substring when the method returns. If the method fails, <paramref name="bytesConsumed" /> is set to 0.</param>
       <param name="standardFormat">The expected format of the Utf8 string.</param>
       <returns>
@@ -48388,8 +48388,8 @@ The target <see cref="T:System.Data.DataSet" /> must have the same schema as the
     </member>
     <member name="M:System.DateTime.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)">
       <summary>Converts a memory span that contains string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
-      <param name="s">The memory span that contains the string to parse. See <see href="#StringToParse">The string to parse</see> for more information.</param>
-      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See <see href="#Culture">Parsing and cultural conventions</see></param>
+      <param name="s">The memory span that contains the string to parse. See The string to parse for more information.</param>
+      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See Parsing and cultural conventions</param>
       <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
       <exception cref="T:System.FormatException">
         <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
@@ -48405,8 +48405,8 @@ The target <see cref="T:System.Data.DataSet" /> must have the same schema as the
     </member>
     <member name="M:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)">
       <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
-      <param name="s">A string that contains a date and time to convert. See <see href="#StringToParse">The string to parse</see> for more information.</param>
-      <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.  See <see href="#Culture">Parsing and cultural conventions</see></param>
+      <param name="s">A string that contains a date and time to convert. See The string to parse for more information.</param>
+      <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.  See Parsing and cultural conventions</param>
       <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
@@ -48418,8 +48418,8 @@ The target <see cref="T:System.Data.DataSet" /> must have the same schema as the
     </member>
     <member name="M:System.DateTime.Parse(System.String,System.IFormatProvider)">
       <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information.</summary>
-      <param name="s">A string that contains a date and time to convert. See <see href="#StringToParse">The string to parse</see> for more information.</param>
-      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See <see href="#Culture">Parsing and cultural conventions</see></param>
+      <param name="s">A string that contains a date and time to convert. See The string to parse for more information.</param>
+      <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See Parsing and cultural conventions</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.FormatException">
@@ -48428,7 +48428,7 @@ The target <see cref="T:System.Data.DataSet" /> must have the same schema as the
     </member>
     <member name="M:System.DateTime.Parse(System.String)">
       <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using the conventions of the current culture.</summary>
-      <param name="s">A string that contains a date and time to convert. See <see href="#StringToParse">The string to parse</see> for more information.</param>
+      <param name="s">A string that contains a date and time to convert. See The string to parse for more information.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.FormatException">
@@ -49909,7 +49909,7 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
       <param name="format">A format specifier that defines the required format of <paramref name="input" />.</param>
       <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
       <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the </param>
+      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.
 -or-
@@ -49925,7 +49925,7 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
       <param name="formats">A array of standard or custom format strings that define the acceptable formats of <paramref name="input" />.</param>
       <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
       <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the </param>
+      <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue">DateTimeOffset.MinValue</see> if the conversion failed. The conversion fails if the</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.
 -or-
@@ -51377,7 +51377,7 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
     <member name="M:System.Decimal.TryParse(System.String,System.Decimal@)">
       <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
       <param name="s">The string representation of the number to convert.</param>
-      <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a valid format, or represents a number less than <see cref="F:System.Decimal.MinValue">Decimal.MinValue</see> or greater than <see cref="F:System.Decimal.MaxValue">Decimal.MaxValue</see>. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten. </param>
+      <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a valid format, or represents a number less than <see cref="F:System.Decimal.MinValue">Decimal.MinValue</see> or greater than <see cref="F:System.Decimal.MaxValue">Decimal.MaxValue</see>. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten.</param>
       <returns>
         <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
     </member>
@@ -56631,14 +56631,14 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
     <member name="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)">
       <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
       <param name="eventSourceType">The type of the event source.</param>
-      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the <see href="https://learn.microsoft.com/windows/win32/wes/eventmanifestschema-provider-eventstype-element">provider</see> element of the manifest.</param>
+      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the provider element of the manifest.</param>
       <param name="flags">A bitwise combination of the enumeration values that specify how the manifest is generated.</param>
       <returns>The XML data string or <see langword="null" />.</returns>
     </member>
     <member name="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String)">
       <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
       <param name="eventSourceType">The type of the event source.</param>
-      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the <see href="https://learn.microsoft.com/windows/win32/wes/eventmanifestschema-provider-eventstype-element">provider</see> element of the manifest.</param>
+      <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the provider element of the manifest.</param>
       <returns>The XML data string.</returns>
     </member>
     <member name="M:System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)">
@@ -63539,7 +63539,7 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available, and controls whether the garbage collector does a full blocking garbage collection if not enough memory is initially available.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <param name="disallowFullBlockingGC">
         <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate <paramref name="totalSize" /> bytes; otherwise, <see langword="false" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -63550,7 +63550,7 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64,System.Int64,System.Boolean)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap, and controls whether the garbage collector does a full blocking garbage collection if not enough memory is initially available.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <param name="lohSize">The number of bytes in <paramref name="totalSize" /> to use for large object heap (LOH) allocations.</param>
       <param name="disallowFullBlockingGC">
         <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate the specified memory on the small object heap (SOH) and LOH; otherwise, <see langword="false" />.</param>
@@ -63562,7 +63562,7 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64,System.Int64)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <param name="lohSize">The number of bytes in <paramref name="totalSize" /> to use for large object heap (LOH) allocations.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="totalSize" /> - <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
@@ -63572,7 +63572,7 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
     </member>
     <member name="M:System.GC.TryStartNoGCRegion(System.Int64)">
       <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available.</summary>
-      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the <see href="/dotnet/standard/garbage-collection/fundamentals">Fundamentals of Garbage Collection</see> article.</param>
+      <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the Fundamentals of Garbage Collection article.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
       <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
@@ -101124,7 +101124,7 @@ The range specified by the combination of <paramref name="offset" /> and <paramr
     </member>
     <member name="T:System.Memory`1">
       <summary>Represents a contiguous region of memory.</summary>
-      <typeparam name="T">The type of items in the <see cref="T:System.Memory`1" />. </typeparam>
+      <typeparam name="T">The type of items in the <see cref="T:System.Memory`1" />.</typeparam>
     </member>
     <member name="M:System.Memory`1.#ctor(`0[],System.Int32,System.Int32)">
       <summary>Creates a new <see cref="T:System.Memory`1" /> object that includes a specified number of elements of an array beginning at a specified index.</summary>
@@ -107166,7 +107166,7 @@ The header value format is invalid for this header name, or the header does not 
       <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with the provided handler, and specifies whether that handler should be disposed when this instance is disposed.</summary>
       <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler" /> responsible for processing the HTTP response messages.</param>
       <param name="disposeHandler">
-        <see langword="true" /> if the inner handler should be disposed of by <see href="xref:System.Net.Http.HttpMessageInvoker.Dispose">HttpClient.Dispose</see>; <see langword="false" /> if you intend to reuse the inner handler.</param>
+        <see langword="true" /> if the inner handler should be disposed of by HttpClient.Dispose; <see langword="false" /> if you intend to reuse the inner handler.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> is <see langword="null" />.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler)">
@@ -114811,7 +114811,7 @@ The number of elements in this <see cref="T:System.Net.NetworkInformation.IPAddr
     </member>
     <member name="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.TimeSpan,System.Byte[],System.Net.NetworkInformation.PingOptions,System.Threading.CancellationToken)">
       <summary>Sends an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the specified computer, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation, a buffer to use for send and receive, control fragmentation and Time-to-Live values, and a <see cref="T:System.Threading.CancellationToken" /> for the ICMP echo message packet.</summary>
-      <param name="hostNameOrAddress"> The computer that is the destination for the ICMP echo message. The value specified for this parameter can be a host name or a string representation of an IP address. </param>
+      <param name="hostNameOrAddress"> The computer that is the destination for the ICMP echo message. The value specified for this parameter can be a host name or a string representation of an IP address.</param>
       <param name="timeout">The amount of time (after sending the echo message) to wait for the ICMP echo reply message.</param>
       <param name="buffer">A <see cref="T:System.Byte" /> array that contains data to be sent with the ICMP echo message and returned in the ICMP echo reply message. The array cannot contain more than 65,500 bytes.</param>
       <param name="options">A <see cref="T:System.Net.NetworkInformation.PingOptions" /> object used to control fragmentation and Time-to-Live values for the ICMP echo message packet.</param>
@@ -131642,7 +131642,7 @@ This API is not CLS-compliant.</summary>
       <param name="value">The vector.</param>
       <exception cref="T:System.NotSupportedException">The type of the vector (<typeparamref name="T" />) is not supported.</exception>
       <returns>
-        <code data-dev-comment-type="paramref">value</code>
+        <paramref name="value" />
       </returns>
     </member>
     <member name="M:System.Numerics.Vector`1.op_UnsignedRightShift(System.Numerics.Vector{`0},System.Int32)">
@@ -136946,7 +136946,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     </member>
     <member name="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String)">
       <summary>Defines a named transient dynamic module in this assembly.</summary>
-      <param name="name">The name of the dynamic module. </param>
+      <param name="name">The name of the dynamic module.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> begins with white space.
 
@@ -152112,7 +152112,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>
 
  Aggregates a managed object of the specified type with the specified COM object.</summary>
-      <param name="pOuter">The outer <see href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</see> pointer.</param>
+      <param name="pOuter">The outer IUnknown pointer.</param>
       <param name="o">The managed object to aggregate.</param>
       <typeparam name="T">The type of the managed object to aggregate.</typeparam>
       <exception cref="T:System.ArgumentException">
@@ -153009,7 +153009,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(System.Int32,System.IntPtr)">
       <summary>Throws an exception with a specific failure HRESULT, based on the specified IErrorInfo interface.</summary>
       <param name="errorCode">The HRESULT corresponding to the desired exception.</param>
-      <param name="errorInfo">A pointer to the <see href="https://learn.microsoft.com/windows/win32/api/oaidl/nn-oaidl-ierrorinfo">IErrorInfo</see> interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current <see href="https://learn.microsoft.com/windows/win32/api/oaidl/nn-oaidl-ierrorinfo">IErrorInfo</see> interface, or <c>IntPtr(-1)</c> to ignore the current <see href="https://learn.microsoft.com/windows/win32/api/oaidl/nn-oaidl-ierrorinfo">IErrorInfo</see> interface and construct the exception just from the error code.</param>
+      <param name="errorInfo">A pointer to the IErrorInfo interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current IErrorInfo interface, or <c>IntPtr(-1)</c> to ignore the current IErrorInfo interface and construct the exception just from the error code.</param>
     </member>
     <member name="M:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(System.Int32)">
       <summary>Throws an exception with a specific failure HRESULT value.</summary>
@@ -153450,7 +153450,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.Runtime.InteropServices.MemoryMarshal.TryGetArray``1(System.ReadOnlyMemory{``0},System.ArraySegment{``0}@)">
       <summary>Tries to get an array segment from the underlying memory buffer. The return value indicates the success of the operation.</summary>
       <param name="memory">A read-only memory buffer.</param>
-      <param name="segment">When this method returns, contains the array segment retrieved from the underlying read-only memory buffer. If the method fails, the method returns a default array segment. </param>
+      <param name="segment">When this method returns, contains the array segment retrieved from the underlying read-only memory buffer. If the method fails, the method returns a default array segment.</param>
       <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
       <returns>
         <see langword="true" /> if the method call succeeds; <see langword="false" /> otherwise.</returns>
@@ -153458,7 +153458,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager``2(System.ReadOnlyMemory{``0},``1@,System.Int32@,System.Int32@)">
       <summary>Tries to retrieve a <see cref="T:System.Buffers.MemoryManager`1" />, start index, and length from the underlying read-only memory buffer.</summary>
       <param name="memory">The read-only memory buffer for which to get the memory manager.</param>
-      <param name="manager">When the method returns, the manager of <paramref name="memory" />. </param>
+      <param name="manager">When the method returns, the manager of <paramref name="memory" />.</param>
       <param name="start">When the method returns, the offset from the start of the <paramref name="manager" /> that the <paramref name="memory" /> represents.</param>
       <param name="length">When the method returns, the length of the <paramref name="manager" /> that the <paramref name="memory" /> represents.</param>
       <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
@@ -153469,7 +153469,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager``2(System.ReadOnlyMemory{``0},``1@)">
       <summary>Tries to retrieve a <see cref="T:System.Buffers.MemoryManager`1" /> from the underlying read-only memory buffer.</summary>
       <param name="memory">The read-only memory buffer for which to get the memory manager.</param>
-      <param name="manager">When the method returns, the manager of <paramref name="memory" />. </param>
+      <param name="manager">When the method returns, the manager of <paramref name="memory" />.</param>
       <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
       <typeparam name="TManager">The type of the <see cref="T:System.Buffers.MemoryManager`1" /> to retrieve.</typeparam>
       <returns>
@@ -153486,7 +153486,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     </member>
     <member name="M:System.Runtime.InteropServices.MemoryMarshal.TryRead``1(System.ReadOnlySpan{System.Byte},``0@)">
       <summary>Tries to read a structure of type <paramref name="T" /> from a read-only span of bytes.</summary>
-      <param name="source">A read-only span of bytes. </param>
+      <param name="source">A read-only span of bytes.</param>
       <param name="value">When the method returns, an instance of <paramref name="T" />.</param>
       <typeparam name="T">The type of the structure to retrieve.</typeparam>
       <exception cref="T:System.ArgumentException">
@@ -159886,35 +159886,7 @@ The length for <paramref name="index" /> is invalid.</exception>
       <summary>Creates an instance of the specified implementation of an asymmetric algorithm.</summary>
       <param name="algName">The asymmetric algorithm implementation to use. The following table shows the valid values for the <paramref name="algName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value
-
- </term><description> Implements
-
- </description></listheader><item><term> System.Security.Cryptography.AsymmetricAlgorithm
-
- </term><description><see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /></description></item><item><term> RSA
-
- </term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> System.Security.Cryptography.RSA
-
- </term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> DSA
-
- </term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> System.Security.Cryptography.DSA
-
- </term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> ECDsa
-
- </term><description><see cref="T:System.Security.Cryptography.ECDsa" /></description></item><item><term> ECDsaCng
-
- </term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> System.Security.Cryptography.ECDsaCng
-
- </term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> ECDH
-
- </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellman
-
- </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellmanCng
-
- </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item><item><term> System.Security.Cryptography.ECDiffieHellmanCng
-
- </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> System.Security.Cryptography.AsymmetricAlgorithm</term><description><see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /></description></item><item><term> RSA</term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> System.Security.Cryptography.RSA</term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> DSA</term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> System.Security.Cryptography.DSA</term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> ECDsa</term><description><see cref="T:System.Security.Cryptography.ECDsa" /></description></item><item><term> ECDsaCng</term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> System.Security.Cryptography.ECDsaCng</term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> ECDH</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellman</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellmanCng</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item><item><term> System.Security.Cryptography.ECDiffieHellmanCng</term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item></list></param>
       <returns>A new instance of the specified asymmetric algorithm implementation.</returns>
     </member>
     <member name="M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose">
@@ -163679,41 +163651,7 @@ The buffer in <paramref name="destination" /> is too small to hold the signature
       <summary>Creates an instance of the specified implementation of a hash algorithm.</summary>
       <param name="hashName">The hash algorithm implementation to use. The following table shows the valid values for the <paramref name="hashName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value
-
- </term><description> Implements
-
- </description></listheader><item><term> SHA
-
- </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> SHA1
-
- </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.SHA1
-
- </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.HashAlgorithm
-
- </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> MD5
-
- </term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.MD5
-
- </term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> SHA256
-
- </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA-256
-
- </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> System.Security.Cryptography.SHA256
-
- </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA384
-
- </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA-384
-
- </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> System.Security.Cryptography.SHA384
-
- </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA512
-
- </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> SHA-512
-
- </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> System.Security.Cryptography.SHA512
-
- </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> SHA</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> SHA1</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.SHA1</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.HashAlgorithm</term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> MD5</term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.MD5</term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> SHA256</term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA-256</term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> System.Security.Cryptography.SHA256</term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA384</term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA-384</term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> System.Security.Cryptography.SHA384</term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA512</term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> SHA-512</term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> System.Security.Cryptography.SHA512</term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item></list></param>
       <returns>A new instance of the specified hash algorithm, or <see langword="null" /> if <paramref name="hashName" /> is not a valid hash algorithm.</returns>
     </member>
     <member name="M:System.Security.Cryptography.HashAlgorithm.Dispose">
@@ -163929,43 +163867,7 @@ The buffer in <paramref name="destination" /> is too small to hold the signature
       <summary>Creates an instance of the specified implementation of a Hash-based Message Authentication Code (HMAC).</summary>
       <param name="algorithmName">The HMAC implementation to use. The following table shows the valid values for the <paramref name="algorithmName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value
-
- </term><description> Implements
-
- </description></listheader><item><term> System.Security.Cryptography.HMAC
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5
-
- </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5
-
- </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160
-
- </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160
-
- </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES
-
- </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES
-
- </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> System.Security.Cryptography.HMAC</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
       <returns>A new instance of the specified HMAC implementation.</returns>
     </member>
     <member name="M:System.Security.Cryptography.HMAC.Dispose(System.Boolean)">
@@ -164968,8 +164870,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
                 of the hash algorithm specified by <paramref name="hashAlgorithm" /> will be hashed (using the
                 algorithm specified by <paramref name="hashAlgorithm" />) to derive a correctly-sized key. Therefore,
                 the recommended size of the secret key is the output size of the hash specified by
-                <paramref name="hashAlgorithm" />.
-            </param>
+                <paramref name="hashAlgorithm" />.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="key" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">
@@ -165068,43 +164969,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <summary>Creates an instance of the specified implementation of a keyed hash algorithm.</summary>
       <param name="algName">The keyed hash algorithm implementation to use. The following table shows the valid values for the <paramref name="algName" /> parameter and the algorithms they map to.
 
- <list type="table"><listheader><term> Parameter value
-
- </term><description> Implements
-
- </description></listheader><item><term> System.Security.Cryptography.HMAC
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5
-
- </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5
-
- </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160
-
- </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160
-
- </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512
-
- </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES
-
- </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES
-
- </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
+ <list type="table"><listheader><term> Parameter value</term><description> Implements</description></listheader><item><term> System.Security.Cryptography.HMAC</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5</term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160</term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1</term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256</term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384</term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512</term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES</term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
       <exception cref="T:System.PlatformNotSupportedException">.NET Core 2.0 - 3.1 and .NET 5 and later: In all cases.</exception>
       <returns>A new instance of the specified keyed hash algorithm.</returns>
     </member>
@@ -169314,7 +169179,7 @@ The feedback size is not valid for the algorithm.</exception>
       <param name="generator">An <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" /> object representing the issuing certificate authority.</param>
       <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow" />, plus or minus a few seconds.</param>
       <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
-      <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. <see href="https://tools.ietf.org/html/rfc3280#section-4.1.2.2">RFC 3280</see> recommends confining it to 20 bytes or less. </param>
+      <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. RFC 3280 recommends confining it to 20 bytes or less.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="issuerName" /> is <see langword="null" />.
 
@@ -169355,7 +169220,7 @@ The feedback size is not valid for the algorithm.</exception>
       <param name="issuerCertificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> instance representing the issuing Certificate Authority (CA).</param>
       <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow" />, plus or minus a few seconds.</param>
       <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
-      <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. <see href="https://tools.ietf.org/html/rfc3280#section-4.1.2.2">RFC 3280</see> recommends confining it to 20 bytes or less.</param>
+      <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. RFC 3280 recommends confining it to 20 bytes or less.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="issuerCertificate" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentException">The <paramref name="issuerCertificate" /> doesn't contain a private key.
@@ -174464,7 +174329,7 @@ The Subject Alternative Name extension or Subject Name could not be decoded.</ex
       <summary>Creates a new <see cref="T:System.Span`1" /> object that includes a specified number of elements of an array starting at a specified index.</summary>
       <param name="array">The source array.</param>
       <param name="start">The zero-based index of the first element to include in the new <see cref="T:System.Span`1" />.</param>
-      <param name="length">The number of elements to include in the new <see cref="T:System.Span`1" />. </param>
+      <param name="length">The number of elements to include in the new <see cref="T:System.Span`1" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
 
@@ -174480,7 +174345,7 @@ The Subject Alternative Name extension or Subject Name could not be decoded.</ex
     </member>
     <member name="M:System.Span`1.#ctor(`0[])">
       <summary>Creates a new <see cref="T:System.Span`1" /> object over the entirety of a specified array.</summary>
-      <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object. </param>
+      <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object.</param>
       <exception cref="T:System.ArrayTypeMismatchException">
         <typeparamref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <typeparamref name="T" />.</exception>
     </member>
@@ -175274,7 +175139,7 @@ Either <paramref name="indexA" /> or <paramref name="indexB" /> is <see langword
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of three specified objects. An parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <param name="arg2">The third object to format.</param>
@@ -175291,7 +175156,7 @@ The index of a format item is less than zero, or greater than two.</exception>
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of two specified objects. A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -175307,7 +175172,7 @@ The index of a format item is not zero or one.</exception>
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object)">
       <summary>Replaces the format item or items in a specified string with the string representation of the corresponding object. A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The object to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> is <see langword="null" />.</exception>
@@ -175322,7 +175187,7 @@ The index of a format item is not zero.</exception>
     <member name="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])">
       <summary>Replaces the format items in a string with the string representations of corresponding objects in a specified array. A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="args">An object array that contains zero or more objects to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> or <paramref name="args" /> is <see langword="null" />.</exception>
@@ -175338,7 +175203,7 @@ The index of a format item is less than zero, or greater than or equal to the le
       <summary>Replaces the format items in a string with the string representations of corresponding objects in a specified span.
  A parameter supplies culture-specific formatting information.</summary>
       <param name="provider">An object that supplies culture-specific formatting information.</param>
-      <param name="format">A <see href="https://learn.microsoft.com/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="args">An object span that contains zero or more objects to format.</param>
       <returns>A copy of <paramref name="format" /> in which the format items have been replaced by the string representation of the corresponding objects in <paramref name="args" />.</returns>
     </member>
@@ -175364,7 +175229,7 @@ The index of a format item is less than zero, or greater than or equal to the le
     </member>
     <member name="M:System.String.Format(System.String,System.Object,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of three specified objects.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <param name="arg2">The third object to format.</param>
@@ -175380,7 +175245,7 @@ The index of a format item is less than zero, or greater than two.</exception>
     </member>
     <member name="M:System.String.Format(System.String,System.Object,System.Object)">
       <summary>Replaces the format items in a string with the string representation of two specified objects.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The first object to format.</param>
       <param name="arg1">The second object to format.</param>
       <exception cref="T:System.ArgumentNullException">
@@ -175395,7 +175260,7 @@ The index of a format item is not zero or one.</exception>
     </member>
     <member name="M:System.String.Format(System.String,System.Object)">
       <summary>Replaces one or more format items in a string with the string representation of a specified object.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="arg0">The object to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> is <see langword="null" />.</exception>
@@ -175408,7 +175273,7 @@ The index of a format item is not zero.</exception>
     </member>
     <member name="M:System.String.Format(System.String,System.Object[])">
       <summary>Replaces the format item in a specified string with the string representation of a corresponding object in a specified array.</summary>
-      <param name="format">A <see href="/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="args">An object array that contains zero or more objects to format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="format" /> or <paramref name="args" /> is <see langword="null" />.</exception>
@@ -175422,7 +175287,7 @@ The index of a format item is less than zero, or greater than or equal to the le
     </member>
     <member name="M:System.String.Format(System.String,System.ReadOnlySpan{System.Object})">
       <summary>Replaces the format item in a specified string with the string representation of a corresponding object in a specified span.</summary>
-      <param name="format">A <see href="https://learn.microsoft.com/dotnet/standard/base-types/composite-formatting">composite format string</see>.</param>
+      <param name="format">A composite format string.</param>
       <param name="args">An object span that contains zero or more objects to format.</param>
       <returns>A copy of <paramref name="format" /> in which the format items have been replaced by the string representation of the corresponding objects in <paramref name="args" />.</returns>
     </member>
@@ -183739,7 +183604,7 @@ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <para
       <param name="initialState">
         <see langword="true" /> to set the initial state to signaled if the named event is created as a result of this call; <see langword="false" /> to set it to nonsignaled.</param>
       <param name="mode">One of the <see cref="T:System.Threading.EventResetMode" /> values that determines whether the event resets automatically or manually.</param>
-      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <param name="createdNew">When this method returns, contains <see langword="true" /> if a local event was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system event was created; <see langword="false" /> if the specified named system event already existed. This parameter is passed uninitialized.</param>
       <exception cref="T:System.IO.IOException">
         <paramref name="name" /> is invalid. This can be for various reasons, including some restrictions that may be placed by the operating system, such as an unknown prefix or invalid characters. Note that the name and common prefixes "Global\" and "Local\" are case-sensitive.
@@ -183776,7 +183641,7 @@ There was some other error. The HResult property may provide more information.</
       <param name="initialState">
         <see langword="true" /> to set the initial state to signaled if the named event is created as a result of this call; <see langword="false" /> to set it to nonsignaled.</param>
       <param name="mode">One of the <see cref="T:System.Threading.EventResetMode" /> values that determines whether the event resets automatically or manually.</param>
-      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <exception cref="T:System.IO.IOException">
         <paramref name="name" /> is invalid. This can be for various reasons, including some restrictions that may be placed by the operating system, such as an unknown prefix or invalid characters. Note that the name and common prefixes "Global\" and "Local\" are case-sensitive.
 
@@ -183807,7 +183672,7 @@ There was some other error. The HResult property may provide more information.</
     </member>
     <member name="M:System.Threading.EventWaitHandle.OpenExisting(System.String)">
       <summary>Opens the specified named synchronization event, if it already exists.</summary>
-      <param name="name">The name of the synchronization object to be opened and shared with other processes. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name of the synchronization object to be opened and shared with other processes. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <exception cref="T:System.Threading.WaitHandleCannotBeOpenedException">A synchronization object with the provided <paramref name="name" /> cannot be opened. It may not exist, or a synchronization object of a different type might have the same name. In some cases, this exception may be thrown for invalid names.</exception>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> is an empty string.
@@ -183842,7 +183707,7 @@ There was some other error. The HResult property may provide more information.</
     </member>
     <member name="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)">
       <summary>Opens the specified named synchronization event, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
-      <param name="name">The name of the synchronization object to be opened and shared with other processes. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name of the synchronization object to be opened and shared with other processes. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <param name="result">When this method returns, contains a <see cref="T:System.Threading.EventWaitHandle" /> object that represents the named synchronization event if the call succeeded, or <see langword="null" /> if the call failed. This parameter is treated as uninitialized.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> is an empty string.
@@ -184776,7 +184641,7 @@ There was some other error. The HResult property may provide more information.</
       <summary>Initializes a new instance of the <see cref="T:System.Threading.Mutex" /> class with a Boolean value that indicates whether the calling thread should have initial ownership of the mutex, a string that is the name of the mutex, and a Boolean value that, when the method returns, indicates whether the calling thread was granted initial ownership of the mutex.</summary>
       <param name="initiallyOwned">
         <see langword="true" /> to give the calling thread initial ownership of the named system mutex if the named system mutex is created as a result of this call; otherwise, <see langword="false" />.</param>
-      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <param name="createdNew">When this method returns, contains a Boolean that is <see langword="true" /> if a local mutex was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system mutex was created; <see langword="false" /> if the specified named system mutex already existed. This parameter is passed uninitialized.</param>
       <exception cref="T:System.UnauthorizedAccessException">The named mutex exists and has access control security, but the user does not have <see cref="F:System.Security.AccessControl.MutexRights.FullControl" />.</exception>
       <exception cref="T:System.IO.IOException">
@@ -184806,7 +184671,7 @@ There was some other error. The HResult property may provide more information.</
       <summary>Initializes a new instance of the <see cref="T:System.Threading.Mutex" /> class with a Boolean value that indicates whether the calling thread should have initial ownership of the mutex, and a string that is the name of the mutex.</summary>
       <param name="initiallyOwned">
         <see langword="true" /> to give the calling thread initial ownership of the named system mutex if the named system mutex is created as a result of this call; otherwise, <see langword="false" />.</param>
-      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <exception cref="T:System.UnauthorizedAccessException">The named mutex exists and has access control security, but the user does not have <see cref="F:System.Security.AccessControl.MutexRights.FullControl" />.</exception>
       <exception cref="T:System.IO.IOException">
         <paramref name="name" /> is invalid. This can be for various reasons, including some restrictions that may be placed by the operating system, such as an unknown prefix or invalid characters. Note that the name and common prefixes "Global\" and "Local\" are case-sensitive.
@@ -184835,7 +184700,7 @@ There was some other error. The HResult property may provide more information.</
     </member>
     <member name="M:System.Threading.Mutex.OpenExisting(System.String)">
       <summary>Opens the specified named mutex, if it already exists.</summary>
-      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> is an empty string.
 
@@ -184863,7 +184728,7 @@ There was some other error. The HResult property may provide more information.</
     </member>
     <member name="M:System.Threading.Mutex.TryOpenExisting(System.String,System.Threading.Mutex@)">
       <summary>Opens the specified named mutex, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
-      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <param name="result">When this method returns, contains a <see cref="T:System.Threading.Mutex" /> object that represents the named mutex if the call succeeded, or <see langword="null" /> if the call failed. This parameter is treated as uninitialized.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> is an empty string.
@@ -185355,7 +185220,7 @@ There was some other error. The HResult property may provide more information.</
       <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class, specifying the initial number of entries and the maximum number of concurrent entries, optionally specifying the name of a system semaphore object, and specifying a variable that receives a value indicating whether a new system semaphore was created.</summary>
       <param name="initialCount">The initial number of requests for the semaphore that can be satisfied concurrently.</param>
       <param name="maximumCount">The maximum number of requests for the semaphore that can be satisfied concurrently.</param>
-      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="initialCount" /> is greater than <paramref name="maximumCount" />.
@@ -185397,7 +185262,7 @@ There was some other error. The HResult property may provide more information.</
       <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class, specifying the initial number of entries and the maximum number of concurrent entries, and optionally specifying the name of a system semaphore object.</summary>
       <param name="initialCount">The initial number of requests for the semaphore that can be granted concurrently.</param>
       <param name="maximumCount">The maximum number of requests for the semaphore that can be granted concurrently.</param>
-      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name, if the synchronization object is to be shared with other processes; otherwise, <see langword="null" /> or an empty string. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="initialCount" /> is greater than <paramref name="maximumCount" />.
 
@@ -185440,7 +185305,7 @@ There was some other error. The HResult property may provide more information.</
     </member>
     <member name="M:System.Threading.Semaphore.OpenExisting(System.String)">
       <summary>Opens the specified named semaphore, if it already exists.</summary>
-      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> is an empty string.
 
@@ -185492,7 +185357,7 @@ There was some other error. The HResult property may provide more information.</
     </member>
     <member name="M:System.Threading.Semaphore.TryOpenExisting(System.String,System.Threading.Semaphore@)">
       <summary>Opens the specified named semaphore, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
-      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
+      <param name="name">The name of the synchronization object to be shared with other processes. The name is case-sensitive. The backslash character (\) is reserved and may only be used to specify a namespace. For more information on namespaces, see the remarks section. There may be further restrictions on the name depending on the operating system. For example, on Unix-based operating systems, the name after excluding the namespace must be a valid file name.</param>
       <param name="result">When this method returns, contains a <see cref="T:System.Threading.Semaphore" /> object that represents the named semaphore if the call succeeded, or <see langword="null" /> if the call failed. This parameter is treated as uninitialized.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="name" /> is an empty string.
@@ -188583,7 +188448,7 @@ An exception was thrown during
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationAction">The action delegate to execute when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
 
@@ -188612,7 +188477,7 @@ An exception was thrown during
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
       <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <param name="scheduler">The object that is used to schedule the new continuation task.</param>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -188653,7 +188518,7 @@ An exception was thrown during
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -188684,7 +188549,7 @@ An exception was thrown during
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationAction">The action delegate to execute when all tasks in the <paramref name="tasks" /> array have completed.</param>
       <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <param name="scheduler">The object that is used to schedule the new continuation task.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -188725,7 +188590,7 @@ An exception was thrown during
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationAction">The action delegate to execute when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.
@@ -188756,7 +188621,7 @@ An exception was thrown during
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
       <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <param name="scheduler">The object that is used to schedule the new continuation task.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
@@ -188802,7 +188667,7 @@ An exception was thrown during
       <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
       <param name="tasks">The array of tasks from which to continue.</param>
       <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
-      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+      <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn and OnlyOn members are not supported.</param>
       <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
       <typeparam name="TResult">The type of the result that is returned by the <paramref name="continuationFunction" /> delegate and associated with the created task.</typeparam>
       <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -196857,7 +196722,7 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
  -or-
 
  <see cref="F:System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
-      <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise. </param>
+      <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise.</param>
       <param name="filterCriteria">The search criteria that determines whether a member is returned in the array of <see langword="MemberInfo" /> objects.
 
  The fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> can be used in conjunction with the <see langword="FilterAttribute" /> delegate supplied by this class.</param>
@@ -202091,7 +201956,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     </member>
     <member name="M:System.UIntPtr.op_Explicit(System.UInt32)~System.UIntPtr">
       <summary>Converts the value of a 32-bit unsigned integer to an <see cref="T:System.UIntPtr" />.</summary>
-      <param name="value">A 32-bit unsigned integer. </param>
+      <param name="value">A 32-bit unsigned integer.</param>
       <returns>A new instance of <see cref="T:System.UIntPtr" /> initialized to <paramref name="value" />.</returns>
     </member>
     <member name="M:System.UIntPtr.op_Explicit(System.UInt64)~System.UIntPtr">
@@ -208071,7 +207936,7 @@ This option indents element content only; mixed content is not affected. For the
       <summary>Represents the callback method that will handle XML schema validation events and the <see cref="T:System.Xml.Schema.ValidationEventArgs" />.</summary>
       <param name="sender">The source of the event.  
   
- **Note** Determine the type of a sender before using it in your code. You cannot assume that the sender is an instance of a particular type. The sender is also not guaranteed to not  be null. Always surround your casts with failure handling logic.</param>
+ Note Determine the type of a sender before using it in your code. You cannot assume that the sender is an instance of a particular type. The sender is also not guaranteed to not  be null. Always surround your casts with failure handling logic.</param>
       <param name="e">The event data.</param>
     </member>
     <member name="T:System.Xml.Schema.XmlAtomicValue">
@@ -214196,7 +214061,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     <member name="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String,System.String)">
       <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
       <param name="s">The string to convert.</param>
-      <param name="format">The format from which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..) The string <paramref name="s" /> is validated against this format.</param>
+      <param name="format">The format from which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the dateTime section of the XML Schema specification..) The string <paramref name="s" /> is validated against this format.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.FormatException">
@@ -214206,12 +214071,12 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     <member name="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String,System.String[])">
       <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
       <param name="s">The string to convert.</param>
-      <param name="formats">An array of formats from which <paramref name="s" /> can be converted. Each format in <paramref name="formats" /> can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..) The string <paramref name="s" /> is validated against one of these formats.</param>
+      <param name="formats">An array of formats from which <paramref name="s" /> can be converted. Each format in <paramref name="formats" /> can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the dateTime section of the XML Schema specification..) The string <paramref name="s" /> is validated against one of these formats.</param>
       <returns>The <see cref="T:System.DateTimeOffset" /> equivalent of the supplied string.</returns>
     </member>
     <member name="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String)">
       <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
-      <param name="s">The string to convert. The string must conform to a subset of the W3C Recommendation for the XML dateTime type. For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification.</param>
+      <param name="s">The string to convert. The string must conform to a subset of the W3C Recommendation for the XML dateTime type. For more information, see the dateTime section of the XML Schema specification.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="s" /> is <see langword="null" />.</exception>
       <exception cref="T:System.ArgumentOutOfRangeException">The argument passed to this method is outside the range of allowable values. For information about allowable values, see <see cref="T:System.DateTimeOffset" />.</exception>
@@ -214337,7 +214202,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
     <member name="M:System.Xml.XmlConvert.ToString(System.DateTimeOffset,System.String)">
       <summary>Converts the supplied <see cref="T:System.DateTimeOffset" /> to a <see cref="T:System.String" /> in the specified format.</summary>
       <param name="value">The <see cref="T:System.DateTimeOffset" /> to be converted.</param>
-      <param name="format">The format to which <paramref name="value" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..)</param>
+      <param name="format">The format to which <paramref name="value" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the dateTime section of the XML Schema specification..)</param>
       <returns>A <see cref="T:System.String" /> representation in the specified format of the supplied <see cref="T:System.DateTimeOffset" />.</returns>
     </member>
     <member name="M:System.Xml.XmlConvert.ToString(System.DateTimeOffset)">
@@ -217317,7 +217182,7 @@ An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was calle
       <summary>Adds the given namespace to the collection.</summary>
       <param name="prefix">The prefix to associate with the namespace being added. Use String.Empty to add a default namespace.
 
- **Note** If the <see cref="T:System.Xml.XmlNamespaceManager" /> will be used for resolving namespaces in an XML Path Language (XPath) expression, a prefix must be specified. If an XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. For more information about XPath expressions and the <see cref="T:System.Xml.XmlNamespaceManager" />, refer to the <see cref="M:System.Xml.XmlNode.SelectNodes(System.String)" /> and <see cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" /> methods.</param>
+ Note If the <see cref="T:System.Xml.XmlNamespaceManager" /> will be used for resolving namespaces in an XML Path Language (XPath) expression, a prefix must be specified. If an XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. For more information about XPath expressions and the <see cref="T:System.Xml.XmlNamespaceManager" />, refer to the <see cref="M:System.Xml.XmlNode.SelectNodes(System.String)" /> and <see cref="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" /> methods.</param>
       <param name="uri">The namespace to add.</param>
       <exception cref="T:System.ArgumentException">The value for <paramref name="prefix" /> is "xml" or "xmlns".</exception>
       <exception cref="T:System.ArgumentNullException">The value for <paramref name="prefix" /> or <paramref name="uri" /> is <see langword="null" />.</exception>
@@ -217553,7 +217418,7 @@ An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was calle
     </member>
     <member name="M:System.Xml.XmlNode.SelectNodes(System.String,System.Xml.XmlNamespaceManager)">
       <summary>Selects a list of nodes matching the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
-      <param name="xpath">The XPath expression. See <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">XPath Examples</see>.</param>
+      <param name="xpath">The XPath expression. See XPath Examples.</param>
       <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
       <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix that's not defined in the <see langword="XmlNamespaceManager" />.</exception>
       <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
@@ -217566,14 +217431,14 @@ An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was calle
     </member>
     <member name="M:System.Xml.XmlNode.SelectSingleNode(System.String,System.Xml.XmlNamespaceManager)">
       <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
-      <param name="xpath">The XPath expression. See <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">XPath Examples</see>.</param>
+      <param name="xpath">The XPath expression. See XPath Examples.</param>
       <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
       <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix that's not defined in the <see langword="XmlNamespaceManager" />.</exception>
       <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
     </member>
     <member name="M:System.Xml.XmlNode.SelectSingleNode(System.String)">
       <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
-      <param name="xpath">The XPath expression. See <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">XPath Examples</see>.</param>
+      <param name="xpath">The XPath expression. See XPath Examples.</param>
       <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
       <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
     </member>
@@ -218452,7 +218317,7 @@ An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was calle
       <param name="settings">The settings for the new <see cref="T:System.Xml.XmlReader" /> instance. This value can be <see langword="null" />.</param>
       <param name="baseUri">The base URI for the entity or document being read. This value can be <see langword="null" />.
 
- **Security Note** The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
+ Security Note The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> value is <see langword="null" />.</exception>
       <returns>An object that is used to read the XML data in the stream.</returns>
     </member>
@@ -218492,7 +218357,7 @@ An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was calle
       <param name="settings">The settings for the new <see cref="T:System.Xml.XmlReader" /> instance. This value can be <see langword="null" />.</param>
       <param name="baseUri">The base URI for the entity or document being read. This value can be <see langword="null" />.
 
- **Security Note** The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
+ Security Note The base URI is used to resolve the relative URI of the XML document. Do not use a base URI from an untrusted source.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> value is <see langword="null" />.</exception>
       <returns>An object that is used to read the XML data in the stream.</returns>
     </member>
@@ -218745,7 +218610,7 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
       <summary>Reads the content as an object of the type specified.</summary>
       <param name="returnType">The type of the value to be returned.
 
- **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ Note With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
       <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion. For example, this can be used when converting an <see cref="T:System.Xml.XmlQualifiedName" /> object to an <c>xs:string</c>.
 
  This value can be <see langword="null" />.</param>
@@ -218917,7 +218782,7 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
       <summary>Checks that the specified local name and namespace URI matches that of the current element, then reads the element content as the requested type.</summary>
       <param name="returnType">The type of the value to be returned.
 
- **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ Note With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
       <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion.</param>
       <param name="localName">The local name of the element.</param>
       <param name="namespaceURI">The namespace URI of the element.</param>
@@ -218940,7 +218805,7 @@ An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asy
       <summary>Reads the element content as the requested type.</summary>
       <param name="returnType">The type of the value to be returned.
 
- **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ Note With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
       <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion.</param>
       <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
 
@@ -222046,7 +221911,7 @@ An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without 
       <summary>Writes the object value.</summary>
       <param name="value">The object value to write.
 
- **Note** With the release of the .NET Framework 3.5, this method accepts <see cref="T:System.DateTimeOffset" /> as a parameter.</param>
+ Note With the release of the .NET Framework 3.5, this method accepts <see cref="T:System.DateTimeOffset" /> as a parameter.</param>
       <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
       <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
       <exception cref="T:System.InvalidOperationException">The writer is closed or in error state.

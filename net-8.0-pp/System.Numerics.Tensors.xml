@@ -158,7 +158,7 @@
     <member name="M:System.Numerics.Tensors.IReadOnlyTensor.GetPinnedHandle">
       <summary>Pins and gets a <see cref="T:System.Buffers.MemoryHandle" /> to the backing memory.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Buffers.MemoryHandle"></xref>
+        <see cref="T:System.Buffers.MemoryHandle" />
       </returns>
     </member>
     <member name="P:System.Numerics.Tensors.IReadOnlyTensor.FlattenedLength">
@@ -3482,7 +3482,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <summary>
             Converts this <see cref="T:System.Numerics.Tensors.Tensor`1" /> to a <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" /> pointing to the same backing memory."/&gt;</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Numerics.Tensors.ReadOnlyTensorSpan`1"></xref>
+        <see cref="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1" />
       </returns>
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.AsReadOnlyTensorSpan(System.ReadOnlySpan{System.Buffers.NIndex})">
@@ -3507,7 +3507,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <summary>
             Converts this <see cref="T:System.Numerics.Tensors.Tensor`1" /> to a <see cref="T:System.Numerics.Tensors.TensorSpan`1" /> pointing to the same backing memory."/&gt;</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Numerics.Tensors.TensorSpan`1"></xref>
+        <see cref="T:System.Numerics.Tensors.TensorSpan`1" />
       </returns>
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.AsTensorSpan(System.ReadOnlySpan{System.Buffers.NIndex})">
@@ -3552,7 +3552,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="M:System.Numerics.Tensors.Tensor`1.GetEnumerator">
       <summary>Gets an enumerator for the readonly tensor.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Collections.Generic.IEnumerator`1"></xref>
+        <see cref="T:System.Collections.Generic.IEnumerator`1" />
       </returns>
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.GetPinnableReference">
@@ -3600,7 +3600,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <summary>
             Gets an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the <see cref="T:System.Numerics.Tensors.Tensor`1" />.</summary>
       <returns>
-        <xref data-throw-if-not-resolved="true" uid="System.Collections.Generic.IEnumerator`1"></xref>
+        <see cref="T:System.Collections.Generic.IEnumerator`1" />
       </returns>
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.System#Collections#IEnumerable#GetEnumerator">

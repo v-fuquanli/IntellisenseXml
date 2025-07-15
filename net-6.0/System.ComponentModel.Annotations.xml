@@ -753,7 +753,7 @@ Using <see cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.
     </member>
     <member name="M:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" /> class.</summary>
-      <param name="name">The name of the associated navigation property, or the name of one or more associated foreign keys. </param>
+      <param name="name">The name of the associated navigation property, or the name of one or more associated foreign keys.</param>
     </member>
     <member name="P:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.Name">
       <summary>Gets the name of the associated navigation property or of the associated foreign keys.</summary>

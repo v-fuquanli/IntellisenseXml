@@ -2047,7 +2047,7 @@
     </member>
     <member name="M:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor(System.String)">
       <summary>Creates an instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" /> class, specifying the script contents of the tag.</summary>
-      <param name="script">A string that contains the <see href="https://www.ecma-international.org/publications-and-standards/standards/ecma-327/">ECMAScript</see> for the tag.</param>
+      <param name="script">A string that contains the ECMAScript for the tag.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="script" /> is <see langword="null" />.</exception>
     </member>

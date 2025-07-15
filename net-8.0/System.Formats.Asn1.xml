@@ -64,14 +64,11 @@
       <summary>
                Creates an <see cref="T:System.Formats.Asn1.Asn1Tag" /> for a specified value within a specified tag class.</summary>
       <param name="tagClass">
-               The tag class for this tag.
-             </param>
+               The tag class for this tag.</param>
       <param name="tagValue">
-               The numeric value for this tag.
-             </param>
+               The numeric value for this tag.</param>
       <param name="isConstructed">
-        <see langword="true" /> for a constructed tag, <see langword="false" /> for a primitive tag.
-             </param>
+        <see langword="true" /> for a constructed tag, <see langword="false" /> for a primitive tag.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="tagClass" /> is not a known value.
             
@@ -83,11 +80,9 @@
       <summary>
               Creates an <see cref="T:System.Formats.Asn1.Asn1Tag" /> for a tag from the UNIVERSAL class.</summary>
       <param name="universalTagNumber">
-              One of the enumeration values that specifies the semantic type for this tag.
-            </param>
+              One of the enumeration values that specifies the semantic type for this tag.</param>
       <param name="isConstructed">
-        <see langword="true" /> for a constructed tag, <see langword="false" /> for a primitive tag.
-            </param>
+        <see langword="true" /> for a constructed tag, <see langword="false" /> for a primitive tag.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="universalTagNumber" /> is not a known value.</exception>
     </member>
@@ -117,12 +112,10 @@
       <summary>
               Reads a BER-encoded tag that starts at <paramref name="source" />.</summary>
       <param name="source">
-              The read-only byte sequence whose beginning is a BER-encoded tag.
-            </param>
+              The read-only byte sequence whose beginning is a BER-encoded tag.</param>
       <param name="bytesConsumed">
               When this method returns, contains the number of bytes that contributed
-              to the encoded tag. This parameter is treated as uninitialized.
-            </param>
+              to the encoded tag. This parameter is treated as uninitialized.</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
               The provided data does not decode to a tag.</exception>
       <returns>
@@ -132,8 +125,7 @@
       <summary>
               Writes the BER-encoded form of this tag to <paramref name="destination" />.</summary>
       <param name="destination">
-              The start of where the encoded tag should be written.
-            </param>
+              The start of where the encoded tag should be written.</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="destination" />.<see cref="P:System.Span`1.Length" /> &lt; <see cref="M:System.Formats.Asn1.Asn1Tag.CalculateEncodedSize" />.</exception>
       <returns>
@@ -143,8 +135,7 @@
       <summary>
               Tests if <paramref name="other" /> has the same encoding as this tag.</summary>
       <param name="other">
-              The tag to test for equality.
-            </param>
+              The tag to test for equality.</param>
       <returns>
         <see langword="true" /> if <paramref name="other" /> has the same values for
               <see cref="P:System.Formats.Asn1.Asn1Tag.TagClass" />, <see cref="P:System.Formats.Asn1.Asn1Tag.TagValue" />, and <see cref="P:System.Formats.Asn1.Asn1Tag.IsConstructed" />;
@@ -202,15 +193,12 @@
       <summary>
               Attempts to read a BER-encoded tag that starts at <paramref name="source" />.</summary>
       <param name="source">
-              The read-only byte sequence whose beginning is a BER-encoded tag.
-            </param>
+              The read-only byte sequence whose beginning is a BER-encoded tag.</param>
       <param name="tag">
-              The decoded tag.
-            </param>
+              The decoded tag.</param>
       <param name="bytesConsumed">
               When this method returns, contains the number of bytes that contributed
-              to the encoded tag, 0 on failure. This parameter is treated as uninitialized.
-            </param>
+              to the encoded tag, 0 on failure. This parameter is treated as uninitialized.</param>
       <returns>
         <see langword="true" /> if a tag was correctly decoded; otherwise, <see langword="false" />.</returns>
     </member>
@@ -218,11 +206,9 @@
       <summary>
               Attempts to write the BER-encoded form of this tag to <paramref name="destination" />.</summary>
       <param name="destination">
-              The start of where the encoded tag should be written.
-            </param>
+              The start of where the encoded tag should be written.</param>
       <param name="bytesWritten">
-              Receives the value from <see cref="M:System.Formats.Asn1.Asn1Tag.CalculateEncodedSize" /> on success, 0 on failure.
-            </param>
+              Receives the value from <see cref="M:System.Formats.Asn1.Asn1Tag.CalculateEncodedSize" /> on success, 0 on failure.</param>
       <returns>
         <see langword="false" /> if <paramref name="destination" />.<see cref="P:System.Span`1.Length" /> &lt;
               <see cref="M:System.Formats.Asn1.Asn1Tag.CalculateEncodedSize" />(), <see langword="true" /> otherwise.</returns>
@@ -252,29 +238,24 @@
       <summary>
               Initializes a new instance of the <see cref="T:System.Formats.Asn1.AsnContentException" /> class with serialized data.</summary>
       <param name="info">
-              The object that holds the serialized object data.
-            </param>
+              The object that holds the serialized object data.</param>
       <param name="context">
-              The contextual information about the source or destination.
-            </param>
+              The contextual information about the source or destination.</param>
     </member>
     <member name="M:System.Formats.Asn1.AsnContentException.#ctor(System.String,System.Exception)">
       <summary>
               Initializes a new instance of the <see cref="T:System.Formats.Asn1.AsnContentException" /> class, using the provided message and
               exception that is the cause of this exception.</summary>
       <param name="message">
-              The error message that explains the reason for the exception.
-            </param>
+              The error message that explains the reason for the exception.</param>
       <param name="inner">
-              The exception that is the cause of the current exception.
-            </param>
+              The exception that is the cause of the current exception.</param>
     </member>
     <member name="M:System.Formats.Asn1.AsnContentException.#ctor(System.String)">
       <summary>
               Initializes a new instance of the <see cref="T:System.Formats.Asn1.AsnContentException" /> class, using the provided message.</summary>
       <param name="message">
-              The error message that explains the reason for the exception.
-            </param>
+              The error message that explains the reason for the exception.</param>
     </member>
     <member name="T:System.Formats.Asn1.AsnDecoder">
       <summary>
@@ -289,15 +270,12 @@
       <param name="unusedBitCount">
                On success, receives the number of bits in the last byte which were reported as
                "unused" by the writer.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -326,11 +304,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -358,16 +334,13 @@
       <param name="source">The buffer containing encoded data.</param>
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="encodingType">
-               One of the enumeration values which represents the value type to process.
-             </param>
+               One of the enumeration values which represents the value type to process.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
                The tag to check for before reading, or <see langword="null" /> for the universal tag that is
-               appropriate to the requested encoding type.
-             </param>
+               appropriate to the requested encoding type.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.
             
@@ -405,16 +378,13 @@
       <param name="contentOffset">
               When this method returns, contains the offset of the content payload relative to the start of
               <paramref name="source" />.
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <param name="contentLength">
               When this method returns, contains the number of bytes in the content payload (which may be 0).
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
               When this method returns, contains the total number of bytes for the encoded value.
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -431,11 +401,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -467,11 +435,9 @@
       <param name="enumType">Type object representing the destination type.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -513,11 +479,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).</param>
       <typeparam name="TEnum">The destination enum type.</typeparam>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
@@ -559,11 +523,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 24).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 24).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -592,11 +554,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -625,11 +585,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -658,11 +616,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -693,11 +649,9 @@
       <param name="flagsEnumType">Type object representing the destination type.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -741,11 +695,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).</param>
       <typeparam name="TFlagsEnum">The destination enum type.</typeparam>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
@@ -787,11 +739,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 5).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 5).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -818,11 +768,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 6).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 6).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -851,11 +799,9 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -885,19 +831,15 @@
       <param name="contentOffset">
                When this method returns, the offset of the content payload relative to the start of
                <paramref name="source" />.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="contentLength">
                When this method returns, the number of bytes in the content payload (which may be 0).
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 16).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 16).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -925,24 +867,19 @@
       <param name="contentOffset">
                When this method returns, the offset of the content payload relative to the start of
                <paramref name="source" />.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="contentLength">
                When this method returns, the number of bytes in the content payload (which may be 0).
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="skipSortOrderValidation">
         <see langword="true" /> to always accept the data in the order it is presented,
                <see langword="false" /> to verify that the data is sorted correctly when the
-               encoding rules say sorting was required (CER and DER).
-             </param>
+               encoding rules say sorting was required (CER and DER).</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 17).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 17).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -969,15 +906,12 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="twoDigitYearMax">
                The largest year to represent with this value.
-               The default value, 2049, represents the 1950-2049 range for X.509 certificates.
-             </param>
+               The default value, 2049, represents the 1950-2049 range for X.509 certificates.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 24).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 24).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.
             
@@ -1012,19 +946,15 @@
       <param name="unusedBitCount">
                On success, receives the number of bits in the last byte which were reported as
                "unused" by the writer.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesWritten">
                When this method returns, the total number of bytes written to <paramref name="destination" />.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1059,20 +989,16 @@
       <param name="destination">The buffer in which to write.</param>
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="encodingType">
-               One of the enumeration values which represents the value type to process.
-             </param>
+               One of the enumeration values which represents the value type to process.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="charsWritten">
                When this method returns, the number of chars written to <paramref name="destination" />.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
                The tag to check for before reading, or <see langword="null" /> for the universal tag that is
-               appropriate to the requested encoding type.
-             </param>
+               appropriate to the requested encoding type.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.
             
@@ -1114,11 +1040,9 @@
       <param name="expectedTag">The tag to check for before reading.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesWritten">
-               On success, receives the number of bytes written to <paramref name="destination" />.
-             </param>
+               On success, receives the number of bytes written to <paramref name="destination" />.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1153,21 +1077,17 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="tag">
               When this method returns, contains the tag identifying the content.
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <param name="contentOffset">
               When this method returns, contains the offset of the content payload relative to the start of
               <paramref name="source" />.
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <param name="contentLength">
               When this method returns, contains the number of bytes in the content payload (which may be 0).
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
               When this method returns, contains the total number of bytes for the encoded value.
-              This parameter is treated as uninitialized.
-            </param>
+              This parameter is treated as uninitialized.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <returns>
@@ -1182,15 +1102,12 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="value">
                On success, receives the interpreted numeric value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1221,15 +1138,12 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="value">
                On success, receives the interpreted numeric value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1261,15 +1175,12 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesWritten">
                When this method returns, the total number of bytes written to <paramref name="destination" />.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1305,20 +1216,16 @@
       <param name="unusedBitCount">
                On success, receives the number of bits in the last byte which were reported as
                "unused" by the writer.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="value">
                On success, receives a slice of the input buffer that corresponds to
                the value of the Bit String.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 3).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1349,17 +1256,14 @@
       <param name="source">The buffer containing encoded data.</param>
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="expectedTag">
-               The tag to check for before reading.
-             </param>
+               The tag to check for before reading.</param>
       <param name="value">
                On success, receives a slice of the input buffer that corresponds to
                the value of the Bit String.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1390,15 +1294,12 @@
       <param name="value">
                On success, receives a slice of the input buffer that corresponds to
                the value of the Octet String.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1428,15 +1329,12 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="value">
                On success, receives the interpreted numeric value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1467,15 +1365,12 @@
       <param name="ruleSet">The encoding constraints to use when interpreting the data.</param>
       <param name="value">
                On success, receives the interpreted numeric value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="bytesConsumed">
                When this method returns, the total number of bytes for the encoded value.
-               This parameter is treated as uninitialized.
-             </param>
+               This parameter is treated as uninitialized.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="ruleSet" /> is not defined.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1567,11 +1462,9 @@
                in a byte array.</summary>
       <param name="unusedBitCount">
                On success, receives the number of bits in the last byte which were reported as
-               "unused" by the writer.
-             </param>
+               "unused" by the writer.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1594,8 +1487,7 @@
       <summary>
                Reads the next value as a Boolean with a specified tag.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1619,12 +1511,10 @@
                Reads the next value as character string with the specified tag and
                encoding type, returning the decoded value as a string.</summary>
       <param name="encodingType">
-               One of the enumeration values representing the value type to process.
-             </param>
+               One of the enumeration values representing the value type to process.</param>
       <param name="expectedTag">
                The tag to check for before reading, or <see langword="null" /> for the universal tag that is
-               appropriate to the requested encoding type.
-             </param>
+               appropriate to the requested encoding type.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="encodingType" /> is not a known character string type.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -1662,8 +1552,7 @@
                Reads the next value as a Enumerated with a specified tag, returning the contents
                as a <see cref="T:System.ReadOnlyMemory`1" /> over the original data.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1688,8 +1577,7 @@
                non-[<see cref="T:System.FlagsAttribute" />] enum specified by <paramref name="enumType" />.</summary>
       <param name="enumType">Type object representing the destination type.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1727,8 +1615,7 @@
                Reads the next value as an Enumerated with a specified tag, converting it to the
                non-[<see cref="T:System.FlagsAttribute" />] enum specified by <typeparamref name="TEnum" />.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 10).</param>
       <typeparam name="TEnum">The destination enum type.</typeparam>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
@@ -1764,8 +1651,7 @@
       <summary>
                Reads the next value as a GeneralizedTime with a specified tag.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 24).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 24).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1788,8 +1674,7 @@
       <summary>
                Reads the next value as an Integer with a specified tag.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1813,8 +1698,7 @@
                Reads the next value as a Integer with a specified tag, returning the contents
                as a <see cref="T:System.ReadOnlyMemory`1" /> over the original data.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1933,8 +1817,7 @@
       <summary>
                Reads the next value as a NULL with a specified tag.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 5).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 5).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1956,8 +1839,7 @@
                Reads the next value as an OBJECT IDENTIFIER with a specified tag, returning
                the value in a dotted decimal format string.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 6).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 6).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -1980,8 +1862,7 @@
                Reads the next value as an OCTET STRING with tag UNIVERSAL 4, returning the value
                in a byte array.</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2006,8 +1887,7 @@
                and returns the result as a new reader positioned at the first
                value in the sequence (or with <see cref="P:System.Formats.Asn1.AsnReader.HasData" /> == <see langword="false" />).</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 16).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 16).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2035,11 +1915,9 @@
       <param name="skipSortOrderValidation">
         <see langword="true" /> to always accept the data in the order it is presented,
                <see langword="false" /> to verify that the data is sorted correctly when the
-               encoding rules say sorting was required (CER and DER).
-             </param>
+               encoding rules say sorting was required (CER and DER).</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 17).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 17).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2067,8 +1945,7 @@
                using the <see cref="P:System.Formats.Asn1.AsnReaderOptions.SkipSetSortOrderVerification" /> value
                from the constructor (default <see langword="false" />).</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 17).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 17).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2092,11 +1969,9 @@
       <summary>
                Reads the next value as a UTCTime with a specified tag.</summary>
       <param name="twoDigitYearMax">
-               The largest year to represent with this value.
-             </param>
+               The largest year to represent with this value.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 23).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 23).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2121,8 +1996,7 @@
                <see cref="P:System.Formats.Asn1.AsnReaderOptions.UtcTimeTwoDigitYearMax" /> value from options passed to
                the constructor (with a default of 2049).</summary>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 23).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 23).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2153,14 +2027,11 @@
       <param name="destination">The buffer in which to write.</param>
       <param name="unusedBitCount">
                On success, receives the number of bits in the last byte which were reported as
-               "unused" by the writer.
-             </param>
+               "unused" by the writer.</param>
       <param name="bytesWritten">
-               On success, receives the number of bytes written to <paramref name="destination" />.
-             </param>
+               On success, receives the number of bytes written to <paramref name="destination" />.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2187,15 +2058,12 @@
                encoding type, copying the decoded value into a provided destination buffer.</summary>
       <param name="destination">The buffer in which to write.</param>
       <param name="encodingType">
-               One of the enumeration values representing the value type to process.
-             </param>
+               One of the enumeration values representing the value type to process.</param>
       <param name="charsWritten">
-               On success, receives the number of chars written to <paramref name="destination" />.
-             </param>
+               On success, receives the number of chars written to <paramref name="destination" />.</param>
       <param name="expectedTag">
                The tag to check for before reading, or <see langword="null" /> for the universal tag that is
-               appropriate to the requested encoding type.
-             </param>
+               appropriate to the requested encoding type.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="encodingType" /> is not a known character string type.</exception>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
@@ -2229,8 +2097,7 @@
       <param name="destination">The buffer in which to write.</param>
       <param name="expectedTag">The tag to check for before reading.</param>
       <param name="bytesWritten">
-               On success, receives the number of bytes written to <paramref name="destination" />.
-             </param>
+               On success, receives the number of bytes written to <paramref name="destination" />.</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2256,11 +2123,9 @@
                Attempts to read the next value as an Integer with a specified tag,
                as a signed 32-bit value.</summary>
       <param name="value">
-               On success, receives the decoded value.
-             </param>
+               On success, receives the decoded value.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2286,11 +2151,9 @@
                Attempts to read the next value as an Integer with a specified tag,
                as a signed 64-bit value.</summary>
       <param name="value">
-               On success, receives the decoded value.
-             </param>
+               On success, receives the decoded value.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2317,11 +2180,9 @@
                into a provided destination buffer.</summary>
       <param name="destination">The buffer in which to write.</param>
       <param name="bytesWritten">
-               On success, receives the number of bytes written to <paramref name="destination" />.
-             </param>
+               On success, receives the number of bytes written to <paramref name="destination" />.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 4).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2348,15 +2209,12 @@
                as a <see cref="T:System.ReadOnlyMemory`1" /> over the original data.</summary>
       <param name="unusedBitCount">
                On success, receives the number of bits in the last byte which were reported as
-               "unused" by the writer.
-             </param>
+               "unused" by the writer.</param>
       <param name="value">
                On success, receives a <see cref="T:System.ReadOnlyMemory`1" /> over the original data
-               corresponding to the value of the BIT STRING.
-             </param>
+               corresponding to the value of the BIT STRING.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 1).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2383,8 +2241,7 @@
       <param name="expectedTag">The tag to check for before reading.</param>
       <param name="contents">
                On success, receives a <see cref="T:System.ReadOnlyMemory`1" /> over the original data
-               corresponding to the value of the character string.
-             </param>
+               corresponding to the value of the character string.</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2410,8 +2267,7 @@
                as a <see cref="T:System.ReadOnlyMemory`1" /> over the original data.</summary>
       <param name="contents">
                On success, receives a <see cref="T:System.ReadOnlyMemory`1" /> over the original data
-               corresponding to the value of the OCTET STRING.
-             </param>
+               corresponding to the value of the OCTET STRING.</param>
       <param name="expectedTag">The tag to check for before reading.</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
@@ -2437,11 +2293,9 @@
                Attempts to read the next value as an Integer with a specified tag,
                as an unsigned 32-bit value.</summary>
       <param name="value">
-               On success, receives the decoded value.
-             </param>
+               On success, receives the decoded value.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2467,11 +2321,9 @@
                Attempts to read the next value as an Integer with a specified tag,
                as an unsigned 64-bit value.</summary>
       <param name="value">
-               On success, receives the decoded value.
-             </param>
+               On success, receives the decoded value.</param>
       <param name="expectedTag">
-               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).
-             </param>
+               The tag to check for before reading, or <see langword="null" /> for the default tag (Universal 2).</param>
       <exception cref="T:System.Formats.Asn1.AsnContentException">
                The next value does not have the correct tag.
             
@@ -2704,8 +2556,7 @@
               Attempts to write the encoded representation of the data to <paramref name="destination" />.</summary>
       <param name="destination">The buffer in which to write.</param>
       <param name="bytesWritten">
-              When this method returns, contains the number of bytes written to <paramref name="destination" />.
-            </param>
+              When this method returns, contains the number of bytes written to <paramref name="destination" />.</param>
       <exception cref="T:System.InvalidOperationException">
               A <see cref="M:System.Formats.Asn1.AsnWriter.PushSequence(System.Nullable{System.Formats.Asn1.Asn1Tag})" /> or <see cref="M:System.Formats.Asn1.AsnWriter.PushSetOf(System.Nullable{System.Formats.Asn1.Asn1Tag})" /> has not been closed via
               <see cref="M:System.Formats.Asn1.AsnWriter.PopSequence(System.Nullable{System.Formats.Asn1.Asn1Tag})" /> or <see cref="M:System.Formats.Asn1.AsnWriter.PopSetOf(System.Nullable{System.Formats.Asn1.Asn1Tag})" />.</exception>
@@ -2718,8 +2569,7 @@
                Write a Bit String value with a specified tag.</summary>
       <param name="value">The value to write.</param>
       <param name="unusedBitCount">
-               The number of trailing bits which are not semantic.
-             </param>
+               The number of trailing bits which are not semantic.</param>
       <param name="tag">The tag to write, or <see langword="null" /> for the default tag (Universal 3).</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="tag" />.<see cref="P:System.Formats.Asn1.Asn1Tag.TagClass" /> is
@@ -2754,13 +2604,11 @@
                Write the provided string using the specified encoding type using the specified
                tag corresponding to the encoding type.</summary>
       <param name="encodingType">
-               One of the enumeration values representing the encoding to use.
-             </param>
+               One of the enumeration values representing the encoding to use.</param>
       <param name="str">The string to write.</param>
       <param name="tag">
                The tag to write, or <see langword="null" /> for the universal tag that is appropriate to
-               the requested encoding type.
-             </param>
+               the requested encoding type.</param>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="encodingType" /> is not a restricted character string encoding type.
             
@@ -2779,13 +2627,11 @@
                Write the provided string using the specified encoding type using the specified
                tag corresponding to the encoding type.</summary>
       <param name="encodingType">
-               One of the enumeration values representing the encoding to use.
-             </param>
+               One of the enumeration values representing the encoding to use.</param>
       <param name="value">The string to write.</param>
       <param name="tag">
                The tag to write, or <see langword="null" /> for the universal tag that is appropriate to
-               the requested encoding type.
-             </param>
+               the requested encoding type.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="value" /> is <see langword="null" /></exception>
       <exception cref="T:System.ArgumentOutOfRangeException">
@@ -2864,8 +2710,7 @@
       <param name="value">The value to write.</param>
       <param name="omitFractionalSeconds">
         <see langword="true" /> to treat the fractional seconds in <paramref name="value" /> as 0 even if
-              a non-zero value is present.
-            </param>
+              a non-zero value is present.</param>
       <param name="tag">The tag to write, or <see langword="null" /> for the default tag (Universal 24).</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="tag" />.<see cref="P:System.Formats.Asn1.Asn1Tag.TagClass" /> is
@@ -2968,8 +2813,7 @@
       <param name="value">The enumeration value to write</param>
       <param name="tag">The tag to write, or <see langword="null" /> for the default tag (Universal 3).</param>
       <typeparam name="TEnum">
-               The [<see cref="T:System.FlagsAttribute" />] enumeration type to write.
-             </typeparam>
+               The [<see cref="T:System.FlagsAttribute" />] enumeration type to write.</typeparam>
       <exception cref="T:System.ArgumentException">
         <paramref name="tag" />.<see cref="P:System.Formats.Asn1.Asn1Tag.TagClass" /> is
                <see cref="F:System.Formats.Asn1.TagClass.Universal" />, but
@@ -3046,8 +2890,7 @@
       <param name="value">The value to write.</param>
       <param name="twoDigitYearMax">
               The maximum valid year for <paramref name="value" />, after conversion to UTC.
-              For the X.509 Time.utcTime range of 1950-2049, pass <c>2049</c>.
-            </param>
+              For the X.509 Time.utcTime range of 1950-2049, pass <c>2049</c>.</param>
       <param name="tag">The tag to write, or <see langword="null" /> for the default tag (Universal 23).</param>
       <exception cref="T:System.ArgumentException">
         <paramref name="tag" />.<see cref="P:System.Formats.Asn1.Asn1Tag.TagClass" /> is
