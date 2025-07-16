@@ -40837,13 +40837,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlBoolean.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlBoolean.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlBoolean.ToSqlByte">
@@ -41221,13 +41221,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlByte.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlByte.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlByte.ToSqlBoolean">
@@ -41346,13 +41346,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlBytes.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="r">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlBytes.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlBytes.ToSqlBinary">
@@ -41465,13 +41465,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlChars.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="r">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlChars.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlChars.ToSqlString">
@@ -41776,13 +41776,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlDateTime.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlDateTime.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlDateTime.ToSqlString">
@@ -42149,13 +42149,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlDecimal.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlDecimal.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlDecimal.ToDouble">
@@ -42717,13 +42717,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlGuid.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlGuid.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlGuid.ToByteArray">
@@ -43054,13 +43054,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlInt16.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlInt16.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlInt16.ToSqlBoolean">
@@ -43426,13 +43426,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlInt32.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlInt32.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlInt32.ToSqlBoolean">
@@ -43798,13 +43798,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlInt64.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlInt64.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlInt64.ToSqlBoolean">
@@ -44134,13 +44134,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlMoney.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlMoney.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlMoney.ToDecimal">
@@ -44492,13 +44492,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlSingle.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlSingle.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlSingle.ToSqlBoolean">
@@ -44839,13 +44839,13 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
     <member name="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="reader">
-        <code data-dev-comment-type="langword">XmlReader</code>
+        <see langword="XmlReader" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
       <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       <param name="writer">
-        <code data-dev-comment-type="langword">XmlWriter</code>
+        <see langword="XmlWriter" />
       </param>
     </member>
     <member name="M:System.Data.SqlTypes.SqlString.ToSqlBoolean">
@@ -189269,10 +189269,10 @@ If the processor cannot find a schema or if the items are not valid, the XML pro
     <member name="M:System.Xml.Schema.XmlSchemaValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
       <summary>Constructs a new <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> object with the given <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> information that contains all the properties of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" />.</summary>
       <param name="info">
-        <xref data-throw-if-not-resolved="true" uid="System.Runtime.Serialization.SerializationInfo"></xref>
+        <see cref="T:System.Runtime.Serialization.SerializationInfo" />
       </param>
       <param name="context">
-        <xref data-throw-if-not-resolved="true" uid="System.Runtime.Serialization.StreamingContext"></xref>
+        <see cref="T:System.Runtime.Serialization.StreamingContext" />
       </param>
     </member>
     <member name="M:System.Xml.Schema.XmlSchemaValidationException.SetSourceObject(System.Object)">

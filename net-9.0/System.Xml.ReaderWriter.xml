@@ -2296,10 +2296,10 @@ If the processor cannot find a schema or if the items are not valid, the XML pro
     <member name="M:System.Xml.Schema.XmlSchemaValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
       <summary>Constructs a new <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> object with the given <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> information that contains all the properties of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" />.</summary>
       <param name="info">
-        <xref data-throw-if-not-resolved="true" uid="System.Runtime.Serialization.SerializationInfo"></xref>
+        <see cref="T:System.Runtime.Serialization.SerializationInfo" />
       </param>
       <param name="context">
-        <xref data-throw-if-not-resolved="true" uid="System.Runtime.Serialization.StreamingContext"></xref>
+        <see cref="T:System.Runtime.Serialization.StreamingContext" />
       </param>
     </member>
     <member name="M:System.Xml.Schema.XmlSchemaValidationException.SetSourceObject(System.Object)">
