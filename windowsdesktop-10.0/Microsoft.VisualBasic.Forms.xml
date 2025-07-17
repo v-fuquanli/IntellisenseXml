@@ -56,7 +56,6 @@
     <member name="T:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs">
       <summary>Provides context for the ApplyApplicationDefaults event.</summary>
     </member>
-    <member name="P:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.ColorMode" />
     <member name="P:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.Font">
       <summary>Gets or sets the default font for Forms and UserControls application-wide. If this property is not written, or the event is not handled, the default font for Forms and UserControls is set by the system.</summary>
     </member>
@@ -376,7 +375,6 @@
       <summary>Gets the <see cref="T:System.Windows.Forms.ApplicationContext" /> object for the current thread of a Windows Forms application.</summary>
       <returns>Contextual information about the current thread.</returns>
     </member>
-    <member name="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ColorMode" />
     <member name="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles">
       <summary>Determines whether this application will use the Windows XP styles for windows, controls, and so on.</summary>
       <returns>A <see cref="T:System.Boolean" /> value that indicates whether this application will use the XP Windows styles for windows, controls, and so on.</returns>

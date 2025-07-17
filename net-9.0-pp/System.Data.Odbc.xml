@@ -4,13 +4,6 @@
     <name>System.Data.Odbc</name>
   </assembly>
   <members>
-    <member name="T:System.Data.Odbc.ODBC32" />
-    <member name="T:System.Data.Odbc.ODBC32.RETCODE" />
-    <member name="F:System.Data.Odbc.ODBC32.RETCODE.ERROR" />
-    <member name="F:System.Data.Odbc.ODBC32.RETCODE.INVALID_HANDLE" />
-    <member name="F:System.Data.Odbc.ODBC32.RETCODE.NO_DATA" />
-    <member name="F:System.Data.Odbc.ODBC32.RETCODE.SUCCESS" />
-    <member name="F:System.Data.Odbc.ODBC32.RETCODE.SUCCESS_WITH_INFO" />
     <member name="T:System.Data.Odbc.OdbcCommand">
       <summary>Represents an SQL statement or stored procedure to execute against a data source. This class cannot be inherited.</summary>
     </member>

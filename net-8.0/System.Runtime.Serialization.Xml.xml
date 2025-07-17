@@ -28,7 +28,6 @@
       <returns>
         <see langword="true" /> if mapping succeeded; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="T:System.Runtime.Serialization.DataContracts.DataContract" />
     <member name="M:System.Runtime.Serialization.DataContracts.DataContract.GetArrayTypeName(System.Boolean)">
       <param name="isNullable" />
     </member>
@@ -44,20 +43,6 @@
       <param name="valueName" />
       <param name="itemName" />
     </member>
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.BaseContract" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.ContractType" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.DataMembers" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.IsBuiltInDataContract" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.IsISerializable" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.IsReference" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.IsValueType" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.KnownDataContracts" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.OriginalUnderlyingType" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.TopLevelElementName" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.TopLevelElementNamespace" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.UnderlyingType" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContract.XmlName" />
-    <member name="T:System.Runtime.Serialization.DataContracts.DataContractSet" />
     <member name="M:System.Runtime.Serialization.DataContracts.DataContractSet.#ctor(System.Runtime.Serialization.DataContracts.DataContractSet)">
       <param name="dataContractSet" />
     </member>
@@ -89,24 +74,6 @@
       <param name="typeNames" />
       <param name="importXmlDataType" />
     </member>
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContractSet.Contracts" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContractSet.KnownTypesForObject" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContractSet.ProcessedContracts" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataContractSet.SurrogateData" />
-    <member name="T:System.Runtime.Serialization.DataContracts.DataMember" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataMember.EmitDefaultValue" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataMember.IsNullable" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataMember.IsRequired" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataMember.MemberTypeContract" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataMember.Name" />
-    <member name="P:System.Runtime.Serialization.DataContracts.DataMember.Order" />
-    <member name="T:System.Runtime.Serialization.DataContracts.XmlDataContract" />
-    <member name="P:System.Runtime.Serialization.DataContracts.XmlDataContract.HasRoot" />
-    <member name="P:System.Runtime.Serialization.DataContracts.XmlDataContract.IsAnonymous" />
-    <member name="P:System.Runtime.Serialization.DataContracts.XmlDataContract.IsTopLevelElementNullable" />
-    <member name="P:System.Runtime.Serialization.DataContracts.XmlDataContract.IsTypeDefinedOnImport" />
-    <member name="P:System.Runtime.Serialization.DataContracts.XmlDataContract.IsValueType" />
-    <member name="P:System.Runtime.Serialization.DataContracts.XmlDataContract.XsdType" />
     <member name="T:System.Runtime.Serialization.DataContractSerializer">
       <summary>Serializes and deserializes an instance of a type into an XML stream or document using a supplied data contract. This class cannot be inherited.</summary>
     </member>

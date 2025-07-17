@@ -4,7 +4,6 @@
     <name>Microsoft.Bcl.Cryptography</name>
   </assembly>
   <members>
-    <member name="T:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.MLKem)">
       <param name="certificate" />
       <param name="privateKey" />

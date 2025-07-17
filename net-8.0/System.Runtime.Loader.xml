@@ -4,7 +4,6 @@
     <name>System.Runtime.Loader</name>
   </assembly>
   <members>
-    <member name="T:System.Reflection.Metadata.AssemblyExtensions" />
     <member name="M:System.Reflection.Metadata.AssemblyExtensions.TryGetRawMetadata(System.Reflection.Assembly,System.Byte*@,System.Int32@)">
       <summary>Retrieves the metadata section of the assembly, for use with <see cref="T:System.Reflection.Metadata.MetadataReader" />.</summary>
       <param name="assembly">The assembly from which to retrieve the metadata.</param>
@@ -23,7 +22,6 @@
     <member name="P:System.Reflection.Metadata.MetadataUpdateHandlerAttribute.HandlerType">
       <summary>Gets the type that handles metadata updates and that should be notified when any occur.</summary>
     </member>
-    <member name="T:System.Reflection.Metadata.MetadataUpdater" />
     <member name="M:System.Reflection.Metadata.MetadataUpdater.ApplyUpdate(System.Reflection.Assembly,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
       <summary>Updates the specified assembly using the provided metadata, IL, and PDB deltas.</summary>
       <param name="assembly">The assembly to update.</param>

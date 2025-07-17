@@ -38,7 +38,6 @@
       <summary>
             Settings for <see cref="T:Microsoft.Extensions.Logging.EventLog.EventLogLogger" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.EventLog.EventLogSettings.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter">
       <summary>
             Gets or sets the function used to filter events based on the log level.</summary>

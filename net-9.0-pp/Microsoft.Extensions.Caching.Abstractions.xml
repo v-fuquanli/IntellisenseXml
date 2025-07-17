@@ -31,7 +31,6 @@
       <summary>
             Provides the cache options for an entry in <see cref="T:Microsoft.Extensions.Caching.Distributed.IDistributedCache" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions.AbsoluteExpiration">
       <summary>
             Gets or sets an absolute expiration date for the cache entry.</summary>
@@ -231,7 +230,6 @@
       <summary>
             Provides multi-tier caching services building on <see cref="T:Microsoft.Extensions.Caching.Distributed.IDistributedCache" /> backends.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.Hybrid.HybridCache.#ctor" />
     <member name="M:Microsoft.Extensions.Caching.Hybrid.HybridCache.GetOrCreateAsync``1(System.String,System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{``0}},Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
       <summary>
             Asynchronously gets the value associated with the key if it exists, or generates a new entry using the provided key and a value from the given factory if the key is not found.</summary>
@@ -337,7 +335,6 @@
             most granular non-null value is used, with null values being inherited. If no value is specified at
             any level, the implementation can choose a reasonable default.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions.Expiration">
       <summary>
             Gets or set the overall cache duration of this entry, passed to the backend distributed cache.</summary>
@@ -346,7 +343,6 @@
       <summary>
             Gets or sets additional flags that apply to the requested operation.</summary>
     </member>
-    <member name="P:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions.LocalCacheExpiration" />
     <member name="T:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1">
       <summary>
             Provides per-type serialization and deserialization support for <see cref="T:Microsoft.Extensions.Caching.Hybrid.HybridCache" />.</summary>
@@ -751,7 +747,6 @@
       <summary>
             Represents the cache options applied to an entry of the <see cref="T:Microsoft.Extensions.Caching.Memory.IMemoryCache" /> instance.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions.AbsoluteExpiration">
       <summary>
             Gets or sets an absolute expiration date for the cache entry.</summary>
@@ -811,7 +806,6 @@
       <summary>
             Represents a callback delegate that will be fired after an entry is evicted from the cache.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration.EvictionCallback">
       <summary>
             Gets or sets the callback delegate that will be fired after an entry is evicted from the cache.</summary>

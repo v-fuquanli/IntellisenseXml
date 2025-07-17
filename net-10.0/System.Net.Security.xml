@@ -2057,6 +2057,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
       <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read. When there is no more data to be read, returns 0.</returns>
     </member>
+    <member name="M:System.Net.Security.SslStream.Read(System.Span{System.Byte})">
+      <param name="buffer" />
+    </member>
     <member name="M:System.Net.Security.SslStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
       <summary>Asynchronously reads data from this stream and stores it in the specified range of a byte array.</summary>
       <param name="buffer">The buffer that receives the bytes read from this stream.</param>
@@ -2148,6 +2151,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
     </member>
+    <member name="M:System.Net.Security.SslStream.Write(System.ReadOnlySpan{System.Byte})">
+      <param name="buffer" />
+    </member>
     <member name="M:System.Net.Security.SslStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
       <summary>Asynchronously writes data to the underlying stream from the specified range of a byte array.</summary>
       <param name="buffer">The data to write to the underlying stream.</param>
@@ -2183,6 +2189,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous write operation.</returns>
+    </member>
+    <member name="M:System.Net.Security.SslStream.WriteByte(System.Byte)">
+      <param name="value" />
     </member>
     <member name="P:System.Net.Security.SslStream.CanRead">
       <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the underlying stream is readable.</summary>

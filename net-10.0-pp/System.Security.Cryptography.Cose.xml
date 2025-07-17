@@ -320,6 +320,18 @@
       <summary>Gets the CBOR-encoded value of this instance.</summary>
       <returns>A view of the CBOR-encoded value as a contiguous region of memory.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseKey.FromKey(System.Security.Cryptography.ECDsa,System.Security.Cryptography.HashAlgorithmName)">
+      <param name="key" />
+      <param name="hashAlgorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseKey.FromKey(System.Security.Cryptography.MLDsa)">
+      <param name="key" />
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseKey.FromKey(System.Security.Cryptography.RSA,System.Security.Cryptography.RSASignaturePadding,System.Security.Cryptography.HashAlgorithmName)">
+      <param name="key" />
+      <param name="signaturePadding" />
+      <param name="hashAlgorithm" />
+    </member>
     <member name="T:System.Security.Cryptography.Cose.CoseMessage">
       <summary>Represents a COSE message as described in RFC 8152.</summary>
     </member>
@@ -972,6 +984,16 @@ The algorithm protected header doesn't match with the algorithms supported by th
       <returns>
         <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSign1Message.VerifyDetached(System.Security.Cryptography.Cose.CoseKey,System.IO.Stream,System.ReadOnlySpan{System.Byte})">
+      <param name="key" />
+      <param name="detachedContent" />
+      <param name="associatedData" />
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSign1Message.VerifyDetached(System.Security.Cryptography.Cose.CoseKey,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="key" />
+      <param name="detachedContent" />
+      <param name="associatedData" />
+    </member>
     <member name="M:System.Security.Cryptography.Cose.CoseSign1Message.VerifyDetachedAsync(System.Security.Cryptography.AsymmetricAlgorithm,System.IO.Stream,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)">
       <summary>Asynchronously verifies that the signature is valid for the content using the specified key.</summary>
       <param name="key">The public key that is associated with the private key that was used to sign the content.</param>
@@ -1003,6 +1025,12 @@ The algorithm protected header was not one of the values supported by this imple
 The algorithm protected header doesn't match with the algorithms supported by the specified <paramref name="key" />.</exception>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task whose <see cref="T:System.Threading.Tasks.Task`1" /> property is <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSign1Message.VerifyDetachedAsync(System.Security.Cryptography.Cose.CoseKey,System.IO.Stream,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)">
+      <param name="key" />
+      <param name="detachedContent" />
+      <param name="associatedData" />
+      <param name="cancellationToken" />
     </member>
     <member name="M:System.Security.Cryptography.Cose.CoseSign1Message.VerifyEmbedded(System.Security.Cryptography.AsymmetricAlgorithm,System.Byte[])">
       <summary>Verifies that the signature is valid for the content using the specified key.</summary>
@@ -1055,6 +1083,10 @@ The algorithm protected header was not one of the values supported by this imple
 The algorithm protected header doesn't match with the algorithms supported by the specified <paramref name="key" />.</exception>
       <returns>
         <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSign1Message.VerifyEmbedded(System.Security.Cryptography.Cose.CoseKey,System.ReadOnlySpan{System.Byte})">
+      <param name="key" />
+      <param name="associatedData" />
     </member>
     <member name="P:System.Security.Cryptography.Cose.CoseSign1Message.Signature">
       <summary>Gets the digital signature.</summary>
@@ -1148,6 +1180,16 @@ The algorithm protected header doesn't match with the algorithms supported by th
       <returns>
         <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSignature.VerifyDetached(System.Security.Cryptography.Cose.CoseKey,System.IO.Stream,System.ReadOnlySpan{System.Byte})">
+      <param name="key" />
+      <param name="detachedContent" />
+      <param name="associatedData" />
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSignature.VerifyDetached(System.Security.Cryptography.Cose.CoseKey,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="key" />
+      <param name="detachedContent" />
+      <param name="associatedData" />
+    </member>
     <member name="M:System.Security.Cryptography.Cose.CoseSignature.VerifyDetachedAsync(System.Security.Cryptography.AsymmetricAlgorithm,System.IO.Stream,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)">
       <summary>Asynchronously verifies that the signature is valid for the message's content using the specified key.</summary>
       <param name="key">The private key used to sign the content.</param>
@@ -1179,6 +1221,12 @@ The algorithm protected header was not one of the values supported by this imple
 The algorithm protected header doesn't match with the algorithms supported by the specified <paramref name="key" />.</exception>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task whose <see cref="T:System.Threading.Tasks.Task`1" /> property is <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSignature.VerifyDetachedAsync(System.Security.Cryptography.Cose.CoseKey,System.IO.Stream,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)">
+      <param name="key" />
+      <param name="detachedContent" />
+      <param name="associatedData" />
+      <param name="cancellationToken" />
     </member>
     <member name="M:System.Security.Cryptography.Cose.CoseSignature.VerifyEmbedded(System.Security.Cryptography.AsymmetricAlgorithm,System.Byte[])">
       <summary>Verifies that the signature is valid for the message's content using the specified key.</summary>
@@ -1232,6 +1280,10 @@ The algorithm protected header doesn't match with the algorithms supported by th
       <returns>
         <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSignature.VerifyEmbedded(System.Security.Cryptography.Cose.CoseKey,System.ReadOnlySpan{System.Byte})">
+      <param name="key" />
+      <param name="associatedData" />
+    </member>
     <member name="P:System.Security.Cryptography.Cose.CoseSignature.ProtectedHeaders">
       <summary>Gets the protected header parameters associated with this instance.</summary>
       <returns>A collection of protected header parameters associated with this instance.</returns>
@@ -1273,6 +1325,11 @@ The algorithm protected header doesn't match with the algorithms supported by th
 -or-
 
 <paramref name="unprotectedHeaders" /> specifies a value with the <see cref="P:System.Security.Cryptography.Cose.CoseHeaderLabel.Algorithm" /> label.</exception>
+    </member>
+    <member name="M:System.Security.Cryptography.Cose.CoseSigner.#ctor(System.Security.Cryptography.Cose.CoseKey,System.Security.Cryptography.Cose.CoseHeaderMap,System.Security.Cryptography.Cose.CoseHeaderMap)">
+      <param name="key" />
+      <param name="protectedHeaders" />
+      <param name="unprotectedHeaders" />
     </member>
     <member name="M:System.Security.Cryptography.Cose.CoseSigner.#ctor(System.Security.Cryptography.RSA,System.Security.Cryptography.RSASignaturePadding,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.Cose.CoseHeaderMap,System.Security.Cryptography.Cose.CoseHeaderMap)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Cose.CoseSigner" /> class.</summary>

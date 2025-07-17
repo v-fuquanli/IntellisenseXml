@@ -207,7 +207,6 @@
     <member name="T:Microsoft.Extensions.AI.AIFunction">
       <summary>Represents a function that can be described to an AI service and invoked.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIFunction.#ctor" />
     <member name="M:Microsoft.Extensions.AI.AIFunction.InvokeAsync(Microsoft.Extensions.AI.AIFunctionArguments,System.Threading.CancellationToken)">
       <summary>Invokes the <see cref="T:Microsoft.Extensions.AI.AIFunction" /> and returns its result.</summary>
       <param name="arguments">The arguments to pass to the function's invocation.</param>
@@ -473,7 +472,6 @@
     <member name="M:Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions.Equals(System.Object)">
       <param name="obj" />
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions.GetHashCode" />
     <member name="M:Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions.op_Equality(Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions,Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions)">
       <param name="left" />
       <param name="right" />
@@ -482,7 +480,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions.ToString" />
     <member name="P:Microsoft.Extensions.AI.AIFunctionFactoryOptions.ParameterBindingOptions.BindParameter">
       <summary>Gets a delegate used to determine the value for a bound parameter.</summary>
     </member>
@@ -533,8 +530,6 @@
       <summary>
             Provides options for configuring the behavior of <see cref="T:Microsoft.Extensions.AI.AIJsonUtilities" /> JSON schema creation functionality.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.#ctor" />
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.{Clone}$" />
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.Equals(Microsoft.Extensions.AI.AIJsonSchemaCreateOptions)">
       <summary>Indicates whether the current object is equal to another object of the same type.</summary>
       <param name="other">An object to compare with this object.</param>
@@ -559,7 +554,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.ToString" />
     <member name="P:Microsoft.Extensions.AI.AIJsonSchemaCreateOptions.Default">
       <summary>
             Gets the default options instance.</summary>
@@ -631,15 +625,12 @@
       <summary>
             Provides options for configuring the behavior of <see cref="T:Microsoft.Extensions.AI.AIJsonUtilities" /> JSON schema transformation functionality.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.#ctor" />
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.{Clone}$" />
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.Equals(Microsoft.Extensions.AI.AIJsonSchemaTransformOptions)">
       <param name="other" />
     </member>
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.Equals(System.Object)">
       <param name="obj" />
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.GetHashCode" />
     <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.op_Equality(Microsoft.Extensions.AI.AIJsonSchemaTransformOptions,Microsoft.Extensions.AI.AIJsonSchemaTransformOptions)">
       <param name="left" />
       <param name="right" />
@@ -648,7 +639,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="M:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.ToString" />
     <member name="P:Microsoft.Extensions.AI.AIJsonSchemaTransformOptions.ConvertBooleanSchemas">
       <summary>
             Gets a value indicating whether to convert boolean schemas to equivalent object-based representations.</summary>
@@ -798,7 +788,6 @@
     <member name="T:Microsoft.Extensions.AI.BinaryEmbedding.VectorConverter">
       <summary>Provides a <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for serializing <see cref="T:System.Collections.BitArray" /> instances.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.BinaryEmbedding.VectorConverter.#ctor" />
     <member name="M:Microsoft.Extensions.AI.BinaryEmbedding.VectorConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
       <summary>Reads and converts the JSON to type <code data-dev-comment-type="typeparamref">T</code>.</summary>
       <param name="reader">The reader.</param>
@@ -973,7 +962,6 @@
     <member name="T:Microsoft.Extensions.AI.ChatFinishReason.Converter">
       <summary>Provides a <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for serializing <see cref="T:Microsoft.Extensions.AI.ChatFinishReason" /> instances.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.ChatFinishReason.Converter.#ctor" />
     <member name="M:Microsoft.Extensions.AI.ChatFinishReason.Converter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
       <summary>Reads and converts the JSON to type <code data-dev-comment-type="typeparamref">T</code>.</summary>
       <param name="reader">The reader.</param>
@@ -1035,7 +1023,6 @@
     <member name="T:Microsoft.Extensions.AI.ChatOptions">
       <summary>Represents the options for a chat request.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.ChatOptions.#ctor" />
     <member name="M:Microsoft.Extensions.AI.ChatOptions.Clone">
       <summary>Produces a clone of the current <see cref="T:Microsoft.Extensions.AI.ChatOptions" /> instance.</summary>
       <returns>A clone of the current <see cref="T:Microsoft.Extensions.AI.ChatOptions" /> instance.</returns>
@@ -1056,6 +1043,9 @@
     <member name="P:Microsoft.Extensions.AI.ChatOptions.FrequencyPenalty">
       <summary>
             Gets or sets the penalty for repeated tokens in chat responses proportional to how many times they've appeared.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.ChatOptions.Instructions">
+      <summary>Gets or sets additional per-request instructions to be provided to the <see cref="T:Microsoft.Extensions.AI.IChatClient" />.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.ChatOptions.MaxOutputTokens">
       <summary>Gets or sets the maximum number of tokens in the generated chat response.</summary>
@@ -1375,7 +1365,6 @@
     <member name="T:Microsoft.Extensions.AI.ChatRole.Converter">
       <summary>Provides a <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for serializing <see cref="T:Microsoft.Extensions.AI.ChatRole" /> instances.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.ChatRole.Converter.#ctor" />
     <member name="M:Microsoft.Extensions.AI.ChatRole.Converter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
       <summary>Reads and converts the JSON to type <code data-dev-comment-type="typeparamref">T</code>.</summary>
       <param name="reader">The reader.</param>
@@ -1469,6 +1458,51 @@
     </member>
     <member name="P:Microsoft.Extensions.AI.DataContent.Uri">
       <summary>Gets the data URI for this <see cref="T:Microsoft.Extensions.AI.DataContent" />.</summary>
+    </member>
+    <member name="T:Microsoft.Extensions.AI.DelegatingAIFunction">
+      <summary>
+            Provides an optional base class for an <see cref="T:Microsoft.Extensions.AI.AIFunction" /> that passes through calls to another instance.</summary>
+    </member>
+    <member name="M:Microsoft.Extensions.AI.DelegatingAIFunction.#ctor(Microsoft.Extensions.AI.AIFunction)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.DelegatingAIFunction" /> class as a wrapper around <paramref name="innerFunction" />.</summary>
+      <param name="innerFunction">The inner AI function to which all calls are delegated by default.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="innerFunction" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:Microsoft.Extensions.AI.DelegatingAIFunction.InvokeCoreAsync(Microsoft.Extensions.AI.AIFunctionArguments,System.Threading.CancellationToken)">
+      <summary>Invokes the <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.AIFunction"></xref> and returns its result.</summary>
+      <param name="arguments">The arguments to pass to the function's invocation.</param>
+      <param name="cancellationToken">The <xref data-throw-if-not-resolved="true" uid="System.Threading.CancellationToken"></xref> to monitor for cancellation requests.</param>
+      <returns>The result of the function's execution.</returns>
+    </member>
+    <member name="M:Microsoft.Extensions.AI.DelegatingAIFunction.ToString">
+      <summary>Returns a string that represents the current object.</summary>
+      <returns>A string that represents the current object.</returns>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.AdditionalProperties">
+      <summary>Gets any additional properties associated with the tool.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.Description">
+      <summary>Gets a description of the tool, suitable for use in describing the purpose to a model.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.InnerFunction">
+      <summary>Gets the inner <see cref="T:Microsoft.Extensions.AI.AIFunction" />.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.JsonSchema">
+      <summary>Gets a JSON Schema describing the function and its input parameters.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.JsonSerializerOptions">
+      <summary>Gets a <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.AIFunction.JsonSerializerOptions"></xref> that can be used to marshal function parameters.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.Name">
+      <summary>Gets the name of the tool.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.ReturnJsonSchema">
+      <summary>Gets a JSON Schema describing the function's return value.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.UnderlyingMethod">
+      <summary>Gets the underlying <xref data-throw-if-not-resolved="true" uid="System.Reflection.MethodInfo"></xref> that this <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.AIFunction"></xref> might be wrapping.</summary>
     </member>
     <member name="T:Microsoft.Extensions.AI.DelegatingChatClient">
       <summary>
@@ -1620,7 +1654,6 @@
     <member name="T:Microsoft.Extensions.AI.EmbeddingGenerationOptions">
       <summary>Represents the options for an embedding generation request.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.EmbeddingGenerationOptions.#ctor" />
     <member name="M:Microsoft.Extensions.AI.EmbeddingGenerationOptions.Clone">
       <summary>Produces a clone of the current <see cref="T:Microsoft.Extensions.AI.EmbeddingGenerationOptions" /> instance.</summary>
       <returns>A clone of the current <see cref="T:Microsoft.Extensions.AI.EmbeddingGenerationOptions" /> instance.</returns>
@@ -2089,7 +2122,6 @@
     <member name="T:Microsoft.Extensions.AI.SpeechToTextOptions">
       <summary>Represents the options for an speech to text request.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.SpeechToTextOptions.#ctor" />
     <member name="M:Microsoft.Extensions.AI.SpeechToTextOptions.Clone">
       <summary>Produces a clone of the current <see cref="T:Microsoft.Extensions.AI.SpeechToTextOptions" /> instance.</summary>
       <returns>A clone of the current <see cref="T:Microsoft.Extensions.AI.SpeechToTextOptions" /> instance.</returns>
@@ -2136,7 +2168,7 @@
       <returns>A string that represents the current object.</returns>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.AdditionalProperties">
-      <summary>Gets or sets any additional properties associated with the speech to text completion.</summary>
+      <summary>Gets or sets any additional properties associated with the speech to text response.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.Contents">
       <summary>Gets or sets the generated content items.</summary>
@@ -2145,10 +2177,10 @@
       <summary>Gets or sets the end time of the text segment in relation to the full audio speech length.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.ModelId">
-      <summary>Gets or sets the model ID used in the creation of the speech to text completion.</summary>
+      <summary>Gets or sets the model ID used in the creation of the speech to text response.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.RawRepresentation">
-      <summary>Gets or sets the raw representation of the speech to text completion from an underlying implementation.</summary>
+      <summary>Gets or sets the raw representation of the speech to text response from an underlying implementation.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.ResponseId">
       <summary>Gets or sets the ID of the speech to text response.</summary>
@@ -2158,6 +2190,9 @@
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.Text">
       <summary>Gets the text of this speech to text response.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.Usage">
+      <summary>Gets or sets usage details for the speech to text response.</summary>
     </member>
     <member name="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdate">
       <summary>
@@ -2289,7 +2324,6 @@
     <member name="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind.Converter">
       <summary>Provides a <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for serializing <see cref="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind" /> instances.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind.Converter.#ctor" />
     <member name="M:Microsoft.Extensions.AI.SpeechToTextResponseUpdateKind.Converter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
       <summary>Reads and converts the JSON to type <code data-dev-comment-type="typeparamref">T</code>.</summary>
       <param name="reader">The reader.</param>
@@ -2391,7 +2425,6 @@
     <member name="T:Microsoft.Extensions.AI.UsageDetails">
       <summary>Provides usage details about a request/response.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.AI.UsageDetails.#ctor" />
     <member name="M:Microsoft.Extensions.AI.UsageDetails.Add(Microsoft.Extensions.AI.UsageDetails)">
       <summary>Adds usage data from another <see cref="T:Microsoft.Extensions.AI.UsageDetails" /> into this instance.</summary>
       <param name="usage">The source <see cref="T:Microsoft.Extensions.AI.UsageDetails" /> with which to augment this instance.</param>

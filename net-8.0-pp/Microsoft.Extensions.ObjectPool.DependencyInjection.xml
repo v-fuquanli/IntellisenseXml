@@ -48,7 +48,6 @@
       <summary>
             Contains configuration for pools.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.ObjectPool.DependencyInjectionPoolOptions.#ctor" />
     <member name="P:Microsoft.Extensions.ObjectPool.DependencyInjectionPoolOptions.Capacity">
       <summary>
             Gets or sets the maximal capacity of the pool.</summary>

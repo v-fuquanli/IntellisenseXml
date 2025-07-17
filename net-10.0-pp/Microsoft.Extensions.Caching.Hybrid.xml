@@ -8,7 +8,6 @@
       <summary>
             Options for configuring the default <see cref="T:Microsoft.Extensions.Caching.Hybrid.HybridCache" /> implementation.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.Hybrid.HybridCacheOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.Hybrid.HybridCacheOptions.DefaultEntryOptions">
       <summary>
             Gets or sets the default global options to be applied to <see cref="T:Microsoft.Extensions.Caching.Hybrid.HybridCache" /> operations.</summary>

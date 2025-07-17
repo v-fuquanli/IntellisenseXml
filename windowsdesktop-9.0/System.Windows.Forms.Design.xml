@@ -436,7 +436,6 @@
       <summary>Gets the parent component for this designer.</summary>
       <returns>The parent component for this designer, or <see langword="null" /> if this designer is the root component.</returns>
     </member>
-    <member name="P:System.ComponentModel.Design.ComponentDesigner.SetTextualDefaultProperty" />
     <member name="P:System.ComponentModel.Design.ComponentDesigner.ShadowProperties">
       <summary>Gets a collection of property values that override user settings.</summary>
       <returns>A <see cref="T:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection" /> that indicates the shadow properties of the design document.</returns>
@@ -467,14 +466,6 @@
       <param name="propertyName">The name of the property to access in the collection.</param>
       <returns>The value of the specified property, if it exists in the collection. Otherwise, the value is retrieved from the current value of the nonshadowed property.</returns>
     </member>
-    <member name="T:System.ComponentModel.Design.DataSourceDescriptor" />
-    <member name="M:System.ComponentModel.Design.DataSourceDescriptor.#ctor" />
-    <member name="P:System.ComponentModel.Design.DataSourceDescriptor.Image" />
-    <member name="P:System.ComponentModel.Design.DataSourceDescriptor.IsDesignable" />
-    <member name="P:System.ComponentModel.Design.DataSourceDescriptor.Name" />
-    <member name="P:System.ComponentModel.Design.DataSourceDescriptor.TypeName" />
-    <member name="T:System.ComponentModel.Design.DataSourceDescriptorCollection" />
-    <member name="M:System.ComponentModel.Design.DataSourceDescriptorCollection.#ctor" />
     <member name="M:System.ComponentModel.Design.DataSourceDescriptorCollection.Add(System.ComponentModel.Design.DataSourceDescriptor)">
       <param name="value" />
     </member>
@@ -498,14 +489,6 @@
     <member name="P:System.ComponentModel.Design.DataSourceDescriptorCollection.Item(System.Int32)">
       <param name="index" />
     </member>
-    <member name="T:System.ComponentModel.Design.DataSourceGroup" />
-    <member name="M:System.ComponentModel.Design.DataSourceGroup.#ctor" />
-    <member name="P:System.ComponentModel.Design.DataSourceGroup.DataSources" />
-    <member name="P:System.ComponentModel.Design.DataSourceGroup.Image" />
-    <member name="P:System.ComponentModel.Design.DataSourceGroup.IsDefault" />
-    <member name="P:System.ComponentModel.Design.DataSourceGroup.Name" />
-    <member name="T:System.ComponentModel.Design.DataSourceGroupCollection" />
-    <member name="M:System.ComponentModel.Design.DataSourceGroupCollection.#ctor" />
     <member name="M:System.ComponentModel.Design.DataSourceGroupCollection.Add(System.ComponentModel.Design.DataSourceGroup)">
       <param name="value" />
     </member>
@@ -529,13 +512,10 @@
     <member name="P:System.ComponentModel.Design.DataSourceGroupCollection.Item(System.Int32)">
       <param name="index" />
     </member>
-    <member name="T:System.ComponentModel.Design.DataSourceProviderService" />
-    <member name="M:System.ComponentModel.Design.DataSourceProviderService.#ctor" />
     <member name="M:System.ComponentModel.Design.DataSourceProviderService.AddDataSourceInstance(System.ComponentModel.Design.IDesignerHost,System.ComponentModel.Design.DataSourceDescriptor)">
       <param name="host" />
       <param name="dataSourceDescriptor" />
     </member>
-    <member name="M:System.ComponentModel.Design.DataSourceProviderService.GetDataSources" />
     <member name="M:System.ComponentModel.Design.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)">
       <param name="parentWindow" />
       <param name="startPosition" />
@@ -548,8 +528,6 @@
     <member name="M:System.ComponentModel.Design.DataSourceProviderService.NotifyDataSourceComponentAdded(System.Object)">
       <param name="dsc" />
     </member>
-    <member name="P:System.ComponentModel.Design.DataSourceProviderService.SupportsAddNewDataSource" />
-    <member name="P:System.ComponentModel.Design.DataSourceProviderService.SupportsConfigureDataSource" />
     <member name="T:System.ComponentModel.Design.DateTimeEditor">
       <summary>This date time editor is a <see cref="T:System.Drawing.Design.UITypeEditor" /> suitable for visually editing <see cref="T:System.DateTime" /> objects.</summary>
     </member>

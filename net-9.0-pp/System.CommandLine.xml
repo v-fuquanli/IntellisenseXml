@@ -26,7 +26,6 @@
       <summary>
             Gets or sets the arity of the argument.</summary>
     </member>
-    <member name="P:System.CommandLine.Argument.CompletionSources" />
     <member name="P:System.CommandLine.Argument.HasDefaultValue">
       <summary>
             Specifies if a default value is defined for the argument.</summary>
@@ -35,7 +34,6 @@
       <summary>
             The name used in help output to describe the argument.</summary>
     </member>
-    <member name="P:System.CommandLine.Argument.Validators" />
     <member name="P:System.CommandLine.Argument.ValueType">
       <summary>
             Gets or sets the <see cref="T:System.Type" /> that the argument token(s) will be converted to.</summary>
@@ -47,9 +45,6 @@
     <member name="M:System.CommandLine.Argument`1.#ctor(System.String)">
       <param name="name" />
     </member>
-    <member name="P:System.CommandLine.Argument`1.CustomParser" />
-    <member name="P:System.CommandLine.Argument`1.DefaultValueFactory" />
-    <member name="P:System.CommandLine.Argument`1.HasDefaultValue" />
     <member name="P:System.CommandLine.Argument`1.ValueType">
       <summary>The type of the value.</summary>
     </member>
@@ -109,7 +104,6 @@
       <summary>
             An arity that may have one value, but no more than one.</summary>
     </member>
-    <member name="T:System.CommandLine.ArgumentValidation" />
     <member name="M:System.CommandLine.ArgumentValidation.AcceptExistingOnly(System.CommandLine.Argument{System.IO.DirectoryInfo})">
       <param name="argument" />
     </member>
@@ -275,8 +269,6 @@
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
     </member>
-    <member name="P:System.CommandLine.Command.Action" />
-    <member name="P:System.CommandLine.Command.Aliases" />
     <member name="P:System.CommandLine.Command.Arguments">
       <summary>
             Represents all of the arguments for the command.</summary>
@@ -298,7 +290,6 @@
             Gets or sets a value that indicates whether unmatched tokens should be treated as errors. For example,
             if set to <see langword="true" /> and an extra command or argument is provided, validation will fail.</summary>
     </member>
-    <member name="P:System.CommandLine.Command.Validators" />
     <member name="T:System.CommandLine.CommandLineConfiguration">
       <summary>
             Represents the configuration used by the <see cref="T:System.CommandLine.Parsing.Parser" />.</summary>
@@ -331,15 +322,10 @@
             Throws an exception if the parser configuration is ambiguous or otherwise not valid.</summary>
       <exception cref="T:System.CommandLine.CommandLineConfigurationException">Thrown if the configuration is found to be invalid.</exception>
     </member>
-    <member name="P:System.CommandLine.CommandLineConfiguration.EnableDefaultExceptionHandler" />
     <member name="P:System.CommandLine.CommandLineConfiguration.EnablePosixBundling">
       <summary>
             Gets a value indicating whether POSIX bundling is enabled.</summary>
     </member>
-    <member name="P:System.CommandLine.CommandLineConfiguration.Error" />
-    <member name="P:System.CommandLine.CommandLineConfiguration.Output" />
-    <member name="P:System.CommandLine.CommandLineConfiguration.ProcessTerminationTimeout" />
-    <member name="P:System.CommandLine.CommandLineConfiguration.ResponseFileTokenReplacer" />
     <member name="P:System.CommandLine.CommandLineConfiguration.RootCommand">
       <summary>
             Gets the root command.</summary>
@@ -360,9 +346,6 @@
       <param name="parseResult" />
       <param name="position" />
     </member>
-    <member name="P:System.CommandLine.Completions.CompletionContext.Empty" />
-    <member name="P:System.CommandLine.Completions.CompletionContext.ParseResult" />
-    <member name="P:System.CommandLine.Completions.CompletionContext.WordToComplete" />
     <member name="T:System.CommandLine.Completions.CompletionItem">
       <summary>
             Provides details about a command line completion item.</summary>
@@ -418,9 +401,6 @@
       <summary>
             The value used to sort the completion item in a list.</summary>
     </member>
-    <member name="T:System.CommandLine.Completions.SuggestDirective" />
-    <member name="M:System.CommandLine.Completions.SuggestDirective.#ctor" />
-    <member name="P:System.CommandLine.Completions.SuggestDirective.Action" />
     <member name="T:System.CommandLine.Completions.TextCompletionContext">
       <summary>
             Provides details for calculating completions in the context of complete, unsplit command line text.</summary>
@@ -450,50 +430,26 @@
       <param name="completionSources" />
       <param name="completions" />
     </member>
-    <member name="T:System.CommandLine.DiagramDirective" />
-    <member name="M:System.CommandLine.DiagramDirective.#ctor" />
-    <member name="P:System.CommandLine.DiagramDirective.Action" />
-    <member name="P:System.CommandLine.DiagramDirective.ParseErrorReturnValue" />
-    <member name="T:System.CommandLine.Directive" />
     <member name="M:System.CommandLine.Directive.#ctor(System.String)">
       <param name="name" />
     </member>
     <member name="M:System.CommandLine.Directive.GetCompletions(System.CommandLine.Completions.CompletionContext)">
       <param name="context" />
     </member>
-    <member name="P:System.CommandLine.Directive.Action" />
-    <member name="T:System.CommandLine.EnvironmentVariablesDirective" />
-    <member name="M:System.CommandLine.EnvironmentVariablesDirective.#ctor" />
-    <member name="P:System.CommandLine.EnvironmentVariablesDirective.Action" />
-    <member name="T:System.CommandLine.Help.HelpAction" />
-    <member name="M:System.CommandLine.Help.HelpAction.#ctor" />
     <member name="M:System.CommandLine.Help.HelpAction.Invoke(System.CommandLine.ParseResult)">
       <param name="parseResult" />
     </member>
-    <member name="T:System.CommandLine.Help.HelpOption" />
-    <member name="M:System.CommandLine.Help.HelpOption.#ctor" />
     <member name="M:System.CommandLine.Help.HelpOption.#ctor(System.String,System.String[])">
       <param name="name" />
       <param name="aliases" />
     </member>
-    <member name="P:System.CommandLine.Help.HelpOption.Action" />
-    <member name="T:System.CommandLine.Invocation.AsynchronousCommandLineAction" />
-    <member name="M:System.CommandLine.Invocation.AsynchronousCommandLineAction.#ctor" />
     <member name="M:System.CommandLine.Invocation.AsynchronousCommandLineAction.InvokeAsync(System.CommandLine.ParseResult,System.Threading.CancellationToken)">
       <param name="parseResult" />
       <param name="cancellationToken" />
     </member>
-    <member name="T:System.CommandLine.Invocation.CommandLineAction" />
-    <member name="P:System.CommandLine.Invocation.CommandLineAction.Terminating" />
-    <member name="T:System.CommandLine.Invocation.ParseErrorAction" />
-    <member name="M:System.CommandLine.Invocation.ParseErrorAction.#ctor" />
     <member name="M:System.CommandLine.Invocation.ParseErrorAction.Invoke(System.CommandLine.ParseResult)">
       <param name="parseResult" />
     </member>
-    <member name="P:System.CommandLine.Invocation.ParseErrorAction.ShowHelp" />
-    <member name="P:System.CommandLine.Invocation.ParseErrorAction.ShowTypoCorrections" />
-    <member name="T:System.CommandLine.Invocation.SynchronousCommandLineAction" />
-    <member name="M:System.CommandLine.Invocation.SynchronousCommandLineAction.#ctor" />
     <member name="M:System.CommandLine.Invocation.SynchronousCommandLineAction.Invoke(System.CommandLine.ParseResult)">
       <param name="parseResult" />
     </member>
@@ -506,9 +462,6 @@
       <param name="context" />
       <returns>A list of completion items.</returns>
     </member>
-    <member name="M:System.CommandLine.Option.GetDefaultValue" />
-    <member name="P:System.CommandLine.Option.Action" />
-    <member name="P:System.CommandLine.Option.Aliases" />
     <member name="P:System.CommandLine.Option.AllowMultipleArgumentsPerToken">
       <summary>
             Gets a value that indicates whether multiple argument tokens are allowed for each option identifier token.</summary>
@@ -517,12 +470,6 @@
       <summary>
             Gets or sets the arity of the option.</summary>
     </member>
-    <member name="P:System.CommandLine.Option.CompletionSources" />
-    <member name="P:System.CommandLine.Option.HasDefaultValue" />
-    <member name="P:System.CommandLine.Option.HelpName" />
-    <member name="P:System.CommandLine.Option.Recursive" />
-    <member name="P:System.CommandLine.Option.Required" />
-    <member name="P:System.CommandLine.Option.Validators" />
     <member name="P:System.CommandLine.Option.ValueType">
       <summary>
             The <see cref="T:System.Type" /> that the option's arguments are expected to be parsed as.</summary>
@@ -535,15 +482,9 @@
       <param name="name" />
       <param name="aliases" />
     </member>
-    <member name="M:System.CommandLine.Option`1.AcceptLegalFileNamesOnly" />
-    <member name="M:System.CommandLine.Option`1.AcceptLegalFilePathsOnly" />
     <member name="M:System.CommandLine.Option`1.AcceptOnlyFromAmong(System.String[])">
       <param name="values" />
     </member>
-    <member name="P:System.CommandLine.Option`1.CustomParser" />
-    <member name="P:System.CommandLine.Option`1.DefaultValueFactory" />
-    <member name="P:System.CommandLine.Option`1.ValueType" />
-    <member name="T:System.CommandLine.OptionValidation" />
     <member name="M:System.CommandLine.OptionValidation.AcceptExistingOnly(System.CommandLine.Option{System.IO.DirectoryInfo})">
       <param name="option" />
     </member>
@@ -557,8 +498,6 @@
       <param name="option" />
       <typeparam name="T" />
     </member>
-    <member name="T:System.CommandLine.ParseResult" />
-    <member name="M:System.CommandLine.ParseResult.GetCompletionContext" />
     <member name="M:System.CommandLine.ParseResult.GetCompletions(System.Nullable{System.Int32})">
       <param name="position" />
     </member>
@@ -604,18 +543,9 @@
       <param name="name" />
       <typeparam name="T" />
     </member>
-    <member name="M:System.CommandLine.ParseResult.Invoke" />
     <member name="M:System.CommandLine.ParseResult.InvokeAsync(System.Threading.CancellationToken)">
       <param name="cancellationToken" />
     </member>
-    <member name="M:System.CommandLine.ParseResult.ToString" />
-    <member name="P:System.CommandLine.ParseResult.Action" />
-    <member name="P:System.CommandLine.ParseResult.CommandResult" />
-    <member name="P:System.CommandLine.ParseResult.Configuration" />
-    <member name="P:System.CommandLine.ParseResult.Errors" />
-    <member name="P:System.CommandLine.ParseResult.RootCommandResult" />
-    <member name="P:System.CommandLine.ParseResult.Tokens" />
-    <member name="P:System.CommandLine.ParseResult.UnmatchedTokens" />
     <member name="T:System.CommandLine.Parsing.ArgumentResult">
       <summary>
             A result produced when parsing an <see cref="P:System.CommandLine.Parsing.ArgumentResult.Argument" />.</summary>
@@ -644,7 +574,6 @@
       <summary>
             The argument to which the result applies.</summary>
     </member>
-    <member name="T:System.CommandLine.Parsing.CommandLineParser" />
     <member name="M:System.CommandLine.Parsing.CommandLineParser.Parse(System.CommandLine.Command,System.Collections.Generic.IReadOnlyList{System.String},System.CommandLine.CommandLineConfiguration)">
       <param name="command" />
       <param name="args" />
@@ -662,17 +591,10 @@
       <summary>
             A result produced when parsing a <see cref="P:System.CommandLine.Parsing.CommandResult.Command" />.</summary>
     </member>
-    <member name="M:System.CommandLine.Parsing.CommandResult.ToString" />
-    <member name="P:System.CommandLine.Parsing.CommandResult.Children" />
     <member name="P:System.CommandLine.Parsing.CommandResult.Command">
       <summary>
             The command to which the result applies.</summary>
     </member>
-    <member name="P:System.CommandLine.Parsing.CommandResult.IdentifierToken" />
-    <member name="T:System.CommandLine.Parsing.DirectiveResult" />
-    <member name="P:System.CommandLine.Parsing.DirectiveResult.Directive" />
-    <member name="P:System.CommandLine.Parsing.DirectiveResult.Token" />
-    <member name="P:System.CommandLine.Parsing.DirectiveResult.Values" />
     <member name="T:System.CommandLine.Parsing.OptionResult">
       <summary>
             A result produced when parsing an <see cref="P:System.CommandLine.Parsing.OptionResult.Option" />.</summary>
@@ -683,10 +605,6 @@
       <typeparam name="T" />
       <returns>The parsed value or the default value for <see cref="P:System.CommandLine.Parsing.OptionResult.Option" /></returns>
     </member>
-    <member name="M:System.CommandLine.Parsing.OptionResult.ToString" />
-    <member name="P:System.CommandLine.Parsing.OptionResult.IdentifierToken" />
-    <member name="P:System.CommandLine.Parsing.OptionResult.IdentifierTokenCount" />
-    <member name="P:System.CommandLine.Parsing.OptionResult.Implicit" />
     <member name="P:System.CommandLine.Parsing.OptionResult.Option">
       <summary>
             The option to which the result applies.</summary>
@@ -753,7 +671,6 @@
       <param name="name" />
       <typeparam name="T" />
     </member>
-    <member name="P:System.CommandLine.Parsing.SymbolResult.Errors" />
     <member name="P:System.CommandLine.Parsing.SymbolResult.Parent">
       <summary>
             The parent symbol result in the parse tree.</summary>
@@ -856,7 +773,6 @@
     <member name="M:System.CommandLine.RootCommand.Add(System.CommandLine.Directive)">
       <param name="directive" />
     </member>
-    <member name="P:System.CommandLine.RootCommand.Directives" />
     <member name="P:System.CommandLine.RootCommand.ExecutableName">
       <summary>
             The name of the currently running executable.</summary>
@@ -882,7 +798,6 @@
       <summary>
             Gets or sets the description of the symbol.</summary>
     </member>
-    <member name="P:System.CommandLine.Symbol.Hidden" />
     <member name="P:System.CommandLine.Symbol.Name">
       <summary>
             Gets or sets the name of the symbol.</summary>
@@ -891,12 +806,9 @@
       <summary>
             Gets the parent symbols.</summary>
     </member>
-    <member name="T:System.CommandLine.VersionOption" />
-    <member name="M:System.CommandLine.VersionOption.#ctor" />
     <member name="M:System.CommandLine.VersionOption.#ctor(System.String,System.String[])">
       <param name="name" />
       <param name="aliases" />
     </member>
-    <member name="P:System.CommandLine.VersionOption.Action" />
   </members>
 </doc>

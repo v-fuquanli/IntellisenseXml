@@ -85,7 +85,6 @@
             Defines options for calling <see cref="M:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Int32,Microsoft.Extensions.VectorData.FilteredRecordRetrievalOptions{`1},System.Threading.CancellationToken)" />.</summary>
       <typeparam name="TRecord">The type of the record.</typeparam>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.FilteredRecordRetrievalOptions`1.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.FilteredRecordRetrievalOptions`1.IncludeVectors">
       <summary>
             Gets or sets a value indicating whether to include vectors in the retrieval result.</summary>
@@ -106,7 +105,6 @@
             Represents a builder for sorting.</summary>
       <typeparam name="TRecord" />
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.FilteredRecordRetrievalOptions`1.OrderByDefinition.#ctor" />
     <member name="M:Microsoft.Extensions.VectorData.FilteredRecordRetrievalOptions`1.OrderByDefinition.Ascending(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
       <summary>
             Creates an ascending sort.</summary>
@@ -141,7 +139,6 @@
             Defines options for hybrid search when using a dense vector and string keywords to do the search.</summary>
       <typeparam name="TRecord" />
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.HybridSearchOptions`1.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.HybridSearchOptions`1.AdditionalProperty">
       <summary>
             Gets or sets the additional target property to do the text or keyword search on.
@@ -477,7 +474,6 @@
             Contains options affecting model building; passed to <see cref="T:Microsoft.Extensions.VectorData.ProviderServices.CollectionModelBuilder" />.
             This is an internal support type meant for use by connectors only and not by applications.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.ProviderServices.CollectionModelBuildingOptions.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.ProviderServices.CollectionModelBuildingOptions.RequiresAtLeastOneVector">
       <summary>
             Gets a value that indicates whether at least one vector property is required.</summary>
@@ -532,7 +528,6 @@
             A processor for user-provided filter expressions which performs various common transformations before actual translation takes place.
             This is an internal support type meant for use by connectors only and not by applications.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.ProviderServices.Filter.FilterTranslationPreprocessor.#ctor" />
     <member name="M:Microsoft.Extensions.VectorData.ProviderServices.Filter.FilterTranslationPreprocessor.Preprocess(System.Linq.Expressions.Expression)">
       <summary>
             Preprocesses the filter expression before translation.</summary>
@@ -540,6 +535,11 @@
     </member>
     <member name="M:Microsoft.Extensions.VectorData.ProviderServices.Filter.FilterTranslationPreprocessor.VisitMember(System.Linq.Expressions.MemberExpression)">
       <summary>Visits the children of the <xref data-throw-if-not-resolved="true" uid="System.Linq.Expressions.MemberExpression"></xref>.</summary>
+      <param name="node">The expression to visit.</param>
+      <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+    </member>
+    <member name="M:Microsoft.Extensions.VectorData.ProviderServices.Filter.FilterTranslationPreprocessor.VisitNew(System.Linq.Expressions.NewExpression)">
+      <summary>Visits the children of the <xref data-throw-if-not-resolved="true" uid="System.Linq.Expressions.NewExpression"></xref>.</summary>
       <param name="node">The expression to visit.</param>
       <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
     </member>
@@ -700,8 +700,6 @@
     <member name="M:Microsoft.Extensions.VectorData.ProviderServices.VectorDataStrings.UnsupportedVectorPropertyWithoutEmbeddingGenerator(Microsoft.Extensions.VectorData.ProviderServices.VectorPropertyModel)">
       <param name="vectorProperty" />
     </member>
-    <member name="P:Microsoft.Extensions.VectorData.ProviderServices.VectorDataStrings.GetCollectionWithDictionaryNotSupported" />
-    <member name="P:Microsoft.Extensions.VectorData.ProviderServices.VectorDataStrings.IncludeVectorsNotSupportedWithEmbeddingGeneration" />
     <member name="T:Microsoft.Extensions.VectorData.ProviderServices.VectorPropertyModel">
       <summary>
             Represents a vector property on a vector store record.
@@ -818,7 +816,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
             Defines options for calling <see cref="M:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync(`0,Microsoft.Extensions.VectorData.RecordRetrievalOptions,System.Threading.CancellationToken)" />
             or <see cref="M:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync(System.Collections.Generic.IEnumerable{`0},Microsoft.Extensions.VectorData.RecordRetrievalOptions,System.Threading.CancellationToken)" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.RecordRetrievalOptions.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.RecordRetrievalOptions.IncludeVectors">
       <summary>
             Gets or sets a value indicating whether to include vectors in the retrieval result.</summary>
@@ -879,7 +876,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
             Defines options for vector search via <see cref="M:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync``1(``0,System.Int32,Microsoft.Extensions.VectorData.VectorSearchOptions{`1},System.Threading.CancellationToken)" />.</summary>
       <typeparam name="TRecord" />
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorSearchOptions`1.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Filter">
       <summary>
             Gets or sets a search filter to use before doing the vector search.</summary>
@@ -928,7 +924,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
       <summary>
             Represents a vector store that contains collections of records.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStore.#ctor" />
     <member name="M:Microsoft.Extensions.VectorData.VectorStore.CollectionExistsAsync(System.String,System.Threading.CancellationToken)">
       <summary>
             Checks if the collection exists in the vector store.</summary>
@@ -989,7 +984,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
       <typeparam name="TKey">The data type of the record key.</typeparam>
       <typeparam name="TRecord">The record data model to use for adding, updating, and retrieving data from the store.</typeparam>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStoreCollection`2.#ctor" />
     <member name="M:Microsoft.Extensions.VectorData.VectorStoreCollection`2.CollectionExistsAsync(System.Threading.CancellationToken)">
       <summary>
             Checks if the collection exists in the vector store.</summary>
@@ -1104,7 +1098,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
       <summary>
             Describes the properties of a record in a vector store collection.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition.EmbeddingGenerator">
       <summary>
             Gets or sets the default embedding generator for vector properties in this collection.</summary>
@@ -1116,7 +1109,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
     <member name="T:Microsoft.Extensions.VectorData.VectorStoreCollectionMetadata">
       <summary>Provides metadata about an <see cref="T:Microsoft.Extensions.VectorData.VectorStoreCollection`2" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStoreCollectionMetadata.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.VectorStoreCollectionMetadata.CollectionName">
       <summary>
             Gets or sets the name of a collection (table, container) within the vector store (database).</summary>
@@ -1152,7 +1144,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
       <summary>
             Defines an attribute to mark a property on a record class as 'data'.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed">
       <summary>
             Gets or sets a value indicating whether this data property is indexed for full-text search.</summary>
@@ -1245,7 +1236,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
       <summary>
             Defines an attribute to mark a property on a record class as the key under which the record is stored in a vector store.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName">
       <summary>
             Gets or sets an optional name to use for the property in storage, if different from the property name.</summary>
@@ -1263,7 +1253,6 @@ the configured <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions
     <member name="T:Microsoft.Extensions.VectorData.VectorStoreMetadata">
       <summary>Provides metadata about an <see cref="T:Microsoft.Extensions.VectorData.VectorStore" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.VectorData.VectorStoreMetadata.#ctor" />
     <member name="P:Microsoft.Extensions.VectorData.VectorStoreMetadata.VectorStoreName">
       <summary>
             Gets or sets the name of the vector store (database).</summary>

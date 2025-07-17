@@ -82,7 +82,6 @@
     <member name="T:Microsoft.Extensions.Caching.SqlServer.SqlServerCacheOptions">
       <summary>Configuration options for <see cref="T:Microsoft.Extensions.Caching.SqlServer.SqlServerCache" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Caching.SqlServer.SqlServerCacheOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.SqlServer.SqlServerCacheOptions.ConnectionString">
       <summary>The connection string to the database.</summary>
     </member>

@@ -114,7 +114,6 @@
       <summary>
             Options to configure the http client latency telemetry.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions.EnableDetailedLatencyBreakdown">
       <summary>
             Gets or sets a value indicating whether to collect detailed latency breakdown of <see cref="T:System.Net.Http.HttpClient" /> call.</summary>
@@ -184,7 +183,6 @@
       <summary>
             Options to configure HTTP client requests logging.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Http.Logging.LoggingOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Logging.LoggingOptions.BodyReadTimeout">
       <summary>
             Gets or sets the maximum amount of time to wait for the request or response body to be read.</summary>

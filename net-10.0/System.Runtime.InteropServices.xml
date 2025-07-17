@@ -3009,10 +3009,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
         <para>When this flag is passed, the resulting COM interface will have an internal implementation of IUnknown, therefore, none should be supplied by the caller.</para>
       </summary>
     </member>
-    <member name="T:System.Runtime.InteropServices.CreatedWrapperFlags" />
-    <member name="F:System.Runtime.InteropServices.CreatedWrapperFlags.None" />
-    <member name="F:System.Runtime.InteropServices.CreatedWrapperFlags.NonWrapping" />
-    <member name="F:System.Runtime.InteropServices.CreatedWrapperFlags.TrackerObject" />
     <member name="T:System.Runtime.InteropServices.CreateObjectFlags">
       <summary>Specifies flags for the <see cref="M:System.Runtime.InteropServices.ComWrappers.GetOrCreateObjectForComInstance(System.IntPtr,System.Runtime.InteropServices.CreateObjectFlags)" /> method.</summary>
     </member>
@@ -5309,7 +5305,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute" /> class.</summary>
     </member>
-    <member name="P:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.ExceptionToUnmanagedMarshaller" />
     <member name="P:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.Options">
       <summary>Options for how to generate COM interface interop with the COM interop source generator.</summary>
     </member>
@@ -7758,7 +7753,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <param name="value" />
       <param name="target" />
     </member>
-    <member name="T:System.Runtime.InteropServices.TypeMapping" />
     <member name="M:System.Runtime.InteropServices.TypeMapping.GetOrCreateExternalTypeMapping``1">
       <typeparam name="TTypeMapGroup" />
     </member>

@@ -41,7 +41,6 @@
         <paramref name="sizeHint" /> is negative.</exception>
       <returns>A span of at least <paramref name="sizeHint" /> in length. If <paramref name="sizeHint" /> is not provided or is equal to 0, some non-empty buffer is returned.</returns>
     </member>
-    <member name="M:System.Buffers.ArrayBufferWriter`1.ResetWrittenCount" />
     <member name="P:System.Buffers.ArrayBufferWriter`1.Capacity">
       <summary>Gets the total amount of space within the underlying buffer.</summary>
       <returns>The total capacity of the underlying buffer.</returns>
@@ -3899,7 +3898,6 @@
       <summary>Gets the current element of the enumeration.</summary>
       <returns>A <see cref="T:System.Range" /> instance that indicates the bounds of the current element withing the source span.</returns>
     </member>
-    <member name="P:System.MemoryExtensions.SpanSplitEnumerator`1.Source" />
     <member name="T:System.MemoryExtensions.TryWriteInterpolatedStringHandler">
       <summary>Provides a handler used by the language compiler to format interpolated strings into character spans.</summary>
     </member>

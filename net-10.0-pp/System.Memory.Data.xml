@@ -185,11 +185,9 @@
       <summary>Gets the number of bytes of this data.</summary>
       <returns>The number of bytes of this data.</returns>
     </member>
-    <member name="P:System.BinaryData.MediaType" />
     <member name="T:System.Text.Json.Serialization.BinaryDataJsonConverter">
       <summary>Serializes <see cref="T:System.BinaryData" /> instances as Base64 JSON strings.</summary>
     </member>
-    <member name="M:System.Text.Json.Serialization.BinaryDataJsonConverter.#ctor" />
     <member name="M:System.Text.Json.Serialization.BinaryDataJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
       <summary>Reads and converts the JSON to type <code data-dev-comment-type="typeparamref">T</code>.</summary>
       <param name="reader">The reader.</param>

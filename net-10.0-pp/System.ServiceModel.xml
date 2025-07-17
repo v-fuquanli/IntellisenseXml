@@ -585,7 +585,6 @@
       <summary>Builds the inner channel factory for the current channel.</summary>
       <exception cref="T:System.InvalidOperationException">The inner channel factory for the channel factory is <see langword="null" />.</exception>
     </member>
-    <member name="M:System.ServiceModel.ChannelFactory.System#IAsyncDisposable#DisposeAsync" />
     <member name="M:System.ServiceModel.ChannelFactory.System#IDisposable#Dispose">
       <summary>Closes the current channel factory.</summary>
     </member>
@@ -1637,7 +1636,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="T:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement">
       <summary>An abstract class that supplements the base <see cref="T:System.ServiceModel.Channels.TransportBindingElement" /> with additional properties that are common to connection-oriented transports such as TCP and named pipes.</summary>
     </member>
-    <member name="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.#ctor" />
     <member name="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.#ctor(System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement)">
       <param name="elementToBeCloned" />
     </member>
@@ -1812,7 +1810,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>Gets the HTTP headers from the HTTP response.</summary>
       <returns>Returns a <see cref="T:System.Net.WebHeaderCollection" /> that contains the HTTP headers in the HTTP response.</returns>
     </member>
-    <member name="P:System.ServiceModel.Channels.HttpResponseMessageProperty.HttpResponseMessage" />
     <member name="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Name">
       <summary>Gets the name of the message property associated with the <see cref="T:System.ServiceModel.Channels.HttpResponseMessageProperty" /> class.</summary>
       <returns>Returns "httpResponse".</returns>
@@ -1936,7 +1933,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>Gets or sets the maximum size of the buffer to use. For buffered messages this value is the same as <see cref="P:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize" />. For streamed messages, this value is the maximum size of the SOAP headers, which must be read in buffered mode.</summary>
       <returns>The maximum size, in bytes, of the buffer.</returns>
     </member>
-    <member name="P:System.ServiceModel.Channels.HttpTransportBindingElement.Proxy" />
     <member name="P:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress">
       <summary>Gets or sets a URI that contains the address of the proxy to use for HTTP requests.</summary>
       <returns>The <see cref="T:System.Uri" /> that contains the address for the proxy. The default value is <see langword="null" />.</returns>
@@ -4420,7 +4416,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.ServiceModel.ClientBase`1.Close">
       <summary>Causes the <see cref="T:System.ServiceModel.ClientBase`1" /> object to transition from its current state into the closed state.</summary>
     </member>
-    <member name="M:System.ServiceModel.ClientBase`1.CloseAsync" />
     <member name="M:System.ServiceModel.ClientBase`1.CreateChannel">
       <summary>Returns a new channel to the service.</summary>
       <returns>A channel of the type of the service contract.</returns>
@@ -4441,7 +4436,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.ServiceModel.ClientBase`1.Open">
       <summary>Causes the <see cref="T:System.ServiceModel.ClientBase`1" /> object to transition from the created state into the opened state.</summary>
     </member>
-    <member name="M:System.ServiceModel.ClientBase`1.System#IAsyncDisposable#DisposeAsync" />
     <member name="M:System.ServiceModel.ClientBase`1.System#IDisposable#Dispose">
       <summary>Explicit implementation of the <see cref="M:System.IDisposable.Dispose" /> method.</summary>
     </member>

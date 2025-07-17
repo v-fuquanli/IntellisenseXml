@@ -3188,8 +3188,6 @@
       <returns>
         <see langword="true" /> if the type is security-transparent; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsSZArray" />
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsTypeDefinition" />
     <member name="P:System.Reflection.Emit.TypeBuilder.MetadataToken">
       <summary>Gets a token that identifies the current dynamic module in metadata.</summary>
       <returns>An integer token that identifies the current module in metadata.</returns>

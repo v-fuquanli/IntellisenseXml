@@ -4,28 +4,21 @@
     <name>Microsoft.Extensions.Logging.AzureAppServices</name>
   </assembly>
   <members>
-    <member name="T:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerContext" />
     <member name="M:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerContext.#ctor(System.String,System.String,System.DateTimeOffset)">
       <param name="appName" />
       <param name="identifier" />
       <param name="timestamp" />
     </member>
-    <member name="P:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerContext.AppName" />
-    <member name="P:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerContext.Identifier" />
-    <member name="P:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerContext.Timestamp" />
     <member name="T:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions">
       <summary>Options for Azure diagnostics blob logging.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions.BlobName">
       <summary>Gets or sets the last section of log blob name.</summary>
       <returns>The default is <c>"applicationLog.txt"</c>.</returns>
     </member>
-    <member name="P:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions.FileNameFormat" />
     <member name="T:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions">
       <summary>Options for Azure diagnostics file logging.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions.FileName">
       <summary>Gets or sets the prefix of the file name used to store the logging information.</summary>
       <returns>The default is <c>diagnostics-</c>.</returns>
@@ -41,7 +34,6 @@
     <member name="T:Microsoft.Extensions.Logging.AzureAppServices.BatchingLoggerOptions">
       <summary>Options for a logger which batches up log messages.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.AzureAppServices.BatchingLoggerOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.AzureAppServices.BatchingLoggerOptions.BackgroundQueueSize">
       <summary>Gets or sets the maximum size of the background log message queue or null for no limit.</summary>
       <returns>The default is 1000.</returns>

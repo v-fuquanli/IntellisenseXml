@@ -259,7 +259,6 @@
       <summary>Provides options that control the behavior of instances created by <see cref="M:System.Threading.Channels.Channel.CreateUnboundedPrioritized``1" />.</summary>
       <typeparam name="T" />
     </member>
-    <member name="M:System.Threading.Channels.UnboundedPrioritizedChannelOptions`1.#ctor" />
     <member name="P:System.Threading.Channels.UnboundedPrioritizedChannelOptions`1.Comparer">
       <summary>Gets or sets the comparer used by the channel to prioritize elements.</summary>
     </member>

@@ -4,7 +4,6 @@
     <name>System.Text.Json</name>
   </assembly>
   <members>
-    <member name="T:System.Runtime.InteropServices.JsonMarshal" />
     <member name="M:System.Runtime.InteropServices.JsonMarshal.GetRawUtf8PropertyName(System.Text.Json.JsonProperty)">
       <param name="property" />
     </member>
@@ -277,7 +276,6 @@ The current <paramref name="reader" /> token does not start or represent a value
       <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       <returns>A <see cref="T:System.Text.Json.JsonElement" /> representing the value of the requested property.</returns>
     </member>
-    <member name="M:System.Text.Json.JsonElement.GetPropertyCount" />
     <member name="M:System.Text.Json.JsonElement.GetRawText">
       <summary>Gets a string that represents the original input data backing this value.</summary>
       <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
@@ -323,6 +321,18 @@ The current <paramref name="reader" /> token does not start or represent a value
       <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.UInt64" />.</exception>
       <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       <returns>The current JSON number as a <see cref="T:System.UInt64" />.</returns>
+    </member>
+    <member name="M:System.Text.Json.JsonElement.Parse(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonDocumentOptions)">
+      <param name="utf8Json" />
+      <param name="options" />
+    </member>
+    <member name="M:System.Text.Json.JsonElement.Parse(System.ReadOnlySpan{System.Char},System.Text.Json.JsonDocumentOptions)">
+      <param name="json" />
+      <param name="options" />
+    </member>
+    <member name="M:System.Text.Json.JsonElement.Parse(System.String,System.Text.Json.JsonDocumentOptions)">
+      <param name="json" />
+      <param name="options" />
     </member>
     <member name="M:System.Text.Json.JsonElement.ParseValue(System.Text.Json.Utf8JsonReader@)">
       <summary>Parses one JSON value (including objects or arrays) from the provided reader.</summary>
@@ -812,7 +822,6 @@ The current <paramref name="reader" /> token does not start or represent a value
     <member name="T:System.Text.Json.JsonReaderOptions">
       <summary>Provides the ability for the user to define custom behavior when reading JSON.</summary>
     </member>
-    <member name="P:System.Text.Json.JsonReaderOptions.AllowMultipleValues" />
     <member name="P:System.Text.Json.JsonReaderOptions.AllowTrailingCommas">
       <summary>Gets or sets a value that defines whether an extra comma at the end of a list of JSON values in an object or array is allowed (and ignored) within the JSON payload being read.</summary>
       <returns>
@@ -3487,7 +3496,6 @@ There is remaining data in the stream.</exception>
       <summary>
             Controls the behavior of the <see cref="T:System.Text.Json.Schema.JsonSchemaExporter" /> class.</summary>
     </member>
-    <member name="M:System.Text.Json.Schema.JsonSchemaExporterOptions.#ctor" />
     <member name="P:System.Text.Json.Schema.JsonSchemaExporterOptions.Default">
       <summary>
             Gets the default configuration object used by <see cref="T:System.Text.Json.Schema.JsonSchemaExporter" />.</summary>
@@ -3674,8 +3682,6 @@ There is remaining data in the stream.</exception>
     <member name="F:System.Text.Json.Serialization.JsonIgnoreCondition.Never">
       <summary>Property is always serialized and deserialized, regardless of <see cref="P:System.Text.Json.JsonSerializerOptions.IgnoreNullValues" /> configuration.</summary>
     </member>
-    <member name="F:System.Text.Json.Serialization.JsonIgnoreCondition.WhenReading" />
-    <member name="F:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWriting" />
     <member name="F:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault">
       <summary>Property is ignored only if it equals the default value for its type.</summary>
     </member>
@@ -3710,10 +3716,6 @@ There is remaining data in the stream.</exception>
     <member name="F:System.Text.Json.Serialization.JsonKnownNamingPolicy.Unspecified">
       <summary>Specifies that JSON property names should not be converted.</summary>
     </member>
-    <member name="T:System.Text.Json.Serialization.JsonKnownReferenceHandler" />
-    <member name="F:System.Text.Json.Serialization.JsonKnownReferenceHandler.IgnoreCycles" />
-    <member name="F:System.Text.Json.Serialization.JsonKnownReferenceHandler.Preserve" />
-    <member name="F:System.Text.Json.Serialization.JsonKnownReferenceHandler.Unspecified" />
     <member name="T:System.Text.Json.Serialization.JsonNumberEnumConverter`1">
       <summary>Converter to convert enums to and from numeric values.</summary>
       <typeparam name="TEnum">The enum type that this converter targets.</typeparam>
@@ -3943,7 +3945,6 @@ There is remaining data in the stream.</exception>
     <member name="P:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.ReadCommentHandling">
       <summary>Gets or sets the default value of <see cref="P:System.Text.Json.JsonSerializerOptions.ReadCommentHandling" />.</summary>
     </member>
-    <member name="P:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.ReferenceHandler" />
     <member name="P:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.RespectNullableAnnotations">
       <summary>Specifies the default value of <see cref="P:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations" /> when set.</summary>
     </member>
@@ -4011,11 +4012,9 @@ There is remaining data in the stream.</exception>
       <param name="options">The serialization options to use.</param>
       <returns>A converter for which <typeparamref name="T" /> is compatible with <paramref name="typeToConvert" />.</returns>
     </member>
-    <member name="T:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute" />
     <member name="M:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute.#ctor(System.String)">
       <param name="name" />
     </member>
-    <member name="P:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute.Name" />
     <member name="T:System.Text.Json.Serialization.JsonUnknownDerivedTypeHandling">
       <summary>Defines how objects of a derived runtime type that has not been explicitly declared for polymorphic serialization should be handled.</summary>
     </member>
@@ -4087,7 +4086,6 @@ There is remaining data in the stream.</exception>
       <summary>Provides serialization metadata about a collection type.</summary>
       <typeparam name="TCollection">The collection type.</typeparam>
     </member>
-    <member name="M:System.Text.Json.Serialization.Metadata.JsonCollectionInfoValues`1.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonCollectionInfoValues`1.ElementInfo">
       <summary>A <see cref="T:System.Text.Json.Serialization.Metadata.JsonTypeInfo" /> instance representing the element type.</summary>
     </member>
@@ -4469,7 +4467,6 @@ There is remaining data in the stream.</exception>
       <summary>Provides serialization metadata about an object type with constructors, properties, and fields.</summary>
       <typeparam name="T">The object type to serialize or deserialize.</typeparam>
     </member>
-    <member name="M:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorAttributeProviderFactory">
       <summary>Provides a delayed attribute provider corresponding to the deserialization constructor.</summary>
     </member>
@@ -4524,7 +4521,6 @@ There is remaining data in the stream.</exception>
     <member name="T:System.Text.Json.Serialization.Metadata.JsonParameterInfoValues">
       <summary>Provides information about a constructor parameter required for JSON deserialization.</summary>
     </member>
-    <member name="M:System.Text.Json.Serialization.Metadata.JsonParameterInfoValues.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonParameterInfoValues.DefaultValue">
       <summary>Gets or sets the default value of the parameter.</summary>
     </member>
@@ -4654,7 +4650,6 @@ The current <see cref="P:System.Text.Json.Serialization.Metadata.JsonPropertyInf
       <summary>Provides serialization metadata about a property or field.</summary>
       <typeparam name="T">The type to convert of the <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for the property.</typeparam>
     </member>
-    <member name="M:System.Text.Json.Serialization.Metadata.JsonPropertyInfoValues`1.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonPropertyInfoValues`1.AttributeProviderFactory">
       <summary>Provides a <see cref="T:System.Reflection.ICustomAttributeProvider" /> factory that maps to <see cref="P:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.AttributeProvider" />.</summary>
     </member>

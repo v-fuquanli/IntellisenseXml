@@ -116419,7 +116419,6 @@ This method is intended to support .NET compilers and is not intended to be call
       <exception cref="T:System.BadImageFormatException">A file was not a valid assembly.</exception>
       <returns>An array of streams that contain the files.</returns>
     </member>
-    <member name="M:System.Reflection.Assembly.GetForwardedTypes" />
     <member name="M:System.Reflection.Assembly.GetHashCode">
       <summary>Returns the hash code for this instance.</summary>
       <returns>A 32-bit signed integer hash code.</returns>
@@ -118228,7 +118227,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="T:System.Reflection.DispatchProxy">
       <summary>Provides a mechanism for instantiating proxy objects and handling their method dispatch.</summary>
     </member>
-    <member name="M:System.Reflection.DispatchProxy.#ctor" />
     <member name="M:System.Reflection.DispatchProxy.Create``2">
       <summary>Creates an object instance that derives from class <typeparamref name="TProxy" /> and implements interface <typeparamref name="T" />.</summary>
       <typeparam name="T">The interface the proxy should implement.</typeparam>
@@ -119295,7 +119293,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is a type definition; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.Emit.EnumBuilder.IsVariableBoundArray" />
     <member name="P:System.Reflection.Emit.EnumBuilder.Module">
       <summary>Retrieves the dynamic module that contains this <see cref="T:System.Reflection.Emit.EnumBuilder" /> definition.</summary>
       <returns>Read-only. The dynamic module that contains this <see cref="T:System.Reflection.Emit.EnumBuilder" /> definition.</returns>
@@ -119810,7 +119807,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is a type definition; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsVariableBoundArray" />
     <member name="P:System.Reflection.Emit.GenericTypeParameterBuilder.Module">
       <summary>Gets the dynamic module that contains the generic type parameter.</summary>
       <returns>A <see cref="T:System.Reflection.Module" /> object that represents the dynamic module that contains the generic type parameter.</returns>
@@ -120348,7 +120344,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the local variables in this method should be zero initialized; otherwise <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.Emit.MethodBuilder.IsConstructedGenericMethod" />
     <member name="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod">
       <summary>Gets a value indicating whether the method is a generic method.</summary>
       <returns>
@@ -123140,9 +123135,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the type is security-transparent; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsSZArray" />
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsTypeDefinition" />
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsVariableBoundArray" />
     <member name="P:System.Reflection.Emit.TypeBuilder.Module">
       <summary>Retrieves the dynamic module that contains this type definition.</summary>
       <returns>Read-only. Retrieves the dynamic module that contains this type definition.</returns>
@@ -124271,7 +124263,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the visibility of this method or constructor is exactly described by <see cref="F:System.Reflection.MethodAttributes.Assembly" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
     <member name="P:System.Reflection.MethodBase.IsConstructor">
       <summary>Gets a value indicating whether the method is a constructor.</summary>
       <returns>
@@ -126164,17 +126155,11 @@ The invoked method is not supported in the base class. Derived classes must prov
       <summary>Gets the GUID (globally unique identifier) of the implemented type.</summary>
       <returns>A GUID.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsByRefLike" />
     <member name="P:System.Reflection.TypeDelegator.IsConstructedGenericType">
       <summary>Gets a value that indicates whether this object represents a constructed generic type.</summary>
       <returns>
         <see langword="true" /> if this object represents a constructed generic type; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsGenericMethodParameter" />
-    <member name="P:System.Reflection.TypeDelegator.IsGenericTypeParameter" />
-    <member name="P:System.Reflection.TypeDelegator.IsSZArray" />
-    <member name="P:System.Reflection.TypeDelegator.IsTypeDefinition" />
-    <member name="P:System.Reflection.TypeDelegator.IsVariableBoundArray" />
     <member name="P:System.Reflection.TypeDelegator.MetadataToken">
       <summary>Gets a value that identifies this entity in metadata.</summary>
       <returns>A value which, in combination with the module, uniquely identifies this entity in metadata.</returns>

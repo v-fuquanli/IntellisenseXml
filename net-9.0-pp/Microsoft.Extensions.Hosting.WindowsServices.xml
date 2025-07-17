@@ -49,7 +49,6 @@
       <summary>
             Specifies options to configure the lifetime of a Windows service.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Hosting.WindowsServiceLifetimeOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Hosting.WindowsServiceLifetimeOptions.ServiceName">
       <summary>
             The name used to identify the service to the system.</summary>

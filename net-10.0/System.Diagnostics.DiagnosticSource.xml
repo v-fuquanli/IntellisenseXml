@@ -569,7 +569,6 @@ Activity links can be used to represent batched operations where an activity was
       <summary>Gets or sets the callback used to listen to the activity stop event.</summary>
       <returns>An activity callback instance used to listen to the activity stop event.</returns>
     </member>
-    <member name="P:System.Diagnostics.ActivityListener.ExceptionRecorder" />
     <member name="P:System.Diagnostics.ActivityListener.Sample">
       <summary>Gets or sets the callback that is used to decide if creating <see cref="T:System.Diagnostics.Activity" /> objects with a specific data state is allowed.</summary>
       <returns>A sample activity instance.</returns>
@@ -696,20 +695,13 @@ Activity links can be used to represent batched operations where an activity was
       <summary>Returns the activity source name.</summary>
       <returns>A string that represents the activity source name.</returns>
     </member>
-    <member name="P:System.Diagnostics.ActivitySource.Tags" />
-    <member name="P:System.Diagnostics.ActivitySource.TelemetrySchemaUrl" />
     <member name="P:System.Diagnostics.ActivitySource.Version">
       <summary>Returns the activity source version.</summary>
       <returns>A string that represents the activity source version.</returns>
     </member>
-    <member name="T:System.Diagnostics.ActivitySourceOptions" />
     <member name="M:System.Diagnostics.ActivitySourceOptions.#ctor(System.String)">
       <param name="name" />
     </member>
-    <member name="P:System.Diagnostics.ActivitySourceOptions.Name" />
-    <member name="P:System.Diagnostics.ActivitySourceOptions.Tags" />
-    <member name="P:System.Diagnostics.ActivitySourceOptions.TelemetrySchemaUrl" />
-    <member name="P:System.Diagnostics.ActivitySourceOptions.Version" />
     <member name="T:System.Diagnostics.ActivitySpanId">
       <summary>Represents a <see cref="P:System.Diagnostics.Activity.SpanId" /> formatted based on a W3C standard.</summary>
     </member>
@@ -1169,8 +1161,6 @@ The characters in <paramref name="idData" /> are not all lower-case hexadecimal 
             When encoding the outbound message, this propagator uses information from the request's root Activity, ignoring any intermediate Activities that may have been created while processing the request.</summary>
       <returns>An instance of the <see cref="T:System.Diagnostics.DistributedContextPropagator" /> class.</returns>
     </member>
-    <member name="M:System.Diagnostics.DistributedContextPropagator.CreatePreW3CPropagator" />
-    <member name="M:System.Diagnostics.DistributedContextPropagator.CreateW3CPropagator" />
     <member name="M:System.Diagnostics.DistributedContextPropagator.ExtractBaggage(System.Object,System.Diagnostics.DistributedContextPropagator.PropagatorGetterCallback)">
       <summary>Extracts the baggage key-value pair list from an incoming request represented by the carrier. For example, from the headers of an HTTP request.</summary>
       <param name="carrier">The medium from which values will be read.</param>
@@ -1804,7 +1794,6 @@ The characters in <paramref name="idData" /> are not all lower-case hexadecimal 
     <member name="P:System.Diagnostics.Metrics.Meter.Tags">
       <summary>Returns the tags associated with the Meter.</summary>
     </member>
-    <member name="P:System.Diagnostics.Metrics.Meter.TelemetrySchemaUrl" />
     <member name="P:System.Diagnostics.Metrics.Meter.Version">
       <summary>Gets the Meter version.</summary>
       <returns>The Meter version.</returns>
@@ -1876,7 +1865,6 @@ The characters in <paramref name="idData" /> are not all lower-case hexadecimal 
     <member name="P:System.Diagnostics.Metrics.MeterOptions.Tags">
       <summary>The optional list of key-value pair tags associated with the Meter.</summary>
     </member>
-    <member name="P:System.Diagnostics.Metrics.MeterOptions.TelemetrySchemaUrl" />
     <member name="P:System.Diagnostics.Metrics.MeterOptions.Version">
       <summary>The optional Meter version.</summary>
     </member>

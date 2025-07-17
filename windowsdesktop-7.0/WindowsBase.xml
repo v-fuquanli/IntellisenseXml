@@ -338,6 +338,9 @@
     <member name="E:System.ComponentModel.GroupDescription.PropertyChanged">
       <summary>Occurs when a property value changes.</summary>
     </member>
+    <member name="E:System.ComponentModel.GroupDescription.System#ComponentModel#INotifyPropertyChanged#PropertyChanged">
+      <summary>Occurs when a property value changes.</summary>
+    </member>
     <member name="M:System.ComponentModel.GroupDescription.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.GroupDescription" /> class.</summary>
     </member>
@@ -828,6 +831,9 @@
     <member name="E:System.ComponentModel.SortDescriptionCollection.CollectionChanged">
       <summary>Occurs when an item is added or removed.</summary>
     </member>
+    <member name="E:System.ComponentModel.SortDescriptionCollection.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged">
+      <summary>Occurs when an item is added or removed.</summary>
+    </member>
     <member name="F:System.ComponentModel.SortDescriptionCollection.Empty">
       <summary>Gets an empty and non-modifiable instance of <see cref="T:System.ComponentModel.SortDescriptionCollection" />.</summary>
     </member>
@@ -929,7 +935,6 @@
       <summary>Gets a shell trace source.</summary>
       <returns>A shell trace source.</returns>
     </member>
-    <member name="P:System.Diagnostics.PresentationTraceSources.TraceLevel" />
     <member name="T:System.IO.Packaging.CertificateEmbeddingOption">
       <summary>Specifies the location where the X.509 certificate that is used in signing is stored.</summary>
     </member>
@@ -2445,6 +2450,9 @@
       <summary>Occurs when the <see cref="P:System.Windows.Data.DataSourceProvider.Data" /> property has a new value.</summary>
     </member>
     <member name="E:System.Windows.Data.DataSourceProvider.PropertyChanged">
+      <summary>Occurs when a property value changes.</summary>
+    </member>
+    <member name="E:System.Windows.Data.DataSourceProvider.System#ComponentModel#INotifyPropertyChanged#PropertyChanged">
       <summary>Occurs when a property value changes.</summary>
     </member>
     <member name="M:System.Windows.Data.DataSourceProvider.#ctor">

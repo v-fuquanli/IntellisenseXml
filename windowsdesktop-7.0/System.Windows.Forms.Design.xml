@@ -2540,6 +2540,14 @@
     <member name="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.SessionDisposed">
       <summary>Occurs when a session is disposed.</summary>
     </member>
+    <member name="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#ResolveName">
+      <summary>Occurs when <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetName(System.Object)" /> cannot locate the specified name in the serialization manager's name table.</summary>
+      <exception cref="T:System.InvalidOperationException">The serialization manager does not have an active serialization session.</exception>
+    </member>
+    <member name="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#SerializationComplete">
+      <summary>Occurs when serialization is complete.</summary>
+      <exception cref="T:System.InvalidOperationException">The serialization manager does not have an active serialization session.</exception>
+    </member>
     <member name="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" /> class.</summary>
     </member>

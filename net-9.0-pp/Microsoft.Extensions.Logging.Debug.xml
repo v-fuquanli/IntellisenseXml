@@ -8,7 +8,6 @@
       <summary>
             The provider for the <see cref="T:Microsoft.Extensions.Logging.Debug.DebugLogger" />.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider.#ctor" />
     <member name="M:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider.CreateLogger(System.String)">
       <summary>Creates a new <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.Logging.ILogger" /> instance.</summary>
       <param name="name" />

@@ -80,14 +80,12 @@
     <member name="P:System.Net.Quic.QuicConnection.NegotiatedApplicationProtocol">
       <summary>Gets the final, negotiated application protocol.</summary>
     </member>
-    <member name="P:System.Net.Quic.QuicConnection.NegotiatedCipherSuite" />
     <member name="P:System.Net.Quic.QuicConnection.RemoteCertificate">
       <summary>Gets the certificate provided by the peer.</summary>
     </member>
     <member name="P:System.Net.Quic.QuicConnection.RemoteEndPoint">
       <summary>Gets the remote endpoint used for this connection.</summary>
     </member>
-    <member name="P:System.Net.Quic.QuicConnection.SslProtocol" />
     <member name="P:System.Net.Quic.QuicConnection.TargetHostName">
       <summary>Gets the name of the server the client is trying to connect to. That name is used for server certificate validation. It can be a DNS name or an IP address.</summary>
       <returns>The name of the server the client is trying to connect to.</returns>

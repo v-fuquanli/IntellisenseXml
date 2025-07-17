@@ -7353,6 +7353,15 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <returns>
         <see langword="true" /> if the formatting was successful; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Char@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
+    </member>
     <member name="M:System.Char.System#Numerics#IAdditionOperators{System#Char@System#Char@System#Char}#op_Addition(System.Char,System.Char)">
       <summary>Adds two values together to compute their sum.</summary>
       <param name="left">The value to which <paramref name="right" /> is added.</param>
@@ -10173,7 +10182,6 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <exception cref="T:System.ArgumentException">The property is set and the value is of a type that is not assignable to the <see cref="T:System.Collections.IList" />.</exception>
       <returns>The element at the specified index.</returns>
     </member>
-    <member name="T:System.Collections.ObjectModel.ReadOnlyCollection" />
     <member name="M:System.Collections.ObjectModel.ReadOnlyCollection.CreateCollection``1(System.ReadOnlySpan{``0})">
       <param name="values" />
       <typeparam name="T" />
@@ -18658,12 +18666,6 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All">
       <summary>Specifies all members.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.AllConstructors" />
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.AllEvents" />
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.AllFields" />
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.AllMethods" />
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.AllNestedTypes" />
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.AllProperties" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.Interfaces">
       <summary>Specifies all interfaces implemented by the type.</summary>
     </member>
@@ -18673,31 +18675,24 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicConstructors">
       <summary>Specifies all non-public constructors.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicConstructorsWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicEvents">
       <summary>Specifies all non-public events.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicEventsWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicFields">
       <summary>Specifies all non-public fields.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicFieldsWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicMethods">
       <summary>Specifies all non-public methods.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicMethodsWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicNestedTypes">
       <summary>Specifies all non-public nested types.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicNestedTypesWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicProperties">
       <summary>Specifies all non-public properties.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.NonPublicPropertiesWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors">
       <summary>Specifies all public constructors.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructorsWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicEvents">
       <summary>Specifies all public events.</summary>
     </member>
@@ -18710,7 +18705,6 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicNestedTypes">
       <summary>Specifies all public nested types.</summary>
     </member>
-    <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicNestedTypesWithInherited" />
     <member name="F:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicParameterlessConstructor">
       <summary>Specifies the default, parameterless public constructor.</summary>
     </member>
@@ -18784,7 +18778,6 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
       <summary>Gets the ID that the compiler will use when reporting a use of the API the attribute applies to.</summary>
       <returns>The unique diagnostic ID.</returns>
     </member>
-    <member name="P:System.Diagnostics.CodeAnalysis.ExperimentalAttribute.Message" />
     <member name="P:System.Diagnostics.CodeAnalysis.ExperimentalAttribute.UrlFormat">
       <summary>Gets or sets the URL for corresponding documentation.
              The API accepts a format string instead of an actual URL, creating a generic URL that includes the diagnostic ID.</summary>
@@ -24565,7 +24558,6 @@ The number, order, or type of parameters listed in <paramref name="args" /> is i
     <member name="F:System.Globalization.CompareOptions.None">
       <summary>Indicates the default option settings for string comparisons.</summary>
     </member>
-    <member name="F:System.Globalization.CompareOptions.NumericOrdering" />
     <member name="F:System.Globalization.CompareOptions.Ordinal">
       <summary>Indicates that the string comparison uses the Unicode UTF-16 encoded values of the strings, comparing them code unit by code unit. This results in a fast, culture-insensitive comparison where strings are ordered based only on their binary values. This option can't be combined with other <see cref="T:System.Globalization.CompareOptions" /> values and must be used alone.</summary>
     </member>
@@ -29082,6 +29074,13 @@ On .NET Framework 4 and later versions and .NET Core running on Windows, it incl
       <returns>
         <see langword="true" /> if <paramref name="left" /> is less than or equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte})">
+      <param name="utf8Text" />
+    </member>
     <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
       <summary>Parses a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
@@ -29188,6 +29187,15 @@ After trimming, the length of the read-only character span is 0.</exception>
       <param name="format">A read-only span containing the character representing one of the following specifiers that indicates the exact format to use when interpreting the current GUID instance: "N", "D", "B", "P", or "X".</param>
       <returns>
         <see langword="true" /> if the formatting operation was successful; <see langword="false" /> otherwise.</returns>
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.Guid@)">
+      <param name="utf8Text" />
+      <param name="result" />
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Guid@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Char},System.Guid@)">
       <summary>Converts the specified read-only span of characters containing the representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure.</summary>
@@ -39637,7 +39645,6 @@ There are too many levels of symbolic links.</exception>
     <member name="F:System.IO.FileAttributes.IntegrityStream">
       <summary>The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.</summary>
     </member>
-    <member name="F:System.IO.FileAttributes.None" />
     <member name="F:System.IO.FileAttributes.Normal">
       <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone. <see langword="Normal" /> is supported on Windows, Linux, and macOS.</summary>
     </member>
@@ -49629,7 +49636,6 @@ This method is intended to support .NET compilers and is not intended to be call
       <exception cref="T:System.BadImageFormatException">A file was not a valid assembly.</exception>
       <returns>An array of streams that contain the files.</returns>
     </member>
-    <member name="M:System.Reflection.Assembly.GetForwardedTypes" />
     <member name="M:System.Reflection.Assembly.GetHashCode">
       <summary>Returns the hash code for this instance.</summary>
       <returns>A 32-bit signed integer hash code.</returns>
@@ -52611,7 +52617,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the visibility of this method or constructor is exactly described by <see cref="F:System.Reflection.MethodAttributes.Assembly" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
     <member name="P:System.Reflection.MethodBase.IsConstructor">
       <summary>Gets a value indicating whether the method is a constructor.</summary>
       <returns>
@@ -52740,7 +52745,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="F:System.Reflection.MethodImplAttributes.AggressiveOptimization">
       <summary>Specifies that the method should be optimized whenever possible.</summary>
     </member>
-    <member name="F:System.Reflection.MethodImplAttributes.Async" />
     <member name="F:System.Reflection.MethodImplAttributes.CodeTypeMask">
       <summary>Specifies flags about code type.</summary>
     </member>
@@ -54705,7 +54709,6 @@ The invoked method is not supported in the base class. Derived classes must prov
       <summary>Gets the GUID (globally unique identifier) of the implemented type.</summary>
       <returns>A GUID.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsByRefLike" />
     <member name="P:System.Reflection.TypeDelegator.IsCollectible">
       <summary>Gets the <see cref="P:System.Reflection.MemberInfo.IsCollectible" /> value for this object's <see cref="F:System.Reflection.TypeDelegator.typeImpl" />, which indicates whether this object, which is a <see cref="T:System.Reflection.MemberInfo" /> implementation, is part of an assembly held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
       <returns>
@@ -54721,16 +54724,11 @@ The invoked method is not supported in the base class. Derived classes must prov
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is a function pointer; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsGenericMethodParameter" />
-    <member name="P:System.Reflection.TypeDelegator.IsGenericTypeParameter" />
-    <member name="P:System.Reflection.TypeDelegator.IsSZArray" />
-    <member name="P:System.Reflection.TypeDelegator.IsTypeDefinition" />
     <member name="P:System.Reflection.TypeDelegator.IsUnmanagedFunctionPointer">
       <summary>Gets a value that indicates whether the current <see cref="T:System.Type" /> is an unmanaged function pointer.</summary>
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is an unmanaged function pointer; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsVariableBoundArray" />
     <member name="P:System.Reflection.TypeDelegator.MetadataToken">
       <summary>Gets a value that identifies this entity in metadata.</summary>
       <returns>A value which, in combination with the module, uniquely identifies this entity in metadata.</returns>
@@ -55324,7 +55322,6 @@ The invoked method is not supported in the base class. Derived classes must prov
       <summary>Gets the name of the property used to access the attributed field.</summary>
       <returns>The name of the property used to access the attributed field.</returns>
     </member>
-    <member name="T:System.Runtime.CompilerServices.AsyncHelpers" />
     <member name="M:System.Runtime.CompilerServices.AsyncHelpers.Await(System.Runtime.CompilerServices.ConfiguredTaskAwaitable)">
       <param name="configuredAwaitable" />
     </member>
@@ -55730,7 +55727,6 @@ The invoked method is not supported in the base class. Derived classes must prov
     <member name="M:System.Runtime.CompilerServices.CallerMemberNameAttribute.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CallerMemberNameAttribute" /> class.</summary>
     </member>
-    <member name="T:System.Runtime.CompilerServices.CollectionBuilderAttribute" />
     <member name="M:System.Runtime.CompilerServices.CollectionBuilderAttribute.#ctor(System.Type,System.String)">
       <summary>Initializes a new instance of <see cref="T:System.Runtime.CompilerServices.CollectionBuilderAttribute" /> that refers to the <paramref name="methodName" /> method on the <paramref name="builderType" /> type.</summary>
       <param name="builderType">The type of the builder to use to construct the collection.</param>
@@ -56204,7 +56200,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <summary>Writes the specified string to the handler.</summary>
       <param name="value">The string to write.</param>
     </member>
-    <member name="M:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.Clear" />
     <member name="M:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.ToString">
       <summary>Gets the built <see cref="T:System.String" />.</summary>
       <returns>The built string.</returns>
@@ -56213,7 +56208,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <summary>Gets the built <see cref="T:System.String" /> and clears the handler.</summary>
       <returns>The built string.</returns>
     </member>
-    <member name="P:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.Text" />
     <member name="T:System.Runtime.CompilerServices.DependencyAttribute">
       <summary>Indicates when a dependency is to be loaded by the referring assembly. This class cannot be inherited.</summary>
     </member>
@@ -56540,7 +56534,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
         <para>It's rarely appropriate to use this attribute. Methods that apply this attribute bypass the first tier of tiered compilation and therefore don't benefit from optimizations that rely on tiered compilation. Those optimizations include dynamic PGO and optimizations based on initialized classes. Use of this attribute might also increase memory use. Always measure performance to ensure it's helpful to apply this attribute.</para>
       </summary>
     </member>
-    <member name="F:System.Runtime.CompilerServices.MethodImplOptions.Async" />
     <member name="F:System.Runtime.CompilerServices.MethodImplOptions.ForwardRef">
       <summary>The method is declared, but its implementation is provided elsewhere.</summary>
     </member>
@@ -57466,11 +57459,9 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="F:System.Runtime.CompilerServices.UnsafeAccessorKind.StaticMethod">
       <summary>Provide access to a static method.</summary>
     </member>
-    <member name="T:System.Runtime.CompilerServices.UnsafeAccessorTypeAttribute" />
     <member name="M:System.Runtime.CompilerServices.UnsafeAccessorTypeAttribute.#ctor(System.String)">
       <param name="typeName" />
     </member>
-    <member name="P:System.Runtime.CompilerServices.UnsafeAccessorTypeAttribute.TypeName" />
     <member name="T:System.Runtime.CompilerServices.UnsafeValueTypeAttribute">
       <summary>Specifies that a type contains an unmanaged array that might potentially overflow. This class cannot be inherited.</summary>
     </member>
@@ -57686,7 +57677,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <summary>Gets the exception that's represented by the current instance.</summary>
       <returns>The exception that's represented by the current instance.</returns>
     </member>
-    <member name="T:System.Runtime.ExceptionServices.ExceptionHandling" />
     <member name="M:System.Runtime.ExceptionServices.ExceptionHandling.RaiseAppDomainUnhandledExceptionEvent(System.Object)">
       <param name="exception" />
     </member>
@@ -58005,7 +57995,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="M:System.Runtime.InteropServices.GCHandle`1.#ctor(`0)">
       <param name="target" />
     </member>
-    <member name="M:System.Runtime.InteropServices.GCHandle`1.Dispose" />
     <member name="M:System.Runtime.InteropServices.GCHandle`1.Equals(System.Object)">
       <param name="obj" />
     </member>
@@ -58015,13 +58004,9 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="M:System.Runtime.InteropServices.GCHandle`1.FromIntPtr(System.IntPtr)">
       <param name="value" />
     </member>
-    <member name="M:System.Runtime.InteropServices.GCHandle`1.GetHashCode" />
     <member name="M:System.Runtime.InteropServices.GCHandle`1.ToIntPtr(System.Runtime.InteropServices.GCHandle{`0})">
       <param name="value" />
     </member>
-    <member name="P:System.Runtime.InteropServices.GCHandle`1.IsAllocated" />
-    <member name="P:System.Runtime.InteropServices.GCHandle`1.Target" />
-    <member name="T:System.Runtime.InteropServices.GCHandleExtensions" />
     <member name="M:System.Runtime.InteropServices.GCHandleExtensions.GetAddressOfArrayData``1(System.Runtime.InteropServices.PinnedGCHandle{``0[]})">
       <param name="handle" />
       <typeparam name="T" />
@@ -58657,7 +58642,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.#ctor(`0)">
       <param name="target" />
     </member>
-    <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.Dispose" />
     <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.Equals(System.Object)">
       <param name="obj" />
     </member>
@@ -58667,13 +58651,9 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.FromIntPtr(System.IntPtr)">
       <param name="value" />
     </member>
-    <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.GetAddressOfObjectData" />
-    <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.GetHashCode" />
     <member name="M:System.Runtime.InteropServices.PinnedGCHandle`1.ToIntPtr(System.Runtime.InteropServices.PinnedGCHandle{`0})">
       <param name="value" />
     </member>
-    <member name="P:System.Runtime.InteropServices.PinnedGCHandle`1.IsAllocated" />
-    <member name="P:System.Runtime.InteropServices.PinnedGCHandle`1.Target" />
     <member name="T:System.Runtime.InteropServices.RuntimeInformation">
       <summary>Provides information about the .NET runtime installation.</summary>
     </member>
@@ -59076,7 +59056,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
       <param name="target" />
       <param name="trackResurrection" />
     </member>
-    <member name="M:System.Runtime.InteropServices.WeakGCHandle`1.Dispose" />
     <member name="M:System.Runtime.InteropServices.WeakGCHandle`1.Equals(System.Object)">
       <param name="obj" />
     </member>
@@ -59086,7 +59065,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="M:System.Runtime.InteropServices.WeakGCHandle`1.FromIntPtr(System.IntPtr)">
       <param name="value" />
     </member>
-    <member name="M:System.Runtime.InteropServices.WeakGCHandle`1.GetHashCode" />
     <member name="M:System.Runtime.InteropServices.WeakGCHandle`1.SetTarget(`0)">
       <param name="target" />
     </member>
@@ -59096,7 +59074,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
     <member name="M:System.Runtime.InteropServices.WeakGCHandle`1.TryGetTarget(`0@)">
       <param name="target" />
     </member>
-    <member name="P:System.Runtime.InteropServices.WeakGCHandle`1.IsAllocated" />
     <member name="T:System.Runtime.JitInfo">
       <summary>Provides information about the Just In Time compiler. This class cannot be inherited.</summary>
     </member>
@@ -67789,6 +67766,15 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <param name="provider">An optional object that supplies culture-specific formatting information for <paramref name="utf8Destination" />.</param>
       <returns>
         <see langword="true" /> if the formatting was successful; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="M:System.Text.Rune.System#IUtf8SpanParsable{System#Text#Rune}#Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Text.Rune.System#IUtf8SpanParsable{System#Text#Rune}#TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Text.Rune@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Text.Rune.ToLower(System.Text.Rune,System.Globalization.CultureInfo)">
       <summary>Returns a copy of the specified <see cref="T:System.Text.Rune" /> converted to lowercase, using the casing rules of the specified culture.</summary>

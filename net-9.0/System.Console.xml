@@ -1040,7 +1040,6 @@
     <member name="F:System.ConsoleKey.NoName">
       <summary>A constant reserved for future use.</summary>
     </member>
-    <member name="F:System.ConsoleKey.None" />
     <member name="F:System.ConsoleKey.NumPad0">
       <summary>The 0 key on the numeric keypad.</summary>
     </member>
@@ -1281,7 +1280,6 @@
     <member name="F:System.ConsoleModifiers.Control">
       <summary>The left or right CTRL modifier key.</summary>
     </member>
-    <member name="F:System.ConsoleModifiers.None" />
     <member name="F:System.ConsoleModifiers.Shift">
       <summary>The left or right SHIFT modifier key.</summary>
     </member>

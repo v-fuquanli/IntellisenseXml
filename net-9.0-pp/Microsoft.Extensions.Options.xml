@@ -990,7 +990,6 @@
       <summary>
             Triggers the automatic generation of the implementation of <see cref="T:Microsoft.Extensions.Options.IValidateOptions`1" /> at compile time.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Options.OptionsValidatorAttribute.#ctor" />
     <member name="T:Microsoft.Extensions.Options.OptionsWrapper`1">
       <summary>
             Wraps the options instance.</summary>

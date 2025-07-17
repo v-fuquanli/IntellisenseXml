@@ -71,7 +71,6 @@
       <summary>
             Represents a nonexistent directory.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents.#ctor" />
     <member name="M:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents.GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator to an empty collection.</returns>
@@ -157,7 +156,6 @@
       <summary>
             An empty file provider with no contents.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.FileProviders.NullFileProvider.#ctor" />
     <member name="M:Microsoft.Extensions.FileProviders.NullFileProvider.GetDirectoryContents(System.String)">
       <summary>
             Enumerates a nonexistent directory.</summary>

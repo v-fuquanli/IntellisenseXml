@@ -85,7 +85,6 @@
       <summary>
             Options for Kubernetes probes.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Probes.KubernetesProbesOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Probes.KubernetesProbesOptions.LivenessProbe">
       <summary>
             Gets or sets the options for the liveness probe.</summary>
@@ -118,7 +117,6 @@
       <summary>
             Options to control TCP-based health check probes.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Probes.TcpEndpointProbesOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Probes.TcpEndpointProbesOptions.FilterChecks">
       <summary>
             Gets or sets a predicate that is used to include health checks based on user-defined criteria.</summary>

@@ -7,7 +7,6 @@
     <member name="T:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase">
       <summary>Represents a directory.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase.#ctor" />
     <member name="M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase.EnumerateFileSystemInfos">
       <summary>Enumerates all files and directories in the directory.</summary>
       <returns>Collection of files and directories.</returns>
@@ -56,7 +55,6 @@
     <member name="T:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase">
       <summary>Represents a file.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase.#ctor" />
     <member name="T:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper">
       <summary>Wraps an instance of <see cref="T:System.IO.FileInfo" /> to provide implementation of <see cref="T:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase" />.</summary>
     </member>
@@ -76,7 +74,6 @@
     <member name="T:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase">
       <summary>Shared abstraction for files and directories.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase.#ctor" />
     <member name="P:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase.FullName">
       <summary>A string containing the full path of the file or directory.</summary>
     </member>
@@ -555,6 +552,10 @@
     <member name="M:Microsoft.Extensions.FileSystemGlobbing.Matcher.#ctor">
       <summary>Initializes an instance of <see cref="T:Microsoft.Extensions.FileSystemGlobbing.Matcher" /> using case-insensitive matching.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.FileSystemGlobbing.Matcher.#ctor(System.StringComparison,System.Boolean)">
+      <param name="comparisonType" />
+      <param name="preserveFilterOrder" />
+    </member>
     <member name="M:Microsoft.Extensions.FileSystemGlobbing.Matcher.#ctor(System.StringComparison)">
       <summary>Initializes an instance of <see cref="T:Microsoft.Extensions.FileSystemGlobbing.Matcher" /> using the specified string comparison method.</summary>
       <param name="comparisonType">One of the enumeration values that specifies the culture, case, and sort rules to be used.</param>
@@ -584,7 +585,6 @@
       <param name="directoryInfo">The root directory for the search.</param>
       <returns>Always returns an instance of <see cref="T:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult" />, even if no files were matched.</returns>
     </member>
-    <member name="T:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions" />
     <member name="M:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions.AddExcludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable{System.String}[])">
       <summary>Adds multiple exclude patterns to <see cref="T:Microsoft.Extensions.FileSystemGlobbing.Matcher" />.</summary>
       <param name="matcher">The matcher to which the exclude patterns are added.</param>

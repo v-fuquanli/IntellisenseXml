@@ -4,7 +4,165 @@
     <name>Microsoft.Bcl.Cryptography</name>
   </assembly>
   <members>
-    <member name="T:System.Security.Cryptography.MLKem" />
+    <member name="M:System.Security.Cryptography.MLDsa.#ctor(System.Security.Cryptography.MLDsaAlgorithm)">
+      <param name="algorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.Dispose(System.Boolean)">
+      <param name="disposing" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportEncryptedPkcs8PrivateKey(System.String,System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportEncryptedPkcs8PrivateKeyPem(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportEncryptedPkcs8PrivateKeyPem(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportEncryptedPkcs8PrivateKeyPem(System.String,System.Security.Cryptography.PbeParameters)">
+      <param name="password" />
+      <param name="pbeParameters" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaPrivateSeed(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaPrivateSeedCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaPublicKey(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaPublicKeyCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaSecretKey(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaSecretKeyCore(System.Span{System.Byte})">
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.GenerateKey(System.Security.Cryptography.MLDsaAlgorithm)">
+      <param name="algorithm" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="passwordBytes" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+      <param name="password" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportEncryptedPkcs8PrivateKey(System.String,System.Byte[])">
+      <param name="password" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportFromEncryptedPem(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+      <param name="passwordBytes" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportFromEncryptedPem(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})">
+      <param name="source" />
+      <param name="password" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportFromEncryptedPem(System.String,System.Byte[])">
+      <param name="source" />
+      <param name="passwordBytes" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportFromEncryptedPem(System.String,System.String)">
+      <param name="source" />
+      <param name="password" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportFromPem(System.ReadOnlySpan{System.Char})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportFromPem(System.String)">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportMLDsaPrivateSeed(System.Security.Cryptography.MLDsaAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportMLDsaPublicKey(System.Security.Cryptography.MLDsaAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportMLDsaSecretKey(System.Security.Cryptography.MLDsaAlgorithm,System.ReadOnlySpan{System.Byte})">
+      <param name="algorithm" />
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportPkcs8PrivateKey(System.Byte[])">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportPkcs8PrivateKey(System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportSubjectPublicKeyInfo(System.Byte[])">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ImportSubjectPublicKeyInfo(System.ReadOnlySpan{System.Byte})">
+      <param name="source" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.SignData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="data" />
+      <param name="destination" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.SignDataCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+      <param name="data" />
+      <param name="context" />
+      <param name="destination" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="passwordBytes" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Char},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="password" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.TryExportEncryptedPkcs8PrivateKey(System.String,System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
+      <param name="password" />
+      <param name="pbeParameters" />
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.TryExportPkcs8PrivateKey(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.TryExportPkcs8PrivateKeyCore(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.TryExportSubjectPublicKeyInfo(System.Span{System.Byte},System.Int32@)">
+      <param name="destination" />
+      <param name="bytesWritten" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.VerifyData(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="data" />
+      <param name="signature" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.MLDsa.VerifyDataCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+      <param name="data" />
+      <param name="context" />
+      <param name="signature" />
+    </member>
     <member name="M:System.Security.Cryptography.MLKem.#ctor(System.Security.Cryptography.MLKemAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -19,7 +177,6 @@
       <param name="ciphertext" />
       <param name="sharedSecret" />
     </member>
-    <member name="M:System.Security.Cryptography.MLKem.Dispose" />
     <member name="M:System.Security.Cryptography.MLKem.Dispose(System.Boolean)">
       <param name="disposing" />
     </member>
@@ -35,14 +192,12 @@
       <param name="ciphertext" />
       <param name="sharedSecret" />
     </member>
-    <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKey" />
     <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
-    <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKey" />
     <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
@@ -73,17 +228,12 @@
       <param name="password" />
       <param name="pbeParameters" />
     </member>
-    <member name="M:System.Security.Cryptography.MLKem.ExportPkcs8PrivateKey" />
-    <member name="M:System.Security.Cryptography.MLKem.ExportPkcs8PrivateKeyPem" />
-    <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeed" />
     <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeed(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeedCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
-    <member name="M:System.Security.Cryptography.MLKem.ExportSubjectPublicKeyInfo" />
-    <member name="M:System.Security.Cryptography.MLKem.ExportSubjectPublicKeyInfoPem" />
     <member name="M:System.Security.Cryptography.MLKem.GenerateKey(System.Security.Cryptography.MLKemAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -187,16 +337,12 @@
       <param name="destination" />
       <param name="bytesWritten" />
     </member>
-    <member name="P:System.Security.Cryptography.MLKem.Algorithm" />
-    <member name="P:System.Security.Cryptography.MLKem.IsSupported" />
-    <member name="T:System.Security.Cryptography.MLKemAlgorithm" />
     <member name="M:System.Security.Cryptography.MLKemAlgorithm.Equals(System.Object)">
       <param name="obj" />
     </member>
     <member name="M:System.Security.Cryptography.MLKemAlgorithm.Equals(System.Security.Cryptography.MLKemAlgorithm)">
       <param name="other" />
     </member>
-    <member name="M:System.Security.Cryptography.MLKemAlgorithm.GetHashCode" />
     <member name="M:System.Security.Cryptography.MLKemAlgorithm.op_Equality(System.Security.Cryptography.MLKemAlgorithm,System.Security.Cryptography.MLKemAlgorithm)">
       <param name="left" />
       <param name="right" />
@@ -205,20 +351,9 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.CiphertextSizeInBytes" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.DecapsulationKeySizeInBytes" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.EncapsulationKeySizeInBytes" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem1024" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem512" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem768" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.Name" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.PrivateSeedSizeInBytes" />
-    <member name="P:System.Security.Cryptography.MLKemAlgorithm.SharedSecretSizeInBytes" />
-    <member name="T:System.Security.Cryptography.SlhDsa" />
     <member name="M:System.Security.Cryptography.SlhDsa.#ctor(System.Security.Cryptography.SlhDsaAlgorithm)">
       <param name="algorithm" />
     </member>
-    <member name="M:System.Security.Cryptography.SlhDsa.Dispose" />
     <member name="M:System.Security.Cryptography.SlhDsa.Dispose(System.Boolean)">
       <param name="disposing" />
     </member>
@@ -246,24 +381,18 @@
       <param name="password" />
       <param name="pbeParameters" />
     </member>
-    <member name="M:System.Security.Cryptography.SlhDsa.ExportPkcs8PrivateKey" />
-    <member name="M:System.Security.Cryptography.SlhDsa.ExportPkcs8PrivateKeyPem" />
-    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKey" />
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
-    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey" />
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
-    <member name="M:System.Security.Cryptography.SlhDsa.ExportSubjectPublicKeyInfo" />
-    <member name="M:System.Security.Cryptography.SlhDsa.ExportSubjectPublicKeyInfoPem" />
     <member name="M:System.Security.Cryptography.SlhDsa.GenerateKey(System.Security.Cryptography.SlhDsaAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -343,6 +472,23 @@
       <param name="context" />
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignPreHash(System.Byte[],System.String,System.Byte[])">
+      <param name="hash" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignPreHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.String,System.ReadOnlySpan{System.Byte})">
+      <param name="hash" />
+      <param name="destination" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignPreHashCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.String,System.Span{System.Byte})">
+      <param name="hash" />
+      <param name="context" />
+      <param name="hashAlgorithmOid" />
+      <param name="destination" />
+    </member>
     <member name="M:System.Security.Cryptography.SlhDsa.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
       <param name="passwordBytes" />
       <param name="pbeParameters" />
@@ -388,25 +534,24 @@
       <param name="context" />
       <param name="signature" />
     </member>
-    <member name="P:System.Security.Cryptography.SlhDsa.Algorithm" />
-    <member name="P:System.Security.Cryptography.SlhDsa.IsSupported" />
-    <member name="T:System.Security.Cryptography.SlhDsaAlgorithm" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.Name" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.PublicKeySizeInBytes" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SignatureSizeInBytes" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_128f" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_128s" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_192f" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_192s" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_256f" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_256s" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake128f" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake128s" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake192f" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake192s" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake256f" />
-    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake256s" />
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyPreHash(System.Byte[],System.Byte[],System.String,System.Byte[])">
+      <param name="hash" />
+      <param name="signature" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyPreHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.String,System.ReadOnlySpan{System.Byte})">
+      <param name="hash" />
+      <param name="signature" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyPreHashCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.String,System.ReadOnlySpan{System.Byte})">
+      <param name="hash" />
+      <param name="context" />
+      <param name="hashAlgorithmOid" />
+      <param name="signature" />
+    </member>
     <member name="T:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits">
       <summary>
               Represents a set of constraints to apply when loading PKCS#12/PFX contents.</summary>
@@ -548,7 +693,6 @@
       <param name="propertyName">
               The name of the property representing the limit that was exceeded.</param>
     </member>
-    <member name="T:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509CertificateKeyAccessors.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.MLKem)">
       <param name="certificate" />
       <param name="privateKey" />

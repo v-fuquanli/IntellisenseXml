@@ -75,7 +75,6 @@
       <summary>Returns an enumerator that iterates through the collection.</summary>
       <returns>An enumerator that can be used to iterate through the collection.</returns>
     </member>
-    <member name="M:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.System#Collections#IEnumerable#GetEnumerator" />
     <member name="P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists">
       <summary>Gets a value that indicates if the resource exists in the underlying storage system.</summary>
       <returns>

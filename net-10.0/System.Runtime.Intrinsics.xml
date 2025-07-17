@@ -15931,7 +15931,6 @@
       </summary>
       <param name="value" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64">
       <summary>Provides access to the ARM AdvSIMD hardware instructions, that are only available to 64-bit processes, via intrinsics.</summary>
     </member>
@@ -22495,7 +22494,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.Aes">
       <summary>This class provides access to the ARM AES hardware instructions via intrinsics.</summary>
     </member>
@@ -24969,7 +24967,7 @@
         <para>  CLASTA Wtied, Pg, Wtied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
@@ -24978,7 +24976,7 @@
         <para>  CLASTA Btied, Pg, Btied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Double},System.Double,System.Numerics.Vector{System.Double})">
@@ -24987,7 +24985,7 @@
         <para>  CLASTA Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
@@ -24996,7 +24994,7 @@
         <para>  CLASTA Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Int16},System.Int16,System.Numerics.Vector{System.Int16})">
@@ -25005,7 +25003,7 @@
         <para>  CLASTA Wtied, Pg, Wtied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
@@ -25014,7 +25012,7 @@
         <para>  CLASTA Htied, Pg, Htied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Int32},System.Int32,System.Numerics.Vector{System.Int32})">
@@ -25023,7 +25021,7 @@
         <para>  CLASTA Wtied, Pg, Wtied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
@@ -25032,7 +25030,7 @@
         <para>  CLASTA Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Int64},System.Int64,System.Numerics.Vector{System.Int64})">
@@ -25041,7 +25039,7 @@
         <para>  CLASTA Xtied, Pg, Xtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
@@ -25050,7 +25048,7 @@
         <para>  CLASTA Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
@@ -25059,7 +25057,7 @@
         <para>  CLASTA Btied, Pg, Btied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.SByte},System.SByte,System.Numerics.Vector{System.SByte})">
@@ -25068,7 +25066,7 @@
         <para>  CLASTA Wtied, Pg, Wtied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
@@ -25077,7 +25075,7 @@
         <para>  CLASTA Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.Single},System.Single,System.Numerics.Vector{System.Single})">
@@ -25086,7 +25084,7 @@
         <para>  CLASTA Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
@@ -25095,7 +25093,7 @@
         <para>  CLASTA Htied, Pg, Htied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt16},System.UInt16,System.Numerics.Vector{System.UInt16})">
@@ -25104,7 +25102,7 @@
         <para>  CLASTA Wtied, Pg, Wtied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
@@ -25113,7 +25111,7 @@
         <para>  CLASTA Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt32},System.UInt32,System.Numerics.Vector{System.UInt32})">
@@ -25122,7 +25120,7 @@
         <para>  CLASTA Wtied, Pg, Wtied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
@@ -25131,7 +25129,7 @@
         <para>  CLASTA Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt64},System.UInt64,System.Numerics.Vector{System.UInt64})">
@@ -25140,7 +25138,7 @@
         <para>  CLASTA Xtied, Pg, Xtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
@@ -25149,7 +25147,7 @@
         <para>  CLASTA Ztied.B, Pg, Ztied.B, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
@@ -25158,7 +25156,7 @@
         <para>  CLASTA Ztied.D, Pg, Ztied.D, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
@@ -25167,7 +25165,7 @@
         <para>  CLASTA Ztied.H, Pg, Ztied.H, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
@@ -25176,7 +25174,7 @@
         <para>  CLASTA Ztied.S, Pg, Ztied.S, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
@@ -25185,7 +25183,7 @@
         <para>  CLASTA Ztied.D, Pg, Ztied.D, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
@@ -25194,7 +25192,7 @@
         <para>  CLASTA Ztied.B, Pg, Ztied.B, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
@@ -25203,7 +25201,7 @@
         <para>  CLASTA Ztied.S, Pg, Ztied.S, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
@@ -25212,7 +25210,7 @@
         <para>  CLASTA Ztied.H, Pg, Ztied.H, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
@@ -25221,7 +25219,7 @@
         <para>  CLASTA Ztied.S, Pg, Ztied.S, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractAfterLastActiveElementAndReplicate(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
@@ -25230,7 +25228,7 @@
         <para>  CLASTA Ztied.D, Pg, Ztied.D, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultScalar" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Byte},System.Byte,System.Numerics.Vector{System.Byte})">
@@ -25239,7 +25237,7 @@
         <para>  CLASTB Wtied, Pg, Wtied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
@@ -25248,7 +25246,7 @@
         <para>  CLASTB Btied, Pg, Btied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Double},System.Double,System.Numerics.Vector{System.Double})">
@@ -25257,7 +25255,7 @@
         <para>  CLASTB Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
@@ -25266,7 +25264,7 @@
         <para>  CLASTB Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Int16},System.Int16,System.Numerics.Vector{System.Int16})">
@@ -25275,7 +25273,7 @@
         <para>  CLASTB Wtied, Pg, Wtied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
@@ -25284,7 +25282,7 @@
         <para>  CLASTB Htied, Pg, Htied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Int32},System.Int32,System.Numerics.Vector{System.Int32})">
@@ -25293,7 +25291,7 @@
         <para>  CLASTB Wtied, Pg, Wtied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
@@ -25302,7 +25300,7 @@
         <para>  CLASTB Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Int64},System.Int64,System.Numerics.Vector{System.Int64})">
@@ -25311,7 +25309,7 @@
         <para>  CLASTB Xtied, Pg, Xtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
@@ -25320,7 +25318,7 @@
         <para>  CLASTB Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
@@ -25329,7 +25327,7 @@
         <para>  CLASTB Btied, Pg, Btied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.SByte},System.SByte,System.Numerics.Vector{System.SByte})">
@@ -25338,7 +25336,7 @@
         <para>  CLASTB Wtied, Pg, Wtied, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
@@ -25347,7 +25345,7 @@
         <para>  CLASTB Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.Single},System.Single,System.Numerics.Vector{System.Single})">
@@ -25356,7 +25354,7 @@
         <para>  CLASTB Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
@@ -25365,7 +25363,7 @@
         <para>  CLASTB Htied, Pg, Htied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.UInt16},System.UInt16,System.Numerics.Vector{System.UInt16})">
@@ -25374,7 +25372,7 @@
         <para>  CLASTB Wtied, Pg, Wtied, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
@@ -25383,7 +25381,7 @@
         <para>  CLASTB Stied, Pg, Stied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.UInt32},System.UInt32,System.Numerics.Vector{System.UInt32})">
@@ -25392,7 +25390,7 @@
         <para>  CLASTB Wtied, Pg, Wtied, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
@@ -25401,7 +25399,7 @@
         <para>  CLASTB Dtied, Pg, Dtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValue" />
+      <param name="defaultScalar" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElement(System.Numerics.Vector{System.UInt64},System.UInt64,System.Numerics.Vector{System.UInt64})">
@@ -25410,7 +25408,7 @@
         <para>  CLASTB Xtied, Pg, Xtied, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="defaultValues" />
+      <param name="defaultValue" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
@@ -25419,7 +25417,7 @@
         <para>  CLASTB Ztied.B, Pg, Ztied.B, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
@@ -25428,7 +25426,7 @@
         <para>  CLASTB Ztied.D, Pg, Ztied.D, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
@@ -25437,7 +25435,7 @@
         <para>  CLASTB Ztied.H, Pg, Ztied.H, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
@@ -25446,7 +25444,7 @@
         <para>  CLASTB Ztied.S, Pg, Ztied.S, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
@@ -25455,7 +25453,7 @@
         <para>  CLASTB Ztied.D, Pg, Ztied.D, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
@@ -25464,7 +25462,7 @@
         <para>  CLASTB Ztied.B, Pg, Ztied.B, Zdata.B</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
@@ -25473,7 +25471,7 @@
         <para>  CLASTB Ztied.S, Pg, Ztied.S, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
@@ -25482,7 +25480,7 @@
         <para>  CLASTB Ztied.H, Pg, Ztied.H, Zdata.H</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
@@ -25491,7 +25489,7 @@
         <para>  CLASTB Ztied.S, Pg, Ztied.S, Zdata.S</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalExtractLastActiveElementAndReplicate(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
@@ -25500,7 +25498,7 @@
         <para>  CLASTB Ztied.D, Pg, Ztied.D, Zdata.D</para>
       </summary>
       <param name="mask" />
-      <param name="fallback" />
+      <param name="defaultValues" />
       <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ConditionalSelect(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
@@ -25796,64 +25794,64 @@
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterMask(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
         <para>svbool_t svbrka[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKA Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakAfterPropagateMask(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <summary>
@@ -25932,64 +25930,64 @@
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforeMask(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
         <para>svbool_t svbrkb[_b]_z(svbool_t pg, svbool_t op)</para>
         <para>  BRKB Presult.B, Pg/Z, Pop.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateBreakBeforePropagateMask(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <summary>
@@ -26192,96 +26190,96 @@
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForFirstActiveElement(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
         <para>svbool_t svpfirst&lt;see href="svbool_t pg, svbool_t op"&gt;_b&lt;/see&gt;</para>
         <para>  PFIRST Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForNextActiveElement(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <summary>
         <para>svbool_t svpnext_b8(svbool_t pg, svbool_t op)</para>
         <para>  PNEXT Ptied.B, Pg, Ptied.B</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForNextActiveElement(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
         <para>svbool_t svpnext_b16(svbool_t pg, svbool_t op)</para>
         <para>  PNEXT Ptied.H, Pg, Ptied.H</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForNextActiveElement(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
         <para>svbool_t svpnext_b32(svbool_t pg, svbool_t op)</para>
         <para>  PNEXT Ptied.S, Pg, Ptied.S</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateMaskForNextActiveElement(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
         <para>svbool_t svpnext_b64(svbool_t pg, svbool_t op)</para>
         <para>  PNEXT Ptied.D, Pg, Ptied.D</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="totalMask" />
+      <param name="fromMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.CreateTrueMaskByte(System.Runtime.Intrinsics.Arm.SveMaskPattern)">
       <summary>
@@ -26784,6 +26782,166 @@
       </summary>
       <param name="data" />
       <param name="index" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElement(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractAfterLastActiveElementScalar(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElement(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="mask" />
+      <param name="data" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractLastActiveElementScalar(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="mask" />
+      <param name="data" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.ExtractVector(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Byte)">
       <summary>
@@ -29013,14 +29171,6 @@
       <param name="mask" />
       <param name="from" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrByte" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrInt16" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrInt32" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrInt64" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrSByte" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrUInt16" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrUInt32" />
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrUInt64" />
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.InsertIntoShiftedVector(System.Numerics.Vector{System.Byte},System.Byte)">
       <summary>
         <para>svuint8_t svinsr&lt;see href="svuint8_t op1, uint8_t op2"&gt;_n_u8&lt;/see&gt;</para>
@@ -31428,38 +31578,22 @@
       </summary>
       <param name="value" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.PrefetchBytes(System.Numerics.Vector{System.Byte},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
-      <summary>
-        <para>void svprfb(svbool_t pg, const void *base, enum svprfop op)</para>
-        <para>  PRFB op, Pg, [Xbase, #0, MUL VL]</para>
-      </summary>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.Prefetch16Bit(System.Numerics.Vector{System.UInt16},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
       <param name="mask" />
       <param name="address" />
       <param name="prefetchType" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.PrefetchInt16(System.Numerics.Vector{System.UInt16},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
-      <summary>
-        <para>void svprfh(svbool_t pg, const void *base, enum svprfop op)</para>
-        <para>  PRFH op, Pg, [Xbase, #0, MUL VL]</para>
-      </summary>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.Prefetch32Bit(System.Numerics.Vector{System.UInt32},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
       <param name="mask" />
       <param name="address" />
       <param name="prefetchType" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.PrefetchInt32(System.Numerics.Vector{System.UInt32},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
-      <summary>
-        <para>void svprfw(svbool_t pg, const void *base, enum svprfop op)</para>
-        <para>  PRFW op, Pg, [Xbase, #0, MUL VL]</para>
-      </summary>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.Prefetch64Bit(System.Numerics.Vector{System.UInt64},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
       <param name="mask" />
       <param name="address" />
       <param name="prefetchType" />
     </member>
-    <member name="M:System.Runtime.Intrinsics.Arm.Sve.PrefetchInt64(System.Numerics.Vector{System.UInt64},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
-      <summary>
-        <para>void svprfd(svbool_t pg, const void *base, enum svprfop op)</para>
-        <para>  PRFD op, Pg, [Xbase, #0, MUL VL]</para>
-      </summary>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.Prefetch8Bit(System.Numerics.Vector{System.Byte},System.Void*,System.Runtime.Intrinsics.Arm.SvePrefetchType)">
       <param name="mask" />
       <param name="address" />
       <param name="prefetchType" />
@@ -34327,7 +34461,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
       <summary>
@@ -34335,7 +34469,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
       <summary>
@@ -34343,7 +34477,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
       <summary>
@@ -34351,7 +34485,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
       <summary>
@@ -34359,7 +34493,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
@@ -34367,7 +34501,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
@@ -34375,7 +34509,7 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestAnyTrue(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
@@ -34383,135 +34517,135 @@
         <para>  PTEST</para>
       </summary>
       <param name="mask" />
-      <param name="srcMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestFirstTrue(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
         <para>bool svptest_first(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TestLastTrue(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
       <summary>
         <para>bool svptest_last(svbool_t pg, svbool_t op)</para>
         <para>  PTEST</para>
       </summary>
-      <param name="mask" />
-      <param name="srcMask" />
+      <param name="leftMask" />
+      <param name="rightMask" />
     </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.TransposeEven(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <summary>
@@ -35382,7 +35516,154 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="T:System.Runtime.Intrinsics.Arm.Sve2" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAdd(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningLower(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningLower(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningLower(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningLower(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningLower(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningLower(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningUpper(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningUpper(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningUpper(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningUpper(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningUpper(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceAddWideningUpper(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="addend" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningLower(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningLower(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningLower(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningLower(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningLower(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningLower(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningUpper(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningUpper(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningUpper(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningUpper(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningUpper(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.AbsoluteDifferenceWideningUpper(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="left" />
+      <param name="right" />
+    </member>
     <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseClearXor(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
       <param name="xor" />
       <param name="value" />
@@ -35423,10 +35704,374 @@
       <param name="value" />
       <param name="mask" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.Arm.Sve2.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.Arm.Sve2.Arm64" />
-    <member name="P:System.Runtime.Intrinsics.Arm.Sve2.Arm64.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.Arm.SveMaskPattern" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelect(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectLeftInverted(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.BitwiseSelectRightInverted(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="select" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorEvenOdd(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="odd" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.InterleavingXorOddEven(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="even" />
+      <param name="left" />
+      <param name="right" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRounded(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRounded(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRounded(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRounded(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRoundedSaturate(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRoundedSaturate(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRoundedSaturate(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticRoundedSaturate(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticSaturate(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticSaturate(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticSaturate(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftArithmeticSaturate(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="value" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.ShiftLeftAndInsert(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="shift" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.Xor(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})">
+      <param name="value1" />
+      <param name="value2" />
+      <param name="value3" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.Byte},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.SByte},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve2.XorRotateRight(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64},System.Byte)">
+      <param name="left" />
+      <param name="right" />
+      <param name="count" />
+    </member>
     <member name="F:System.Runtime.Intrinsics.Arm.SveMaskPattern.All">
       <summary>
         <para>ALL</para>
@@ -35512,7 +36157,6 @@
         <para>VL8</para>
       </summary>
     </member>
-    <member name="T:System.Runtime.Intrinsics.Arm.SvePrefetchType" />
     <member name="F:System.Runtime.Intrinsics.Arm.SvePrefetchType.LoadL1NonTemporal">
       <summary>
         <para>PLDL1STRM</para>
@@ -44054,8 +44698,6 @@
       <summary>Gets a new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> with all elements initialized to zero.</summary>
       <exception cref="T:System.NotSupportedException">The type of the current instance (<typeparamref name="T" />) is not supported.</exception>
     </member>
-    <member name="T:System.Runtime.Intrinsics.Wasm.PackedSimd" />
-    <member name="M:System.Runtime.Intrinsics.Wasm.PackedSimd.#ctor" />
     <member name="M:System.Runtime.Intrinsics.Wasm.PackedSimd.Abs(System.Runtime.Intrinsics.Vector128{System.Double})">
       <param name="value" />
     </member>
@@ -52002,7 +52644,6 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="T:System.Runtime.Intrinsics.X86.Avx10v2" />
     <member name="M:System.Runtime.Intrinsics.X86.Avx10v2.ConvertToByteWithSaturationAndZeroExtendToInt32(System.Runtime.Intrinsics.Vector128{System.Single})">
       <param name="value" />
     </member>
@@ -52077,8 +52718,6 @@
       <param name="address" />
       <param name="source" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Avx10v2.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Avx10v2.V512" />
     <member name="M:System.Runtime.Intrinsics.X86.Avx10v2.V512.ConvertToByteWithSaturationAndZeroExtendToInt32(System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.X86.FloatRoundingMode)">
       <param name="value" />
       <param name="mode" />
@@ -52114,11 +52753,6 @@
       <param name="right" />
       <param name="mask" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Avx10v2.V512.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Avx10v2.V512.X64" />
-    <member name="P:System.Runtime.Intrinsics.X86.Avx10v2.V512.X64.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Avx10v2.X64" />
-    <member name="P:System.Runtime.Intrinsics.X86.Avx10v2.X64.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.X86.Avx2">
       <summary>This class provides access to Intel AVX2 hardware instructions via intrinsics.</summary>
     </member>
@@ -58727,6 +59361,36 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Compress(System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Compress(System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Compress(System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Compress(System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Compress(System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Compress(System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
     <member name="M:System.Runtime.Intrinsics.X86.Avx512F.ConvertScalarToVector128Double(System.Runtime.Intrinsics.Vector128{System.Double},System.UInt32)">
       <summary>
         <para>__m128d _mm_cvtsi32_sd (__m128d a, int b)</para>
@@ -59402,6 +60066,36 @@
         <para>__m512 _mm512_movehdup_ps (__m512 a)</para>
         <para>VMOVSHDUP zmm1 {k1}{z}, zmm2/m512</para>
       </summary>
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Expand(System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Expand(System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Expand(System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Expand(System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Expand(System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.Expand(System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})">
+      <param name="merge" />
+      <param name="mask" />
       <param name="value" />
     </member>
     <member name="M:System.Runtime.Intrinsics.X86.Avx512F.ExtractVector128(System.Runtime.Intrinsics.Vector512{System.Byte},System.Byte)">
@@ -62456,6 +63150,66 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector256{System.Int32},System.Runtime.Intrinsics.Vector256{System.Int32},System.Runtime.Intrinsics.Vector256{System.Int32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector256{System.Int64},System.Runtime.Intrinsics.Vector256{System.Int64},System.Runtime.Intrinsics.Vector256{System.Int64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector256{System.UInt32},System.Runtime.Intrinsics.Vector256{System.UInt32},System.Runtime.Intrinsics.Vector256{System.UInt32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Compress(System.Runtime.Intrinsics.Vector256{System.UInt64},System.Runtime.Intrinsics.Vector256{System.UInt64},System.Runtime.Intrinsics.Vector256{System.UInt64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
     <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.ConvertToVector128Byte(System.Runtime.Intrinsics.Vector128{System.Int32})">
       <summary>
         <para>__m128i _mm_cvtepi32_epi8 (__m128i a)</para>
@@ -62958,6 +63712,66 @@
         <para>__m256i _mm256_cvttps_epu32 (__m256 a)</para>
         <para>VCVTTPS2UDQ ymm1 {k1}{z}, ymm2/m256/m32bcst</para>
       </summary>
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector256{System.Int32},System.Runtime.Intrinsics.Vector256{System.Int32},System.Runtime.Intrinsics.Vector256{System.Int32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector256{System.Int64},System.Runtime.Intrinsics.Vector256{System.Int64},System.Runtime.Intrinsics.Vector256{System.Int64})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector256{System.UInt32},System.Runtime.Intrinsics.Vector256{System.UInt32},System.Runtime.Intrinsics.Vector256{System.UInt32})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Expand(System.Runtime.Intrinsics.Vector256{System.UInt64},System.Runtime.Intrinsics.Vector256{System.UInt64},System.Runtime.Intrinsics.Vector256{System.UInt64})">
+      <param name="merge" />
+      <param name="mask" />
       <param name="value" />
     </member>
     <member name="M:System.Runtime.Intrinsics.X86.Avx512F.VL.Fixup(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Int64},System.Byte)">
@@ -64237,6 +65051,126 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Compress(System.Runtime.Intrinsics.Vector512{System.Byte},System.Runtime.Intrinsics.Vector512{System.Byte},System.Runtime.Intrinsics.Vector512{System.Byte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Compress(System.Runtime.Intrinsics.Vector512{System.Int16},System.Runtime.Intrinsics.Vector512{System.Int16},System.Runtime.Intrinsics.Vector512{System.Int16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Compress(System.Runtime.Intrinsics.Vector512{System.SByte},System.Runtime.Intrinsics.Vector512{System.SByte},System.Runtime.Intrinsics.Vector512{System.SByte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Compress(System.Runtime.Intrinsics.Vector512{System.UInt16},System.Runtime.Intrinsics.Vector512{System.UInt16},System.Runtime.Intrinsics.Vector512{System.UInt16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Expand(System.Runtime.Intrinsics.Vector512{System.Byte},System.Runtime.Intrinsics.Vector512{System.Byte},System.Runtime.Intrinsics.Vector512{System.Byte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Expand(System.Runtime.Intrinsics.Vector512{System.Int16},System.Runtime.Intrinsics.Vector512{System.Int16},System.Runtime.Intrinsics.Vector512{System.Int16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Expand(System.Runtime.Intrinsics.Vector512{System.SByte},System.Runtime.Intrinsics.Vector512{System.SByte},System.Runtime.Intrinsics.Vector512{System.SByte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.Expand(System.Runtime.Intrinsics.Vector512{System.UInt16},System.Runtime.Intrinsics.Vector512{System.UInt16},System.Runtime.Intrinsics.Vector512{System.UInt16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector256{System.Byte},System.Runtime.Intrinsics.Vector256{System.Byte},System.Runtime.Intrinsics.Vector256{System.Byte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector256{System.Int16},System.Runtime.Intrinsics.Vector256{System.Int16},System.Runtime.Intrinsics.Vector256{System.Int16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector256{System.SByte},System.Runtime.Intrinsics.Vector256{System.SByte},System.Runtime.Intrinsics.Vector256{System.SByte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Compress(System.Runtime.Intrinsics.Vector256{System.UInt16},System.Runtime.Intrinsics.Vector256{System.UInt16},System.Runtime.Intrinsics.Vector256{System.UInt16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector256{System.Byte},System.Runtime.Intrinsics.Vector256{System.Byte},System.Runtime.Intrinsics.Vector256{System.Byte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector256{System.Int16},System.Runtime.Intrinsics.Vector256{System.Int16},System.Runtime.Intrinsics.Vector256{System.Int16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector256{System.SByte},System.Runtime.Intrinsics.Vector256{System.SByte},System.Runtime.Intrinsics.Vector256{System.SByte})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
+    <member name="M:System.Runtime.Intrinsics.X86.Avx512Vbmi2.VL.Expand(System.Runtime.Intrinsics.Vector256{System.UInt16},System.Runtime.Intrinsics.Vector256{System.UInt16},System.Runtime.Intrinsics.Vector256{System.UInt16})">
+      <param name="merge" />
+      <param name="mask" />
+      <param name="value" />
+    </member>
     <member name="T:System.Runtime.Intrinsics.X86.AvxVnni">
       <summary>Provides access to the x86 AVXVNNI hardware instructions via intrinsics.</summary>
     </member>
@@ -64521,7 +65455,6 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="T:System.Runtime.Intrinsics.X86.FloatComparisonMode" />
     <member name="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedEqualNonSignaling">
       <summary>_CMP_EQ_OQ.</summary>
     </member>
@@ -64618,7 +65551,6 @@
     <member name="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.UnorderedTrueSignaling">
       <summary>_CMP_TRUE_US.</summary>
     </member>
-    <member name="T:System.Runtime.Intrinsics.X86.FloatRoundingMode" />
     <member name="F:System.Runtime.Intrinsics.X86.FloatRoundingMode.ToEven">
       <summary>
         <para>_MM_FROUND_TO_NEAREST_INT | _MM_FROUND_NO_EXC</para>
@@ -64943,7 +65875,6 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="T:System.Runtime.Intrinsics.X86.Gfni" />
     <member name="M:System.Runtime.Intrinsics.X86.Gfni.GaloisFieldAffineTransform(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte},System.Byte)">
       <param name="x" />
       <param name="a" />
@@ -64958,8 +65889,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Gfni.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Gfni.V256" />
     <member name="M:System.Runtime.Intrinsics.X86.Gfni.V256.GaloisFieldAffineTransform(System.Runtime.Intrinsics.Vector256{System.Byte},System.Runtime.Intrinsics.Vector256{System.Byte},System.Byte)">
       <param name="x" />
       <param name="a" />
@@ -64974,8 +65903,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Gfni.V256.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Gfni.V512" />
     <member name="M:System.Runtime.Intrinsics.X86.Gfni.V512.GaloisFieldAffineTransform(System.Runtime.Intrinsics.Vector512{System.Byte},System.Runtime.Intrinsics.Vector512{System.Byte},System.Byte)">
       <param name="x" />
       <param name="a" />
@@ -64990,9 +65917,6 @@
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Gfni.V512.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Gfni.X64" />
-    <member name="P:System.Runtime.Intrinsics.X86.Gfni.X64.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.X86.Lzcnt">
       <summary>This class provides access to Intel LZCNT hardware instructions via intrinsics.</summary>
     </member>
@@ -65049,7 +65973,6 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="T:System.Runtime.Intrinsics.X86.Pclmulqdq.V256" />
     <member name="M:System.Runtime.Intrinsics.X86.Pclmulqdq.V256.CarrylessMultiply(System.Runtime.Intrinsics.Vector256{System.Int64},System.Runtime.Intrinsics.Vector256{System.Int64},System.Byte)">
       <param name="left" />
       <param name="right" />
@@ -65060,8 +65983,6 @@
       <param name="right" />
       <param name="control" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Pclmulqdq.V256.IsSupported" />
-    <member name="T:System.Runtime.Intrinsics.X86.Pclmulqdq.V512" />
     <member name="M:System.Runtime.Intrinsics.X86.Pclmulqdq.V512.CarrylessMultiply(System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64},System.Byte)">
       <param name="left" />
       <param name="right" />
@@ -65072,7 +65993,6 @@
       <param name="right" />
       <param name="control" />
     </member>
-    <member name="P:System.Runtime.Intrinsics.X86.Pclmulqdq.V512.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.X86.Pclmulqdq.X64">
       <summary>Provides access to the x86 CLMUL hardware instructions, that are only available to 64-bit processes, via intrinsics.</summary>
     </member>

@@ -799,8 +799,6 @@
     <member name="M:System.Data.Common.DbBatchCommand.#ctor">
       <summary>Constructs an instance of the <see cref="T:System.Data.Common.DbBatchCommand" /> object.</summary>
     </member>
-    <member name="M:System.Data.Common.DbBatchCommand.CreateParameter" />
-    <member name="P:System.Data.Common.DbBatchCommand.CanCreateParameter" />
     <member name="P:System.Data.Common.DbBatchCommand.CommandText">
       <summary>Gets or sets the text command to run against the data source.</summary>
       <returns>The text command to execute. The default value is an empty string ("").</returns>

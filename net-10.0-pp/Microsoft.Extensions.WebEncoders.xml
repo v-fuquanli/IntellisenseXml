@@ -27,7 +27,6 @@
       <summary>
         <see cref="T:System.Text.Encodings.Web.HtmlEncoder" /> used for unit testing. This encoder does not perform any encoding and should not be used in application code.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder.#ctor" />
     <member name="M:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)">
       <summary>Encodes characters from an array and writes them to a <xref data-throw-if-not-resolved="true" uid="System.IO.TextWriter"></xref> object.</summary>
       <param name="output">The stream to which to write the encoded text.</param>
@@ -76,7 +75,6 @@
       <summary>
         <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder" /> used for unit testing. This encoder does not perform any encoding and should not be used in application code.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder.#ctor" />
     <member name="M:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)">
       <summary>Encodes characters from an array and writes them to a <xref data-throw-if-not-resolved="true" uid="System.IO.TextWriter"></xref> object.</summary>
       <param name="output">The stream to which to write the encoded text.</param>
@@ -125,7 +123,6 @@
       <summary>
         <see cref="T:System.Text.Encodings.Web.UrlEncoder" /> used for unit testing. This encoder does not perform any encoding and should not be used in application code.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder.#ctor" />
     <member name="M:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)">
       <summary>Encodes characters from an array and writes them to a <xref data-throw-if-not-resolved="true" uid="System.IO.TextWriter"></xref> object.</summary>
       <param name="output">The stream to which to write the encoded text.</param>
@@ -174,7 +171,6 @@
       <summary>
             Specifies options common to all three encoders (HtmlEncode, JavaScriptEncode, UrlEncode).</summary>
     </member>
-    <member name="M:Microsoft.Extensions.WebEncoders.WebEncoderOptions.#ctor" />
     <member name="P:Microsoft.Extensions.WebEncoders.WebEncoderOptions.TextEncoderSettings">
       <summary>
             Specifies which code points are allowed to be represented unescaped by the encoders.</summary>

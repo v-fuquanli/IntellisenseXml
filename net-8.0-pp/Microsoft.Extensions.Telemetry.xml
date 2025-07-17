@@ -142,7 +142,6 @@
       <summary>
             Options for the service log enricher.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions.ApplicationName">
       <summary>
             Gets or sets a value indicating whether <see cref="P:Microsoft.Extensions.AmbientMetadata.ApplicationMetadata.ApplicationName" /> is used for logs enrichment.</summary>
@@ -188,7 +187,6 @@
       <summary>
             Options for the process enricher.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions.ProcessId">
       <summary>
             Gets or sets a value indicating whether current process ID is used for log enrichment.</summary>
@@ -205,7 +203,6 @@
       <summary>
             Options for console latency data exporter.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Latency.LatencyConsoleOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Latency.LatencyConsoleOptions.OutputCheckpoints">
       <summary>
             Gets or sets a value indicating whether to emit latency checkpoint information to the console.</summary>
@@ -228,7 +225,6 @@
       <summary>
             Options for LatencyContext.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Latency.LatencyContextOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Latency.LatencyContextOptions.ThrowOnUnregisteredNames">
       <summary>
             Gets or sets a value indicating whether an exception is thrown when using unregistered names.</summary>
@@ -248,10 +244,6 @@
       <param name="eventId">The event ID to use in this filter rule.</param>
       <param name="eventName">The event name to use in this filter rule.</param>
     </member>
-    <member name="P:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerFilterRule.CategoryName" />
-    <member name="P:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerFilterRule.EventId" />
-    <member name="P:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerFilterRule.EventName" />
-    <member name="P:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerFilterRule.LogLevel" />
     <member name="P:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerFilterRule.Probability">
       <summary>
             Gets the probability for sampling in if this rule applies.</summary>
@@ -260,7 +252,6 @@
       <summary>
             The options for the Random Probabilistic sampler.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerOptions.Rules">
       <summary>
             Gets or sets the collection of <see cref="T:Microsoft.Extensions.Diagnostics.Sampling.RandomProbabilisticSamplerFilterRule" /> used for filtering log messages.</summary>
@@ -269,7 +260,6 @@
       <summary>
             Options for logging enrichment features.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.LoggerEnrichmentOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.LoggerEnrichmentOptions.CaptureStackTraces">
       <summary>
             Gets or sets a value indicating whether to include stack traces when an exception is logged.</summary>
@@ -298,7 +288,6 @@
       <summary>
             Options to control redaction.</summary>
     </member>
-    <member name="M:Microsoft.Extensions.Logging.LoggerRedactionOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.LoggerRedactionOptions.ApplyDiscriminator">
       <summary>
             Gets or sets a value indicating whether a discriminator value is applied to each redacted value.</summary>

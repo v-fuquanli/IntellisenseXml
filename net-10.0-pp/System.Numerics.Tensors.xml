@@ -239,6 +239,11 @@
       <exception cref="T:System.ArgumentException">
         <paramref name="destination" /> is shorter than the source tensor.</exception>
     </member>
+    <member name="M:System.Numerics.Tensors.IReadOnlyTensor`2.GetDimensionSpan(System.Int32)">
+      <summary>Returns a span that can be used to access the flattened elements for a given dimension.</summary>
+      <param name="dimension">The dimension for which the span should be created.</param>
+      <returns>A span that can be used to access the flattened elements for a given dimension.</returns>
+    </member>
     <member name="M:System.Numerics.Tensors.IReadOnlyTensor`2.GetPinnableReference">
       <summary>Returns a reference to an object of type <typeparamref name="T" /> that can be used for pinning.</summary>
       <returns>A reference to the element of the tensor at index 0, or <c>null</c> if the tensor is empty.</returns>
@@ -387,6 +392,11 @@
             Fills the contents of this tensor with the given value.</summary>
       <param name="value">The value to assign to each element of the tensor.</param>
     </member>
+    <member name="M:System.Numerics.Tensors.ITensor`2.GetDimensionSpan(System.Int32)">
+      <summary>Returns a span that can be used to access the flattened elements for a given dimension.</summary>
+      <param name="dimension">The dimension for which the span should be created.</param>
+      <returns>A span that can be used to access the flattened elements for a given dimension.</returns>
+    </member>
     <member name="M:System.Numerics.Tensors.ITensor`2.GetPinnableReference">
       <summary>
             Returns a reference to the 0th element of the tensor. If the tensor is empty, returns <see langword="null" />.</summary>
@@ -411,11 +421,39 @@
       <param name="indexes">The indexes to use.</param>
       <returns>A reference to the element that exists at <code data-dev-comment-type="paramref">indexes</code>.</returns>
     </member>
+    <member name="T:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1">
+      <summary>Represents the slices that exist within a dimension of a tensor span.</summary>
+      <typeparam name="T">The type of the elements within the tensor span.</typeparam>
+    </member>
+    <member name="M:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.GetEnumerator">
+      <summary>Gets an enumerator for the readonly tensor dimension span.</summary>
+    </member>
+    <member name="P:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.Item(System.IntPtr)">
+      <summary>Gets the tensor span representing a slice of the tracked dimension using the specified index.</summary>
+      <param name="index">The index of the tensor span slice to retrieve within the tracked dimension.</param>
+      <returns>The tensor span representing a slice of the tracked dimension using <paramref name="index" />.</returns>
+    </member>
+    <member name="P:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.Length">
+      <summary>Gets the length of the tensor dimension span.</summary>
+    </member>
+    <member name="T:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.Enumerator">
+      <summary>Enumerates the spans of a tensor dimension span.</summary>
+      <typeparam name="T" />
+    </member>
+    <member name="M:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.Enumerator.MoveNext">
+      <summary>Advances the enumerator to the next element of the tensor span.</summary>
+    </member>
+    <member name="M:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.Enumerator.Reset">
+      <summary>Sets the enumerator to its initial position, which is before the first element in the tensor span.</summary>
+    </member>
+    <member name="P:System.Numerics.Tensors.ReadOnlyTensorDimensionSpan`1.Enumerator.Current">
+      <summary>Gets the span at the current position of the enumerator.</summary>
+    </member>
     <member name="T:System.Numerics.Tensors.ReadOnlyTensorSpan`1">
       <summary>
             Represents a contiguous region of arbitrary memory. Unlike arrays, it can point to either managed
             or native memory, or to memory allocated on the stack. It is type-safe and memory-safe.</summary>
-      <typeparam name="T" />
+      <typeparam name="T">The type of the elements within the tensor span.</typeparam>
     </member>
     <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.#ctor(`0[],System.Int32,System.ReadOnlySpan{System.IntPtr},System.ReadOnlySpan{System.IntPtr})">
       <summary>Creates a new tensor over the portion of the target array beginning at the specified start index and using the specified lengths and strides.</summary>
@@ -569,6 +607,11 @@
             Flattens the contents of this span into the provided <see cref="T:System.Span`1" />.</summary>
       <param name="destination">The span to copy items into.</param>
     </member>
+    <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.GetDimensionSpan(System.Int32)">
+      <summary>Returns a span that can be used to access the flattened elements for a given dimension.</summary>
+      <param name="dimension">The dimension for which the span should be created.</param>
+      <returns>A span that can be used to access the flattened elements for a given dimension.</returns>
+    </member>
     <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.GetEnumerator">
       <summary>Gets an enumerator for the readonly tensor span.</summary>
     </member>
@@ -700,12 +743,9 @@
     <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.Reset">
       <summary>Sets the enumerator to its initial position, which is before the first element in the tensor span.</summary>
     </member>
-    <member name="M:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.Current">
       <summary>Gets the element at the current position of the enumerator.</summary>
     </member>
-    <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
-    <member name="P:System.Numerics.Tensors.ReadOnlyTensorSpan`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Numerics.Tensors.Tensor">
       <summary>Provides methods for tensor operations.</summary>
     </member>
@@ -3549,6 +3589,11 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
             Flattens the contents of this Tensor into the provided <see cref="T:System.Span`1" />.</summary>
       <param name="destination">The span to copy items into.</param>
     </member>
+    <member name="M:System.Numerics.Tensors.Tensor`1.GetDimensionSpan(System.Int32)">
+      <summary>Returns a span that can be used to access the flattened elements for a given dimension.</summary>
+      <param name="dimension">The dimension for which the span should be created.</param>
+      <returns>A span that can be used to access the flattened elements for a given dimension.</returns>
+    </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.GetEnumerator">
       <summary>Gets an enumerator for the readonly tensor.</summary>
       <returns>
@@ -3609,6 +3654,9 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor&lt;System#Numerics#Tensors#Tensor&lt;T&gt;,T&gt;#CopyTo(System.Numerics.Tensors.TensorSpan{`0}@|System.Runtime.InteropServices.InAttribute)">
       <param name="destination" />
+    </member>
+    <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor{System#Numerics#Tensors#Tensor{T}@T}#GetDimensionSpan(System.Int32)">
+      <param name="dimension" />
     </member>
     <member name="M:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#IReadOnlyTensor{System#Numerics#Tensors#Tensor{T}@T}#GetPinnableReference">
       <summary>
@@ -3759,7 +3807,6 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <exception cref="T:System.IndexOutOfRangeException">
             Thrown when index less than 0 or index greater than or equal to FlattenedLength</exception>
     </member>
-    <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor#IsReadOnly" />
     <member name="P:System.Numerics.Tensors.Tensor`1.System#Numerics#Tensors#ITensor#Item(System.ReadOnlySpan{System.Buffers.NIndex})">
       <param name="indexes" />
     </member>
@@ -3778,13 +3825,38 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="M:System.Numerics.Tensors.Tensor`1.Enumerator.Reset">
       <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
     </member>
-    <member name="M:System.Numerics.Tensors.Tensor`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.Numerics.Tensors.Tensor`1.Enumerator.Current">
       <summary>Gets the element in the collection at the current position of the enumerator.</summary>
       <returns>The element in the collection at the current position of the enumerator.</returns>
     </member>
-    <member name="P:System.Numerics.Tensors.Tensor`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
-    <member name="P:System.Numerics.Tensors.Tensor`1.Enumerator.System#Collections#IEnumerator#Current" />
+    <member name="T:System.Numerics.Tensors.TensorDimensionSpan`1">
+      <summary>Represents the slices that exist within a dimension of a tensor span.</summary>
+      <typeparam name="T">The type of the elements within the tensor span.</typeparam>
+    </member>
+    <member name="M:System.Numerics.Tensors.TensorDimensionSpan`1.GetEnumerator">
+      <summary>Gets an enumerator for the readonly tensor dimension span.</summary>
+    </member>
+    <member name="P:System.Numerics.Tensors.TensorDimensionSpan`1.Item(System.IntPtr)">
+      <summary>Gets the tensor span representing a slice of the tracked dimension using the specified index.</summary>
+      <param name="index">The index of the tensor span slice to retrieve within the tracked dimension.</param>
+      <returns>The tensor span representing a slice of the tracked dimension using <paramref name="index" />.</returns>
+    </member>
+    <member name="P:System.Numerics.Tensors.TensorDimensionSpan`1.Length">
+      <summary>Gets the length of the tensor dimension span.</summary>
+    </member>
+    <member name="T:System.Numerics.Tensors.TensorDimensionSpan`1.Enumerator">
+      <summary>Enumerates the spans of a tensor dimension span.</summary>
+      <typeparam name="T" />
+    </member>
+    <member name="M:System.Numerics.Tensors.TensorDimensionSpan`1.Enumerator.MoveNext">
+      <summary>Advances the enumerator to the next element of the tensor span.</summary>
+    </member>
+    <member name="M:System.Numerics.Tensors.TensorDimensionSpan`1.Enumerator.Reset">
+      <summary>Sets the enumerator to its initial position, which is before the first element in the tensor span.</summary>
+    </member>
+    <member name="P:System.Numerics.Tensors.TensorDimensionSpan`1.Enumerator.Current">
+      <summary>Gets the span at the current position of the enumerator.</summary>
+    </member>
     <member name="T:System.Numerics.Tensors.TensorPrimitives">
       <summary>Performs primitive tensor operations over spans of memory.</summary>
     </member>
@@ -6133,7 +6205,7 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
       <summary>
             Represents a contiguous region of arbitrary memory. Unlike arrays, it can point to either managed
             or native memory, or to memory allocated on the stack. It is type-safe and memory-safe.</summary>
-      <typeparam name="T" />
+      <typeparam name="T">The type of the elements within the tensor span.</typeparam>
     </member>
     <member name="M:System.Numerics.Tensors.TensorSpan`1.#ctor(`0[],System.Int32,System.ReadOnlySpan{System.IntPtr},System.ReadOnlySpan{System.IntPtr})">
       <summary>
@@ -6275,6 +6347,11 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
             Flattens the contents of this span into the provided <see cref="T:System.Span`1" />.</summary>
       <param name="destination">The span to copy items into.</param>
     </member>
+    <member name="M:System.Numerics.Tensors.TensorSpan`1.GetDimensionSpan(System.Int32)">
+      <summary>Returns a span that can be used to access the flattened elements for a given dimension.</summary>
+      <param name="dimension">The dimension for which the span should be created.</param>
+      <returns>A span that can be used to access the flattened elements for a given dimension.</returns>
+    </member>
     <member name="M:System.Numerics.Tensors.TensorSpan`1.GetEnumerator">
       <summary>Gets an enumerator for the tensor span.</summary>
     </member>
@@ -6415,11 +6492,8 @@ at 'start' index and ending at 'end' index (exclusive).</summary>
     <member name="M:System.Numerics.Tensors.TensorSpan`1.Enumerator.Reset">
       <summary>Sets the enumerator to its initial position, which is before the first element in the tensor span.</summary>
     </member>
-    <member name="M:System.Numerics.Tensors.TensorSpan`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.Current">
       <summary>Gets the element at the current position of the enumerator.</summary>
     </member>
-    <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
-    <member name="P:System.Numerics.Tensors.TensorSpan`1.Enumerator.System#Collections#IEnumerator#Current" />
   </members>
 </doc>

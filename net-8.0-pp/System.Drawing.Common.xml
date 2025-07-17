@@ -6541,7 +6541,6 @@ The <see cref="T:System.Drawing.Graphics" /> object has a transform applied othe
     <member name="M:System.Drawing.Imaging.CachedBitmap.Dispose">
       <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
     </member>
-    <member name="M:System.Drawing.Imaging.CachedBitmap.Finalize" />
     <member name="T:System.Drawing.Imaging.ColorAdjustType">
       <summary>Specifies which GDI+ objects use color adjustment information.</summary>
     </member>
@@ -8901,21 +8900,6 @@ The <see cref="T:System.Drawing.Graphics" /> object has a transform applied othe
       <summary>Reserved. Do not use.</summary>
       <returns>Reserved. Do not use.</returns>
     </member>
-    <member name="T:System.Drawing.Interop.LOGFONT" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfCharSet" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfClipPrecision" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfEscapement" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfHeight" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfItalic" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfOrientation" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfOutPrecision" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfPitchAndFamily" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfQuality" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfStrikeOut" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfUnderline" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfWeight" />
-    <member name="F:System.Drawing.Interop.LOGFONT.lfWidth" />
-    <member name="P:System.Drawing.Interop.LOGFONT.lfFaceName" />
     <member name="T:System.Drawing.Pen">
       <summary>Defines an object used to draw lines and curves. This class cannot be inherited.</summary>
     </member>

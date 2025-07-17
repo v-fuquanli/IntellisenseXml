@@ -5462,7 +5462,6 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
         <paramref name="sizeHint" /> is negative.</exception>
       <returns>A span of at least <paramref name="sizeHint" /> in length. If <paramref name="sizeHint" /> is not provided or is equal to 0, some non-empty buffer is returned.</returns>
     </member>
-    <member name="M:System.Buffers.ArrayBufferWriter`1.ResetWrittenCount" />
     <member name="P:System.Buffers.ArrayBufferWriter`1.Capacity">
       <summary>Gets the total amount of space within the underlying buffer.</summary>
       <returns>The total capacity of the underlying buffer.</returns>
@@ -8909,6 +8908,15 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <param name="provider">An optional object that supplies culture-specific formatting information for <paramref name="utf8Destination" />.</param>
       <returns>
         <see langword="true" /> if the formatting was successful; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Char@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Char.System#Numerics#IAdditionOperators{System#Char@System#Char@System#Char}#op_Addition(System.Char,System.Char)">
       <summary>Adds two values together to compute their sum.</summary>
@@ -30402,7 +30410,6 @@ The view object must implement any interfaces the development environment requir
     <member name="F:System.ConsoleKey.NoName">
       <summary>A constant reserved for future use.</summary>
     </member>
-    <member name="F:System.ConsoleKey.None" />
     <member name="F:System.ConsoleKey.NumPad0">
       <summary>The 0 key on the numeric keypad.</summary>
     </member>
@@ -30643,7 +30650,6 @@ The view object must implement any interfaces the development environment requir
     <member name="F:System.ConsoleModifiers.Control">
       <summary>The left or right CTRL modifier key.</summary>
     </member>
-    <member name="F:System.ConsoleModifiers.None" />
     <member name="F:System.ConsoleModifiers.Shift">
       <summary>The left or right SHIFT modifier key.</summary>
     </member>
@@ -42483,7 +42489,6 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
       <summary>
         <see cref="T:System.Object" />. A special data type that can contain numeric, string, binary, or date data as well as the SQL Server values Empty and Null, which is assumed if no other type is declared.</summary>
     </member>
-    <member name="F:System.Data.SqlDbType.Vector" />
     <member name="F:System.Data.SqlDbType.Xml">
       <summary>An XML value. Obtain the XML as a string using the <see cref="M:System.Data.SqlClient.SqlDataReader.GetValue(System.Int32)" /> method or <see cref="P:System.Data.SqlTypes.SqlXml.Value" /> property, or as an <see cref="T:System.Xml.XmlReader" /> by calling the <see cref="M:System.Data.SqlTypes.SqlXml.CreateReader" /> method.</summary>
     </member>
@@ -54094,7 +54099,6 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
       <summary>Gets or sets the preferred encoding for standard output.</summary>
       <returns>An object that represents the preferred encoding for standard output. The default is <see langword="null" />.</returns>
     </member>
-    <member name="P:System.Diagnostics.ProcessStartInfo.UseCredentialsForNetworkingOnly" />
     <member name="P:System.Diagnostics.ProcessStartInfo.UserName">
       <summary>Gets or sets the user name to use when starting the process. If you use the UPN format, <code>user@DNS_domain_name</code>, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</summary>
       <returns>The user name to use when starting the process.</returns>
@@ -65163,7 +65167,6 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
     <member name="F:System.Globalization.CompareOptions.None">
       <summary>Indicates the default option settings for string comparisons.</summary>
     </member>
-    <member name="F:System.Globalization.CompareOptions.NumericOrdering" />
     <member name="F:System.Globalization.CompareOptions.Ordinal">
       <summary>Indicates that the string comparison uses the Unicode UTF-16 encoded values of the strings, comparing them code unit by code unit. This results in a fast, culture-insensitive comparison where strings are ordered based only on their binary values. This option can't be combined with other <see cref="T:System.Globalization.CompareOptions" /> values and must be used alone.</summary>
     </member>
@@ -69680,6 +69683,13 @@ On .NET Framework 4 and later versions and .NET Core running on Windows, it incl
       <returns>
         <see langword="true" /> if <paramref name="left" /> is less than or equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte})">
+      <param name="utf8Text" />
+    </member>
     <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
       <summary>Parses a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
@@ -69786,6 +69796,15 @@ After trimming, the length of the read-only character span is 0.</exception>
       <param name="format">A read-only span containing the character representing one of the following specifiers that indicates the exact format to use when interpreting the current GUID instance: "N", "D", "B", "P", or "X".</param>
       <returns>
         <see langword="true" /> if the formatting operation was successful; <see langword="false" /> otherwise.</returns>
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.Guid@)">
+      <param name="utf8Text" />
+      <param name="result" />
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Guid@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Char},System.Guid@)">
       <summary>Converts the specified read-only span of characters containing the representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure.</summary>
@@ -75518,8 +75537,6 @@ An encoding other than UTF-8 is specified for the <paramref name="entryNameEncod
       <param name="disposing">
         <see langword="true" /> to finish writing the archive and release unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
     </member>
-    <member name="M:System.IO.Compression.ZipArchive.DisposeAsync" />
-    <member name="M:System.IO.Compression.ZipArchive.DisposeAsyncCore" />
     <member name="M:System.IO.Compression.ZipArchive.GetEntry(System.String)">
       <summary>Retrieves a wrapper for the specified entry in the zip archive.</summary>
       <param name="entryName">A path, relative to the root of the archive, that identifies the entry to retrieve.</param>
@@ -80262,7 +80279,6 @@ There are too many levels of symbolic links.</exception>
     <member name="F:System.IO.FileAttributes.IntegrityStream">
       <summary>The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.</summary>
     </member>
-    <member name="F:System.IO.FileAttributes.None" />
     <member name="F:System.IO.FileAttributes.Normal">
       <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone. <see langword="Normal" /> is supported on Windows, Linux, and macOS.</summary>
     </member>
@@ -84862,7 +84878,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="F:System.IO.Pipes.PipeOptions.CurrentUserOnly">
       <summary>When used to create a <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> instance, indicates that the pipe can only be connected to a client created by the same user. When used to create a <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> instance, indicates that the pipe can only connect to a server created by the same user. On Windows, it verifies both the user account and elevation level.</summary>
     </member>
-    <member name="F:System.IO.Pipes.PipeOptions.FirstPipeInstance" />
     <member name="F:System.IO.Pipes.PipeOptions.None">
       <summary>Indicates that there are no additional parameters.</summary>
     </member>
@@ -89104,6 +89119,11 @@ The range specified by the combination of <paramref name="offset" /> and <paramr
         <paramref name="source" /> is <see langword="null" />.</exception>
       <returns>An enumerable that incorporates each element index into a tuple.</returns>
     </member>
+    <member name="M:System.Linq.Enumerable.InfiniteSequence``1(``0,``0)">
+      <param name="start" />
+      <param name="step" />
+      <typeparam name="T" />
+    </member>
     <member name="M:System.Linq.Enumerable.Intersect``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Produces the set intersection of two sequences by using the specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</summary>
       <param name="first">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose distinct elements that also appear in <paramref name="second" /> will be returned.</param>
@@ -89966,6 +89986,12 @@ The range specified by the combination of <paramref name="offset" /> and <paramr
       <exception cref="T:System.ArgumentNullException">
         <paramref name="source" /> or <paramref name="collectionSelector" /> or <paramref name="resultSelector" /> is <see langword="null" />.</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements are the result of invoking the one-to-many transform function <paramref name="collectionSelector" /> on each element of <paramref name="source" /> and then mapping each of those sequence elements and their corresponding source element to a result element.</returns>
+    </member>
+    <member name="M:System.Linq.Enumerable.Sequence``1(``0,``0,``0)">
+      <param name="start" />
+      <param name="endInclusive" />
+      <param name="step" />
+      <typeparam name="T" />
     </member>
     <member name="M:System.Linq.Enumerable.SequenceEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Determines whether two sequences are equal by comparing their elements by using a specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" />.</summary>
@@ -117073,6 +117099,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
       <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read. When there is no more data to be read, returns 0.</returns>
     </member>
+    <member name="M:System.Net.Security.SslStream.Read(System.Span{System.Byte})">
+      <param name="buffer" />
+    </member>
     <member name="M:System.Net.Security.SslStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
       <summary>Asynchronously reads data from this stream and stores it in the specified range of a byte array.</summary>
       <param name="buffer">The buffer that receives the bytes read from this stream.</param>
@@ -117164,6 +117193,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
     </member>
+    <member name="M:System.Net.Security.SslStream.Write(System.ReadOnlySpan{System.Byte})">
+      <param name="buffer" />
+    </member>
     <member name="M:System.Net.Security.SslStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
       <summary>Asynchronously writes data to the underlying stream from the specified range of a byte array.</summary>
       <param name="buffer">The data to write to the underlying stream.</param>
@@ -117199,6 +117231,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous write operation.</returns>
+    </member>
+    <member name="M:System.Net.Security.SslStream.WriteByte(System.Byte)">
+      <param name="value" />
     </member>
     <member name="P:System.Net.Security.SslStream.CanRead">
       <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the underlying stream is readable.</summary>
@@ -128821,9 +128856,6 @@ This API is not CLS-compliant.</summary>
       <summary>Gets or sets the translation component of this matrix.</summary>
       <returns>The translation component of the current instance.</returns>
     </member>
-    <member name="P:System.Numerics.Matrix3x2.X" />
-    <member name="P:System.Numerics.Matrix3x2.Y" />
-    <member name="P:System.Numerics.Matrix3x2.Z" />
     <member name="T:System.Numerics.Matrix4x4">
       <summary>Represents a 4x4 matrix.</summary>
     </member>
@@ -129464,10 +129496,6 @@ This API is not CLS-compliant.</summary>
       <summary>Gets or sets the translation component of this matrix.</summary>
       <returns>The translation component of the current instance.</returns>
     </member>
-    <member name="P:System.Numerics.Matrix4x4.W" />
-    <member name="P:System.Numerics.Matrix4x4.X" />
-    <member name="P:System.Numerics.Matrix4x4.Y" />
-    <member name="P:System.Numerics.Matrix4x4.Z" />
     <member name="T:System.Numerics.Plane">
       <summary>Represents a plane in three-dimensional space.</summary>
     </member>
@@ -132392,7 +132420,6 @@ This API is not CLS-compliant.</summary>
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Numerics.Vector2.AllBitsSet" />
     <member name="P:System.Numerics.Vector2.E">
       <summary>Gets a vector whose elements are equal to <see cref="P:System.Single.E" />.</summary>
       <returns>A vector whose elements are equal to <see cref="P:System.Single.E" /> (that is, it returns the vector <code data-dev-comment-type="c">Create(float.E)</code>).</returns>
@@ -133118,7 +133145,6 @@ This API is not CLS-compliant.</summary>
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Numerics.Vector3.AllBitsSet" />
     <member name="P:System.Numerics.Vector3.E">
       <summary>Gets a vector whose elements are equal to <xref data-throw-if-not-resolved="true" uid="System.Single.E" />.</summary>
       <returns>A vector whose elements are equal to <see cref="P:System.Single.E" /> (that is, it returns the vector <code data-dev-comment-type="c">Create(float.E)</code>).</returns>
@@ -133877,7 +133903,6 @@ This API is not CLS-compliant.</summary>
       <param name="left" />
       <param name="right" />
     </member>
-    <member name="P:System.Numerics.Vector4.AllBitsSet" />
     <member name="P:System.Numerics.Vector4.E">
       <summary>Gets a vector whose elements are equal to <see cref="F:System.Single.E" />.</summary>
       <returns>A vector whose elements are equal to <see cref="F:System.Single.E" /> (that is, it returns the vector <c>Create(float.E)</c>).</returns>
@@ -135065,7 +135090,6 @@ This method is intended to support .NET compilers and is not intended to be call
       <exception cref="T:System.BadImageFormatException">A file was not a valid assembly.</exception>
       <returns>An array of streams that contain the files.</returns>
     </member>
-    <member name="M:System.Reflection.Assembly.GetForwardedTypes" />
     <member name="M:System.Reflection.Assembly.GetHashCode">
       <summary>Returns the hash code for this instance.</summary>
       <returns>A 32-bit signed integer hash code.</returns>
@@ -136895,7 +136919,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="T:System.Reflection.DispatchProxy">
       <summary>Provides a mechanism for instantiating proxy objects and handling their method dispatch.</summary>
     </member>
-    <member name="M:System.Reflection.DispatchProxy.#ctor" />
     <member name="M:System.Reflection.DispatchProxy.Create(System.Type,System.Type)">
       <summary>Creates an object instance that derives from class <paramref name="proxyType" /> and implements interface <paramref name="interfaceType" />.</summary>
       <param name="interfaceType" />
@@ -143064,8 +143087,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the type is security-transparent; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsSZArray" />
-    <member name="P:System.Reflection.Emit.TypeBuilder.IsTypeDefinition" />
     <member name="P:System.Reflection.Emit.TypeBuilder.MetadataToken">
       <summary>Gets a token that identifies the current dynamic module in metadata.</summary>
       <returns>An integer token that identifies the current module in metadata.</returns>
@@ -144218,7 +144239,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the visibility of this method or constructor is exactly described by <see cref="F:System.Reflection.MethodAttributes.Assembly" />; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
     <member name="P:System.Reflection.MethodBase.IsConstructor">
       <summary>Gets a value indicating whether the method is a constructor.</summary>
       <returns>
@@ -144347,7 +144367,6 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="F:System.Reflection.MethodImplAttributes.AggressiveOptimization">
       <summary>Specifies that the method should be optimized whenever possible.</summary>
     </member>
-    <member name="F:System.Reflection.MethodImplAttributes.Async" />
     <member name="F:System.Reflection.MethodImplAttributes.CodeTypeMask">
       <summary>Specifies flags about code type.</summary>
     </member>
@@ -146186,7 +146205,6 @@ The invoked method is not supported in the base class. Derived classes must prov
       <summary>Gets the GUID (globally unique identifier) of the implemented type.</summary>
       <returns>A GUID.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsByRefLike" />
     <member name="P:System.Reflection.TypeDelegator.IsCollectible">
       <summary>Gets the <see cref="P:System.Reflection.MemberInfo.IsCollectible" /> value for this object's <see cref="F:System.Reflection.TypeDelegator.typeImpl" />, which indicates whether this object, which is a <see cref="T:System.Reflection.MemberInfo" /> implementation, is part of an assembly held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
       <returns>
@@ -146202,16 +146220,11 @@ The invoked method is not supported in the base class. Derived classes must prov
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is a function pointer; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsGenericMethodParameter" />
-    <member name="P:System.Reflection.TypeDelegator.IsGenericTypeParameter" />
-    <member name="P:System.Reflection.TypeDelegator.IsSZArray" />
-    <member name="P:System.Reflection.TypeDelegator.IsTypeDefinition" />
     <member name="P:System.Reflection.TypeDelegator.IsUnmanagedFunctionPointer">
       <summary>Gets a value that indicates whether the current <see cref="T:System.Type" /> is an unmanaged function pointer.</summary>
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is an unmanaged function pointer; otherwise, <see langword="false" />.</returns>
     </member>
-    <member name="P:System.Reflection.TypeDelegator.IsVariableBoundArray" />
     <member name="P:System.Reflection.TypeDelegator.MetadataToken">
       <summary>Gets a value that identifies this entity in metadata.</summary>
       <returns>A value which, in combination with the module, uniquely identifies this entity in metadata.</returns>
@@ -148052,7 +148065,6 @@ Note: In the .NET for Windows Store apps or the Portable Class Library, catch th
         <para>It's rarely appropriate to use this attribute. Methods that apply this attribute bypass the first tier of tiered compilation and therefore don't benefit from optimizations that rely on tiered compilation. Those optimizations include dynamic PGO and optimizations based on initialized classes. Use of this attribute might also increase memory use. Always measure performance to ensure it's helpful to apply this attribute.</para>
       </summary>
     </member>
-    <member name="F:System.Runtime.CompilerServices.MethodImplOptions.Async" />
     <member name="F:System.Runtime.CompilerServices.MethodImplOptions.ForwardRef">
       <summary>The method is declared, but its implementation is provided elsewhere.</summary>
     </member>
@@ -155696,7 +155708,6 @@ The <see langword="InnerException" /> property may contain more information abou
       <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type.</summary>
       <param name="type">The type of the instances that is serialized or deserialized.</param>
     </member>
-    <member name="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.GetSerializationSurrogateProvider" />
     <member name="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.IsStartObject(System.Xml.XmlDictionaryReader)">
       <summary>Gets a value that specifies whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned over an XML element that represents an object the serializer can deserialize from.</summary>
       <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream mapped from JSON.</param>
@@ -158681,6 +158692,10 @@ The <see langword="InnerException" /> property may contain more information abou
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class using an enumerated collection of <see cref="T:System.Security.Claims.Claim" /> objects.</summary>
       <param name="claims">The claims with which to populate the claims identity.</param>
     </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader,System.StringComparison)">
+      <param name="reader" />
+      <param name="stringComparison" />
+    </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader)">
       <summary>Initializes an instance of <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
       <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.ClaimsIdentity" />.</param>
@@ -158700,11 +158715,23 @@ The <see langword="InnerException" /> property may contain more information abou
       <exception cref="T:System.ArgumentNullException">
         <paramref name="info" /> is <see langword="null" />.</exception>
     </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity,System.StringComparison)">
+      <param name="other" />
+      <param name="stringComparison" />
+    </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from an existing <see cref="T:System.Security.Claims.ClaimsIdentity" /> instance.</summary>
       <param name="other">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> to copy.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="other" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String,System.StringComparison)">
+      <param name="identity" />
+      <param name="claims" />
+      <param name="authenticationType" />
+      <param name="nameType" />
+      <param name="roleType" />
+      <param name="stringComparison" />
     </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from the specified <see cref="T:System.Security.Principal.IIdentity" /> using the specified claims, authentication type, name claim type, and role claim type.</summary>
@@ -169619,14 +169646,11 @@ This object was created with a constructor which did not accept a signing key.</
       <exception cref="T:System.Security.Cryptography.CryptographicException">The key contents are corrupt or could not be read successfully.</exception>
       <returns>The public key, or <see langword="null" /> if the key is not an ECDsa key.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetMLDsaPublicKey" />
-    <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetMLKemPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetRSAPublicKey">
       <summary>Gets the <see cref="T:System.Security.Cryptography.RSA" /> public key, or <see langword="null" /> if the key is not an RSA key.</summary>
       <exception cref="T:System.Security.Cryptography.CryptographicException">The key contents are corrupt or could not be read successfully.</exception>
       <returns>The public key, or <see langword="null" /> if the key is not an RSA key.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetSlhDsaPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.TryExportSubjectPublicKeyInfo(System.Span{System.Byte},System.Int32@)">
       <summary>Attempts to export the current key in the X.509 SubjectPublicKeyInfo format into a provided buffer.</summary>
       <param name="destination">The byte span to receive the X.509 SubjectPublicKeyInfo data.</param>
@@ -170723,10 +170747,6 @@ The certificate uses an unknown public key algorithm.</exception>
       <exception cref="T:System.Security.Cryptography.CryptographicException">The handle is invalid.</exception>
       <returns>The public key, or <see langword="null" /> if this certificate does not have an ECDiffieHellman public key.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLDsaPrivateKey" />
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLDsaPublicKey" />
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLKemPrivateKey" />
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLKemPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetNameInfo(System.Security.Cryptography.X509Certificates.X509NameType,System.Boolean)">
       <summary>Gets the subject and issuer names from a certificate.</summary>
       <param name="nameType">The <see cref="T:System.Security.Cryptography.X509Certificates.X509NameType" /> value for the subject.</param>
@@ -170734,8 +170754,6 @@ The certificate uses an unknown public key algorithm.</exception>
         <see langword="true" /> to include the issuer name; otherwise, <see langword="false" />.</param>
       <returns>The name of the certificate.</returns>
     </member>
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetSlhDsaPrivateKey" />
-    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetSlhDsaPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)">
       <summary>Populates an <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object using data from a byte array, a password, and a key storage flag.</summary>
       <param name="rawData">A byte array that contains data from an X.509 certificate.</param>
@@ -191697,7 +191715,6 @@ The <paramref name="tasks" /> array is empty.</exception>
       <typeparam name="T">The type of field to read. This must be a reference type, not a value type.</typeparam>
       <returns>The reference to <paramref name="T" /> that was read. This reference is the latest written by any processor in the computer, regardless of the number of processors or the state of processor cache.</returns>
     </member>
-    <member name="M:System.Threading.Volatile.ReadBarrier" />
     <member name="M:System.Threading.Volatile.Write(System.Boolean@,System.Boolean)">
       <summary>Writes the specified value to the specified field. On systems that require it, inserts a memory barrier that prevents the processor from reordering memory operations as follows: If a read or write appears before this method in the code, the processor cannot move it after this method.</summary>
       <param name="location">The field where the value is written.</param>
@@ -191769,7 +191786,6 @@ The <paramref name="tasks" /> array is empty.</exception>
       <param name="value">The object reference to write.</param>
       <typeparam name="T">The type of field to write. This must be a reference type, not a value type.</typeparam>
     </member>
-    <member name="M:System.Threading.Volatile.WriteBarrier" />
     <member name="T:System.Threading.WaitCallback">
       <summary>Represents a callback method to be executed by a thread pool thread.</summary>
       <param name="state">An object containing information to be used by the callback method.</param>

@@ -1269,7 +1269,6 @@
       <exception cref="T:System.PlatformNotSupportedException">This method does not work on the current platform.</exception>
       <exception cref="T:System.DirectoryServices.Protocols.LdapException">An LDAP error occurred.</exception>
     </member>
-    <member name="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartNewTlsSessionContext" />
     <member name="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartTransportLayerSecurity(System.DirectoryServices.Protocols.DirectoryControlCollection)">
       <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartTransportLayerSecurity(System.DirectoryServices.Protocols.DirectoryControlCollection)" /> method starts transport layer security encryption.</summary>
       <param name="controls">A <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object that contains the controls to use.</param>
@@ -1403,7 +1402,6 @@
       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
       <returns>This property is <see langword="true" /> if TCP keep-alive is enabled or <see langword="false" /> if it is not.</returns>
     </member>
-    <member name="P:System.DirectoryServices.Protocols.LdapSessionOptions.TrustedCertificatesDirectory" />
     <member name="P:System.DirectoryServices.Protocols.LdapSessionOptions.VerifyServerCertificate">
       <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.VerifyServerCertificate" /> property contains a <see cref="T:System.DirectoryServices.Protocols.VerifyServerCertificateCallback" /> object that specifies the default callback method to use to verify server certificates when an SSL connection is established.</summary>
       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
