@@ -260,6 +260,7 @@
       <summary>
             Options for the fake logger.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.Testing.FakeLogCollectorOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.Testing.FakeLogCollectorOptions.CollectRecordsForDisabledLogLevels">
       <summary>
             Gets or sets a value indicating whether to collect records that are logged when the associated log level is currently disabled.</summary>

@@ -4,6 +4,7 @@
     <name>UIAutomationTypes</name>
   </assembly>
   <members>
+    <member name="T:System.Windows.Automation.ActiveTextPositionChangedEventArgs" />
     <member name="M:System.Windows.Automation.ActiveTextPositionChangedEventArgs.#ctor(System.Windows.Automation.Provider.ITextRangeProvider)">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ActiveTextPositionChangedEventArgs" /> class.</summary>
       <param name="textRangeProvider" />
@@ -48,6 +49,7 @@
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.AccessKeyProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AccessKey" /> property.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationElementIdentifiers.ActiveTextPositionChangedEvent" />
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent">
       <summary>Identifies an event raised during asynchronous content-loading.</summary>
     </member>
@@ -84,6 +86,7 @@
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.HasKeyboardFocusProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.HasKeyboardFocus" /> property.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationElementIdentifiers.HeadingLevelProperty" />
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.HelpTextProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText" /> property.</summary>
     </member>
@@ -93,6 +96,7 @@
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement" /> property.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationElementIdentifiers.IsDialogProperty" />
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.IsDockPatternAvailableProperty">
       <summary>Identifies the property that indicates whether <see cref="T:System.Windows.Automation.DockPattern" /> is available on this UI Automation element.</summary>
     </member>
@@ -204,6 +208,7 @@
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.NativeWindowHandleProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.NativeWindowHandle" /> property.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationElementIdentifiers.NotificationEvent" />
     <member name="F:System.Windows.Automation.AutomationElementIdentifiers.NotSupported">
       <summary>Indicates that a property is not supported.</summary>
     </member>
@@ -298,6 +303,7 @@
     <member name="F:System.Windows.Automation.AutomationNotificationKind.ItemRemoved">
       <summary>An item was removed that should be presented to the user.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationNotificationKind.Other" />
     <member name="T:System.Windows.Automation.AutomationNotificationProcessing">
       <summary>Specifies the order in which to process a notification when calling <see cref="M:System.Windows.Automation.Peers.AutomationPeer.RaiseNotificationEvent(System.Windows.Automation.AutomationNotificationKind,System.Windows.Automation.AutomationNotificationProcessing,System.String,System.String)" />.</summary>
     </member>
@@ -697,6 +703,7 @@
       <param name="info">Data needed to serialize or deserialize the object.</param>
       <param name="context">The destination of the serialized stream.</param>
     </member>
+    <member name="T:System.Windows.Automation.NotificationEventArgs" />
     <member name="M:System.Windows.Automation.NotificationEventArgs.#ctor(System.Windows.Automation.AutomationNotificationKind,System.Windows.Automation.AutomationNotificationProcessing,System.String,System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.NotificationEventArgs" /> class with the specified arguments.</summary>
       <param name="notificationKind">Specifies the type of the notification.</param>

@@ -10,6 +10,7 @@
             it to a reference response using the BLEU (Bilingual Evaluation Understudy) algorithm. It is often used
             to evaluate the quality of machine translation or text generation tasks.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.NLP.BLEUEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.NLP.BLEUEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -62,6 +63,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             it to a reference response using the F1 scoring algorithm. F1 score is the ratio of the number of shared
             words between the generated response and the reference response.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.NLP.F1Evaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.NLP.F1Evaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -108,6 +110,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             it to a reference response using the GLEU (Google-BLEU) algorithm. The GLEU evaluator measures the similarity
             between the generated response and one or more reference responses using n-gram overlap.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.NLP.GLEUEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.NLP.GLEUEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>

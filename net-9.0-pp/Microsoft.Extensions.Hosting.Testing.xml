@@ -120,6 +120,7 @@
       <summary>
             Options to configure <see cref="T:Microsoft.Extensions.Hosting.Testing.FakeHost" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Hosting.Testing.FakeHostOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Hosting.Testing.FakeHostOptions.FakeLogging">
       <summary>
             Gets or sets a value indicating whether fake logging is configured automatically.</summary>

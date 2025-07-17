@@ -931,6 +931,7 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
       <summary>Gets or sets the preferred encoding for standard output.</summary>
       <returns>An object that represents the preferred encoding for standard output. The default is <see langword="null" />.</returns>
     </member>
+    <member name="P:System.Diagnostics.ProcessStartInfo.UseCredentialsForNetworkingOnly" />
     <member name="P:System.Diagnostics.ProcessStartInfo.UserName">
       <summary>Gets or sets the user name to use when starting the process. If you use the UPN format, <code>user@DNS_domain_name</code>, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</summary>
       <returns>The user name to use when starting the process.</returns>

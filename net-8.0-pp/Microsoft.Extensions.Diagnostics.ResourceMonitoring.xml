@@ -99,6 +99,8 @@
       <summary>
             Options to control resource monitoring behavior.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.#ctor" />
+    <member name="P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.CalculateCpuUsageWithoutHostDelta" />
     <member name="P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.CollectionWindow">
       <summary>
             Gets or sets the maximum time window for which utilization can be requested.</summary>
@@ -111,6 +113,7 @@
       <returns>
             The default value is 5 seconds.</returns>
     </member>
+    <member name="P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.EnableSystemDiskIoMetrics" />
     <member name="P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.MemoryConsumptionRefreshInterval">
       <summary>
             Gets or sets the default interval used for refreshing values reported by <c>"dotnet.process.memory.virtual.utilization"</c> metrics.</summary>
@@ -133,6 +136,8 @@
       <summary>
             Gets or sets the list of source IPv4 addresses to track the connections for in telemetry.</summary>
     </member>
+    <member name="P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.UseDeltaNrPeriodsForCpuCalculation" />
+    <member name="P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.UseZeroToOneRangeForMetrics" />
     <member name="T:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceUtilization">
       <summary>
             Captures resource usage at a given point in time.</summary>

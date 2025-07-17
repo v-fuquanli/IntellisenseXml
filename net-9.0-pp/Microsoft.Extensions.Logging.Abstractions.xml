@@ -8,6 +8,7 @@
       <summary>
             Represents a buffered log record to be written in batch to an <see cref="T:Microsoft.Extensions.Logging.Abstractions.IBufferedLogger" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.ActivitySpanId">
       <summary>
             Gets an activity span ID for this record, representing the state of the thread that created the record.</summary>
@@ -141,6 +142,7 @@
             Returns an instance of <see cref="T:Microsoft.Extensions.Logging.Abstractions.NullLogger`1" />.</summary>
       <returns>An instance of <see cref="T:Microsoft.Extensions.Logging.Abstractions.NullLogger`1" />.</returns>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.Abstractions.NullLogger`1.#ctor" />
     <member name="M:Microsoft.Extensions.Logging.Abstractions.NullLogger`1.BeginScope``1(``0)">
       <summary>Begins a logical operation scope.</summary>
       <param name="state">The identifier for the scope.</param>
@@ -363,6 +365,7 @@
       <summary>
             Options for <see cref="M:Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)" /> and its overloads.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.LogDefineOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.LogDefineOptions.SkipEnabledCheck">
       <summary>
             Gets or sets the flag to skip IsEnabled check for the logging method.</summary>

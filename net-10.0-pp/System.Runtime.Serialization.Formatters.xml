@@ -707,5 +707,6 @@ The <see langword="InnerException" /> property may contain more information abou
       <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> for the current surrogate.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
     </member>
+    <member name="T:System.Runtime.Serialization.TypeLoadExceptionHolder" />
   </members>
 </doc>

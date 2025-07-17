@@ -105,6 +105,7 @@
       <summary>
             Generates an implementation of <see cref="T:Microsoft.Extensions.Options.Contextual.IOptionsContext" /> for the annotated type.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Options.Contextual.OptionsContextAttribute.#ctor" />
     <member name="T:Microsoft.Extensions.Options.Contextual.Provider.IConfigureContextualOptions`1">
       <summary>
             Provides functionality to configure the <typeparamref name="TOptions" /> type.</summary>

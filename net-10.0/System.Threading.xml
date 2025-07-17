@@ -1619,6 +1619,9 @@ There was some other error. The HResult property may provide more information.</
       <param name="options" />
       <param name="result" />
     </member>
+    <member name="T:System.Threading.NamedWaitHandleOptions" />
+    <member name="P:System.Threading.NamedWaitHandleOptions.CurrentSessionOnly" />
+    <member name="P:System.Threading.NamedWaitHandleOptions.CurrentUserOnly" />
     <member name="T:System.Threading.ReaderWriterLock">
       <summary>Defines a lock that supports single writers and multiple readers.</summary>
     </member>
@@ -2640,6 +2643,7 @@ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <para
       <typeparam name="T">The type of field to read. This must be a reference type, not a value type.</typeparam>
       <returns>The reference to <paramref name="T" /> that was read. This reference is the latest written by any processor in the computer, regardless of the number of processors or the state of processor cache.</returns>
     </member>
+    <member name="M:System.Threading.Volatile.ReadBarrier" />
     <member name="M:System.Threading.Volatile.Write(System.Boolean@,System.Boolean)">
       <summary>Writes the specified value to the specified field. On systems that require it, inserts a memory barrier that prevents the processor from reordering memory operations as follows: If a read or write appears before this method in the code, the processor cannot move it after this method.</summary>
       <param name="location">The field where the value is written.</param>
@@ -2711,6 +2715,7 @@ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <para
       <param name="value">The object reference to write.</param>
       <typeparam name="T">The type of field to write. This must be a reference type, not a value type.</typeparam>
     </member>
+    <member name="M:System.Threading.Volatile.WriteBarrier" />
     <member name="T:System.Threading.WaitHandleCannotBeOpenedException">
       <summary>The exception that is thrown when an attempt is made to open a system mutex, semaphore, or event wait handle that does not exist.</summary>
     </member>

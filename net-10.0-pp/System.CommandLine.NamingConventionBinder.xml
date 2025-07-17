@@ -86,6 +86,7 @@
       <returns>
         <see langword="true" /> if a matching value was found; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="T:System.CommandLine.NamingConventionBinder.BindingContextExtensions" />
     <member name="M:System.CommandLine.NamingConventionBinder.BindingContextExtensions.AddModelBinder(System.CommandLine.Binding.BindingContext,System.CommandLine.NamingConventionBinder.ModelBinder)">
       <param name="bindingContext" />
       <param name="binder" />
@@ -97,9 +98,12 @@
       <param name="bindingContext" />
       <param name="valueDescriptor" />
     </member>
+    <member name="T:System.CommandLine.NamingConventionBinder.BindingHandler" />
+    <member name="M:System.CommandLine.NamingConventionBinder.BindingHandler.#ctor" />
     <member name="M:System.CommandLine.NamingConventionBinder.BindingHandler.GetBindingContext(System.CommandLine.ParseResult)">
       <param name="parseResult" />
     </member>
+    <member name="T:System.CommandLine.NamingConventionBinder.CommandHandler" />
     <member name="M:System.CommandLine.NamingConventionBinder.CommandHandler.Create(System.Delegate)">
       <param name="delegate" />
     </member>
@@ -843,6 +847,12 @@
       <typeparam name="T8" />
       <typeparam name="T9" />
     </member>
+    <member name="T:System.CommandLine.NamingConventionBinder.ConstructorDescriptor" />
+    <member name="M:System.CommandLine.NamingConventionBinder.ConstructorDescriptor.ToString" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ConstructorDescriptor.ParameterDescriptors" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ConstructorDescriptor.Parent" />
+    <member name="T:System.CommandLine.NamingConventionBinder.HandlerDescriptor" />
+    <member name="M:System.CommandLine.NamingConventionBinder.HandlerDescriptor.#ctor" />
     <member name="M:System.CommandLine.NamingConventionBinder.HandlerDescriptor.FromDelegate(System.Delegate)">
       <param name="delegate" />
     </member>
@@ -850,6 +860,14 @@
       <param name="methodInfo" />
       <param name="target" />
     </member>
+    <member name="M:System.CommandLine.NamingConventionBinder.HandlerDescriptor.GetCommandHandler" />
+    <member name="M:System.CommandLine.NamingConventionBinder.HandlerDescriptor.ToString" />
+    <member name="P:System.CommandLine.NamingConventionBinder.HandlerDescriptor.ParameterDescriptors" />
+    <member name="P:System.CommandLine.NamingConventionBinder.HandlerDescriptor.Parent" />
+    <member name="T:System.CommandLine.NamingConventionBinder.IMethodDescriptor" />
+    <member name="P:System.CommandLine.NamingConventionBinder.IMethodDescriptor.ParameterDescriptors" />
+    <member name="P:System.CommandLine.NamingConventionBinder.IMethodDescriptor.Parent" />
+    <member name="T:System.CommandLine.NamingConventionBinder.ModelBinder" />
     <member name="M:System.CommandLine.NamingConventionBinder.ModelBinder.#ctor(System.Type)">
       <param name="modelType" />
     </member>
@@ -865,9 +883,13 @@
       <param name="bindingContext" />
       <typeparam name="T" />
     </member>
+    <member name="P:System.CommandLine.NamingConventionBinder.ModelBinder.EnforceExplicitBinding" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ModelBinder.ModelDescriptor" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ModelBinder.ValueDescriptor" />
     <member name="T:System.CommandLine.NamingConventionBinder.ModelBinder`1">
       <typeparam name="TModel" />
     </member>
+    <member name="M:System.CommandLine.NamingConventionBinder.ModelBinder`1.#ctor" />
     <member name="M:System.CommandLine.NamingConventionBinder.ModelBinder`1.BindMemberFromValue``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.CommandLine.Symbol)">
       <param name="property" />
       <param name="symbol" />
@@ -878,6 +900,7 @@
       <param name="getValue" />
       <typeparam name="TValue" />
     </member>
+    <member name="T:System.CommandLine.NamingConventionBinder.ModelBindingCommandHandler" />
     <member name="M:System.CommandLine.NamingConventionBinder.ModelBindingCommandHandler.BindParameter(System.Reflection.ParameterInfo,System.CommandLine.Argument)">
       <param name="param" />
       <param name="argument" />
@@ -890,6 +913,7 @@
       <param name="parseResult" />
       <param name="cancellationToken" />
     </member>
+    <member name="T:System.CommandLine.NamingConventionBinder.ModelDescriptor" />
     <member name="M:System.CommandLine.NamingConventionBinder.ModelDescriptor.#ctor(System.Type)">
       <param name="modelType" />
     </member>
@@ -899,9 +923,28 @@
     <member name="M:System.CommandLine.NamingConventionBinder.ModelDescriptor.FromType``1">
       <typeparam name="T" />
     </member>
+    <member name="M:System.CommandLine.NamingConventionBinder.ModelDescriptor.ToString" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ModelDescriptor.ConstructorDescriptors" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ModelDescriptor.ModelType" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ModelDescriptor.PropertyDescriptors" />
+    <member name="T:System.CommandLine.NamingConventionBinder.ParameterDescriptor" />
+    <member name="M:System.CommandLine.NamingConventionBinder.ParameterDescriptor.GetDefaultValue" />
+    <member name="M:System.CommandLine.NamingConventionBinder.ParameterDescriptor.ToString" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ParameterDescriptor.AllowsNull" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ParameterDescriptor.HasDefaultValue" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ParameterDescriptor.Parent" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ParameterDescriptor.ValueName" />
+    <member name="P:System.CommandLine.NamingConventionBinder.ParameterDescriptor.ValueType" />
+    <member name="T:System.CommandLine.NamingConventionBinder.PropertyDescriptor" />
+    <member name="M:System.CommandLine.NamingConventionBinder.PropertyDescriptor.GetDefaultValue" />
     <member name="M:System.CommandLine.NamingConventionBinder.PropertyDescriptor.SetValue(System.Object,System.Object)">
       <param name="instance" />
       <param name="value" />
     </member>
+    <member name="M:System.CommandLine.NamingConventionBinder.PropertyDescriptor.ToString" />
+    <member name="P:System.CommandLine.NamingConventionBinder.PropertyDescriptor.HasDefaultValue" />
+    <member name="P:System.CommandLine.NamingConventionBinder.PropertyDescriptor.Parent" />
+    <member name="P:System.CommandLine.NamingConventionBinder.PropertyDescriptor.ValueName" />
+    <member name="P:System.CommandLine.NamingConventionBinder.PropertyDescriptor.ValueType" />
   </members>
 </doc>

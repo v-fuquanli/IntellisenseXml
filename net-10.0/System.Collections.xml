@@ -3119,6 +3119,7 @@
       <returns>
         <see langword="true" /> if there is a minimal element; <see langword="false" /> if the <see cref="T:System.Collections.Generic.PriorityQueue`2" /> is empty.</returns>
     </member>
+    <member name="P:System.Collections.Generic.PriorityQueue`2.Capacity" />
     <member name="P:System.Collections.Generic.PriorityQueue`2.Comparer">
       <summary>Gets the priority comparer used by the <see cref="T:System.Collections.Generic.PriorityQueue`2" />.</summary>
       <returns>The comparer that determines the priority of items in the queue.</returns>

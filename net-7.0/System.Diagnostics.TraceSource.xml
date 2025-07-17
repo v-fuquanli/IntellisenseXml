@@ -112,12 +112,15 @@
     <member name="M:System.Diagnostics.InitializingSwitchEventArgs.#ctor(System.Diagnostics.Switch)">
       <param name="switch" />
     </member>
+    <member name="P:System.Diagnostics.InitializingSwitchEventArgs.Switch" />
     <member name="T:System.Diagnostics.InitializingTraceSourceEventArgs">
       <summary>Provides data for the <see cref="E:System.Diagnostics.TraceSource.Initializing">TraceSource.Initializing</see> event.</summary>
     </member>
     <member name="M:System.Diagnostics.InitializingTraceSourceEventArgs.#ctor(System.Diagnostics.TraceSource)">
       <param name="traceSource" />
     </member>
+    <member name="P:System.Diagnostics.InitializingTraceSourceEventArgs.TraceSource" />
+    <member name="P:System.Diagnostics.InitializingTraceSourceEventArgs.WasInitialized" />
     <member name="T:System.Diagnostics.SourceFilter">
       <summary>Indicates whether a listener should trace a message based on the source of a trace.</summary>
     </member>

@@ -32,6 +32,7 @@
       <summary>
             The default <see cref="T:Microsoft.Extensions.ObjectPool.ObjectPoolProvider" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider.#ctor" />
     <member name="M:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider.Create``1(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy{``0})">
       <summary>Creates an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.ObjectPool.ObjectPool"></xref> with the given <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.ObjectPool.IPooledObjectPolicy`1"></xref>.</summary>
       <param name="policy" />
@@ -46,6 +47,7 @@
             Default implementation for <see cref="T:Microsoft.Extensions.ObjectPool.PooledObjectPolicy`1" />.</summary>
       <typeparam name="T">The type of object which is being pooled.</typeparam>
     </member>
+    <member name="M:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy`1.#ctor" />
     <member name="M:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy`1.Create">
       <summary>Creates a <typeparamref name="T" />.</summary>
       <returns>The <typeparamref name="T" /> that was created.</returns>
@@ -133,6 +135,7 @@
             A pool of objects.</summary>
       <typeparam name="T">The type of objects to pool.</typeparam>
     </member>
+    <member name="M:Microsoft.Extensions.ObjectPool.ObjectPool`1.#ctor" />
     <member name="M:Microsoft.Extensions.ObjectPool.ObjectPool`1.Get">
       <summary>
             Gets an object from the pool if one is available, otherwise creates one.</summary>
@@ -147,6 +150,7 @@
       <summary>
             A provider of <see cref="T:Microsoft.Extensions.ObjectPool.ObjectPool`1" /> instances.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.ObjectPool.ObjectPoolProvider.#ctor" />
     <member name="M:Microsoft.Extensions.ObjectPool.ObjectPoolProvider.Create``1">
       <summary>
             Creates an <see cref="T:Microsoft.Extensions.ObjectPool.ObjectPool" />.</summary>
@@ -182,6 +186,7 @@
             A base type for <see cref="T:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy`1" />.</summary>
       <typeparam name="T">The type of object which is being pooled.</typeparam>
     </member>
+    <member name="M:Microsoft.Extensions.ObjectPool.PooledObjectPolicy`1.#ctor" />
     <member name="M:Microsoft.Extensions.ObjectPool.PooledObjectPolicy`1.Create">
       <summary>Creates a <typeparamref name="T" />.</summary>
       <returns>The <typeparamref name="T" /> that was created.</returns>
@@ -196,6 +201,7 @@
       <summary>
             A policy for pooling <see cref="T:System.Text.StringBuilder" /> instances.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy.#ctor" />
     <member name="M:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy.Create">
       <summary>Creates a <typeparamref name="T" />.</summary>
       <returns>The <typeparamref name="T" /> that was created.</returns>

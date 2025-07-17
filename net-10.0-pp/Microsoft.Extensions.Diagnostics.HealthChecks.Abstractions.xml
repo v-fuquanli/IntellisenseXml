@@ -8,6 +8,7 @@
       <summary>
             Health check context. Provides health check registrations to <see cref="M:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext.Registration">
       <summary>
             Gets or sets the <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration" /> of the currently executing <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck" />.</summary>

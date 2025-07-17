@@ -115,6 +115,7 @@
       <summary>
             Options for a <see cref="T:Microsoft.Extensions.Logging.Console.ConsoleLogger" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors">
       <summary>
             Gets or sets a value that indicates whether colors are disabled.</summary>
@@ -210,6 +211,7 @@
       <summary>
             This type is retained only for compatibility. The recommended alternative is ConsoleLoggerOptions.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings.#ctor" />
     <member name="M:Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings.Reload">
       <summary>This method is retained only for compatibility.</summary>
       <returns>This method is retained only for compatibility.</returns>

@@ -8,6 +8,7 @@
       <summary>
             Application-level metadata model.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AmbientMetadata.ApplicationMetadata.#ctor" />
     <member name="P:Microsoft.Extensions.AmbientMetadata.ApplicationMetadata.ApplicationName">
       <summary>
             Gets or sets the application's name.</summary>

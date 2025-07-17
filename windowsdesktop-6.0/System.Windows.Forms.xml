@@ -3821,6 +3821,7 @@ More than one argument is specified for a field set operation.</exception>
     <member name="M:System.Windows.Forms.Button.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Button" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.Button.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)">
       <summary>Notifies the <see cref="T:System.Windows.Forms.Button" /> whether it is the default button so that it can adjust its appearance accordingly.</summary>
       <param name="value">
@@ -34094,6 +34095,7 @@ The following table shows the default value of this property for different .NET 
     <member name="M:System.Windows.Forms.PictureBox.CancelAsync">
       <summary>Cancels an asynchronous image load.</summary>
     </member>
+    <member name="M:System.Windows.Forms.PictureBox.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.PictureBox.Dispose(System.Boolean)">
       <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.PictureBox" /> and optionally releases the managed resources.</summary>
       <param name="disposing">
@@ -35131,6 +35133,7 @@ The following table shows the default value of this property for different .NET 
       <summary>Gets the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the color to use to create highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</returns>
     </member>
+    <member name="P:System.Windows.Forms.ProfessionalColors.StatusStripBorder" />
     <member name="P:System.Windows.Forms.ProfessionalColors.StatusStripGradientBegin">
       <summary>Gets the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</returns>
@@ -35361,6 +35364,7 @@ The following table shows the default value of this property for different .NET 
       <summary>Gets the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</returns>
     </member>
+    <member name="P:System.Windows.Forms.ProfessionalColorTable.StatusStripBorder" />
     <member name="P:System.Windows.Forms.ProfessionalColorTable.StatusStripGradientBegin">
       <summary>Gets the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</returns>
@@ -36738,6 +36742,7 @@ The following table shows the default value of this property for different .NET 
       <returns>
         <see langword="true" /> if you can paste data from the Clipboard in the specified data format; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Windows.Forms.RichTextBox.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.RichTextBox.CreateRichEditOleCallback">
       <summary>Creates an <see langword="IRichEditOleCallback" />-compatible object for handling rich-edit callback operations.</summary>
       <returns>An object that implements the <see langword="IRichEditOleCallback" /> interface.</returns>
@@ -39211,6 +39216,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
     <member name="M:System.Windows.Forms.Splitter.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Splitter" /> class. <see cref="T:System.Windows.Forms.Splitter" /> has been replaced by <see cref="T:System.Windows.Forms.SplitContainer" />, and is provided only for compatibility with previous versions.</summary>
     </member>
+    <member name="M:System.Windows.Forms.Splitter.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.Splitter.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
       <summary>This method is not relevant to this class.</summary>
       <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
@@ -40193,6 +40199,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
     <member name="M:System.Windows.Forms.TabControl.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TabControl.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TabControl.CreateControlsInstance">
       <summary>This member overrides <see cref="M:System.Windows.Forms.Control.CreateControlsInstance" />.</summary>
       <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
@@ -41404,6 +41411,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class and specifies the text for the tab.</summary>
       <param name="text">The text for the tab.</param>
     </member>
+    <member name="M:System.Windows.Forms.TabPage.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TabPage.CreateControlsInstance">
       <summary>Creates a new instance of the control collection for the control.</summary>
       <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
@@ -42574,6 +42582,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.TextBoxBase.Copy">
       <summary>Copies the current selection in the text box to the Clipboard.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TextBoxBase.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TextBoxBase.CreateHandle">
       <summary>Creates a handle for the control.</summary>
     </member>
@@ -49202,6 +49211,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.TrackBar.BeginInit">
       <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.TrackBar" /> that is used on a form or used by another component. The initialization occurs at run time.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TrackBar.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TrackBar.CreateHandle">
       <summary>Overrides the <see cref="M:System.Windows.Forms.Control.CreateHandle" /> method.</summary>
     </member>

@@ -4,6 +4,7 @@
     <name>System.Json</name>
   </assembly>
   <members>
+    <member name="T:System.Json.JsonArray" />
     <member name="M:System.Json.JsonArray.#ctor(System.Collections.Generic.IEnumerable{System.Json.JsonValue})">
       <param name="items" />
     </member>
@@ -79,6 +80,8 @@
       <param name="index">The zero-based index of the element to get or set.</param>
       <returns>The element at the specified index.</returns>
     </member>
+    <member name="P:System.Json.JsonArray.JsonType" />
+    <member name="T:System.Json.JsonObject" />
     <member name="M:System.Json.JsonObject.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Json.JsonValue}})">
       <param name="items" />
     </member>
@@ -156,6 +159,7 @@
       <param name="key">The key of the element to get or set.</param>
       <returns>The element with the specified key.</returns>
     </member>
+    <member name="P:System.Json.JsonObject.JsonType" />
     <member name="P:System.Json.JsonObject.Keys">
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
@@ -169,6 +173,7 @@
       <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
       <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
     </member>
+    <member name="T:System.Json.JsonPrimitive" />
     <member name="M:System.Json.JsonPrimitive.#ctor(System.Boolean)">
       <param name="value" />
     </member>
@@ -229,6 +234,15 @@
     <member name="M:System.Json.JsonPrimitive.Save(System.IO.Stream)">
       <param name="stream" />
     </member>
+    <member name="P:System.Json.JsonPrimitive.JsonType" />
+    <member name="T:System.Json.JsonType" />
+    <member name="F:System.Json.JsonType.Array" />
+    <member name="F:System.Json.JsonType.Boolean" />
+    <member name="F:System.Json.JsonType.Number" />
+    <member name="F:System.Json.JsonType.Object" />
+    <member name="F:System.Json.JsonType.String" />
+    <member name="T:System.Json.JsonValue" />
+    <member name="M:System.Json.JsonValue.#ctor" />
     <member name="M:System.Json.JsonValue.ContainsKey(System.String)">
       <param name="key" />
     </member>
@@ -365,11 +379,14 @@
       <summary>Returns an enumerator that iterates through a collection.</summary>
       <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
     </member>
+    <member name="M:System.Json.JsonValue.ToString" />
+    <member name="P:System.Json.JsonValue.Count" />
     <member name="P:System.Json.JsonValue.Item(System.Int32)">
       <param name="index" />
     </member>
     <member name="P:System.Json.JsonValue.Item(System.String)">
       <param name="key" />
     </member>
+    <member name="P:System.Json.JsonValue.JsonType" />
   </members>
 </doc>

@@ -3341,6 +3341,7 @@ There is remaining data in the stream.</exception>
       <summary>Provides serialization metadata about a collection type.</summary>
       <typeparam name="TCollection">The collection type.</typeparam>
     </member>
+    <member name="M:System.Text.Json.Serialization.Metadata.JsonCollectionInfoValues`1.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonCollectionInfoValues`1.ElementInfo">
       <summary>A <see cref="T:System.Text.Json.Serialization.Metadata.JsonTypeInfo" /> instance representing the element type.</summary>
     </member>
@@ -3693,6 +3694,7 @@ There is remaining data in the stream.</exception>
       <summary>Provides serialization metadata about an object type with constructors, properties, and fields.</summary>
       <typeparam name="T">The object type to serialize or deserialize.</typeparam>
     </member>
+    <member name="M:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer">
       <summary>Provides a mechanism to initialize metadata for a parameterized constructor of the class or struct to be used when deserializing.</summary>
     </member>
@@ -3714,6 +3716,7 @@ There is remaining data in the stream.</exception>
     <member name="T:System.Text.Json.Serialization.Metadata.JsonParameterInfoValues">
       <summary>Provides information about a constructor parameter required for JSON deserialization.</summary>
     </member>
+    <member name="M:System.Text.Json.Serialization.Metadata.JsonParameterInfoValues.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonParameterInfoValues.DefaultValue">
       <summary>Gets or sets the default value of the parameter.</summary>
     </member>
@@ -3812,6 +3815,7 @@ The current <see cref="P:System.Text.Json.Serialization.Metadata.JsonPropertyInf
       <summary>Provides serialization metadata about a property or field.</summary>
       <typeparam name="T">The type to convert of the <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for the property.</typeparam>
     </member>
+    <member name="M:System.Text.Json.Serialization.Metadata.JsonPropertyInfoValues`1.#ctor" />
     <member name="P:System.Text.Json.Serialization.Metadata.JsonPropertyInfoValues`1.Converter">
       <summary>A <see cref="T:System.Text.Json.Serialization.JsonConverter" /> for the property or field, specified by <see cref="T:System.Text.Json.Serialization.JsonConverterAttribute" />.</summary>
     </member>

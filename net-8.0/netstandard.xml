@@ -5330,6 +5330,7 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
         <paramref name="sizeHint" /> is negative.</exception>
       <returns>A span of at least <paramref name="sizeHint" /> in length. If <paramref name="sizeHint" /> is not provided or is equal to 0, some non-empty buffer is returned.</returns>
     </member>
+    <member name="M:System.Buffers.ArrayBufferWriter`1.ResetWrittenCount" />
     <member name="P:System.Buffers.ArrayBufferWriter`1.Capacity">
       <summary>Gets the total amount of space within the underlying buffer.</summary>
       <returns>The total capacity of the underlying buffer.</returns>
@@ -30037,6 +30038,7 @@ The view object must implement any interfaces the development environment requir
     <member name="F:System.ConsoleKey.NoName">
       <summary>A constant reserved for future use.</summary>
     </member>
+    <member name="F:System.ConsoleKey.None" />
     <member name="F:System.ConsoleKey.NumPad0">
       <summary>The 0 key on the numeric keypad.</summary>
     </member>
@@ -30277,6 +30279,7 @@ The view object must implement any interfaces the development environment requir
     <member name="F:System.ConsoleModifiers.Control">
       <summary>The left or right CTRL modifier key.</summary>
     </member>
+    <member name="F:System.ConsoleModifiers.None" />
     <member name="F:System.ConsoleModifiers.Shift">
       <summary>The left or right SHIFT modifier key.</summary>
     </member>
@@ -53613,6 +53616,7 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
       <summary>Gets or sets the preferred encoding for standard output.</summary>
       <returns>An object that represents the preferred encoding for standard output. The default is <see langword="null" />.</returns>
     </member>
+    <member name="P:System.Diagnostics.ProcessStartInfo.UseCredentialsForNetworkingOnly" />
     <member name="P:System.Diagnostics.ProcessStartInfo.UserName">
       <summary>Gets or sets the user name to use when starting the process. If you use the UPN format, <code>user@DNS_domain_name</code>, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</summary>
       <returns>The user name to use when starting the process.</returns>
@@ -79204,6 +79208,7 @@ There are too many levels of symbolic links.</exception>
     <member name="F:System.IO.FileAttributes.IntegrityStream">
       <summary>The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.</summary>
     </member>
+    <member name="F:System.IO.FileAttributes.None" />
     <member name="F:System.IO.FileAttributes.Normal">
       <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone. <see langword="Normal" /> is supported on Windows, Linux, and macOS.</summary>
     </member>
@@ -83761,6 +83766,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="F:System.IO.Pipes.PipeOptions.CurrentUserOnly">
       <summary>When used to create a <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> instance, indicates that the pipe can only be connected to a client created by the same user. When used to create a <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> instance, indicates that the pipe can only connect to a server created by the same user. On Windows, it verifies both the user account and elevation level.</summary>
     </member>
+    <member name="F:System.IO.Pipes.PipeOptions.FirstPipeInstance" />
     <member name="F:System.IO.Pipes.PipeOptions.None">
       <summary>Indicates that there are no additional parameters.</summary>
     </member>
@@ -131364,6 +131370,7 @@ This method is intended to support .NET compilers and is not intended to be call
       <exception cref="T:System.BadImageFormatException">A file was not a valid assembly.</exception>
       <returns>An array of streams that contain the files.</returns>
     </member>
+    <member name="M:System.Reflection.Assembly.GetForwardedTypes" />
     <member name="M:System.Reflection.Assembly.GetHashCode">
       <summary>Returns the hash code for this instance.</summary>
       <returns>A 32-bit signed integer hash code.</returns>
@@ -133189,6 +133196,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="T:System.Reflection.DispatchProxy">
       <summary>Provides a mechanism for instantiating proxy objects and handling their method dispatch.</summary>
     </member>
+    <member name="M:System.Reflection.DispatchProxy.#ctor" />
     <member name="M:System.Reflection.DispatchProxy.Create(System.Type,System.Type)">
       <summary>Creates an object instance that derives from class <paramref name="proxyType" /> and implements interface <paramref name="interfaceType" />.</summary>
       <param name="interfaceType" />
@@ -139273,6 +139281,8 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the type is security-transparent; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="P:System.Reflection.Emit.TypeBuilder.IsSZArray" />
+    <member name="P:System.Reflection.Emit.TypeBuilder.IsTypeDefinition" />
     <member name="P:System.Reflection.Emit.TypeBuilder.MetadataToken">
       <summary>Gets a token that identifies the current dynamic module in metadata.</summary>
       <returns>An integer token that identifies the current module in metadata.</returns>
@@ -140422,6 +140432,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <returns>
         <see langword="true" /> if the visibility of this method or constructor is exactly described by <see cref="F:System.Reflection.MethodAttributes.Assembly" />; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
     <member name="P:System.Reflection.MethodBase.IsConstructor">
       <summary>Gets a value indicating whether the method is a constructor.</summary>
       <returns>
@@ -142388,6 +142399,7 @@ The invoked method is not supported in the base class. Derived classes must prov
       <summary>Gets the GUID (globally unique identifier) of the implemented type.</summary>
       <returns>A GUID.</returns>
     </member>
+    <member name="P:System.Reflection.TypeDelegator.IsByRefLike" />
     <member name="P:System.Reflection.TypeDelegator.IsCollectible">
       <summary>Gets the <see cref="P:System.Reflection.MemberInfo.IsCollectible" /> value for this object's <see cref="F:System.Reflection.TypeDelegator.typeImpl" />, which indicates whether this object, which is a <see cref="T:System.Reflection.MemberInfo" /> implementation, is part of an assembly held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
       <returns>
@@ -142403,11 +142415,16 @@ The invoked method is not supported in the base class. Derived classes must prov
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is a function pointer; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="P:System.Reflection.TypeDelegator.IsGenericMethodParameter" />
+    <member name="P:System.Reflection.TypeDelegator.IsGenericTypeParameter" />
+    <member name="P:System.Reflection.TypeDelegator.IsSZArray" />
+    <member name="P:System.Reflection.TypeDelegator.IsTypeDefinition" />
     <member name="P:System.Reflection.TypeDelegator.IsUnmanagedFunctionPointer">
       <summary>Gets a value that indicates whether the current <see cref="T:System.Type" /> is an unmanaged function pointer.</summary>
       <returns>
         <see langword="true" /> if the current <see cref="T:System.Type" /> is an unmanaged function pointer; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="P:System.Reflection.TypeDelegator.IsVariableBoundArray" />
     <member name="P:System.Reflection.TypeDelegator.MetadataToken">
       <summary>Gets a value that identifies this entity in metadata.</summary>
       <returns>A value which, in combination with the module, uniquely identifies this entity in metadata.</returns>
@@ -151852,6 +151869,7 @@ The <see langword="InnerException" /> property may contain more information abou
       <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type.</summary>
       <param name="type">The type of the instances that is serialized or deserialized.</param>
     </member>
+    <member name="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.GetSerializationSurrogateProvider" />
     <member name="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.IsStartObject(System.Xml.XmlDictionaryReader)">
       <summary>Gets a value that specifies whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned over an XML element that represents an object the serializer can deserialize from.</summary>
       <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream mapped from JSON.</param>

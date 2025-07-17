@@ -5279,6 +5279,7 @@ Note: If the configuration file is saved (even if there are no modifications), A
       <param name="type">The type to convert to.</param>
       <returns>An object representing the converted value.</returns>
     </member>
+    <member name="T:System.Diagnostics.TraceConfiguration" />
     <member name="M:System.Diagnostics.TraceConfiguration.Register">
       <summary>Registers the configuration system to apply settings from configuration files to <see cref="T:System.Diagnostics.TraceSource" /> and related classes.</summary>
     </member>

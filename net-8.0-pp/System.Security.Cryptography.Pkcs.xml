@@ -349,6 +349,7 @@
       <summary>Gets or sets the algorithm identifier for the hash algorithm to use with the signature.</summary>
       <returns>The algorithm identifier for the hash algorithm to use with the signature.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.Pkcs.CmsSigner.HasPrivateKey" />
     <member name="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption">
       <summary>Gets or sets the option indicating how much of a the signer certificate's certificate chain should be embedded in the signed message.</summary>
       <exception cref="T:System.ArgumentException">One of the arguments provided to a method was not valid.</exception>

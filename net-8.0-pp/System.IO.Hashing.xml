@@ -14,6 +14,7 @@
       <summary>Appends the contents of <paramref name="source" /> to the data already processed for the current hash computation.</summary>
       <param name="source">The data to process.</param>
     </member>
+    <member name="M:System.IO.Hashing.Crc32.Clone" />
     <member name="M:System.IO.Hashing.Crc32.GetCurrentHashAsUInt32">
       <summary>Gets the current computed hash value without modifying accumulated state.</summary>
       <returns>The hash value for the data already provided.</returns>
@@ -62,6 +63,7 @@
       <summary>Appends the contents of <paramref name="source" /> to the data already processed for the current hash computation.</summary>
       <param name="source">The data to process.</param>
     </member>
+    <member name="M:System.IO.Hashing.Crc64.Clone" />
     <member name="M:System.IO.Hashing.Crc64.GetCurrentHashAsUInt64">
       <summary>Gets the current computed hash value without modifying accumulated state.</summary>
       <returns>The hash value for the data already provided.</returns>
@@ -207,6 +209,7 @@
       <summary>Appends the contents of <paramref name="source" /> to the data already processed for the current hash computation.</summary>
       <param name="source">The data to process.</param>
     </member>
+    <member name="M:System.IO.Hashing.XxHash128.Clone" />
     <member name="M:System.IO.Hashing.XxHash128.GetCurrentHashAsUInt128">
       <summary>Gets the current computed hash value without modifying accumulated state.</summary>
       <returns>The hash value for the data already provided.</returns>
@@ -273,6 +276,7 @@
       <summary>Appends the contents of <paramref name="source" /> to the data already processed for the current hash computation.</summary>
       <param name="source">The data to process.</param>
     </member>
+    <member name="M:System.IO.Hashing.XxHash3.Clone" />
     <member name="M:System.IO.Hashing.XxHash3.GetCurrentHashAsUInt64">
       <summary>Gets the current computed hash value without modifying accumulated state.</summary>
       <returns>The hash value for the data already provided.</returns>
@@ -339,6 +343,7 @@
       <summary>Appends the contents of <paramref name="source" /> to the data already processed for the current hash computation.</summary>
       <param name="source">The data to process.</param>
     </member>
+    <member name="M:System.IO.Hashing.XxHash32.Clone" />
     <member name="M:System.IO.Hashing.XxHash32.GetCurrentHashAsUInt32">
       <summary>Gets the current computed hash value without modifying accumulated state.</summary>
       <returns>The hash value for the data already provided.</returns>
@@ -403,6 +408,7 @@
       <summary>Appends the contents of <paramref name="source" /> to the data already processed for the current hash computation.</summary>
       <param name="source">The data to process.</param>
     </member>
+    <member name="M:System.IO.Hashing.XxHash64.Clone" />
     <member name="M:System.IO.Hashing.XxHash64.GetCurrentHashAsUInt64">
       <summary>Gets the current computed hash value without modifying accumulated state.</summary>
       <returns>The hash value for the data already provided.</returns>

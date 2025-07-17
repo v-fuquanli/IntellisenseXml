@@ -91,10 +91,12 @@
       <summary>
             Buffers logs into global circular buffers and drops them after some time if not flushed.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.Buffering.GlobalLogBuffer.#ctor" />
     <member name="T:Microsoft.Extensions.Diagnostics.Buffering.LogBuffer">
       <summary>
             Buffers logs into circular buffers and drops them after some time if not flushed.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.Buffering.LogBuffer.#ctor" />
     <member name="M:Microsoft.Extensions.Diagnostics.Buffering.LogBuffer.Flush">
       <summary>
             Flushes the buffer and emits all buffered logs.</summary>
@@ -112,6 +114,7 @@
       <summary>
             Buffers logs into per-request circular buffers and drops them after some time if not flushed or when the request ends.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.Buffering.PerRequestLogBuffer.#ctor" />
     <member name="T:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector">
       <summary>
             Allows enrichers to report enrichment properties.</summary>
@@ -312,6 +315,7 @@
       <summary>
             Registered names for <see cref="T:Microsoft.Extensions.Diagnostics.Latency.ILatencyContext" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.Latency.LatencyContextRegistrationOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Latency.LatencyContextRegistrationOptions.CheckpointNames">
       <summary>
             Gets or sets the list of registered checkpoint names.</summary>
@@ -750,6 +754,7 @@
       <summary>
             Controls the number of samples of log records collected and sent to the backend.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.LoggingSampler.#ctor" />
     <member name="M:Microsoft.Extensions.Logging.LoggingSampler.ShouldSample``1(Microsoft.Extensions.Logging.Abstractions.LogEntry{``0}@|System.Runtime.InteropServices.InAttribute)">
       <summary>
             Makes a sampling decision for the provided <paramref name="logEntry" />.</summary>
@@ -762,6 +767,7 @@
       <summary>
             Marks a logging method parameter whose public properties need to be logged as log tags.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.LogPropertiesAttribute.#ctor" />
     <member name="P:Microsoft.Extensions.Logging.LogPropertiesAttribute.OmitReferenceName">
       <summary>
             Gets or sets a value indicating whether to prefix the name of the parameter or property to the generated name of each tag being logged.</summary>
@@ -784,6 +790,7 @@
       <summary>
             Indicates that a tag should not be logged.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Logging.LogPropertyIgnoreAttribute.#ctor" />
     <member name="T:Microsoft.Extensions.Logging.TagNameAttribute">
       <summary>
             Defines the tag name to use for a logged parameter or property.</summary>

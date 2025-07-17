@@ -14821,6 +14821,7 @@
       </summary>
       <param name="value" />
     </member>
+    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64">
       <summary>Provides access to the ARM AdvSIMD hardware instructions, that are only available to 64-bit processes, via intrinsics.</summary>
     </member>
@@ -19545,6 +19546,7 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.Aes">
       <summary>This class provides access to the ARM AES hardware instructions via intrinsics.</summary>
     </member>
@@ -27320,6 +27322,7 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="T:System.Runtime.Intrinsics.X86.FloatComparisonMode" />
     <member name="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedEqualNonSignaling">
       <summary>_CMP_EQ_OQ.</summary>
     </member>

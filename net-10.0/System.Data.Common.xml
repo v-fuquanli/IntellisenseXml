@@ -799,6 +799,8 @@
     <member name="M:System.Data.Common.DbBatchCommand.#ctor">
       <summary>Constructs an instance of the <see cref="T:System.Data.Common.DbBatchCommand" /> object.</summary>
     </member>
+    <member name="M:System.Data.Common.DbBatchCommand.CreateParameter" />
+    <member name="P:System.Data.Common.DbBatchCommand.CanCreateParameter" />
     <member name="P:System.Data.Common.DbBatchCommand.CommandText">
       <summary>Gets or sets the text command to run against the data source.</summary>
       <returns>The text command to execute. The default value is an empty string ("").</returns>
@@ -9414,6 +9416,7 @@ Returns <see langword="null" /> if the executed command returned no resultset, o
       <summary>
         <see cref="T:System.Object" />. A special data type that can contain numeric, string, binary, or date data as well as the SQL Server values Empty and Null, which is assumed if no other type is declared.</summary>
     </member>
+    <member name="F:System.Data.SqlDbType.Vector" />
     <member name="F:System.Data.SqlDbType.Xml">
       <summary>An XML value. Obtain the XML as a string using the <see cref="M:System.Data.SqlClient.SqlDataReader.GetValue(System.Int32)" /> method or <see cref="P:System.Data.SqlTypes.SqlXml.Value" /> property, or as an <see cref="T:System.Xml.XmlReader" /> by calling the <see cref="M:System.Data.SqlTypes.SqlXml.CreateReader" /> method.</summary>
     </member>

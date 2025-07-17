@@ -8,6 +8,7 @@
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates the 'Coherence' of a response produced by an AI model.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -33,6 +34,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates the 'Completeness' of a response produced by an AI model.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -82,6 +84,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates the 'Equivalence' of a response produced by an AI model with another
             response supplied via <see cref="P:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluatorContext.GroundTruth" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -130,6 +133,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates the 'Fluency' of a response produced by an AI model.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -155,6 +159,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates the 'Groundedness' of a response produced by an AI model.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -203,6 +208,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates an AI system's effectiveness at identifying and resolving user intent.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.IntentResolutionEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.IntentResolutionEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -267,6 +273,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates the 'Relevance' of a response produced by an AI model.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -294,6 +301,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             AI model.</summary>
       <param name="options">Options for <see cref="T:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator" />.</param>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -330,6 +338,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates an AI system's performance in retrieving information for additional
             context in response to a user request (for example, in a Retrieval Augmented Generation (RAG) scenario).</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -380,6 +389,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates an AI system's effectiveness at adhering to the task assigned to it.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.TaskAdherenceEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.TaskAdherenceEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>
@@ -444,6 +454,7 @@ more composed <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.
       <summary>
             An <see cref="T:Microsoft.Extensions.AI.Evaluation.IEvaluator" /> that evaluates an AI system's effectiveness at using the tools supplied to it.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.ToolCallAccuracyEvaluator.#ctor" />
     <member name="M:Microsoft.Extensions.AI.Evaluation.Quality.ToolCallAccuracyEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)">
       <summary>Evaluates the supplied <code data-dev-comment-type="paramref">modelResponse</code> and returns an <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationResult"></xref>
 containing one or more <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.Evaluation.EvaluationMetric"></xref>s.</summary>

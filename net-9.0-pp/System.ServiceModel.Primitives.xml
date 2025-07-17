@@ -1846,6 +1846,7 @@
       <summary>Builds the inner channel factory for the current channel.</summary>
       <exception cref="T:System.InvalidOperationException">The inner channel factory for the channel factory is <see langword="null" />.</exception>
     </member>
+    <member name="M:System.ServiceModel.ChannelFactory.System#IAsyncDisposable#DisposeAsync" />
     <member name="M:System.ServiceModel.ChannelFactory.System#IDisposable#Dispose">
       <summary>Closes the current channel factory.</summary>
     </member>
@@ -3289,6 +3290,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
       <summary>Gets the type of session associated with this channel.</summary>
       <returns>The type of <see cref="T:System.ServiceModel.Channels.ISession" /> associated with this channel.</returns>
     </member>
+    <member name="T:System.ServiceModel.Channels.ITransportCompressionSupport" />
     <member name="M:System.ServiceModel.Channels.ITransportCompressionSupport.IsCompressionFormatSupported(System.ServiceModel.Channels.CompressionFormat)">
       <param name="compressionFormat" />
     </member>
@@ -5064,6 +5066,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.ServiceModel.ClientBase`1.Close">
       <summary>Causes the <see cref="T:System.ServiceModel.ClientBase`1" /> object to transition from its current state into the closed state.</summary>
     </member>
+    <member name="M:System.ServiceModel.ClientBase`1.CloseAsync" />
     <member name="M:System.ServiceModel.ClientBase`1.CreateChannel">
       <summary>Returns a new channel to the service.</summary>
       <returns>A channel of the type of the service contract.</returns>
@@ -5084,6 +5087,7 @@ Note: In .NET for Windows Store apps or the Portable Class Library, catch the ba
     <member name="M:System.ServiceModel.ClientBase`1.Open">
       <summary>Causes the <see cref="T:System.ServiceModel.ClientBase`1" /> object to transition from the created state into the opened state.</summary>
     </member>
+    <member name="M:System.ServiceModel.ClientBase`1.System#IAsyncDisposable#DisposeAsync" />
     <member name="M:System.ServiceModel.ClientBase`1.System#IDisposable#Dispose">
       <summary>Explicit implementation of the <see cref="M:System.IDisposable.Dispose" /> method.</summary>
     </member>

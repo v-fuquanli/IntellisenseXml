@@ -15931,6 +15931,7 @@
       </summary>
       <param name="value" />
     </member>
+    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64">
       <summary>Provides access to the ARM AdvSIMD hardware instructions, that are only available to 64-bit processes, via intrinsics.</summary>
     </member>
@@ -22494,6 +22495,7 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.Aes">
       <summary>This class provides access to the ARM AES hardware instructions via intrinsics.</summary>
     </member>
@@ -29011,6 +29013,14 @@
       <param name="mask" />
       <param name="from" />
     </member>
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrByte" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrInt16" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrInt32" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrInt64" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrSByte" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrUInt16" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrUInt32" />
+    <member name="M:System.Runtime.Intrinsics.Arm.Sve.GetFfrUInt64" />
     <member name="M:System.Runtime.Intrinsics.Arm.Sve.InsertIntoShiftedVector(System.Numerics.Vector{System.Byte},System.Byte)">
       <summary>
         <para>svuint8_t svinsr&lt;see href="svuint8_t op1, uint8_t op2"&gt;_n_u8&lt;/see&gt;</para>
@@ -35372,6 +35382,7 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="T:System.Runtime.Intrinsics.Arm.SveMaskPattern" />
     <member name="F:System.Runtime.Intrinsics.Arm.SveMaskPattern.All">
       <summary>
         <para>ALL</para>
@@ -35457,6 +35468,7 @@
         <para>VL8</para>
       </summary>
     </member>
+    <member name="T:System.Runtime.Intrinsics.Arm.SvePrefetchType" />
     <member name="F:System.Runtime.Intrinsics.Arm.SvePrefetchType.LoadL1NonTemporal">
       <summary>
         <para>PLDL1STRM</para>
@@ -43342,6 +43354,8 @@
       <summary>Gets a new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> with all elements initialized to zero.</summary>
       <exception cref="T:System.NotSupportedException">The type of the current instance (<typeparamref name="T" />) is not supported.</exception>
     </member>
+    <member name="T:System.Runtime.Intrinsics.Wasm.PackedSimd" />
+    <member name="M:System.Runtime.Intrinsics.Wasm.PackedSimd.#ctor" />
     <member name="M:System.Runtime.Intrinsics.Wasm.PackedSimd.Abs(System.Runtime.Intrinsics.Vector128{System.Double})">
       <param name="value" />
     </member>
@@ -63690,6 +63704,7 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="T:System.Runtime.Intrinsics.X86.FloatComparisonMode" />
     <member name="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedEqualNonSignaling">
       <summary>_CMP_EQ_OQ.</summary>
     </member>
@@ -63786,6 +63801,7 @@
     <member name="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.UnorderedTrueSignaling">
       <summary>_CMP_TRUE_US.</summary>
     </member>
+    <member name="T:System.Runtime.Intrinsics.X86.FloatRoundingMode" />
     <member name="F:System.Runtime.Intrinsics.X86.FloatRoundingMode.ToEven">
       <summary>
         <para>_MM_FROUND_TO_NEAREST_INT | _MM_FROUND_NO_EXC</para>

@@ -1252,6 +1252,8 @@ Authentication has not occurred.</exception>
       <returns>
         <see langword="true" /> to indicate that the <see cref="T:System.Net.Security.SslStream" /> allows SSL renegotiation; otherwise, <see langword="false" />. The default value is <see langword="true" />.</returns>
     </member>
+    <member name="P:System.Net.Security.SslClientAuthenticationOptions.AllowRsaPkcs1Padding" />
+    <member name="P:System.Net.Security.SslClientAuthenticationOptions.AllowRsaPssPadding" />
     <member name="P:System.Net.Security.SslClientAuthenticationOptions.AllowTlsResume">
       <summary>Gets or sets a value that indicates whether the SslStream should allow TLS resumption.</summary>
       <returns>
@@ -1322,6 +1324,8 @@ Authentication has not occurred.</exception>
       <returns>
         <see langword="true" /> to allow SSL renegotiation; otherwise, <see langword="false" />. The default value is <see langword="false" /> in .NET 7 and later versions; in earlier versions, the default value is <see langword="true" />.</returns>
     </member>
+    <member name="P:System.Net.Security.SslServerAuthenticationOptions.AllowRsaPkcs1Padding" />
+    <member name="P:System.Net.Security.SslServerAuthenticationOptions.AllowRsaPssPadding" />
     <member name="P:System.Net.Security.SslServerAuthenticationOptions.AllowTlsResume">
       <summary>Gets or sets a value that indicates whether the SslStream should allow TLS resumption.</summary>
     </member>

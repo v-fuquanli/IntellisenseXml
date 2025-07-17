@@ -7,6 +7,7 @@
     <member name="T:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement">
       <summary>An abstract class that supplements the base <see cref="T:System.ServiceModel.Channels.TransportBindingElement" /> with additional properties that are common to connection-oriented transports such as TCP and named pipes.</summary>
     </member>
+    <member name="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.#ctor" />
     <member name="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.#ctor(System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement)">
       <param name="elementToBeCloned" />
     </member>
@@ -40,6 +41,8 @@
       <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.TransferMode" />.</exception>
       <returns>A <see cref="T:System.ServiceModel.TransferMode" /> value which indicates whether a channel uses streamed or buffered modes of message transfer. The default is <see cref="F:System.ServiceModel.TransferMode.Buffered" />.</returns>
     </member>
+    <member name="T:System.ServiceModel.Channels.IConnection" />
+    <member name="M:System.ServiceModel.Channels.IConnection.Abort" />
     <member name="M:System.ServiceModel.Channels.IConnection.CloseAsync(System.TimeSpan)">
       <param name="timeout" />
     </member>
@@ -52,10 +55,13 @@
       <param name="immediate" />
       <param name="timeout" />
     </member>
+    <member name="P:System.ServiceModel.Channels.IConnection.ConnectionBufferSize" />
+    <member name="T:System.ServiceModel.Channels.IConnectionInitiator" />
     <member name="M:System.ServiceModel.Channels.IConnectionInitiator.ConnectAsync(System.Uri,System.TimeSpan)">
       <param name="uri" />
       <param name="timeout" />
     </member>
+    <member name="T:System.ServiceModel.Channels.IConnectionPoolSettings" />
     <member name="M:System.ServiceModel.Channels.IConnectionPoolSettings.GetConnectionPoolSetting``1(System.String)">
       <param name="settingName" />
       <typeparam name="T" />
@@ -73,6 +79,7 @@
       <param name="idleTimeout" />
       <param name="maxOutboundConnectionsPerEndpoint" />
     </member>
+    <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.GetConnectionInitiator" />
     <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.GetConnectionPoolKey(System.ServiceModel.EndpointAddress,System.Uri)">
       <param name="address" />
       <param name="via" />
@@ -80,6 +87,7 @@
     <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.GetProperty``1">
       <typeparam name="T" />
     </member>
+    <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.OnAbort" />
     <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)">
       <param name="timeout" />
       <param name="callback" />
@@ -112,9 +120,24 @@
     <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.OnOpenAsync(System.TimeSpan)">
       <param name="timeout" />
     </member>
+    <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.OnOpening" />
     <member name="M:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.SupportsUpgrade(System.ServiceModel.Channels.StreamUpgradeBindingElement)">
       <param name="upgradeBindingElement" />
     </member>
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.ConnectionBufferSize" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.ConnectionPoolGroupName" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.IdleTimeout" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.MaxBufferSize" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.MaxOutboundConnectionsPerEndpoint" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.MaxOutputDelay" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.Scheme" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.System#ServiceModel#Channels#ITransportFactorySettings#BufferManager" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.System#ServiceModel#Channels#ITransportFactorySettings#ManualAddressing" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.System#ServiceModel#Channels#ITransportFactorySettings#MaxReceivedMessageSize" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.System#ServiceModel#Channels#ITransportFactorySettings#MessageEncoderFactory" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.System#ServiceModel#Channels#ITransportFactorySettings#MessageVersion" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.TransferMode" />
+    <member name="P:System.ServiceModel.Channels.NetFramingTransportChannelFactory`1.Upgrade" />
     <member name="T:System.ServiceModel.Channels.SslStreamSecurityBindingElement">
       <summary>Represents a custom binding element that supports channel security using an SSL stream.</summary>
     </member>

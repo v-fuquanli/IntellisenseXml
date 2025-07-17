@@ -14923,6 +14923,7 @@
       </summary>
       <param name="value" />
     </member>
+    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64">
       <summary>Provides access to the ARM AdvSIMD hardware instructions, that are only available to 64-bit processes, via intrinsics.</summary>
     </member>
@@ -20025,6 +20026,7 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="P:System.Runtime.Intrinsics.Arm.AdvSimd.Arm64.IsSupported" />
     <member name="T:System.Runtime.Intrinsics.Arm.Aes">
       <summary>This class provides access to the ARM AES hardware instructions via intrinsics.</summary>
     </member>
@@ -27327,6 +27329,8 @@
       <summary>Gets a new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> with all elements initialized to zero.</summary>
       <exception cref="T:System.NotSupportedException">The type of the current instance (<typeparamref name="T" />) is not supported.</exception>
     </member>
+    <member name="T:System.Runtime.Intrinsics.Wasm.PackedSimd" />
+    <member name="M:System.Runtime.Intrinsics.Wasm.PackedSimd.#ctor" />
     <member name="M:System.Runtime.Intrinsics.Wasm.PackedSimd.Abs(System.Runtime.Intrinsics.Vector128{System.Double})">
       <param name="value" />
     </member>
@@ -42782,6 +42786,7 @@
       <returns>
         <see langword="true" /> if the APIs are supported; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="T:System.Runtime.Intrinsics.X86.FloatComparisonMode" />
     <member name="F:System.Runtime.Intrinsics.X86.FloatComparisonMode.OrderedEqualNonSignaling">
       <summary>_CMP_EQ_OQ.</summary>
     </member>

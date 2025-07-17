@@ -7,6 +7,7 @@
     <member name="T:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement">
       <summary>An abstract class that supplements the base <see cref="T:System.ServiceModel.Channels.TransportBindingElement" /> with additional properties that are common to connection-oriented transports such as TCP and named pipes.</summary>
     </member>
+    <member name="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.#ctor" />
     <member name="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.#ctor(System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement)">
       <param name="elementToBeCloned" />
     </member>

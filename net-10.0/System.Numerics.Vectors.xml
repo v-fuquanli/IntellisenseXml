@@ -278,6 +278,9 @@
       <summary>Gets or sets the translation component of this matrix.</summary>
       <returns>The translation component of the current instance.</returns>
     </member>
+    <member name="P:System.Numerics.Matrix3x2.X" />
+    <member name="P:System.Numerics.Matrix3x2.Y" />
+    <member name="P:System.Numerics.Matrix3x2.Z" />
     <member name="T:System.Numerics.Matrix4x4">
       <summary>Represents a 4x4 matrix.</summary>
     </member>
@@ -918,6 +921,10 @@
       <summary>Gets or sets the translation component of this matrix.</summary>
       <returns>The translation component of the current instance.</returns>
     </member>
+    <member name="P:System.Numerics.Matrix4x4.W" />
+    <member name="P:System.Numerics.Matrix4x4.X" />
+    <member name="P:System.Numerics.Matrix4x4.Y" />
+    <member name="P:System.Numerics.Matrix4x4.Z" />
     <member name="T:System.Numerics.Plane">
       <summary>Represents a plane in three-dimensional space.</summary>
     </member>
@@ -3842,6 +3849,7 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="P:System.Numerics.Vector2.AllBitsSet" />
     <member name="P:System.Numerics.Vector2.E">
       <summary>Gets a vector whose elements are equal to <see cref="P:System.Single.E" />.</summary>
       <returns>A vector whose elements are equal to <see cref="P:System.Single.E" /> (that is, it returns the vector <code data-dev-comment-type="c">Create(float.E)</code>).</returns>
@@ -4567,6 +4575,7 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="P:System.Numerics.Vector3.AllBitsSet" />
     <member name="P:System.Numerics.Vector3.E">
       <summary>Gets a vector whose elements are equal to <xref data-throw-if-not-resolved="true" uid="System.Single.E" />.</summary>
       <returns>A vector whose elements are equal to <see cref="P:System.Single.E" /> (that is, it returns the vector <code data-dev-comment-type="c">Create(float.E)</code>).</returns>
@@ -5325,6 +5334,7 @@
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="P:System.Numerics.Vector4.AllBitsSet" />
     <member name="P:System.Numerics.Vector4.E">
       <summary>Gets a vector whose elements are equal to <see cref="F:System.Single.E" />.</summary>
       <returns>A vector whose elements are equal to <see cref="F:System.Single.E" /> (that is, it returns the vector <c>Create(float.E)</c>).</returns>

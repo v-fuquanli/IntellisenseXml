@@ -106,6 +106,7 @@
       <summary>
             Represents a set of supported measurement types. If a listener does not support a given type, the measurement is skipped.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers.ByteHandler">
       <summary>
             Gets or sets a <see cref="T:System.Diagnostics.Metrics.MeasurementCallback`1" /> for <see cref="T:System.Byte" />. If <see langword="null" />, byte measurements are skipped.</summary>
@@ -247,6 +248,7 @@
       <summary>
             Represents options for configuring the metrics system.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions.Rules">
       <summary>
             Gets a list of instrument rules that identifies which metrics, instruments, and listeners are enabled.</summary>

@@ -7,6 +7,7 @@
     <member name="T:System.Reflection.DispatchProxy">
       <summary>Provides a mechanism for instantiating proxy objects and handling their method dispatch.</summary>
     </member>
+    <member name="M:System.Reflection.DispatchProxy.#ctor" />
     <member name="M:System.Reflection.DispatchProxy.Create(System.Type,System.Type)">
       <summary>Creates an object instance that derives from class <paramref name="proxyType" /> and implements interface <paramref name="interfaceType" />.</summary>
       <param name="interfaceType" />

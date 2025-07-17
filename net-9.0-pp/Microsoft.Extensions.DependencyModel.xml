@@ -4,6 +4,7 @@
     <name>Microsoft.Extensions.DependencyModel</name>
   </assembly>
   <members>
+    <member name="T:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner" />
     <member name="M:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner.Add(System.Int32)">
       <param name="i" />
     </member>
@@ -18,6 +19,8 @@
       <param name="comparer" />
       <typeparam name="TValue" />
     </member>
+    <member name="M:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner.Start" />
+    <member name="P:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner.CombinedHash" />
     <member name="T:Microsoft.Extensions.DependencyModel.CompilationLibrary">
       <summary>Represents a compile time library dependency in a dependency manifest.</summary>
     </member>
@@ -68,6 +71,7 @@
       <summary>Gets the list of assemblies for this library.</summary>
       <returns>The list of assemblies for this library.</returns>
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.CompilationOptions" />
     <member name="M:Microsoft.Extensions.DependencyModel.CompilationOptions.#ctor(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
       <param name="defines" />
       <param name="languageVersion" />
@@ -82,6 +86,20 @@
       <param name="emitEntryPoint" />
       <param name="generateXmlDocumentation" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.AllowUnsafe" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.DebugType" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.Default" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.Defines" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.DelaySign" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.EmitEntryPoint" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.GenerateXmlDocumentation" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.KeyFile" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.LanguageVersion" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.Optimize" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.Platform" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.PublicSign" />
+    <member name="P:Microsoft.Extensions.DependencyModel.CompilationOptions.WarningsAsErrors" />
+    <member name="T:Microsoft.Extensions.DependencyModel.Dependency" />
     <member name="M:Microsoft.Extensions.DependencyModel.Dependency.#ctor(System.String,System.String)">
       <param name="name" />
       <param name="version" />
@@ -95,6 +113,9 @@
     <member name="M:Microsoft.Extensions.DependencyModel.Dependency.Equals(System.Object)">
       <param name="obj" />
     </member>
+    <member name="M:Microsoft.Extensions.DependencyModel.Dependency.GetHashCode" />
+    <member name="P:Microsoft.Extensions.DependencyModel.Dependency.Name" />
+    <member name="P:Microsoft.Extensions.DependencyModel.Dependency.Version" />
     <member name="T:Microsoft.Extensions.DependencyModel.DependencyContext">
       <summary>Provides information about application dependencies.</summary>
     </member>
@@ -140,6 +161,7 @@
       <summary>Gets information about the application's target runtime.</summary>
       <returns>The application's target runtime information.</returns>
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.DependencyContextExtensions" />
     <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextExtensions.GetDefaultAssemblyNames(Microsoft.Extensions.DependencyModel.DependencyContext)">
       <param name="self" />
     </member>
@@ -188,6 +210,8 @@
       <param name="context" />
       <param name="runtimeIdentifier" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader" />
+    <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader.#ctor" />
     <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader.Dispose">
       <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
     </member>
@@ -197,13 +221,19 @@
     <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextJsonReader.Read(System.IO.Stream)">
       <param name="stream" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.DependencyContextLoader" />
+    <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextLoader.#ctor" />
     <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextLoader.Load(System.Reflection.Assembly)">
       <param name="assembly" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.DependencyContextLoader.Default" />
+    <member name="T:Microsoft.Extensions.DependencyModel.DependencyContextWriter" />
+    <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextWriter.#ctor" />
     <member name="M:Microsoft.Extensions.DependencyModel.DependencyContextWriter.Write(Microsoft.Extensions.DependencyModel.DependencyContext,System.IO.Stream)">
       <param name="context" />
       <param name="stream" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.IDependencyContextReader" />
     <member name="M:Microsoft.Extensions.DependencyModel.IDependencyContextReader.Read(System.IO.Stream)">
       <param name="stream" />
     </member>
@@ -270,6 +300,7 @@
       <summary>Gets the relative path to package assets, if this library is a package.</summary>
       <returns>The relative path to package assets, if this library is a package.</returns>
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.Library.RuntimeStoreManifestName" />
     <member name="P:Microsoft.Extensions.DependencyModel.Library.Serviceable">
       <summary>Gets a value that indicates whether this library can be serviced, if this library is a package.</summary>
       <returns>
@@ -283,6 +314,8 @@
       <summary>Gets the version of this library.</summary>
       <returns>The version of this library.</returns>
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver" />
+    <member name="M:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver.#ctor" />
     <member name="M:Microsoft.Extensions.DependencyModel.Resolution.AppBaseCompilationAssemblyResolver.#ctor(System.String)">
       <param name="basePath" />
     </member>
@@ -290,6 +323,7 @@
       <param name="library" />
       <param name="assemblies" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver" />
     <member name="M:Microsoft.Extensions.DependencyModel.Resolution.CompositeCompilationAssemblyResolver.#ctor(Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver[])">
       <param name="resolvers" />
     </member>
@@ -297,10 +331,17 @@
       <param name="library" />
       <param name="assemblies" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver" />
+    <member name="F:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver.DotNetReferenceAssembliesPathEnv" />
+    <member name="M:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver.#ctor" />
+    <member name="M:Microsoft.Extensions.DependencyModel.Resolution.DotNetReferenceAssembliesPathResolver.Resolve" />
+    <member name="T:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver" />
     <member name="M:Microsoft.Extensions.DependencyModel.Resolution.ICompilationAssemblyResolver.TryResolveAssemblyPaths(Microsoft.Extensions.DependencyModel.CompilationLibrary,System.Collections.Generic.List{System.String})">
       <param name="library" />
       <param name="assemblies" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver" />
+    <member name="M:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver.#ctor" />
     <member name="M:Microsoft.Extensions.DependencyModel.Resolution.PackageCompilationAssemblyResolver.#ctor(System.String)">
       <param name="nugetPackageDirectory" />
     </member>
@@ -308,6 +349,8 @@
       <param name="library" />
       <param name="assemblies" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver" />
+    <member name="M:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver.#ctor" />
     <member name="M:Microsoft.Extensions.DependencyModel.Resolution.ReferenceAssemblyPathResolver.#ctor(System.String,System.String[])">
       <param name="defaultReferenceAssembliesPath" />
       <param name="fallbackSearchPaths" />
@@ -316,10 +359,14 @@
       <param name="library" />
       <param name="assemblies" />
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.ResourceAssembly" />
     <member name="M:Microsoft.Extensions.DependencyModel.ResourceAssembly.#ctor(System.String,System.String)">
       <param name="path" />
       <param name="locale" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.ResourceAssembly.Locale" />
+    <member name="P:Microsoft.Extensions.DependencyModel.ResourceAssembly.Path" />
+    <member name="T:Microsoft.Extensions.DependencyModel.RuntimeAssembly" />
     <member name="M:Microsoft.Extensions.DependencyModel.RuntimeAssembly.#ctor(System.String,System.String)">
       <param name="assemblyName" />
       <param name="path" />
@@ -327,6 +374,9 @@
     <member name="M:Microsoft.Extensions.DependencyModel.RuntimeAssembly.Create(System.String)">
       <param name="path" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeAssembly.Name" />
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeAssembly.Path" />
+    <member name="T:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup" />
     <member name="M:Microsoft.Extensions.DependencyModel.RuntimeAssetGroup.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Extensions.DependencyModel.RuntimeFile})">
       <param name="runtime" />
       <param name="runtimeFiles" />
@@ -351,6 +401,7 @@
       <summary>Gets a list of runtime files provided in this runtime group.</summary>
       <returns>A read-only list of runtime file instances.</returns>
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.RuntimeFallbacks" />
     <member name="M:Microsoft.Extensions.DependencyModel.RuntimeFallbacks.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})">
       <param name="runtime" />
       <param name="fallbacks" />
@@ -359,11 +410,17 @@
       <param name="runtime" />
       <param name="fallbacks" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeFallbacks.Fallbacks" />
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeFallbacks.Runtime" />
+    <member name="T:Microsoft.Extensions.DependencyModel.RuntimeFile" />
     <member name="M:Microsoft.Extensions.DependencyModel.RuntimeFile.#ctor(System.String,System.String,System.String)">
       <param name="path" />
       <param name="assemblyVersion" />
       <param name="fileVersion" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeFile.AssemblyVersion" />
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeFile.FileVersion" />
+    <member name="P:Microsoft.Extensions.DependencyModel.RuntimeFile.Path" />
     <member name="T:Microsoft.Extensions.DependencyModel.RuntimeLibrary">
       <summary>Represents a runtime library dependency in a dependency manifest.</summary>
     </member>
@@ -430,11 +487,16 @@
       <summary>Gets the list of runtime assembly groups for this library.</summary>
       <returns>The list of runtime assembly groups for this library.</returns>
     </member>
+    <member name="T:Microsoft.Extensions.DependencyModel.TargetInfo" />
     <member name="M:Microsoft.Extensions.DependencyModel.TargetInfo.#ctor(System.String,System.String,System.String,System.Boolean)">
       <param name="framework" />
       <param name="runtime" />
       <param name="runtimeSignature" />
       <param name="isPortable" />
     </member>
+    <member name="P:Microsoft.Extensions.DependencyModel.TargetInfo.Framework" />
+    <member name="P:Microsoft.Extensions.DependencyModel.TargetInfo.IsPortable" />
+    <member name="P:Microsoft.Extensions.DependencyModel.TargetInfo.Runtime" />
+    <member name="P:Microsoft.Extensions.DependencyModel.TargetInfo.RuntimeSignature" />
   </members>
 </doc>

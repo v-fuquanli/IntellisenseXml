@@ -682,6 +682,8 @@ An encoding other than UTF-8 is specified for the <paramref name="entryNameEncod
       <param name="disposing">
         <see langword="true" /> to finish writing the archive and release unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
     </member>
+    <member name="M:System.IO.Compression.ZipArchive.DisposeAsync" />
+    <member name="M:System.IO.Compression.ZipArchive.DisposeAsyncCore" />
     <member name="M:System.IO.Compression.ZipArchive.GetEntry(System.String)">
       <summary>Retrieves a wrapper for the specified entry in the zip archive.</summary>
       <param name="entryName">A path, relative to the root of the archive, that identifies the entry to retrieve.</param>

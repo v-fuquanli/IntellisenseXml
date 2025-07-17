@@ -200,6 +200,7 @@
       <summary>Gets the HTTP headers from the HTTP response.</summary>
       <returns>Returns a <see cref="T:System.Net.WebHeaderCollection" /> that contains the HTTP headers in the HTTP response.</returns>
     </member>
+    <member name="P:System.ServiceModel.Channels.HttpResponseMessageProperty.HttpResponseMessage" />
     <member name="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Name">
       <summary>Gets the name of the message property associated with the <see cref="T:System.ServiceModel.Channels.HttpResponseMessageProperty" /> class.</summary>
       <returns>Returns "httpResponse".</returns>
@@ -323,6 +324,7 @@
       <summary>Gets or sets the maximum size of the buffer to use. For buffered messages this value is the same as <see cref="P:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize" />. For streamed messages, this value is the maximum size of the SOAP headers, which must be read in buffered mode.</summary>
       <returns>The maximum size, in bytes, of the buffer.</returns>
     </member>
+    <member name="P:System.ServiceModel.Channels.HttpTransportBindingElement.Proxy" />
     <member name="P:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress">
       <summary>Gets or sets a URI that contains the address of the proxy to use for HTTP requests.</summary>
       <returns>The <see cref="T:System.Uri" /> that contains the address for the proxy. The default value is <see langword="null" />.</returns>

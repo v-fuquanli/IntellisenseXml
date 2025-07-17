@@ -320,6 +320,7 @@
       <summary>Gets the CBOR-encoded value of this instance.</summary>
       <returns>A view of the CBOR-encoded value as a contiguous region of memory.</returns>
     </member>
+    <member name="T:System.Security.Cryptography.Cose.CoseKey" />
     <member name="M:System.Security.Cryptography.Cose.CoseKey.FromKey(System.Security.Cryptography.ECDsa,System.Security.Cryptography.HashAlgorithmName)">
       <param name="key" />
       <param name="hashAlgorithm" />

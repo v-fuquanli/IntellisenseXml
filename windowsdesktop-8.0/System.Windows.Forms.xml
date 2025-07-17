@@ -2633,6 +2633,7 @@ More than one argument is specified for a field set operation.</exception>
     <member name="E:System.Windows.Forms.BindableComponent.BindingContextChanged">
       <summary>Occurs when the binding context has changed.</summary>
     </member>
+    <member name="M:System.Windows.Forms.BindableComponent.#ctor" />
     <member name="M:System.Windows.Forms.BindableComponent.OnBindingContextChanged(System.EventArgs)">
       <summary>Raises the <see cref="E:System.Windows.Forms.BindableComponent.BindingContextChanged" /> event.</summary>
       <param name="e" />
@@ -3851,6 +3852,7 @@ More than one argument is specified for a field set operation.</exception>
     <member name="M:System.Windows.Forms.Button.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Button" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.Button.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)">
       <summary>Notifies the <see cref="T:System.Windows.Forms.Button" /> whether it is the default button so that it can adjust its appearance accordingly.</summary>
       <param name="value">
@@ -4144,6 +4146,8 @@ More than one argument is specified for a field set operation.</exception>
     <member name="M:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.DoDefaultAction">
       <summary>Performs the default action associated with this accessible object.</summary>
     </member>
+    <member name="P:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.KeyboardShortcut" />
+    <member name="P:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.Name" />
     <member name="P:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.State">
       <summary>Gets the state of this accessible object.</summary>
       <returns>One of the <see cref="T:System.Windows.Forms.AccessibleStates" /> values.</returns>
@@ -20951,10 +20955,13 @@ The value assigned is less than the <see cref="F:System.Windows.Forms.DateTimePi
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject" /> class.</summary>
       <param name="owner">The <see cref="T:System.Windows.Forms.DateTimePicker" /> that owns the <see cref="T:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject" />.</param>
     </member>
+    <member name="M:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.DoDefaultAction" />
+    <member name="P:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.DefaultAction" />
     <member name="P:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.KeyboardShortcut">
       <summary>Gets the shortcut key or access key for the accessible object.</summary>
       <returns>The shortcut key or access key for the accessible object.</returns>
     </member>
+    <member name="P:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.Name" />
     <member name="P:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.Role">
       <summary>Gets the role of this accessible object.</summary>
       <returns>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values indicating the role of the <see cref="T:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject" />.</returns>
@@ -31959,6 +31966,7 @@ The following table shows the default value of this property for different .NET 
     <member name="M:System.Windows.Forms.MaskedTextBox.ClearUndo">
       <summary>Clears information about the most recent operation from the undo buffer of the text box. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
     </member>
+    <member name="M:System.Windows.Forms.MaskedTextBox.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.MaskedTextBox.CreateHandle">
       <summary>Creates a handle for the control.</summary>
     </member>
@@ -34321,6 +34329,7 @@ The following table shows the default value of this property for different .NET 
     <member name="M:System.Windows.Forms.PictureBox.CancelAsync">
       <summary>Cancels an asynchronous image load.</summary>
     </member>
+    <member name="M:System.Windows.Forms.PictureBox.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.PictureBox.Dispose(System.Boolean)">
       <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.PictureBox" /> and optionally releases the managed resources.</summary>
       <param name="disposing">
@@ -34744,6 +34753,7 @@ The following table shows the default value of this property for different .NET 
     <member name="M:System.Windows.Forms.PrintPreviewControl.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.PrintPreviewControl.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.PrintPreviewControl.InvalidatePreview">
       <summary>Refreshes the preview of the document.</summary>
     </member>
@@ -34809,6 +34819,7 @@ The following table shows the default value of this property for different .NET 
       <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>
       <returns>The page number of the upper left page. The default is 0.</returns>
     </member>
+    <member name="P:System.Windows.Forms.PrintPreviewControl.TabStop" />
     <member name="P:System.Windows.Forms.PrintPreviewControl.Text">
       <summary>Gets or sets the text associated with this control.</summary>
       <returns>The text associated with this control.</returns>
@@ -35366,6 +35377,7 @@ The following table shows the default value of this property for different .NET 
       <summary>Gets the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the color to use to create highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</returns>
     </member>
+    <member name="P:System.Windows.Forms.ProfessionalColors.StatusStripBorder" />
     <member name="P:System.Windows.Forms.ProfessionalColors.StatusStripGradientBegin">
       <summary>Gets the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</returns>
@@ -35596,6 +35608,7 @@ The following table shows the default value of this property for different .NET 
       <summary>Gets the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</returns>
     </member>
+    <member name="P:System.Windows.Forms.ProfessionalColorTable.StatusStripBorder" />
     <member name="P:System.Windows.Forms.ProfessionalColorTable.StatusStripGradientBegin">
       <summary>Gets the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</returns>
@@ -36794,6 +36807,8 @@ The following table shows the default value of this property for different .NET 
       <summary>Gets a string that describes the default action of the <see cref="T:System.Windows.Forms.RadioButton" /> control.</summary>
       <returns>A description of the default action of the <see cref="T:System.Windows.Forms.RadioButton" /> control.</returns>
     </member>
+    <member name="P:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.KeyboardShortcut" />
+    <member name="P:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.Name" />
     <member name="P:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.Role">
       <summary>Gets the role of this accessible object.</summary>
       <returns>The <see cref="F:System.Windows.Forms.AccessibleRole.RadioButton" /> value.</returns>
@@ -36973,6 +36988,7 @@ The following table shows the default value of this property for different .NET 
       <returns>
         <see langword="true" /> if you can paste data from the Clipboard in the specified data format; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Windows.Forms.RichTextBox.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.RichTextBox.CreateRichEditOleCallback">
       <summary>Creates an <see langword="IRichEditOleCallback" />-compatible object for handling rich-edit callback operations.</summary>
       <returns>An object that implements the <see langword="IRichEditOleCallback" /> interface.</returns>
@@ -39169,6 +39185,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
     <member name="M:System.Windows.Forms.SplitContainer.BeginInit">
       <summary>Signals the object that initialization is started.</summary>
     </member>
+    <member name="M:System.Windows.Forms.SplitContainer.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.SplitContainer.CreateControlsInstance">
       <summary>Creates a new instance of the control collection for the control.</summary>
       <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
@@ -39452,6 +39469,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
     <member name="M:System.Windows.Forms.Splitter.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Splitter" /> class. <see cref="T:System.Windows.Forms.Splitter" /> has been replaced by <see cref="T:System.Windows.Forms.SplitContainer" />, and is provided only for compatibility with previous versions.</summary>
     </member>
+    <member name="M:System.Windows.Forms.Splitter.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.Splitter.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
       <summary>This method is not relevant to this class.</summary>
       <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
@@ -40434,6 +40452,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
     <member name="M:System.Windows.Forms.TabControl.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TabControl.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TabControl.CreateControlsInstance">
       <summary>This member overrides <see cref="M:System.Windows.Forms.Control.CreateControlsInstance" />.</summary>
       <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
@@ -41651,6 +41670,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class and specifies the text for the tab.</summary>
       <param name="text">The text for the tab.</param>
     </member>
+    <member name="M:System.Windows.Forms.TabPage.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TabPage.CreateControlsInstance">
       <summary>Creates a new instance of the control collection for the control.</summary>
       <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
@@ -42664,6 +42684,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.TextBox.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TextBox" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TextBox.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TextBox.Dispose(System.Boolean)">
       <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.TextBox" /> and optionally releases the managed resources.</summary>
       <param name="disposing">
@@ -42850,6 +42871,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.TextBoxBase.Copy">
       <summary>Copies the current selection in the text box to the Clipboard.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TextBoxBase.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TextBoxBase.CreateHandle">
       <summary>Creates a handle for the control.</summary>
     </member>
@@ -44644,6 +44666,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.ToolStripContainer.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripContainer" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.ToolStripContainer.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.ToolStripContainer.CreateControlsInstance">
       <summary>Creates and returns a <see cref="T:System.Windows.Forms.ToolStripContainer" /> collection.</summary>
       <returns>A read-only <see cref="T:System.Windows.Forms.ToolStripContainer" /> collection.</returns>
@@ -45895,6 +45918,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.ToolStripDropDownMenu.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.ToolStripDropDownMenu.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.ToolStripDropDownMenu.CreateDefaultItem(System.String,System.Drawing.Image,System.EventHandler)">
       <summary>Creates a default <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> with the specified text, image, and event handler on a new <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
       <param name="text">The text to use for the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />. If the <paramref name="text" /> parameter is a hyphen (-), this method creates a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
@@ -47625,6 +47649,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.ToolStripPanel.BeginInit">
       <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
     </member>
+    <member name="M:System.Windows.Forms.ToolStripPanel.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.ToolStripPanel.CreateControlsInstance">
       <summary>Retrieves a collection of <see cref="T:System.Windows.Forms.ToolStripPanel" /> controls.</summary>
       <returns>A collection of <see cref="T:System.Windows.Forms.ToolStripPanel" /> controls.</returns>
@@ -49516,6 +49541,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.TrackBar.BeginInit">
       <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.TrackBar" /> that is used on a form or used by another component. The initialization occurs at run time.</summary>
     </member>
+    <member name="M:System.Windows.Forms.TrackBar.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.TrackBar.CreateHandle">
       <summary>Overrides the <see cref="M:System.Windows.Forms.Control.CreateHandle" /> method.</summary>
     </member>
@@ -51199,6 +51225,7 @@ This collection is currently bound to a task dialog.</exception>
     <member name="M:System.Windows.Forms.UpDownBase.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.UpDownBase" /> class.</summary>
     </member>
+    <member name="M:System.Windows.Forms.UpDownBase.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.UpDownBase.DownButton">
       <summary>When overridden in a derived class, handles the clicking of the down button on the spin box (also known as an up-down control).</summary>
     </member>
@@ -55295,6 +55322,7 @@ This collection is currently bound to a task dialog.</exception>
       <summary>Called by the control when the underlying ActiveX control is created.</summary>
       <param name="nativeActiveXObject">An object that represents the underlying ActiveX control.</param>
     </member>
+    <member name="M:System.Windows.Forms.WebBrowser.CreateAccessibilityInstance" />
     <member name="M:System.Windows.Forms.WebBrowser.CreateSink">
       <summary>Associates the underlying ActiveX control with a client that can handle control events.</summary>
     </member>

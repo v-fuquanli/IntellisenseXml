@@ -8,6 +8,7 @@
       <summary>
             Redactor that replaces anything with an empty string.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Compliance.Redaction.ErasingRedactor.#ctor" />
     <member name="M:Microsoft.Extensions.Compliance.Redaction.ErasingRedactor.GetRedactedLength(System.ReadOnlySpan{System.Char})">
       <summary>Gets the number of characters produced by redacting the input.</summary>
       <param name="input">Value to be redacted.</param>
@@ -47,6 +48,7 @@
       <summary>
             Options to control the <see cref="T:Microsoft.Extensions.Compliance.Redaction.HmacRedactor" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Compliance.Redaction.HmacRedactorOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Compliance.Redaction.HmacRedactorOptions.Key">
       <summary>
              Gets or sets the hashing key.</summary>

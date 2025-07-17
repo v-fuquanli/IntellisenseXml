@@ -2677,6 +2677,7 @@
       <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the specified <see cref="T:System.Windows.UIElement" />.</summary>
       <returns>The point that represents the clickable space that is on the specified <see cref="T:System.Windows.UIElement" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetHeadingLevelCore" />
     <member name="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetHelpTextCore">
       <summary>Gets the string that describes the functionality of the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />.</summary>
       <returns>The help text.</returns>
@@ -2733,6 +2734,7 @@
       <returns>
         <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsDialogCore" />
     <member name="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsEnabledCore">
       <summary>Gets a value that indicates whether the specified <see cref="T:System.Windows.UIElement" /> can receive and send events.</summary>
       <returns>
@@ -19612,6 +19614,7 @@
     <member name="F:System.Windows.Controls.ToolTip.PlacementTargetProperty">
       <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTip.PlacementTarget" /> dependency property.</summary>
     </member>
+    <member name="F:System.Windows.Controls.ToolTip.ShowsToolTipOnKeyboardFocusProperty" />
     <member name="F:System.Windows.Controls.ToolTip.StaysOpenProperty">
       <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTip.StaysOpen" /> dependency property.</summary>
     </member>
@@ -19672,6 +19675,7 @@
       <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> relative to which the <see cref="T:System.Windows.Controls.ToolTip" /> is positioned when it opens.</summary>
       <returns>The <see cref="T:System.Windows.UIElement" /> that is the logical parent of the <see cref="T:System.Windows.Controls.ToolTip" /> control. The default is <see langword="null" />.</returns>
     </member>
+    <member name="P:System.Windows.Controls.ToolTip.ShowsToolTipOnKeyboardFocus" />
     <member name="P:System.Windows.Controls.ToolTip.StaysOpen">
       <summary>Gets or sets a value that indicates whether an open <see cref="T:System.Windows.Controls.ToolTip" /> remains open until the user clicks the mouse when the mouse is not over the <see cref="T:System.Windows.Controls.ToolTip" />.</summary>
       <exception cref="T:System.NotSupportedException">Occurs when <see cref="P:System.Windows.Controls.ToolTip.StaysOpen" /> is set to <see langword="false" /> when a tooltip is not open.</exception>
@@ -19732,6 +19736,7 @@
     <member name="F:System.Windows.Controls.ToolTipService.ShowOnDisabledProperty">
       <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" /> attached property.</summary>
     </member>
+    <member name="F:System.Windows.Controls.ToolTipService.ShowsToolTipOnKeyboardFocusProperty" />
     <member name="F:System.Windows.Controls.ToolTipService.ToolTipClosingEvent">
       <summary>Identifies the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipClosing" /> event that is exposed by objects that use the <see cref="T:System.Windows.Controls.ToolTipService" /> service to display tooltips.</summary>
     </member>
@@ -19932,6 +19937,7 @@
     <member name="P:System.Windows.Controls.ToolTipService.ShowOnDisabled">
       <summary>Gets or sets whether a tooltip appears for an object that is not enabled.</summary>
     </member>
+    <member name="P:System.Windows.Controls.ToolTipService.ShowsToolTipOnKeyboardFocus" />
     <member name="P:System.Windows.Controls.ToolTipService.ToolTip">
       <summary>Gets or sets the content of a tooltip.</summary>
     </member>
@@ -24105,6 +24111,15 @@
       <returns>
         <see langword="true" /> if <paramref name="elementInTemplate" /> belongs to an instance of a template that defines a value for the specified property that may change at runtime based on changes elsewhere; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="T:System.Windows.Diagnostics.BindingDiagnostics" />
+    <member name="E:System.Windows.Diagnostics.BindingDiagnostics.BindingFailed" />
+    <member name="T:System.Windows.Diagnostics.BindingFailedEventArgs" />
+    <member name="M:System.Windows.Diagnostics.BindingFailedEventArgs.#ctor" />
+    <member name="P:System.Windows.Diagnostics.BindingFailedEventArgs.Binding" />
+    <member name="P:System.Windows.Diagnostics.BindingFailedEventArgs.Code" />
+    <member name="P:System.Windows.Diagnostics.BindingFailedEventArgs.EventType" />
+    <member name="P:System.Windows.Diagnostics.BindingFailedEventArgs.Message" />
+    <member name="P:System.Windows.Diagnostics.BindingFailedEventArgs.Parameters" />
     <member name="T:System.Windows.Diagnostics.ResourceDictionaryDiagnostics">
       <summary>Enables enumeration of generic and themed <see cref="T:System.Windows.ResourceDictionary" /> instances, and provides      a notification infrastructure for listening to the loading and unloading of <see cref="T:System.Windows.ResourceDictionary" /> instances.</summary>
     </member>
@@ -32016,6 +32031,8 @@
       <param name="element">A <see cref="T:System.Object" /> that represents the element whose attached property you want to set.</param>
       <param name="comments">A <see cref="T:System.String" /> that specifies the localization comments.</param>
     </member>
+    <member name="P:System.Windows.Localization.Attributes" />
+    <member name="P:System.Windows.Localization.Comments" />
     <member name="T:System.Windows.LogicalTreeHelper">
       <summary>Provides static helper methods for querying objects in the logical tree.</summary>
     </member>
@@ -34030,6 +34047,7 @@
     <member name="P:System.Windows.Media.Animation.Storyboard.TargetName">
       <summary>Gets or sets the name of the object to animate. The object must be a <see cref="T:System.Windows.FrameworkElement" />, <see cref="T:System.Windows.FrameworkContentElement" />, or <see cref="T:System.Windows.Freezable" />.</summary>
     </member>
+    <member name="P:System.Windows.Media.Animation.Storyboard.TargetProperty_a" />
     <member name="T:System.Windows.Media.Animation.ThicknessAnimation">
       <summary>Animates the value of a  <see cref="T:System.Windows.Thickness" /> property between two target values using linear interpolation over a specified <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />.</summary>
     </member>
@@ -36639,6 +36657,7 @@ The invalidations happen when an implicit data template resource changes.</summa
       <summary>Gets or sets a value that indicates the width of the glass border around a window.</summary>
       <returns>The width of the glass border around a window.</returns>
     </member>
+    <member name="P:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome" />
     <member name="P:System.Windows.Shell.WindowChrome.NonClientFrameEdges">
       <summary>Gets or sets a value that indicates which edges of the window frame are not owned by the client.</summary>
       <exception cref="T:System.ArgumentException">'Left, Right, Top, Bottom' is not a valid value. At least one edge must belong to the client.</exception>
@@ -36650,6 +36669,7 @@ The invalidations happen when an implicit data template resource changes.</summa
       <summary>Gets or sets a value that indicates the width of the border that is used to resize a window.</summary>
       <returns>The width of the border that is used to resize a window.</returns>
     </member>
+    <member name="P:System.Windows.Shell.WindowChrome.ResizeGripDirection" />
     <member name="P:System.Windows.Shell.WindowChrome.UseAeroCaptionButtons">
       <summary>Gets or sets a value that indicates whether hit-testing is enabled on the Windows Aero caption buttons.</summary>
       <returns>

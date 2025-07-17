@@ -8,6 +8,7 @@
       <summary>
             Specifies options used by the <see cref="T:Microsoft.Extensions.Configuration.ConfigurationBinder" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Configuration.BinderOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Configuration.BinderOptions.BindNonPublicProperties">
       <summary>
             Gets or sets a value that indicates whether the binder attempts to set all properties or only public properties.</summary>

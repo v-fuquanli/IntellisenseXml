@@ -4,6 +4,7 @@
     <name>Microsoft.Extensions.Caching.StackExchangeRedis</name>
   </assembly>
   <members>
+    <member name="T:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache" />
     <member name="M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})">
       <param name="optionsAccessor" />
     </member>
@@ -82,6 +83,7 @@
     <member name="T:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions">
       <summary>Configuration options for <see cref="T:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.Configuration">
       <summary>The configuration used to connect to Redis.</summary>
     </member>
@@ -89,6 +91,7 @@
       <summary>The configuration used to connect to Redis.
             This is preferred over Configuration.</summary>
     </member>
+    <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.ConnectionMultiplexerFactory" />
     <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.InstanceName">
       <summary>The Redis instance name.</summary>
     </member>
@@ -96,6 +99,7 @@
       <summary>Gets the default configured <typeparamref name="TOptions" /> instance.</summary>
       <returns>An object that represents the Redis cache options.</returns>
     </member>
+    <member name="P:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.ProfilingSession" />
     <member name="T:Microsoft.Extensions.DependencyInjection.StackExchangeRedisCacheServiceCollectionExtensions">
       <summary>Extension methods for setting up Redis distributed cache related services in an <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</summary>
     </member>

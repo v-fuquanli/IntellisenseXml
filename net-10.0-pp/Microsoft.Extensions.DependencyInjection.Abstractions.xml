@@ -1688,6 +1688,7 @@
       <summary>
             Specifies the parameter to inject the key that was used for registration or resolution.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute.#ctor" />
     <member name="T:Microsoft.Extensions.DependencyInjection.ServiceKeyLookupMode">
       <summary>
             Specifies how to look up the service key for a parameter.</summary>

@@ -4,6 +4,7 @@
     <name>System.CommandLine.Hosting</name>
   </assembly>
   <members>
+    <member name="T:System.CommandLine.Hosting.HostingExtensions" />
     <member name="M:System.CommandLine.Hosting.HostingExtensions.BindCommandLine``1(Microsoft.Extensions.Options.OptionsBuilder{``0})">
       <param name="optionsBuilder" />
       <typeparam name="TOptions" />
@@ -34,17 +35,24 @@
       <param name="host" />
       <param name="configureOptions" />
     </member>
+    <member name="T:System.CommandLine.Hosting.InvocationLifetime" />
     <member name="M:System.CommandLine.Hosting.InvocationLifetime.#ctor(Microsoft.Extensions.Options.IOptions{System.CommandLine.Hosting.InvocationLifetimeOptions},Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Logging.ILoggerFactory)">
       <param name="options" />
       <param name="environment" />
       <param name="applicationLifetime" />
       <param name="loggerFactory" />
     </member>
+    <member name="M:System.CommandLine.Hosting.InvocationLifetime.Dispose" />
     <member name="M:System.CommandLine.Hosting.InvocationLifetime.StopAsync(System.Threading.CancellationToken)">
       <param name="cancellationToken" />
     </member>
     <member name="M:System.CommandLine.Hosting.InvocationLifetime.WaitForStartAsync(System.Threading.CancellationToken)">
       <param name="cancellationToken" />
     </member>
+    <member name="P:System.CommandLine.Hosting.InvocationLifetime.ApplicationLifetime" />
+    <member name="P:System.CommandLine.Hosting.InvocationLifetime.Environment" />
+    <member name="P:System.CommandLine.Hosting.InvocationLifetime.Options" />
+    <member name="T:System.CommandLine.Hosting.InvocationLifetimeOptions" />
+    <member name="M:System.CommandLine.Hosting.InvocationLifetimeOptions.#ctor" />
   </members>
 </doc>

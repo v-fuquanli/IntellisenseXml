@@ -935,6 +935,7 @@
       <summary>Gets a shell trace source.</summary>
       <returns>A shell trace source.</returns>
     </member>
+    <member name="P:System.Diagnostics.PresentationTraceSources.TraceLevel" />
     <member name="T:System.IO.Packaging.CertificateEmbeddingOption">
       <summary>Specifies the location where the X.509 certificate that is used in signing is stored.</summary>
     </member>

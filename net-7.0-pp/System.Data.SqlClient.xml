@@ -1869,6 +1869,7 @@ The connection string contains <see langword="Context Connection=true" />.
       <param name="length">The maximum length to copy into the buffer.</param>
       <returns>The actual number of characters read.</returns>
     </member>
+    <member name="M:System.Data.SqlClient.SqlDataReader.GetColumnSchema" />
     <member name="M:System.Data.SqlClient.SqlDataReader.GetDataTypeName(System.Int32)">
       <summary>Gets a string representing the data type of the specified column.</summary>
       <param name="i">The zero-based ordinal position of the column to find.</param>

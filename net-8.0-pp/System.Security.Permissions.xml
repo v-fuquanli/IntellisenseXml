@@ -7365,6 +7365,7 @@ The parameter's version number is not supported.</exception>
   
  The version attribute within <paramref name="elem" /> is not supported.</exception>
     </member>
+    <member name="M:System.Xaml.Permissions.XamlLoadPermission.GetHashCode" />
     <member name="M:System.Xaml.Permissions.XamlLoadPermission.Includes(System.Xaml.Permissions.XamlAccessLevel)">
       <summary>Returns whether this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> includes a specified <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> in its <see cref="P:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess" /> list.</summary>
       <param name="requestedAccess">The specific <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> to check for.</param>

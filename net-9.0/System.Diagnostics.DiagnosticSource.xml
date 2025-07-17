@@ -569,6 +569,7 @@ Activity links can be used to represent batched operations where an activity was
       <summary>Gets or sets the callback used to listen to the activity stop event.</summary>
       <returns>An activity callback instance used to listen to the activity stop event.</returns>
     </member>
+    <member name="P:System.Diagnostics.ActivityListener.ExceptionRecorder" />
     <member name="P:System.Diagnostics.ActivityListener.Sample">
       <summary>Gets or sets the callback that is used to decide if creating <see cref="T:System.Diagnostics.Activity" /> objects with a specific data state is allowed.</summary>
       <returns>A sample activity instance.</returns>
@@ -692,6 +693,7 @@ Activity links can be used to represent batched operations where an activity was
       <summary>Returns the activity source name.</summary>
       <returns>A string that represents the activity source name.</returns>
     </member>
+    <member name="P:System.Diagnostics.ActivitySource.Tags" />
     <member name="P:System.Diagnostics.ActivitySource.Version">
       <summary>Returns the activity source version.</summary>
       <returns>A string that represents the activity source version.</returns>

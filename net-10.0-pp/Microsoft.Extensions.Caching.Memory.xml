@@ -160,6 +160,7 @@
       <summary>
             Specifies options for <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCache" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.Clock">
       <summary>
             Gets or sets the clock used by the cache for expiration.</summary>

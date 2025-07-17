@@ -69,6 +69,7 @@
       <summary>
             Options for the pipeline of resilience strategies assigned to a particular endpoint.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.HedgingEndpointOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.HedgingEndpointOptions.CircuitBreaker">
       <summary>
             Gets or sets the circuit breaker options for the endpoint.</summary>
@@ -139,6 +140,7 @@
       <summary>
             Implementation of the <see cref="T:Polly.RateLimiting.RateLimiterStrategyOptions" /> for HTTP scenarios.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.HttpRateLimiterStrategyOptions.#ctor" />
     <member name="T:Microsoft.Extensions.Http.Resilience.HttpResiliencePipelineBuilderExtensions">
       <summary>
             Extensions for <see cref="T:Microsoft.Extensions.Http.Resilience.IHttpResiliencePipelineBuilder" />.</summary>
@@ -189,6 +191,7 @@
       <summary>
             Options for the pipeline of resilience strategies for usage in hedging HTTP scenarios.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.HttpStandardHedgingResilienceOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.HttpStandardHedgingResilienceOptions.Endpoint">
       <summary>
             Gets or sets the hedging endpoint options.</summary>
@@ -205,6 +208,7 @@
       <summary>
             Options for resilience strategies for usage in HTTP scenarios.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.HttpStandardResilienceOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.HttpStandardResilienceOptions.AttemptTimeout">
       <summary>
             Gets or sets the options for the timeout pipeline applied per each request attempt.</summary>
@@ -267,6 +271,7 @@
       <summary>
             Implementation of the <see cref="T:Polly.Timeout.TimeoutStrategyOptions" /> for HTTP scenarios.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.HttpTimeoutStrategyOptions.#ctor" />
     <member name="T:Microsoft.Extensions.Http.Resilience.IHttpResiliencePipelineBuilder">
       <summary>
             The builder for configuring the HTTP client resilience pipeline.</summary>
@@ -323,6 +328,7 @@
       <summary>
             Represents the options for collection of endpoint groups that have fixed order.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.OrderedGroupsRoutingOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.OrderedGroupsRoutingOptions.Groups">
       <summary>
             Gets or sets the collection of ordered endpoints groups.</summary>
@@ -481,6 +487,7 @@
       <summary>
             Represents a URI-based endpoint.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.UriEndpoint.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.UriEndpoint.Uri">
       <summary>
             Gets or sets the URL of the endpoint.</summary>
@@ -489,6 +496,7 @@
       <summary>
             Represents a collection of <see cref="T:Microsoft.Extensions.Http.Resilience.WeightedUriEndpoint" />.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.UriEndpointGroup.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.UriEndpointGroup.Endpoints">
       <summary>
             Gets or sets the endpoints in this endpoint group.</summary>
@@ -510,6 +518,7 @@
       <summary>
             Represents the options for collection of endpoint groups that have a weight assigned.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.WeightedGroupsRoutingOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.WeightedGroupsRoutingOptions.Groups">
       <summary>
             Gets or sets the collection of weighted endpoints groups.</summary>
@@ -522,6 +531,7 @@
       <summary>
             Represents a URI-based endpoint with a weight assigned.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.WeightedUriEndpoint.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.WeightedUriEndpoint.Uri">
       <summary>
             Gets or sets the URL of the endpoint.</summary>
@@ -536,6 +546,7 @@
       <summary>
             Represents a collection of <see cref="T:Microsoft.Extensions.Http.Resilience.UriEndpoint" /> with a weight assigned.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Http.Resilience.WeightedUriEndpointGroup.#ctor" />
     <member name="P:Microsoft.Extensions.Http.Resilience.WeightedUriEndpointGroup.Weight">
       <summary>
             Gets or sets the weight of the group.</summary>

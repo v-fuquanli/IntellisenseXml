@@ -1445,6 +1445,7 @@ The <paramref name="tag" /> parameter length is not 16 bytes (128 bits).</except
       <summary>Gets a new <see cref="T:System.Security.Cryptography.CngAlgorithm" /> object that specifies the Message Digest 5 (MD5) hash algorithm.</summary>
       <returns>An object that specifies the MD5 algorithm.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.CngAlgorithm.MLDsa" />
     <member name="P:System.Security.Cryptography.CngAlgorithm.Rsa">
       <summary>Gets a new <see cref="T:System.Security.Cryptography.CngAlgorithm" /> object that specifies the RSA hash algorithm.</summary>
       <returns>An object that specifies the RSA algorithm.</returns>
@@ -1528,6 +1529,7 @@ The <paramref name="tag" /> parameter length is not 16 bytes (128 bits).</except
       <summary>Gets a <see cref="T:System.Security.Cryptography.CngAlgorithmGroup" /> object that specifies the Elliptic Curve Digital Signature Algorithm (ECDSA) family of algorithms.</summary>
       <returns>An object that specifies the ECDSA family of algorithms.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.CngAlgorithmGroup.MLDsa" />
     <member name="P:System.Security.Cryptography.CngAlgorithmGroup.Rsa">
       <summary>Gets a <see cref="T:System.Security.Cryptography.CngAlgorithmGroup" /> object that specifies the Rivest-Shamir-Adleman (RSA) family of algorithms.</summary>
       <returns>An object that specifies the RSA family of algorithms.</returns>
@@ -1854,6 +1856,9 @@ The <paramref name="tag" /> parameter length is not 16 bytes (128 bits).</except
       <summary>Gets a <see cref="T:System.Security.Cryptography.CngKeyBlobFormat" /> object that specifies a Private Key Information Syntax Standard (PKCS #8) key BLOB.</summary>
       <returns>An object that specifies a PKCS #8 private key BLOB.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.CngKeyBlobFormat.PQDsaPrivateBlob" />
+    <member name="P:System.Security.Cryptography.CngKeyBlobFormat.PQDsaPrivateSeedBlob" />
+    <member name="P:System.Security.Cryptography.CngKeyBlobFormat.PQDsaPublicBlob" />
     <member name="T:System.Security.Cryptography.CngKeyCreationOptions">
       <summary>Specifies options used for key creation.</summary>
     </member>
@@ -9597,9 +9602,11 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
     <member name="M:System.Security.Cryptography.MD5CryptoServiceProvider.Initialize">
       <summary>Initializes an instance of <see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" />.</summary>
     </member>
+    <member name="T:System.Security.Cryptography.MLDsa" />
     <member name="M:System.Security.Cryptography.MLDsa.#ctor(System.Security.Cryptography.MLDsaAlgorithm)">
       <param name="algorithm" />
     </member>
+    <member name="M:System.Security.Cryptography.MLDsa.Dispose" />
     <member name="M:System.Security.Cryptography.MLDsa.Dispose(System.Boolean)">
       <param name="disposing" />
     </member>
@@ -9645,6 +9652,10 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
     <member name="M:System.Security.Cryptography.MLDsa.ExportMLDsaSecretKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.MLDsa.ExportPkcs8PrivateKey" />
+    <member name="M:System.Security.Cryptography.MLDsa.ExportPkcs8PrivateKeyPem" />
+    <member name="M:System.Security.Cryptography.MLDsa.ExportSubjectPublicKeyInfo" />
+    <member name="M:System.Security.Cryptography.MLDsa.ExportSubjectPublicKeyInfoPem" />
     <member name="M:System.Security.Cryptography.MLDsa.GenerateKey(System.Security.Cryptography.MLDsaAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -9756,12 +9767,28 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="context" />
       <param name="signature" />
     </member>
+    <member name="P:System.Security.Cryptography.MLDsa.Algorithm" />
+    <member name="P:System.Security.Cryptography.MLDsa.IsSupported" />
+    <member name="T:System.Security.Cryptography.MLDsaAlgorithm" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.MLDsa44" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.MLDsa65" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.MLDsa87" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.Name" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.PrivateSeedSizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.PublicKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.SecretKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLDsaAlgorithm.SignatureSizeInBytes" />
+    <member name="T:System.Security.Cryptography.MLDsaCng" />
     <member name="M:System.Security.Cryptography.MLDsaCng.#ctor(System.Security.Cryptography.CngKey)">
       <param name="key" />
     </member>
+    <member name="P:System.Security.Cryptography.MLDsaCng.Key" />
+    <member name="T:System.Security.Cryptography.MLDsaOpenSsl" />
     <member name="M:System.Security.Cryptography.MLDsaOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
       <param name="pkeyHandle" />
     </member>
+    <member name="M:System.Security.Cryptography.MLDsaOpenSsl.DuplicateKeyHandle" />
+    <member name="T:System.Security.Cryptography.MLKem" />
     <member name="M:System.Security.Cryptography.MLKem.#ctor(System.Security.Cryptography.MLKemAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -9776,6 +9803,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="ciphertext" />
       <param name="sharedSecret" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKem.Dispose" />
     <member name="M:System.Security.Cryptography.MLKem.Dispose(System.Boolean)">
       <param name="disposing" />
     </member>
@@ -9791,12 +9819,14 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="ciphertext" />
       <param name="sharedSecret" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKey" />
     <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.MLKem.ExportDecapsulationKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKey" />
     <member name="M:System.Security.Cryptography.MLKem.ExportEncapsulationKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
@@ -9827,12 +9857,17 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="password" />
       <param name="pbeParameters" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportPkcs8PrivateKey" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportPkcs8PrivateKeyPem" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeed" />
     <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeed(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.MLKem.ExportPrivateSeedCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKem.ExportSubjectPublicKeyInfo" />
+    <member name="M:System.Security.Cryptography.MLKem.ExportSubjectPublicKeyInfoPem" />
     <member name="M:System.Security.Cryptography.MLKem.GenerateKey(System.Security.Cryptography.MLKemAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -9936,12 +9971,16 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="destination" />
       <param name="bytesWritten" />
     </member>
+    <member name="P:System.Security.Cryptography.MLKem.Algorithm" />
+    <member name="P:System.Security.Cryptography.MLKem.IsSupported" />
+    <member name="T:System.Security.Cryptography.MLKemAlgorithm" />
     <member name="M:System.Security.Cryptography.MLKemAlgorithm.Equals(System.Object)">
       <param name="obj" />
     </member>
     <member name="M:System.Security.Cryptography.MLKemAlgorithm.Equals(System.Security.Cryptography.MLKemAlgorithm)">
       <param name="other" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.GetHashCode" />
     <member name="M:System.Security.Cryptography.MLKemAlgorithm.op_Equality(System.Security.Cryptography.MLKemAlgorithm,System.Security.Cryptography.MLKemAlgorithm)">
       <param name="left" />
       <param name="right" />
@@ -9950,9 +9989,21 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.ToString" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.CiphertextSizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.DecapsulationKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.EncapsulationKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem1024" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem512" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.MLKem768" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.Name" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.PrivateSeedSizeInBytes" />
+    <member name="P:System.Security.Cryptography.MLKemAlgorithm.SharedSecretSizeInBytes" />
+    <member name="T:System.Security.Cryptography.MLKemOpenSsl" />
     <member name="M:System.Security.Cryptography.MLKemOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
       <param name="pkeyHandle" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKemOpenSsl.DuplicateKeyHandle" />
     <member name="T:System.Security.Cryptography.Oid">
       <summary>Represents a cryptographic object identifier. This class cannot be inherited.</summary>
     </member>
@@ -14154,9 +14205,11 @@ An error occurred creating the signature.</exception>
       <summary>Gets or sets the key algorithm for the signature description.</summary>
       <returns>The key algorithm for the signature description.</returns>
     </member>
+    <member name="T:System.Security.Cryptography.SlhDsa" />
     <member name="M:System.Security.Cryptography.SlhDsa.#ctor(System.Security.Cryptography.SlhDsaAlgorithm)">
       <param name="algorithm" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.Dispose" />
     <member name="M:System.Security.Cryptography.SlhDsa.Dispose(System.Boolean)">
       <param name="disposing" />
     </member>
@@ -14184,18 +14237,24 @@ An error occurred creating the signature.</exception>
       <param name="password" />
       <param name="pbeParameters" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportPkcs8PrivateKey" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportPkcs8PrivateKeyPem" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKey" />
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaPublicKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey" />
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey(System.Span{System.Byte})">
       <param name="destination" />
     </member>
     <member name="M:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKeyCore(System.Span{System.Byte})">
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSubjectPublicKeyInfo" />
+    <member name="M:System.Security.Cryptography.SlhDsa.ExportSubjectPublicKeyInfoPem" />
     <member name="M:System.Security.Cryptography.SlhDsa.GenerateKey(System.Security.Cryptography.SlhDsaAlgorithm)">
       <param name="algorithm" />
     </member>
@@ -14355,9 +14414,30 @@ An error occurred creating the signature.</exception>
       <param name="hashAlgorithmOid" />
       <param name="signature" />
     </member>
+    <member name="P:System.Security.Cryptography.SlhDsa.Algorithm" />
+    <member name="P:System.Security.Cryptography.SlhDsa.IsSupported" />
+    <member name="T:System.Security.Cryptography.SlhDsaAlgorithm" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.Name" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.PublicKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SignatureSizeInBytes" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_128f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_128s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_192f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_192s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_256f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaSha2_256s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake128f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake128s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake192f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake192s" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake256f" />
+    <member name="P:System.Security.Cryptography.SlhDsaAlgorithm.SlhDsaShake256s" />
+    <member name="T:System.Security.Cryptography.SlhDsaOpenSsl" />
     <member name="M:System.Security.Cryptography.SlhDsaOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
       <param name="pkeyHandle" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsaOpenSsl.DuplicateKeyHandle" />
     <member name="T:System.Security.Cryptography.SP800108HmacCounterKdf">
       <summary>
               NIST SP 800-108 HMAC CTR Key-Based Key Derivation (KBKDF)</summary>
@@ -16345,6 +16425,10 @@ This object was created with a constructor which did not accept a signing key.</
     <member name="F:System.Security.Cryptography.X509Certificates.OpenFlags.ReadWrite">
       <summary>Open the X.509 certificate store for both reading and writing.</summary>
     </member>
+    <member name="T:System.Security.Cryptography.X509Certificates.Pkcs12ExportPbeParameters" />
+    <member name="F:System.Security.Cryptography.X509Certificates.Pkcs12ExportPbeParameters.Default" />
+    <member name="F:System.Security.Cryptography.X509Certificates.Pkcs12ExportPbeParameters.Pbes2Aes256Sha256" />
+    <member name="F:System.Security.Cryptography.X509Certificates.Pkcs12ExportPbeParameters.Pkcs12TripleDesSha1" />
     <member name="T:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits">
       <summary>
               Represents a set of constraints to apply when loading PKCS#12/PFX contents.</summary>
@@ -16537,11 +16621,14 @@ This object was created with a constructor which did not accept a signing key.</
       <exception cref="T:System.Security.Cryptography.CryptographicException">The key contents are corrupt or could not be read successfully.</exception>
       <returns>The public key, or <see langword="null" /> if the key is not an ECDsa key.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetMLDsaPublicKey" />
+    <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetMLKemPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetRSAPublicKey">
       <summary>Gets the <see cref="T:System.Security.Cryptography.RSA" /> public key, or <see langword="null" /> if the key is not an RSA key.</summary>
       <exception cref="T:System.Security.Cryptography.CryptographicException">The key contents are corrupt or could not be read successfully.</exception>
       <returns>The public key, or <see langword="null" /> if the key is not an RSA key.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.GetSlhDsaPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.PublicKey.TryExportSubjectPublicKeyInfo(System.Span{System.Byte},System.Int32@)">
       <summary>Attempts to export the current key in the X.509 SubjectPublicKeyInfo format into a provided buffer.</summary>
       <param name="destination">The byte span to receive the X.509 SubjectPublicKeyInfo data.</param>
@@ -17967,6 +18054,10 @@ The certificate uses an unknown public key algorithm.</exception>
       <exception cref="T:System.Security.Cryptography.CryptographicException">The handle is invalid.</exception>
       <returns>The public key, or <see langword="null" /> if this certificate does not have an ECDiffieHellman public key.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLDsaPrivateKey" />
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLDsaPublicKey" />
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLKemPrivateKey" />
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetMLKemPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetNameInfo(System.Security.Cryptography.X509Certificates.X509NameType,System.Boolean)">
       <summary>Gets the subject and issuer names from a certificate.</summary>
       <param name="nameType">The <see cref="T:System.Security.Cryptography.X509Certificates.X509NameType" /> value for the subject.</param>
@@ -17974,6 +18065,8 @@ The certificate uses an unknown public key algorithm.</exception>
         <see langword="true" /> to include the issuer name; otherwise, <see langword="false" />.</param>
       <returns>The name of the certificate.</returns>
     </member>
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetSlhDsaPrivateKey" />
+    <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetSlhDsaPublicKey" />
     <member name="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)">
       <summary>Populates an <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object using data from a byte array, a password, and a key storage flag.</summary>
       <param name="rawData">A byte array that contains data from an X.509 certificate.</param>

@@ -78,6 +78,7 @@
       <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type.</summary>
       <param name="type">The type of the instances that is serialized or deserialized.</param>
     </member>
+    <member name="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.GetSerializationSurrogateProvider" />
     <member name="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.IsStartObject(System.Xml.XmlDictionaryReader)">
       <summary>Gets a value that specifies whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned over an XML element that represents an object the serializer can deserialize from.</summary>
       <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream mapped from JSON.</param>

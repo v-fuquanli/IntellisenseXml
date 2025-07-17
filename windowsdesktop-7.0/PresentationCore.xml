@@ -148,6 +148,17 @@
       <summary>Gets the uniform resource identifier (URI) of the response.</summary>
       <returns>The URI of the response.</returns>
     </member>
+    <member name="T:System.Windows.Automation.AutomationHeadingLevel" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level1" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level2" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level3" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level4" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level5" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level6" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level7" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level8" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.Level9" />
+    <member name="F:System.Windows.Automation.AutomationHeadingLevel.None" />
     <member name="T:System.Windows.Automation.AutomationLiveSetting">
       <summary>Describes the notification characteristics of a particular live region.</summary>
     </member>
@@ -172,12 +183,14 @@
     <member name="F:System.Windows.Automation.AutomationProperties.AutomationIdProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.AutomationId" /> attached property.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationProperties.HeadingLevelProperty" />
     <member name="F:System.Windows.Automation.AutomationProperties.HelpTextProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.HelpText" /> attached property.</summary>
     </member>
     <member name="F:System.Windows.Automation.AutomationProperties.IsColumnHeaderProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.IsColumnHeader" /> attached property.</summary>
     </member>
+    <member name="F:System.Windows.Automation.AutomationProperties.IsDialogProperty" />
     <member name="F:System.Windows.Automation.AutomationProperties.IsOffscreenBehaviorProperty">
       <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.IsOffscreenBehavior" /> dependency property.</summary>
     </member>
@@ -383,12 +396,14 @@
     <member name="P:System.Windows.Automation.AutomationProperties.AutomationId">
       <summary>Gets or set the string that uniquely identifies the specified element.</summary>
     </member>
+    <member name="P:System.Windows.Automation.AutomationProperties.HeadingLevel" />
     <member name="P:System.Windows.Automation.AutomationProperties.HelpText">
       <summary>Gets or sets the help text for the specified element. The help text generally is the same text that is provided in the tooltip for the control.</summary>
     </member>
     <member name="P:System.Windows.Automation.AutomationProperties.IsColumnHeader">
       <summary>Gets or sets a value indicating whether the specified element is a column header.</summary>
     </member>
+    <member name="P:System.Windows.Automation.AutomationProperties.IsDialog" />
     <member name="P:System.Windows.Automation.AutomationProperties.IsOffscreenBehavior">
       <summary>Gets or sets a value that specifies how the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> property is determined.</summary>
     </member>
@@ -561,6 +576,7 @@
     <member name="T:System.Windows.Automation.Peers.AutomationEvents">
       <summary>Specifies the event that is raised by the element through the associated <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
     </member>
+    <member name="F:System.Windows.Automation.Peers.AutomationEvents.ActiveTextPositionChanged" />
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.AsyncContentLoaded">
       <summary>
         <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent" />
@@ -605,6 +621,7 @@
         <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuOpenedEvent" />
       </summary>
     </member>
+    <member name="F:System.Windows.Automation.Peers.AutomationEvents.Notification" />
     <member name="F:System.Windows.Automation.Peers.AutomationEvents.PropertyChanged">
       <summary>Used to raise a notification that a property has changed.</summary>
     </member>
@@ -752,6 +769,8 @@
       <summary>When overridden in a derived class, provides UI Automation with a list of elements affected or controlled by this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
       <returns>A list of automation peers for the controlled elements.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.AutomationPeer.GetHeadingLevel" />
+    <member name="M:System.Windows.Automation.Peers.AutomationPeer.GetHeadingLevelCore" />
     <member name="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText">
       <summary>Gets text that describes the functionality of the control that is associated with the automation peer.</summary>
       <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
@@ -901,6 +920,8 @@
       <returns>
         <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.AutomationPeer.IsDialog" />
+    <member name="M:System.Windows.Automation.Peers.AutomationPeer.IsDialogCore" />
     <member name="M:System.Windows.Automation.Peers.AutomationPeer.IsEnabled">
       <summary>Gets a value that indicates whether the element associated with this automation peer supports interaction.</summary>
       <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
@@ -1061,6 +1082,7 @@
       <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
       <returns>The point that represents the clickable space that is on the element.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetHeadingLevelCore" />
     <member name="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetHelpTextCore">
       <summary>Gets the string that describes the functionality of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.</summary>
       <returns>The string that describes the functionality of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</returns>
@@ -1117,6 +1139,7 @@
       <returns>
         <see langword="false" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsDialogCore" />
     <member name="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsEnabledCore">
       <summary>Gets a value that indicates whether this automation peer can receive and send events to the associated element. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsEnabled" />.</summary>
       <returns>
@@ -1296,6 +1319,7 @@
       <summary>Returns a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the <see cref="T:System.Windows.UIElement3D" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElement3DAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
       <returns>The <see cref="T:System.Windows.Point" /> on the element that allows a click. The point values are (<see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />) if the element is not both a <see cref="T:System.Windows.Interop.HwndSource" /> and a <see cref="T:System.Windows.PresentationSource" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHeadingLevelCore" />
     <member name="M:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore">
       <summary>Returns the string that describes the functionality of the <see cref="T:System.Windows.UIElement3D" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElement3DAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.</summary>
       <returns>A string that describes the functionality of the <see cref="T:System.Windows.UIElement3D" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElement3DAutomationPeer" />.</returns>
@@ -1353,6 +1377,7 @@
       <returns>
         <see langword="true" /> in all cases.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.UIElement3DAutomationPeer.IsDialogCore" />
     <member name="M:System.Windows.Automation.Peers.UIElement3DAutomationPeer.IsEnabledCore">
       <summary>Returns a value that indicates whether the <see cref="T:System.Windows.UIElement3D" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElement3DAutomationPeer" /> can participate in hit testing or accept focus. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable" />.</summary>
       <returns>
@@ -1434,6 +1459,7 @@
       <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
       <returns>The <see cref="T:System.Windows.Point" /> on the element that allows a click. The point values are (<see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />) if the element is not both a <see cref="T:System.Windows.Interop.HwndSource" /> and a <see cref="T:System.Windows.PresentationSource" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.UIElementAutomationPeer.GetHeadingLevelCore" />
     <member name="M:System.Windows.Automation.Peers.UIElementAutomationPeer.GetHelpTextCore">
       <summary>Gets the string that describes the functionality of the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.</summary>
       <returns>The string that contains the <see cref="P:System.Windows.Automation.AutomationProperties.HelpText" /> that is returned by <see cref="M:System.Windows.Automation.AutomationProperties.GetHelpText(System.Windows.DependencyObject)" />.</returns>
@@ -1490,6 +1516,7 @@
       <returns>
         <see langword="true" />.</returns>
     </member>
+    <member name="M:System.Windows.Automation.Peers.UIElementAutomationPeer.IsDialogCore" />
     <member name="M:System.Windows.Automation.Peers.UIElementAutomationPeer.IsEnabledCore">
       <summary>Gets a value that indicates whether the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" /> can accept keyboard focus. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable" />.</summary>
       <returns>A <see langword="boolean" /> that contains the value of <see cref="P:System.Windows.UIElement.IsEnabled" />.</returns>

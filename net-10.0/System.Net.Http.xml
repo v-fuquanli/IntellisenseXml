@@ -3180,6 +3180,7 @@ The timeout specified is greater than <see cref="F:System.Int32.MaxValue" /> mil
       <summary>Represents an HTTP PUT protocol method that is used to replace an entity identified by a URI.</summary>
       <returns>The HTTP PUT method.</returns>
     </member>
+    <member name="P:System.Net.Http.HttpMethod.Query" />
     <member name="P:System.Net.Http.HttpMethod.Trace">
       <summary>Represents an HTTP TRACE protocol method.</summary>
       <returns>The HTTP TRACE method.</returns>

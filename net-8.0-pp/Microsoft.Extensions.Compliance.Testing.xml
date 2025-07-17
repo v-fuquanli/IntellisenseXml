@@ -41,6 +41,7 @@
       <summary>
             Usage history of fake redaction types.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Compliance.Testing.FakeRedactionCollector.#ctor" />
     <member name="P:Microsoft.Extensions.Compliance.Testing.FakeRedactionCollector.AllRedactedData">
       <summary>
             Gets the full log of all redaction events that happened.</summary>
@@ -95,6 +96,7 @@
       <summary>
             Options to control the fake redactor.</summary>
     </member>
+    <member name="M:Microsoft.Extensions.Compliance.Testing.FakeRedactorOptions.#ctor" />
     <member name="P:Microsoft.Extensions.Compliance.Testing.FakeRedactorOptions.RedactionFormat">
       <summary>
             Gets or sets a value indicating how to format redacted data.</summary>
