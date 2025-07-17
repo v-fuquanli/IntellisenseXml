@@ -3355,6 +3355,9 @@ More than one argument is specified for a field set operation.</exception>
     <member name="E:System.Windows.Forms.BindingSource.PositionChanged">
       <summary>Occurs after the value of the <see cref="P:System.Windows.Forms.BindingSource.Position" /> property has changed.</summary>
     </member>
+    <member name="E:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitializeNotification#Initialized">
+      <summary>Occurs when the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized.</summary>
+    </member>
     <member name="M:System.Windows.Forms.BindingSource.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingSource" /> class to the default property values.</summary>
     </member>

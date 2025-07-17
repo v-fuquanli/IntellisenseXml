@@ -7353,6 +7353,15 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <returns>
         <code data-dev-comment-type="langword">true</code> if the formatting was successful; otherwise, <code data-dev-comment-type="langword">false</code>.</returns>
     </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Char@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
+    </member>
     <member name="M:System.Char.System#Numerics#IAdditionOperators{System#Char@System#Char@System#Char}#op_Addition(System.Char,System.Char)">
       <summary>Adds two values together to compute their sum.</summary>
       <param name="left">The value to which <paramref name="right" /> is added.</param>
@@ -29078,6 +29087,13 @@ On .NET Framework 4 and later versions and .NET Core running on Windows, it incl
       <returns>
         <code data-dev-comment-type="langword">true</code> if <code data-dev-comment-type="paramref">left</code> is less than or equal to <code data-dev-comment-type="paramref">right</code>; otherwise, <code data-dev-comment-type="langword">false</code>.</returns>
     </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte})">
+      <param name="utf8Text" />
+    </member>
     <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
       <summary>Parses a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
@@ -29184,6 +29200,15 @@ After trimming, the length of the read-only character span is 0.</exception>
       <param name="format">A read-only span containing the character representing one of the following specifiers that indicates the exact format to use when interpreting the current GUID instance: "N", "D", "B", "P", or "X".</param>
       <returns>
         <see langword="true" /> if the formatting operation was successful; <see langword="false" /> otherwise.</returns>
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.Guid@)">
+      <param name="utf8Text" />
+      <param name="result" />
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Guid@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Char},System.Guid@)">
       <summary>Converts the specified read-only span of characters containing the representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure.</summary>
@@ -49439,10 +49464,14 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the span has been passed.</returns>
     </member>
+    <member name="M:System.ReadOnlySpan`1.Enumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.ReadOnlySpan`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.ReadOnlySpan`1.Enumerator.Current">
       <summary>Gets a reference to the item at the current position of the enumerator.</summary>
       <returns>The element in the <see cref="T:System.ReadOnlySpan`1" /> at the current position of the enumerator.</returns>
     </member>
+    <member name="P:System.ReadOnlySpan`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.ReadOnlySpan`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Reflection.AmbiguousMatchException">
       <summary>The exception that is thrown when binding to a member results in more than one member matching the binding criteria. This class cannot be inherited.</summary>
     </member>
@@ -63354,10 +63383,14 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the span has been passed.</returns>
     </member>
+    <member name="M:System.Span`1.Enumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.Span`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.Span`1.Enumerator.Current">
       <summary>Gets a reference to the item at the current position of the enumerator.</summary>
       <returns>The element in the <see cref="T:System.Span`1" /> at the current position of the enumerator.</returns>
     </member>
+    <member name="P:System.Span`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.Span`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.StackOverflowException">
       <summary>The exception that is thrown when the execution stack exceeds the stack size. This class cannot be inherited.</summary>
     </member>
@@ -67789,6 +67822,15 @@ The current instance does not equal <see cref="F:System.String.Empty" />, and <p
       <param name="provider">An optional object that supplies culture-specific formatting information for <paramref name="utf8Destination" />.</param>
       <returns>
         <see langword="true" /> if the formatting was successful; otherwise, <see langword="false" />.</returns>
+    </member>
+    <member name="M:System.Text.Rune.System#IUtf8SpanParsable{System#Text#Rune}#Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Text.Rune.System#IUtf8SpanParsable{System#Text#Rune}#TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Text.Rune@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Text.Rune.ToLower(System.Text.Rune,System.Globalization.CultureInfo)">
       <summary>Returns a copy of the specified <see cref="T:System.Text.Rune" /> converted to lowercase, using the casing rules of the specified culture.</summary>

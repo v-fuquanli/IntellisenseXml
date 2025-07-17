@@ -714,6 +714,11 @@
         <paramref name="source" /> is <see langword="null" />.</exception>
       <returns>An enumerable that incorporates each element index into a tuple.</returns>
     </member>
+    <member name="M:System.Linq.Enumerable.InfiniteSequence``1(``0,``0)">
+      <param name="start" />
+      <param name="step" />
+      <typeparam name="T" />
+    </member>
     <member name="M:System.Linq.Enumerable.Intersect``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Produces the set intersection of two sequences by using the specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</summary>
       <param name="first">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose distinct elements that also appear in <paramref name="second" /> will be returned.</param>
@@ -1576,6 +1581,12 @@
       <exception cref="T:System.ArgumentNullException">
         <paramref name="source" /> or <paramref name="collectionSelector" /> or <paramref name="resultSelector" /> is <see langword="null" />.</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements are the result of invoking the one-to-many transform function <paramref name="collectionSelector" /> on each element of <paramref name="source" /> and then mapping each of those sequence elements and their corresponding source element to a result element.</returns>
+    </member>
+    <member name="M:System.Linq.Enumerable.Sequence``1(``0,``0,``0)">
+      <param name="start" />
+      <param name="endInclusive" />
+      <param name="step" />
+      <typeparam name="T" />
     </member>
     <member name="M:System.Linq.Enumerable.SequenceEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Determines whether two sequences are equal by comparing their elements by using a specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" />.</summary>

@@ -5076,6 +5076,12 @@
       <summary>Represents a collection of <see cref="T:System.Windows.DependencyObject" />, <see cref="T:System.Windows.Freezable" />, or <see cref="T:System.Windows.Media.Animation.Animatable" /> objects. <see cref="T:System.Windows.FreezableCollection`1" /> is itself an <see cref="T:System.Windows.Media.Animation.Animatable" /> type.</summary>
       <typeparam name="T">The type of collection. This type must be a <see cref="T:System.Windows.DependencyObject" /> or a derived class.</typeparam>
     </member>
+    <member name="E:System.Windows.FreezableCollection`1.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged">
+      <summary>For a description of this members, see <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />.</summary>
+    </member>
+    <member name="E:System.Windows.FreezableCollection`1.System#ComponentModel#INotifyPropertyChanged#PropertyChanged">
+      <summary>For a description of this members, see <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />.</summary>
+    </member>
     <member name="M:System.Windows.FreezableCollection`1.#ctor">
       <summary>Initializes a new instance of <see cref="T:System.Windows.FreezableCollection`1" /> that is empty and has the default initial capacity.</summary>
     </member>
@@ -5834,6 +5840,9 @@
     <member name="E:System.Windows.Ink.DrawingAttributes.PropertyDataChanged">
       <summary>Occurs when property data is added or removed from the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
     </member>
+    <member name="E:System.Windows.Ink.DrawingAttributes.System#ComponentModel#INotifyPropertyChanged#PropertyChanged">
+      <summary>Occurs when the value of any <see cref="T:System.Windows.Ink.DrawingAttributes" /> property has changed.</summary>
+    </member>
     <member name="F:System.Windows.Ink.DrawingAttributes.MaxHeight">
       <summary>Specifies the largest value allowed for the <see cref="P:System.Windows.Ink.DrawingAttributes.Height" /> property.</summary>
     </member>
@@ -6189,6 +6198,9 @@
     <member name="E:System.Windows.Ink.Stroke.StylusPointsReplaced">
       <summary>Occurs when the <see cref="P:System.Windows.Ink.Stroke.StylusPoints" /> property is assigned a new <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
     </member>
+    <member name="E:System.Windows.Ink.Stroke.System#ComponentModel#INotifyPropertyChanged#PropertyChanged">
+      <summary>Occurs when the value of any <see cref="T:System.Windows.Ink.Stroke" /> property has changed.</summary>
+    </member>
     <member name="M:System.Windows.Ink.Stroke.#ctor(System.Windows.Input.StylusPointCollection,System.Windows.Ink.DrawingAttributes)">
       <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.Stroke" /> class.</summary>
       <param name="stylusPoints">A <see cref="T:System.Windows.Input.StylusPointCollection" /> that represents the <see cref="T:System.Windows.Ink.Stroke" />.</param>
@@ -6381,6 +6393,12 @@
     </member>
     <member name="E:System.Windows.Ink.StrokeCollection.StrokesChanged">
       <summary>Occurs when a <see cref="T:System.Windows.Ink.Stroke" /> in the collection changes.</summary>
+    </member>
+    <member name="E:System.Windows.Ink.StrokeCollection.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged">
+      <summary>Occurs when the <see cref="T:System.Windows.Ink.StrokeCollection" /> changes.</summary>
+    </member>
+    <member name="E:System.Windows.Ink.StrokeCollection.System#ComponentModel#INotifyPropertyChanged#PropertyChanged">
+      <summary>Occurs when the value of any <see cref="T:System.Windows.Ink.StrokeCollection" /> property has changed.</summary>
     </member>
     <member name="F:System.Windows.Ink.StrokeCollection.InkSerializedFormat">
       <summary>Represents the native persistence format for ink data.</summary>

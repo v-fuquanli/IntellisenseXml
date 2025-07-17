@@ -12,6 +12,16 @@
       <summary>Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.CachingChatClient" /> class.</summary>
       <param name="innerClient">The underlying <see cref="T:Microsoft.Extensions.AI.IChatClient" />.</param>
     </member>
+    <member name="M:Microsoft.Extensions.AI.CachingChatClient.EnableCaching(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions)">
+      <summary>Determines whether caching should be used with the specified request.</summary>
+      <param name="messages">The sequence of chat messages included in the request.</param>
+      <param name="options">The chat options included in the request.</param>
+      <returns>
+        <see langword="true" /> if caching should be used for the request, such that the <see cref="T:Microsoft.Extensions.AI.CachingChatClient" />
+            will try to satisfy the request from the cache, or if it can't, will try to cache the fetched response.
+            <see langword="false" /> if caching should not be used for the request, such that the request will
+            be passed through to the inner <see cref="T:Microsoft.Extensions.AI.IChatClient" /> without attempting to read from or write to the cache.</returns>
+    </member>
     <member name="M:Microsoft.Extensions.AI.CachingChatClient.GetCacheKey(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.ReadOnlySpan{System.Object})">
       <summary>Computes a cache key for the specified values.</summary>
       <param name="messages">The messages to inform the key.</param>
@@ -436,6 +446,9 @@ This is used when there is a call to <xref data-throw-if-not-resolved="true" uid
       <param name="cancellationToken">The <xref data-throw-if-not-resolved="true" uid="System.Threading.CancellationToken"></xref> to monitor for cancellation requests.</param>
       <returns>A <xref data-throw-if-not-resolved="true" uid="System.Threading.Tasks.Task"></xref> representing the completion of the operation.</returns>
     </member>
+    <member name="P:Microsoft.Extensions.AI.DistributedCachingChatClient.CacheKeyAdditionalValues">
+      <summary>Gets or sets additional values used to inform the cache key employed for storing state.</summary>
+    </member>
     <member name="P:Microsoft.Extensions.AI.DistributedCachingChatClient.JsonSerializerOptions">
       <summary>Gets or sets JSON serialization options to use when serializing cache data.</summary>
     </member>
@@ -485,6 +498,9 @@ This is used when there is a call to <xref data-throw-if-not-resolved="true" uid
       <param name="value">The <code data-dev-comment-type="typeparamref">TEmbedding</code> to be stored.</param>
       <param name="cancellationToken">The <xref data-throw-if-not-resolved="true" uid="System.Threading.CancellationToken"></xref> to monitor for cancellation requests.</param>
       <returns>A <xref data-throw-if-not-resolved="true" uid="System.Threading.Tasks.Task"></xref> representing the completion of the operation.</returns>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DistributedCachingEmbeddingGenerator`2.CacheKeyAdditionalValues">
+      <summary>Gets or sets additional values used to inform the cache key employed for storing state.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.DistributedCachingEmbeddingGenerator`2.JsonSerializerOptions">
       <summary>Gets or sets JSON serialization options to use when serializing cache data.</summary>
@@ -662,6 +678,9 @@ This is used when there is a call to <xref data-throw-if-not-resolved="true" uid
     </member>
     <member name="P:Microsoft.Extensions.AI.FunctionInvokingChatClient.FunctionInvocationServices">
       <summary>Gets the <see cref="T:System.IServiceProvider" /> specified when constructing the <see cref="T:Microsoft.Extensions.AI.FunctionInvokingChatClient" />, if any.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.FunctionInvokingChatClient.FunctionInvoker">
+      <summary>Gets or sets a delegate used to invoke <see cref="T:Microsoft.Extensions.AI.AIFunction" /> instances.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.FunctionInvokingChatClient.IncludeDetailedErrors">
       <summary>

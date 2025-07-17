@@ -1057,6 +1057,9 @@
       <summary>
             Gets or sets the penalty for repeated tokens in chat responses proportional to how many times they've appeared.</summary>
     </member>
+    <member name="P:Microsoft.Extensions.AI.ChatOptions.Instructions">
+      <summary>Gets or sets additional per-request instructions to be provided to the <see cref="T:Microsoft.Extensions.AI.IChatClient" />.</summary>
+    </member>
     <member name="P:Microsoft.Extensions.AI.ChatOptions.MaxOutputTokens">
       <summary>Gets or sets the maximum number of tokens in the generated chat response.</summary>
     </member>
@@ -1469,6 +1472,51 @@
     </member>
     <member name="P:Microsoft.Extensions.AI.DataContent.Uri">
       <summary>Gets the data URI for this <see cref="T:Microsoft.Extensions.AI.DataContent" />.</summary>
+    </member>
+    <member name="T:Microsoft.Extensions.AI.DelegatingAIFunction">
+      <summary>
+            Provides an optional base class for an <see cref="T:Microsoft.Extensions.AI.AIFunction" /> that passes through calls to another instance.</summary>
+    </member>
+    <member name="M:Microsoft.Extensions.AI.DelegatingAIFunction.#ctor(Microsoft.Extensions.AI.AIFunction)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Extensions.AI.DelegatingAIFunction" /> class as a wrapper around <paramref name="innerFunction" />.</summary>
+      <param name="innerFunction">The inner AI function to which all calls are delegated by default.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="innerFunction" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:Microsoft.Extensions.AI.DelegatingAIFunction.InvokeCoreAsync(Microsoft.Extensions.AI.AIFunctionArguments,System.Threading.CancellationToken)">
+      <summary>Invokes the <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.AIFunction"></xref> and returns its result.</summary>
+      <param name="arguments">The arguments to pass to the function's invocation.</param>
+      <param name="cancellationToken">The <xref data-throw-if-not-resolved="true" uid="System.Threading.CancellationToken"></xref> to monitor for cancellation requests.</param>
+      <returns>The result of the function's execution.</returns>
+    </member>
+    <member name="M:Microsoft.Extensions.AI.DelegatingAIFunction.ToString">
+      <summary>Returns a string that represents the current object.</summary>
+      <returns>A string that represents the current object.</returns>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.AdditionalProperties">
+      <summary>Gets any additional properties associated with the tool.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.Description">
+      <summary>Gets a description of the tool, suitable for use in describing the purpose to a model.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.InnerFunction">
+      <summary>Gets the inner <see cref="T:Microsoft.Extensions.AI.AIFunction" />.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.JsonSchema">
+      <summary>Gets a JSON Schema describing the function and its input parameters.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.JsonSerializerOptions">
+      <summary>Gets a <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.AIFunction.JsonSerializerOptions"></xref> that can be used to marshal function parameters.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.Name">
+      <summary>Gets the name of the tool.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.ReturnJsonSchema">
+      <summary>Gets a JSON Schema describing the function's return value.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.DelegatingAIFunction.UnderlyingMethod">
+      <summary>Gets the underlying <xref data-throw-if-not-resolved="true" uid="System.Reflection.MethodInfo"></xref> that this <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.AI.AIFunction"></xref> might be wrapping.</summary>
     </member>
     <member name="T:Microsoft.Extensions.AI.DelegatingChatClient">
       <summary>
@@ -2136,7 +2184,7 @@
       <returns>A string that represents the current object.</returns>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.AdditionalProperties">
-      <summary>Gets or sets any additional properties associated with the speech to text completion.</summary>
+      <summary>Gets or sets any additional properties associated with the speech to text response.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.Contents">
       <summary>Gets or sets the generated content items.</summary>
@@ -2145,10 +2193,10 @@
       <summary>Gets or sets the end time of the text segment in relation to the full audio speech length.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.ModelId">
-      <summary>Gets or sets the model ID used in the creation of the speech to text completion.</summary>
+      <summary>Gets or sets the model ID used in the creation of the speech to text response.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.RawRepresentation">
-      <summary>Gets or sets the raw representation of the speech to text completion from an underlying implementation.</summary>
+      <summary>Gets or sets the raw representation of the speech to text response from an underlying implementation.</summary>
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.ResponseId">
       <summary>Gets or sets the ID of the speech to text response.</summary>
@@ -2158,6 +2206,9 @@
     </member>
     <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.Text">
       <summary>Gets the text of this speech to text response.</summary>
+    </member>
+    <member name="P:Microsoft.Extensions.AI.SpeechToTextResponse.Usage">
+      <summary>Gets or sets usage details for the speech to text response.</summary>
     </member>
     <member name="T:Microsoft.Extensions.AI.SpeechToTextResponseUpdate">
       <summary>

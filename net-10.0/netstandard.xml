@@ -8910,6 +8910,15 @@ The underlying array of <paramref name="destination" /> is <see langword="null" 
       <returns>
         <code data-dev-comment-type="langword">true</code> if the formatting was successful; otherwise, <code data-dev-comment-type="langword">false</code>.</returns>
     </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Char.System#IUtf8SpanParsable{System#Char}#TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Char@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
+    </member>
     <member name="M:System.Char.System#Numerics#IAdditionOperators{System#Char@System#Char@System#Char}#op_Addition(System.Char,System.Char)">
       <summary>Adds two values together to compute their sum.</summary>
       <param name="left">The value to which <paramref name="right" /> is added.</param>
@@ -69676,6 +69685,13 @@ On .NET Framework 4 and later versions and .NET Core running on Windows, it incl
       <returns>
         <code data-dev-comment-type="langword">true</code> if <code data-dev-comment-type="paramref">left</code> is less than or equal to <code data-dev-comment-type="paramref">right</code>; otherwise, <code data-dev-comment-type="langword">false</code>.</returns>
     </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte},System.IFormatProvider)">
+      <param name="utf8Text" />
+      <param name="provider" />
+    </member>
+    <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Byte})">
+      <param name="utf8Text" />
+    </member>
     <member name="M:System.Guid.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)">
       <summary>Parses a span of characters into a value.</summary>
       <param name="s">The span of characters to parse.</param>
@@ -69782,6 +69798,15 @@ After trimming, the length of the read-only character span is 0.</exception>
       <param name="format">A read-only span containing the character representing one of the following specifiers that indicates the exact format to use when interpreting the current GUID instance: "N", "D", "B", "P", or "X".</param>
       <returns>
         <see langword="true" /> if the formatting operation was successful; <see langword="false" /> otherwise.</returns>
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.Guid@)">
+      <param name="utf8Text" />
+      <param name="result" />
+    </member>
+    <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Byte},System.IFormatProvider,System.Guid@)">
+      <param name="utf8Text" />
+      <param name="provider" />
+      <param name="result" />
     </member>
     <member name="M:System.Guid.TryParse(System.ReadOnlySpan{System.Char},System.Guid@)">
       <summary>Converts the specified read-only span of characters containing the representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure.</summary>
@@ -89100,6 +89125,11 @@ The range specified by the combination of <paramref name="offset" /> and <paramr
         <paramref name="source" /> is <see langword="null" />.</exception>
       <returns>An enumerable that incorporates each element index into a tuple.</returns>
     </member>
+    <member name="M:System.Linq.Enumerable.InfiniteSequence``1(``0,``0)">
+      <param name="start" />
+      <param name="step" />
+      <typeparam name="T" />
+    </member>
     <member name="M:System.Linq.Enumerable.Intersect``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Produces the set intersection of two sequences by using the specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</summary>
       <param name="first">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose distinct elements that also appear in <paramref name="second" /> will be returned.</param>
@@ -89962,6 +89992,12 @@ The range specified by the combination of <paramref name="offset" /> and <paramr
       <exception cref="T:System.ArgumentNullException">
         <paramref name="source" /> or <paramref name="collectionSelector" /> or <paramref name="resultSelector" /> is <see langword="null" />.</exception>
       <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements are the result of invoking the one-to-many transform function <paramref name="collectionSelector" /> on each element of <paramref name="source" /> and then mapping each of those sequence elements and their corresponding source element to a result element.</returns>
+    </member>
+    <member name="M:System.Linq.Enumerable.Sequence``1(``0,``0,``0)">
+      <param name="start" />
+      <param name="endInclusive" />
+      <param name="step" />
+      <typeparam name="T" />
     </member>
     <member name="M:System.Linq.Enumerable.SequenceEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Determines whether two sequences are equal by comparing their elements by using a specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" />.</summary>
@@ -108438,6 +108474,7 @@ The timeout specified is greater than <see cref="F:System.Int32.MaxValue" /> mil
       <summary>Represents an HTTP PUT protocol method that is used to replace an entity identified by a URI.</summary>
       <returns>The HTTP PUT method.</returns>
     </member>
+    <member name="P:System.Net.Http.HttpMethod.Query" />
     <member name="P:System.Net.Http.HttpMethod.Trace">
       <summary>Represents an HTTP TRACE protocol method.</summary>
       <returns>The HTTP TRACE method.</returns>
@@ -116263,6 +116300,8 @@ Authentication has not occurred.</exception>
       <returns>
         <see langword="true" /> to indicate that the <see cref="T:System.Net.Security.SslStream" /> allows SSL renegotiation; otherwise, <see langword="false" />. The default value is <see langword="true" />.</returns>
     </member>
+    <member name="P:System.Net.Security.SslClientAuthenticationOptions.AllowRsaPkcs1Padding" />
+    <member name="P:System.Net.Security.SslClientAuthenticationOptions.AllowRsaPssPadding" />
     <member name="P:System.Net.Security.SslClientAuthenticationOptions.AllowTlsResume">
       <summary>Gets or sets a value that indicates whether the SslStream should allow TLS resumption.</summary>
       <returns>
@@ -116334,6 +116373,8 @@ Authentication has not occurred.</exception>
       <returns>
         <see langword="true" /> to allow SSL renegotiation; otherwise, <see langword="false" />. The default value is <see langword="false" /> in .NET 7 and later versions; in earlier versions, the default value is <see langword="true" />.</returns>
     </member>
+    <member name="P:System.Net.Security.SslServerAuthenticationOptions.AllowRsaPkcs1Padding" />
+    <member name="P:System.Net.Security.SslServerAuthenticationOptions.AllowRsaPssPadding" />
     <member name="P:System.Net.Security.SslServerAuthenticationOptions.AllowTlsResume">
       <summary>Gets or sets a value that indicates whether the SslStream should allow TLS resumption.</summary>
     </member>
@@ -117069,6 +117110,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
       <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read. When there is no more data to be read, returns 0.</returns>
     </member>
+    <member name="M:System.Net.Security.SslStream.Read(System.Span{System.Byte})">
+      <param name="buffer" />
+    </member>
     <member name="M:System.Net.Security.SslStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
       <summary>Asynchronously reads data from this stream and stores it in the specified range of a byte array.</summary>
       <param name="buffer">The buffer that receives the bytes read from this stream.</param>
@@ -117160,6 +117204,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
     </member>
+    <member name="M:System.Net.Security.SslStream.Write(System.ReadOnlySpan{System.Byte})">
+      <param name="buffer" />
+    </member>
     <member name="M:System.Net.Security.SslStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
       <summary>Asynchronously writes data to the underlying stream from the specified range of a byte array.</summary>
       <param name="buffer">The data to write to the underlying stream.</param>
@@ -117195,6 +117242,9 @@ Authentication has not occurred.</exception>
       <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous write operation.</returns>
+    </member>
+    <member name="M:System.Net.Security.SslStream.WriteByte(System.Byte)">
+      <param name="value" />
     </member>
     <member name="P:System.Net.Security.SslStream.CanRead">
       <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the underlying stream is readable.</summary>
@@ -134867,10 +134917,14 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the span has been passed.</returns>
     </member>
+    <member name="M:System.ReadOnlySpan`1.Enumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.ReadOnlySpan`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.ReadOnlySpan`1.Enumerator.Current">
       <summary>Gets a reference to the item at the current position of the enumerator.</summary>
       <returns>The element in the <see cref="T:System.ReadOnlySpan`1" /> at the current position of the enumerator.</returns>
     </member>
+    <member name="P:System.ReadOnlySpan`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.ReadOnlySpan`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Reflection.AmbiguousMatchException">
       <summary>The exception that is thrown when binding to a member results in more than one member matching the binding criteria. This class cannot be inherited.</summary>
     </member>
@@ -158677,6 +158731,10 @@ The <see langword="InnerException" /> property may contain more information abou
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class using an enumerated collection of <see cref="T:System.Security.Claims.Claim" /> objects.</summary>
       <param name="claims">The claims with which to populate the claims identity.</param>
     </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader,System.StringComparison)">
+      <param name="reader" />
+      <param name="stringComparison" />
+    </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader)">
       <summary>Initializes an instance of <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
       <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.ClaimsIdentity" />.</param>
@@ -158696,11 +158754,23 @@ The <see langword="InnerException" /> property may contain more information abou
       <exception cref="T:System.ArgumentNullException">
         <paramref name="info" /> is <see langword="null" />.</exception>
     </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity,System.StringComparison)">
+      <param name="other" />
+      <param name="stringComparison" />
+    </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from an existing <see cref="T:System.Security.Claims.ClaimsIdentity" /> instance.</summary>
       <param name="other">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> to copy.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="other" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String,System.StringComparison)">
+      <param name="identity" />
+      <param name="claims" />
+      <param name="authenticationType" />
+      <param name="nameType" />
+      <param name="roleType" />
+      <param name="stringComparison" />
     </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from the specified <see cref="T:System.Security.Principal.IIdentity" /> using the specified claims, authentication type, name claim type, and role claim type.</summary>
@@ -174467,10 +174537,14 @@ This method is intended to support .NET compilers and is not intended to be call
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the span has been passed.</returns>
     </member>
+    <member name="M:System.Span`1.Enumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.Span`1.Enumerator.System#IDisposable#Dispose" />
     <member name="P:System.Span`1.Enumerator.Current">
       <summary>Gets a reference to the item at the current position of the enumerator.</summary>
       <returns>The element in the <see cref="T:System.Span`1" /> at the current position of the enumerator.</returns>
     </member>
+    <member name="P:System.Span`1.Enumerator.System#Collections#Generic#IEnumerator{T}#Current" />
+    <member name="P:System.Span`1.Enumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.StackOverflowException">
       <summary>The exception that is thrown when the execution stack exceeds the stack size. This class cannot be inherited.</summary>
     </member>

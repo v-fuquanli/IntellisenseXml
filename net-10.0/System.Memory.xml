@@ -3895,11 +3895,14 @@ If all of the values are inside of the specified range, returns <code data-dev-c
       <returns>
         <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the enumeration.</returns>
     </member>
+    <member name="M:System.MemoryExtensions.SpanSplitEnumerator`1.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.MemoryExtensions.SpanSplitEnumerator`1.System#IDisposable#Dispose" />
     <member name="P:System.MemoryExtensions.SpanSplitEnumerator`1.Current">
       <summary>Gets the current element of the enumeration.</summary>
       <returns>A <see cref="T:System.Range" /> instance that indicates the bounds of the current element withing the source span.</returns>
     </member>
     <member name="P:System.MemoryExtensions.SpanSplitEnumerator`1.Source" />
+    <member name="P:System.MemoryExtensions.SpanSplitEnumerator`1.System#Collections#IEnumerator#Current" />
     <member name="T:System.MemoryExtensions.TryWriteInterpolatedStringHandler">
       <summary>Provides a handler used by the language compiler to format interpolated strings into character spans.</summary>
     </member>
@@ -4202,10 +4205,13 @@ If all of the values are inside of the specified range, returns <code data-dev-c
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next line; <see langword="false" /> if the enumerator has advanced past the end of the span.</returns>
     </member>
+    <member name="M:System.Text.SpanLineEnumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.Text.SpanLineEnumerator.System#IDisposable#Dispose" />
     <member name="P:System.Text.SpanLineEnumerator.Current">
       <summary>Gets the line at the current position of the enumerator.</summary>
       <returns>The line at the current position of the enumerator.</returns>
     </member>
+    <member name="P:System.Text.SpanLineEnumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Text.SpanRuneEnumerator">
       <summary>Provides an enumerator for the <see cref="T:System.Text.Rune" /> values represented by a span containing UTF-16 text.</summary>
     </member>
@@ -4218,9 +4224,12 @@ If all of the values are inside of the specified range, returns <code data-dev-c
       <returns>
         <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the span has been reached.</returns>
     </member>
+    <member name="M:System.Text.SpanRuneEnumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.Text.SpanRuneEnumerator.System#IDisposable#Dispose" />
     <member name="P:System.Text.SpanRuneEnumerator.Current">
       <summary>Gets the <see cref="T:System.Text.Rune" /> at the current position of the enumerator.</summary>
       <returns>The <see cref="T:System.Text.Rune" /> at the current position of the enumerator.</returns>
     </member>
+    <member name="P:System.Text.SpanRuneEnumerator.System#Collections#IEnumerator#Current" />
   </members>
 </doc>

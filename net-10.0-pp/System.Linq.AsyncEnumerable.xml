@@ -838,6 +838,13 @@
         <paramref name="source" /> is <see langword="null" />.</exception>
       <returns>An enumerable that incorporates each element index into a tuple.</returns>
     </member>
+    <member name="M:System.Linq.AsyncEnumerable.InfiniteSequence``1(``0,``0)">
+      <summary>Generates an infinite sequence that begins with <paramref name="start" /> and yields additional values each incremented by <paramref name="step" />.</summary>
+      <param name="start">The starting value.</param>
+      <param name="step">The amount by which the next yielded value should be incremented from the previous yielded value.</param>
+      <typeparam name="T">The type of the value to be yielded in the result sequence.</typeparam>
+      <returns>An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> that contains the sequence.</returns>
+    </member>
     <member name="M:System.Linq.AsyncEnumerable.Intersect``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Collections.Generic.IAsyncEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
       <summary>Produces the set intersection of two sequences.</summary>
       <param name="first">An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> whose distinct elements that also appear in second will be returned.</param>
@@ -1555,6 +1562,18 @@
             invoking the one-to-many transform function <paramref name="collectionSelector" /> on each element
             of source and then mapping each of those sequence elements and their corresponding
             source element to a result element.</returns>
+    </member>
+    <member name="M:System.Linq.AsyncEnumerable.Sequence``1(``0,``0,``0)">
+      <summary>Generates a  sequence that begins with <paramref name="start" /> and yields additional values each incremented by <paramref name="step" /> until <paramref name="endInclusive" /> is reached.</summary>
+      <param name="start">The starting value. This value will always be included in the resulting sequence.</param>
+      <param name="endInclusive">The ending bound beyond which values will not be included in the sequence.</param>
+      <param name="step">The amount by which the next value in the sequence should be incremented from the previous value.</param>
+      <typeparam name="T">The type of the value to be yielded in the result sequence.</typeparam>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="endInclusive" /> is <see langword="null" />.</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="step" /> is zero and <paramref name="endInclusive" /> does not equal <paramref name="start" />.</exception>
+      <returns>An <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> that contains the sequence.</returns>
     </member>
     <member name="M:System.Linq.AsyncEnumerable.SequenceEqualAsync``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Collections.Generic.IAsyncEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0},System.Threading.CancellationToken)">
       <summary>Determines whether two sequences are equal by comparing their elements.</summary>

@@ -13294,6 +13294,7 @@ This class is not available in .NET Core 3.1 and later versions. Use the <see cr
       <summary>Gets a collection that contains all the columns in the control.</summary>
       <returns>The <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" /> that contains all the columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</returns>
     </member>
+    <member name="P:System.Windows.Forms.DataGridView.CreateParams" />
     <member name="P:System.Windows.Forms.DataGridView.CurrentCell">
       <summary>Gets or sets the currently active cell.</summary>
       <exception cref="T:System.InvalidOperationException">The value of this property cannot be set because changes to the current cell cannot be committed or canceled.
@@ -25305,6 +25306,7 @@ The value assigned is less than the <see cref="F:System.Windows.Forms.DateTimePi
     <member name="P:System.Windows.Forms.Form.FormCornerPreference">
       <summary>Sets or gets the rounding style of the Form's corners using the <see cref="P:System.Windows.Forms.Form.FormCornerPreference" /> enum.</summary>
     </member>
+    <member name="P:System.Windows.Forms.Form.FormScreenCaptureMode" />
     <member name="P:System.Windows.Forms.Form.HelpButton">
       <summary>Gets or sets a value indicating whether a Help button should be displayed in the caption box of the form.</summary>
       <returns>
@@ -40324,6 +40326,10 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
       <summary>Gets the working area of the display. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.</summary>
       <returns>A <see cref="T:System.Drawing.Rectangle" />, representing the working area of the display.</returns>
     </member>
+    <member name="T:System.Windows.Forms.ScreenCaptureMode" />
+    <member name="F:System.Windows.Forms.ScreenCaptureMode.Allow" />
+    <member name="F:System.Windows.Forms.ScreenCaptureMode.HideContent" />
+    <member name="F:System.Windows.Forms.ScreenCaptureMode.HideWindow" />
     <member name="T:System.Windows.Forms.ScrollableControl">
       <summary>Defines a base class for controls that support auto-scrolling behavior.</summary>
     </member>
@@ -44831,6 +44837,7 @@ This class is not available in .NET 5 and later versions. Use the <see cref="T:S
       <summary>Gets or sets the background color for the <see cref="T:System.Windows.Forms.TabPage" />.</summary>
       <returns>A <see cref="T:System.Drawing.Color" /> that represents the background color of the <see cref="T:System.Windows.Forms.TabPage" />.</returns>
     </member>
+    <member name="P:System.Windows.Forms.TabPage.CreateParams" />
     <member name="P:System.Windows.Forms.TabPage.Dock">
       <summary>This member is not meaningful for this control.</summary>
       <returns>A <see cref="T:System.Windows.Forms.DockStyle" /> value.</returns>

@@ -1445,6 +1445,7 @@ The <paramref name="tag" /> parameter length is not 16 bytes (128 bits).</except
       <summary>Gets a new <see cref="T:System.Security.Cryptography.CngAlgorithm" /> object that specifies the Message Digest 5 (MD5) hash algorithm.</summary>
       <returns>An object that specifies the MD5 algorithm.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.CngAlgorithm.MLDsa" />
     <member name="P:System.Security.Cryptography.CngAlgorithm.Rsa">
       <summary>Gets a new <see cref="T:System.Security.Cryptography.CngAlgorithm" /> object that specifies the RSA hash algorithm.</summary>
       <returns>An object that specifies the RSA algorithm.</returns>
@@ -1528,6 +1529,7 @@ The <paramref name="tag" /> parameter length is not 16 bytes (128 bits).</except
       <summary>Gets a <see cref="T:System.Security.Cryptography.CngAlgorithmGroup" /> object that specifies the Elliptic Curve Digital Signature Algorithm (ECDSA) family of algorithms.</summary>
       <returns>An object that specifies the ECDSA family of algorithms.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.CngAlgorithmGroup.MLDsa" />
     <member name="P:System.Security.Cryptography.CngAlgorithmGroup.Rsa">
       <summary>Gets a <see cref="T:System.Security.Cryptography.CngAlgorithmGroup" /> object that specifies the Rivest-Shamir-Adleman (RSA) family of algorithms.</summary>
       <returns>An object that specifies the RSA family of algorithms.</returns>
@@ -1854,6 +1856,9 @@ The <paramref name="tag" /> parameter length is not 16 bytes (128 bits).</except
       <summary>Gets a <see cref="T:System.Security.Cryptography.CngKeyBlobFormat" /> object that specifies a Private Key Information Syntax Standard (PKCS #8) key BLOB.</summary>
       <returns>An object that specifies a PKCS #8 private key BLOB.</returns>
     </member>
+    <member name="P:System.Security.Cryptography.CngKeyBlobFormat.PQDsaPrivateBlob" />
+    <member name="P:System.Security.Cryptography.CngKeyBlobFormat.PQDsaPrivateSeedBlob" />
+    <member name="P:System.Security.Cryptography.CngKeyBlobFormat.PQDsaPublicBlob" />
     <member name="T:System.Security.Cryptography.CngKeyCreationOptions">
       <summary>Specifies options used for key creation.</summary>
     </member>
@@ -9761,6 +9766,11 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
     <member name="P:System.Security.Cryptography.MLDsaAlgorithm.PublicKeySizeInBytes" />
     <member name="P:System.Security.Cryptography.MLDsaAlgorithm.SecretKeySizeInBytes" />
     <member name="P:System.Security.Cryptography.MLDsaAlgorithm.SignatureSizeInBytes" />
+    <member name="T:System.Security.Cryptography.MLDsaCng" />
+    <member name="M:System.Security.Cryptography.MLDsaCng.#ctor(System.Security.Cryptography.CngKey)">
+      <param name="key" />
+    </member>
+    <member name="P:System.Security.Cryptography.MLDsaCng.Key" />
     <member name="T:System.Security.Cryptography.MLDsaOpenSsl" />
     <member name="M:System.Security.Cryptography.MLDsaOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)">
       <param name="pkeyHandle" />
@@ -9967,6 +9977,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       <param name="left" />
       <param name="right" />
     </member>
+    <member name="M:System.Security.Cryptography.MLKemAlgorithm.ToString" />
     <member name="P:System.Security.Cryptography.MLKemAlgorithm.CiphertextSizeInBytes" />
     <member name="P:System.Security.Cryptography.MLKemAlgorithm.DecapsulationKeySizeInBytes" />
     <member name="P:System.Security.Cryptography.MLKemAlgorithm.EncapsulationKeySizeInBytes" />
@@ -14311,6 +14322,23 @@ An error occurred creating the signature.</exception>
       <param name="context" />
       <param name="destination" />
     </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignPreHash(System.Byte[],System.String,System.Byte[])">
+      <param name="hash" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignPreHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.String,System.ReadOnlySpan{System.Byte})">
+      <param name="hash" />
+      <param name="destination" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.SignPreHashCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.String,System.Span{System.Byte})">
+      <param name="hash" />
+      <param name="context" />
+      <param name="hashAlgorithmOid" />
+      <param name="destination" />
+    </member>
     <member name="M:System.Security.Cryptography.SlhDsa.TryExportEncryptedPkcs8PrivateKey(System.ReadOnlySpan{System.Byte},System.Security.Cryptography.PbeParameters,System.Span{System.Byte},System.Int32@)">
       <param name="passwordBytes" />
       <param name="pbeParameters" />
@@ -14354,6 +14382,24 @@ An error occurred creating the signature.</exception>
     <member name="M:System.Security.Cryptography.SlhDsa.VerifyDataCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
       <param name="data" />
       <param name="context" />
+      <param name="signature" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyPreHash(System.Byte[],System.Byte[],System.String,System.Byte[])">
+      <param name="hash" />
+      <param name="signature" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyPreHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.String,System.ReadOnlySpan{System.Byte})">
+      <param name="hash" />
+      <param name="signature" />
+      <param name="hashAlgorithmOid" />
+      <param name="context" />
+    </member>
+    <member name="M:System.Security.Cryptography.SlhDsa.VerifyPreHashCore(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.String,System.ReadOnlySpan{System.Byte})">
+      <param name="hash" />
+      <param name="context" />
+      <param name="hashAlgorithmOid" />
       <param name="signature" />
     </member>
     <member name="P:System.Security.Cryptography.SlhDsa.Algorithm" />

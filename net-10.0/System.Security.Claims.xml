@@ -167,6 +167,10 @@
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class using an enumerated collection of <see cref="T:System.Security.Claims.Claim" /> objects.</summary>
       <param name="claims">The claims with which to populate the claims identity.</param>
     </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader,System.StringComparison)">
+      <param name="reader" />
+      <param name="stringComparison" />
+    </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader)">
       <summary>Initializes an instance of <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
       <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.ClaimsIdentity" />.</param>
@@ -186,11 +190,23 @@
       <exception cref="T:System.ArgumentNullException">
         <paramref name="info" /> is <see langword="null" />.</exception>
     </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity,System.StringComparison)">
+      <param name="other" />
+      <param name="stringComparison" />
+    </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from an existing <see cref="T:System.Security.Claims.ClaimsIdentity" /> instance.</summary>
       <param name="other">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> to copy.</param>
       <exception cref="T:System.ArgumentNullException">
         <paramref name="other" /> is <see langword="null" />.</exception>
+    </member>
+    <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String,System.StringComparison)">
+      <param name="identity" />
+      <param name="claims" />
+      <param name="authenticationType" />
+      <param name="nameType" />
+      <param name="roleType" />
+      <param name="stringComparison" />
     </member>
     <member name="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from the specified <see cref="T:System.Security.Principal.IIdentity" /> using the specified claims, authentication type, name claim type, and role claim type.</summary>

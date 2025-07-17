@@ -131,6 +131,7 @@ The current <paramref name="reader" /> token does not start or represent a value
     <member name="T:System.Text.Json.JsonDocumentOptions">
       <summary>Provides the ability for the user to define custom behavior when parsing JSON to create a <see cref="T:System.Text.Json.JsonDocument" />.</summary>
     </member>
+    <member name="P:System.Text.Json.JsonDocumentOptions.AllowDuplicateProperties" />
     <member name="P:System.Text.Json.JsonDocumentOptions.AllowTrailingCommas">
       <summary>Gets or sets a value that indicates whether an extra comma at the end of a list of JSON values in an object or array is allowed (and ignored) within the JSON payload being read.</summary>
       <returns>
@@ -323,6 +324,18 @@ The current <paramref name="reader" /> token does not start or represent a value
       <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.UInt64" />.</exception>
       <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       <returns>The current JSON number as a <see cref="T:System.UInt64" />.</returns>
+    </member>
+    <member name="M:System.Text.Json.JsonElement.Parse(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonDocumentOptions)">
+      <param name="utf8Json" />
+      <param name="options" />
+    </member>
+    <member name="M:System.Text.Json.JsonElement.Parse(System.ReadOnlySpan{System.Char},System.Text.Json.JsonDocumentOptions)">
+      <param name="json" />
+      <param name="options" />
+    </member>
+    <member name="M:System.Text.Json.JsonElement.Parse(System.String,System.Text.Json.JsonDocumentOptions)">
+      <param name="json" />
+      <param name="options" />
     </member>
     <member name="M:System.Text.Json.JsonElement.ParseValue(System.Text.Json.Utf8JsonReader@)">
       <summary>Parses one JSON value (including objects or arrays) from the provided reader.</summary>
@@ -2083,6 +2096,7 @@ There is remaining data in the stream.</exception>
         <para>For information about the default property values that are applied, see JsonSerializerOptions properties.</para>
       </summary>
     </member>
+    <member name="F:System.Text.Json.JsonSerializerDefaults.Strict" />
     <member name="F:System.Text.Json.JsonSerializerDefaults.Web">
       <summary>
         <para>Option values appropriate to Web-based scenarios.</para>
@@ -2152,6 +2166,7 @@ There is remaining data in the stream.</exception>
       <returns>
         <see langword="true" /> if a contract for <paramref name="type" /> was found, or <see langword="false" /> otherwise.</returns>
     </member>
+    <member name="P:System.Text.Json.JsonSerializerOptions.AllowDuplicateProperties" />
     <member name="P:System.Text.Json.JsonSerializerOptions.AllowOutOfOrderMetadataProperties">
       <summary>Allows JSON metadata properties to be specified after regular properties in a deserialized JSON object.</summary>
       <exception cref="T:System.InvalidOperationException">This property is set after serialization or deserialization has occurred.</exception>
@@ -2286,6 +2301,7 @@ There is remaining data in the stream.</exception>
       <summary>Gets or sets a value that indicates whether non-optional constructor parameters should be specified during deserialization.</summary>
       <exception cref="T:System.InvalidOperationException">This property is set after serialization or deserialization has occurred.</exception>
     </member>
+    <member name="P:System.Text.Json.JsonSerializerOptions.Strict" />
     <member name="P:System.Text.Json.JsonSerializerOptions.TypeInfoResolver">
       <summary>Gets or sets the <see cref="T:System.Text.Json.Serialization.Metadata.JsonTypeInfo" /> contract resolver used by this instance.</summary>
       <exception cref="T:System.InvalidOperationException">The property is set after serialization or deserialization has occurred.</exception>
@@ -3886,6 +3902,7 @@ There is remaining data in the stream.</exception>
       <exception cref="T:System.ArgumentOutOfRangeException">
         <paramref name="defaults" /> is invalid.</exception>
     </member>
+    <member name="P:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.AllowDuplicateProperties" />
     <member name="P:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.AllowOutOfOrderMetadataProperties">
       <summary>Specifies the default value of <see cref="P:System.Text.Json.JsonSerializerOptions.AllowOutOfOrderMetadataProperties" /> when set.</summary>
     </member>

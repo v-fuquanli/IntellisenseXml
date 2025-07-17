@@ -1486,10 +1486,13 @@
       <returns>
         <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator cannot find additional matches.</returns>
     </member>
+    <member name="M:System.Text.RegularExpressions.Regex.ValueMatchEnumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.Text.RegularExpressions.Regex.ValueMatchEnumerator.System#IDisposable#Dispose" />
     <member name="P:System.Text.RegularExpressions.Regex.ValueMatchEnumerator.Current">
       <summary>Gets the <see cref="T:System.Text.RegularExpressions.ValueMatch" /> element at the current position of the enumerator.</summary>
       <exception cref="T:System.InvalidOperationException">Enumeration has either not started or has already finished.</exception>
     </member>
+    <member name="P:System.Text.RegularExpressions.Regex.ValueMatchEnumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Text.RegularExpressions.Regex.ValueSplitEnumerator">
       <summary>Represents an enumerator containing the set of splits around successful matches found by iteratively applying a regular expression pattern to the input span.</summary>
     </member>
@@ -1502,9 +1505,12 @@
       <returns>
         <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator cannot find additional matches.</returns>
     </member>
+    <member name="M:System.Text.RegularExpressions.Regex.ValueSplitEnumerator.System#Collections#IEnumerator#Reset" />
+    <member name="M:System.Text.RegularExpressions.Regex.ValueSplitEnumerator.System#IDisposable#Dispose" />
     <member name="P:System.Text.RegularExpressions.Regex.ValueSplitEnumerator.Current">
       <summary>Gets a <see cref="T:System.Range" /> for the split at the current position of the enumerator.</summary>
     </member>
+    <member name="P:System.Text.RegularExpressions.Regex.ValueSplitEnumerator.System#Collections#IEnumerator#Current" />
     <member name="T:System.Text.RegularExpressions.RegexCompilationInfo">
       <summary>Provides information about a regular expression that is used to compile a regular expression to a stand-alone assembly.</summary>
     </member>
